@@ -1,0 +1,7 @@
+/build/
+/external/
+*.wav
+*.mp3
+*.flac
+*.reapeaks
+__pycache__/
