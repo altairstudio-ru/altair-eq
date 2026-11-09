@@ -2,6 +2,8 @@
 
 Самостоятельный программный эквалайзер AltaiR: будущий VST3 и общее DSP-ядро для AltaiR Mix Studio.
 
+Репозиторий: https://github.com/altairstudio-ru/altair-eq (приватный). Дефолтная ветка `master` — стартовый bootstrap; активная работа идёт в ветке `pultec-lf-mvp` (план: `docs/WORK_PLAN_PULTEC_MVP.md`).
+
 Сейчас перенесён только прототип DSP, исследовательские требования и контекст. Готового самостоятельного VST3 в этом проекте ещё нет. Основной Mix Studio продолжает развиваться отдельно.
 
 Начать с `HANDOFF.md`, затем `PLAN.md` и `docs/RESEARCH_REQUIREMENTS.md`.
