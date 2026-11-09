@@ -1,0 +1,356 @@
+id,group,priority,conditional,sample_rate_hz,fx_present,host_bypass,eq_in,lf_cps_hz,lf_boost_ui,lf_atten_ui,output_gain_ui,signal,level_dbfs,purpose
+boost_only-20-b010-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,1,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b010-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,1,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b020-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,2,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b020-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,2,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b030-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,3,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b030-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,3,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b040-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,4,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b040-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,4,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b050-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,5,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b050-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,5,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b060-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,6,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b060-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,6,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b070-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,7,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b070-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,7,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b080-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,8,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b080-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,8,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b090-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,9,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b090-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,9,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b100-a000-44k1-imp,boost_only,1,False,44100,True,False,True,20,10,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-20-b100-a000-44k1-swp,boost_only,1,False,44100,True,False,True,20,10,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b010-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,1,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b010-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,1,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b020-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,2,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b020-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,2,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b030-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,3,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b030-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,3,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b040-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,4,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b040-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,4,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b050-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,5,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b050-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,5,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b060-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,6,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b060-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,6,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b070-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,7,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b070-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,7,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b080-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,8,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b080-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,8,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b090-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,9,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b090-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,9,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b100-a000-44k1-imp,boost_only,1,False,44100,True,False,True,30,10,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-30-b100-a000-44k1-swp,boost_only,1,False,44100,True,False,True,30,10,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b010-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,1,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b010-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,1,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b020-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,2,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b020-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,2,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b030-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,3,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b030-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,3,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b040-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,4,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b040-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,4,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b050-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,5,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b050-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,5,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b060-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,6,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b060-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,6,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b070-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,7,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b070-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,7,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b080-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,8,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b080-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,8,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b090-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,9,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b090-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,9,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b100-a000-44k1-imp,boost_only,1,False,44100,True,False,True,60,10,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-60-b100-a000-44k1-swp,boost_only,1,False,44100,True,False,True,60,10,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b010-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,1,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b010-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,1,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b020-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,2,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b020-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,2,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b030-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,3,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b030-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,3,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b040-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,4,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b040-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,4,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b050-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,5,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b050-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,5,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b060-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,6,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b060-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,6,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b070-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,7,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b070-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,7,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b080-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,8,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b080-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,8,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b090-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,9,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b090-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,9,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b100-a000-44k1-imp,boost_only,1,False,44100,True,False,True,100,10,0,,impulse,,Static magnitude/phase: LF boost grid (atten=0)
+boost_only-100-b100-a000-44k1-swp,boost_only,1,False,44100,True,False,True,100,10,0,,sweep_log,,Static magnitude/phase: LF boost grid (atten=0)
+atten_only-20-b000-a010-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,1,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a010-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,1,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a020-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,2,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a020-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,2,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a030-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,3,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a030-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,3,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a040-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,4,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a040-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,4,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a050-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,5,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a050-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,5,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a060-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,6,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a060-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,6,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a070-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,7,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a070-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,7,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a080-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,8,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a080-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,8,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a090-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,9,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a090-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,9,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a100-44k1-imp,atten_only,1,False,44100,True,False,True,20,0,10,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-20-b000-a100-44k1-swp,atten_only,1,False,44100,True,False,True,20,0,10,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a010-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,1,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a010-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,1,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a020-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,2,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a020-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,2,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a030-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,3,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a030-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,3,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a040-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,4,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a040-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,4,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a050-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,5,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a050-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,5,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a060-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,6,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a060-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,6,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a070-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,7,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a070-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,7,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a080-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,8,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a080-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,8,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a090-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,9,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a090-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,9,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a100-44k1-imp,atten_only,1,False,44100,True,False,True,30,0,10,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-30-b000-a100-44k1-swp,atten_only,1,False,44100,True,False,True,30,0,10,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a010-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,1,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a010-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,1,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a020-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,2,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a020-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,2,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a030-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,3,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a030-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,3,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a040-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,4,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a040-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,4,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a050-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,5,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a050-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,5,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a060-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,6,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a060-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,6,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a070-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,7,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a070-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,7,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a080-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,8,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a080-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,8,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a090-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,9,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a090-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,9,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a100-44k1-imp,atten_only,1,False,44100,True,False,True,60,0,10,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-60-b000-a100-44k1-swp,atten_only,1,False,44100,True,False,True,60,0,10,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a010-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,1,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a010-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,1,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a020-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,2,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a020-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,2,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a030-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,3,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a030-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,3,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a040-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,4,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a040-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,4,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a050-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,5,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a050-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,5,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a060-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,6,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a060-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,6,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a070-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,7,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a070-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,7,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a080-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,8,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a080-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,8,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a090-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,9,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a090-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,9,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a100-44k1-imp,atten_only,1,False,44100,True,False,True,100,0,10,,impulse,,Static magnitude/phase: LF attenuation grid (boost=0)
+atten_only-100-b000-a100-44k1-swp,atten_only,1,False,44100,True,False,True,100,0,10,,sweep_log,,Static magnitude/phase: LF attenuation grid (boost=0)
+boost_atten_trick-20-b020-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,2,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b020-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,2,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b040-a040-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,4,4,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b040-a040-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,4,4,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b060-a060-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,6,6,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b060-a060-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,6,6,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b080-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,8,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b080-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,8,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b100-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,10,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b100-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,10,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b100-a050-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,10,5,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b100-a050-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,10,5,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b050-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,5,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b050-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,5,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b080-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,8,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b080-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,8,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b020-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,20,2,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-20-b020-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,20,2,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b020-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,2,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b020-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,2,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b040-a040-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,4,4,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b040-a040-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,4,4,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b060-a060-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,6,6,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b060-a060-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,6,6,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b080-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,8,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b080-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,8,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b100-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,10,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b100-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,10,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b100-a050-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,10,5,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b100-a050-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,10,5,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b050-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,5,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b050-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,5,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b080-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,8,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b080-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,8,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b020-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,30,2,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-30-b020-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,30,2,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b020-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,2,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b020-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,2,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b040-a040-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,4,4,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b040-a040-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,4,4,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b060-a060-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,6,6,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b060-a060-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,6,6,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b080-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,8,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b080-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,8,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b100-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,10,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b100-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,10,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b100-a050-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,10,5,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b100-a050-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,10,5,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b050-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,5,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b050-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,5,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b080-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,8,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b080-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,8,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b020-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,60,2,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-60-b020-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,60,2,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b020-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,2,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b020-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,2,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b040-a040-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,4,4,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b040-a040-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,4,4,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b060-a060-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,6,6,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b060-a060-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,6,6,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b080-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,8,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b080-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,8,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b100-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,10,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b100-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,10,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b100-a050-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,10,5,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b100-a050-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,10,5,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b050-a100-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,5,10,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b050-a100-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,5,10,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b080-a020-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,8,2,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b080-a020-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,8,2,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b020-a080-44k1-imp,boost_atten_trick,1,False,44100,True,False,True,100,2,8,,impulse,,Simultaneous boost+atten interaction at same CPS
+boost_atten_trick-100-b020-a080-44k1-swp,boost_atten_trick,1,False,44100,True,False,True,100,2,8,,sweep_log,,Simultaneous boost+atten interaction at same CPS
+svc-transparent-44k1-imp,service,1,False,44100,False,False,True,,0,0,,impulse,,Reference path without plugin (null/calibration)
+svc-flat-44k1-imp,service,1,False,44100,True,False,True,,0,0,,impulse,,"All knobs zero, EQ in: path coloration check"
+svc-hostbypass-44k1-imp,service,1,False,44100,True,True,True,,0,0,,impulse,,Host bypass: must equal transparent
+svc-eqoff-44k1-imp,service,1,False,44100,True,False,False,,0,0,,impulse,,EQ IN off (conditional until dump confirms switch)
+svc-transparent-44k1-swp,service,1,False,44100,False,False,True,,0,0,,sweep_log,,Reference path without plugin (null/calibration)
+svc-flat-44k1-swp,service,1,False,44100,True,False,True,,0,0,,sweep_log,,"All knobs zero, EQ in: path coloration check"
+svc-hostbypass-44k1-swp,service,1,False,44100,True,True,True,,0,0,,sweep_log,,Host bypass: must equal transparent
+svc-eqoff-44k1-swp,service,1,False,44100,True,False,False,,0,0,,sweep_log,,EQ IN off (conditional until dump confirms switch)
+og-m12.0-44k1-swp,output_gain,2,False,44100,True,False,True,60,6,4,-12.0,sweep_log,,"Output gain influence at characteristic config (60 CPS, B6/A4)"
+og-m6.0-44k1-swp,output_gain,2,False,44100,True,False,True,60,6,4,-6.0,sweep_log,,"Output gain influence at characteristic config (60 CPS, B6/A4)"
+og-z0.0-44k1-swp,output_gain,2,False,44100,True,False,True,60,6,4,0.0,sweep_log,,"Output gain influence at characteristic config (60 CPS, B6/A4)"
+og-p6.0-44k1-swp,output_gain,2,False,44100,True,False,True,60,6,4,6.0,sweep_log,,"Output gain influence at characteristic config (60 CPS, B6/A4)"
+og-p12.0-44k1-swp,output_gain,2,False,44100,True,False,True,60,6,4,12.0,sweep_log,,"Output gain influence at characteristic config (60 CPS, B6/A4)"
+lvl-flat-s50-36db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_50,-36,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s50-24db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_50,-24,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s50-18db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_50,-18,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s50-12db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_50,-12,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s50-6db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_50,-6,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s100-36db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_100,-36,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s100-24db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_100,-24,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s100-18db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_100,-18,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s100-12db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_100,-12,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s100-6db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_100,-6,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s1k-36db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_1000,-36,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s1k-24db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_1000,-24,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s1k-18db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_1000,-18,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s1k-12db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_1000,-12,"Level dependence: gain vs input level, harmonics"
+lvl-flat-s1k-6db,level_dependence,2,False,44100,True,False,True,,0,0,,sine_1000,-6,"Level dependence: gain vs input level, harmonics"
+imd-flat-12db,level_dependence,2,False,44100,True,False,True,,0,0,,twotone_50_1000,-12,Two-tone IMD at characteristic/flat config
+imd-flat-6db,level_dependence,2,False,44100,True,False,True,,0,0,,twotone_50_1000,-6,Two-tone IMD at characteristic/flat config
+lvl-char60b6a4-s50-36db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_50,-36,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s50-24db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_50,-24,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s50-18db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_50,-18,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s50-12db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_50,-12,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s50-6db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_50,-6,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s100-36db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_100,-36,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s100-24db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_100,-24,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s100-18db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_100,-18,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s100-12db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_100,-12,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s100-6db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_100,-6,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s1k-36db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_1000,-36,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s1k-24db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_1000,-24,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s1k-18db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_1000,-18,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s1k-12db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_1000,-12,"Level dependence: gain vs input level, harmonics"
+lvl-char60b6a4-s1k-6db,level_dependence,2,False,44100,True,False,True,60,6,4,,sine_1000,-6,"Level dependence: gain vs input level, harmonics"
+imd-char60b6a4-12db,level_dependence,2,False,44100,True,False,True,60,6,4,,twotone_50_1000,-12,Two-tone IMD at characteristic/flat config
+imd-char60b6a4-6db,level_dependence,2,False,44100,True,False,True,60,6,4,,twotone_50_1000,-6,Two-tone IMD at characteristic/flat config
+sr_reduced-30-b030-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,30,3,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b030-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,30,3,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a030-48k-imp,sr_reduced,2,False,48000,True,False,True,30,0,3,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a030-48k-swp,sr_reduced,2,False,48000,True,False,True,30,0,3,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b070-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,30,7,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b070-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,30,7,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a070-48k-imp,sr_reduced,2,False,48000,True,False,True,30,0,7,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a070-48k-swp,sr_reduced,2,False,48000,True,False,True,30,0,7,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b100-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,30,10,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b100-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,30,10,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a100-48k-imp,sr_reduced,2,False,48000,True,False,True,30,0,10,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a100-48k-swp,sr_reduced,2,False,48000,True,False,True,30,0,10,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b060-a060-48k-imp,sr_reduced,2,False,48000,True,False,True,30,6,6,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b060-a060-48k-swp,sr_reduced,2,False,48000,True,False,True,30,6,6,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-30-b100-a050-48k-imp,sr_reduced,2,False,48000,True,False,True,30,10,5,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b100-a050-48k-swp,sr_reduced,2,False,48000,True,False,True,30,10,5,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-30-b050-a100-48k-imp,sr_reduced,2,False,48000,True,False,True,30,5,10,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b050-a100-48k-swp,sr_reduced,2,False,48000,True,False,True,30,5,10,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b030-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,100,3,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b030-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,100,3,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a030-48k-imp,sr_reduced,2,False,48000,True,False,True,100,0,3,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a030-48k-swp,sr_reduced,2,False,48000,True,False,True,100,0,3,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b070-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,100,7,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b070-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,100,7,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a070-48k-imp,sr_reduced,2,False,48000,True,False,True,100,0,7,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a070-48k-swp,sr_reduced,2,False,48000,True,False,True,100,0,7,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b100-a000-48k-imp,sr_reduced,2,False,48000,True,False,True,100,10,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b100-a000-48k-swp,sr_reduced,2,False,48000,True,False,True,100,10,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a100-48k-imp,sr_reduced,2,False,48000,True,False,True,100,0,10,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a100-48k-swp,sr_reduced,2,False,48000,True,False,True,100,0,10,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b060-a060-48k-imp,sr_reduced,2,False,48000,True,False,True,100,6,6,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b060-a060-48k-swp,sr_reduced,2,False,48000,True,False,True,100,6,6,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b100-a050-48k-imp,sr_reduced,2,False,48000,True,False,True,100,10,5,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b100-a050-48k-swp,sr_reduced,2,False,48000,True,False,True,100,10,5,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b050-a100-48k-imp,sr_reduced,2,False,48000,True,False,True,100,5,10,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b050-a100-48k-swp,sr_reduced,2,False,48000,True,False,True,100,5,10,,sweep_log,,SR dependence check: boost+atten trick
+svc-flat-48k-imp,sr_reduced,2,False,48000,True,False,True,,0,0,,impulse,,Flat reference at alternate SR
+svc-flat-48k-swp,sr_reduced,2,False,48000,True,False,True,,0,0,,sweep_log,,Flat reference at alternate SR
+sr_reduced-30-b030-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,30,3,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b030-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,30,3,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a030-96k-imp,sr_reduced,2,False,96000,True,False,True,30,0,3,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a030-96k-swp,sr_reduced,2,False,96000,True,False,True,30,0,3,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b070-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,30,7,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b070-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,30,7,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a070-96k-imp,sr_reduced,2,False,96000,True,False,True,30,0,7,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a070-96k-swp,sr_reduced,2,False,96000,True,False,True,30,0,7,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b100-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,30,10,0,,impulse,,SR dependence check: boost
+sr_reduced-30-b100-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,30,10,0,,sweep_log,,SR dependence check: boost
+sr_reduced-30-b000-a100-96k-imp,sr_reduced,2,False,96000,True,False,True,30,0,10,,impulse,,SR dependence check: atten
+sr_reduced-30-b000-a100-96k-swp,sr_reduced,2,False,96000,True,False,True,30,0,10,,sweep_log,,SR dependence check: atten
+sr_reduced-30-b060-a060-96k-imp,sr_reduced,2,False,96000,True,False,True,30,6,6,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b060-a060-96k-swp,sr_reduced,2,False,96000,True,False,True,30,6,6,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-30-b100-a050-96k-imp,sr_reduced,2,False,96000,True,False,True,30,10,5,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b100-a050-96k-swp,sr_reduced,2,False,96000,True,False,True,30,10,5,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-30-b050-a100-96k-imp,sr_reduced,2,False,96000,True,False,True,30,5,10,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-30-b050-a100-96k-swp,sr_reduced,2,False,96000,True,False,True,30,5,10,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b030-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,100,3,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b030-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,100,3,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a030-96k-imp,sr_reduced,2,False,96000,True,False,True,100,0,3,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a030-96k-swp,sr_reduced,2,False,96000,True,False,True,100,0,3,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b070-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,100,7,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b070-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,100,7,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a070-96k-imp,sr_reduced,2,False,96000,True,False,True,100,0,7,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a070-96k-swp,sr_reduced,2,False,96000,True,False,True,100,0,7,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b100-a000-96k-imp,sr_reduced,2,False,96000,True,False,True,100,10,0,,impulse,,SR dependence check: boost
+sr_reduced-100-b100-a000-96k-swp,sr_reduced,2,False,96000,True,False,True,100,10,0,,sweep_log,,SR dependence check: boost
+sr_reduced-100-b000-a100-96k-imp,sr_reduced,2,False,96000,True,False,True,100,0,10,,impulse,,SR dependence check: atten
+sr_reduced-100-b000-a100-96k-swp,sr_reduced,2,False,96000,True,False,True,100,0,10,,sweep_log,,SR dependence check: atten
+sr_reduced-100-b060-a060-96k-imp,sr_reduced,2,False,96000,True,False,True,100,6,6,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b060-a060-96k-swp,sr_reduced,2,False,96000,True,False,True,100,6,6,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b100-a050-96k-imp,sr_reduced,2,False,96000,True,False,True,100,10,5,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b100-a050-96k-swp,sr_reduced,2,False,96000,True,False,True,100,10,5,,sweep_log,,SR dependence check: boost+atten trick
+sr_reduced-100-b050-a100-96k-imp,sr_reduced,2,False,96000,True,False,True,100,5,10,,impulse,,SR dependence check: boost+atten trick
+sr_reduced-100-b050-a100-96k-swp,sr_reduced,2,False,96000,True,False,True,100,5,10,,sweep_log,,SR dependence check: boost+atten trick
+svc-flat-96k-imp,sr_reduced,2,False,96000,True,False,True,,0,0,,impulse,,Flat reference at alternate SR
+svc-flat-96k-swp,sr_reduced,2,False,96000,True,False,True,,0,0,,sweep_log,,Flat reference at alternate SR

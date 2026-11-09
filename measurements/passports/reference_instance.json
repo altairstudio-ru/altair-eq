@@ -1,0 +1,120 @@
+{
+  "schema": "altair-eq.reference-passport/1",
+  "status": "template-not-filled",
+  "created": "2026-11-08",
+  "filled_utc": null,
+  "fill_rules": "Значения только из фактических источников: вывод dump_fx_params.lua, UA Connect, мануал UA, состояние REAPER. Неизвестное остаётся null. Статусы: confirmed / to-check / to-measure.",
+  "instance": {
+    "product": "UADx Pultec EQP-1A EQ",
+    "collection": "UAD Pultec Passive EQ Collection",
+    "vendor": "Universal Audio",
+    "format": "VST3",
+    "variant": "UADx-native",
+    "version": "1.2.16",
+    "confirmed_by": [
+      "REAPER screenshot 2026-11-08 (docs/changes/2026-11-08-pultec-reference.md)",
+      "UA collection page (docs/changes/2026-11-08-pultec-reference.md)"
+    ],
+    "to_check": [
+      "license active in UA Connect",
+      "instance matches dump_fx_params.lua output"
+    ]
+  },
+  "host": {
+    "app": "REAPER",
+    "version_reported": "7.85",
+    "version_from_dump": null,
+    "os": null
+  },
+  "environment": {
+    "project_path": null,
+    "sample_rate_hz": null,
+    "block_size": null,
+    "render_path": null
+  },
+  "fx_dump": {
+    "file": null,
+    "fx_name": null,
+    "ident": null,
+    "version_parm": null,
+    "parameter_count": null
+  },
+  "controls": {
+    "lf_cps_hz": {
+      "expected_values": [20, 30, 60, 100],
+      "param_index": null,
+      "raw_min": null,
+      "raw_max": null,
+      "step": null,
+      "granularity": null,
+      "source": "UA manual fragment (search 2026-11-08); recheck in full manual and dump",
+      "status": "to-check"
+    },
+    "lf_boost_ui": {
+      "expected_ui_range": [0, 10],
+      "param_index": null,
+      "raw_min": null,
+      "raw_max": null,
+      "step": null,
+      "law": null,
+      "source": "dump",
+      "status": "to-check"
+    },
+    "lf_atten_ui": {
+      "expected_ui_range": [0, 10],
+      "param_index": null,
+      "raw_min": null,
+      "raw_max": null,
+      "step": null,
+      "law": null,
+      "source": "dump",
+      "status": "to-check"
+    },
+    "output_gain_ui": {
+      "exists": null,
+      "param_index": null,
+      "raw_min": null,
+      "raw_max": null,
+      "step": null,
+      "source": "dump + manual",
+      "status": "to-check"
+    },
+    "eq_in_switch": {
+      "exists": null,
+      "param_index": null,
+      "behavior_vs_host_bypass": null,
+      "source": "dump + manual + measurement",
+      "status": "to-check"
+    }
+  },
+  "latency": {
+    "api_reported_samples": null,
+    "measured_samples": null,
+    "note": "Измерять импульсом (кросс-корреляция); API-репорт только записывать.",
+    "status": "to-measure"
+  },
+  "facts": {
+    "confirmed": [
+      "LF CPS 20/30/60/100 Hz - UA manual fragment (search 2026-11-08)",
+      "Instance UADx Pultec EQP-1A EQ, VST3, v1.2.16, REAPER 7.85 - user screenshot"
+    ],
+    "needs_primary_check": [
+      "Boost/Atten 0-10 scale and knob law",
+      "Output Gain (makeup) presence and range",
+      "EQ IN vs host bypass behavior",
+      "UADx oversampling/latency claims"
+    ],
+    "measurement_only": [
+      "Real magnitude/phase response",
+      "Boost/atten shelf shapes",
+      "Simultaneous boost+atten interaction (low-end trick)",
+      "Input level dependence and harmonics",
+      "Sample-rate dependence"
+    ]
+  },
+  "manual": {
+    "url": "https://help.uaudio.com/hc/en-us/articles/7183176266260-Pultec-Passive-EQ-Collection-Manual",
+    "excerpt_file": null,
+    "note": "Страница отдаёт 403 агенту; раздел EQP-1A предоставляет пользователь."
+  }
+}

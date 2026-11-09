@@ -1,0 +1,6813 @@
+{
+  "schema": "altair-eq.measurement-grid/1",
+  "created_utc": "2026-11-09T02:49:01Z",
+  "plan_ref": "docs/WORK_PLAN_PULTEC_MVP.md, stage 4",
+  "passport_ref": "measurements/passports/reference_instance.json",
+  "status": "proposed - renders not performed",
+  "flags": {
+    "KNOB_CONTINUOUS": false,
+    "OUTPUT_GAIN_CONFIRMED": true,
+    "EQ_IN_CONFIRMED": true
+  },
+  "notes": [
+    "One row = one render job (plugin config + signal + sample rate).",
+    "Knob values are UI units (0-10); normalized mapping comes from dump_fx_params.lua at stage 3.",
+    "Static signal level -12 dBFS is a working hypothesis; may be revised after level-dependence results.",
+    "Every render must carry a passport per docs/RESEARCH_EQ_MARKET.md section 8.",
+    "conditional=true rows wait for stage-2 dump confirmation before rendering."
+  ],
+  "signals": {
+    "impulse": {
+      "type": "impulse",
+      "description": "unit impulse, 200 ms leading silence, 5 s total, peak 0 dBFS",
+      "duration_s": 5.0,
+      "level_dbfs": 0.0
+    },
+    "sweep_log": {
+      "type": "log_sweep",
+      "description": "log sweep 1 Hz .. 0.45*SR, 15 s, 50 ms fades, -12 dBFS",
+      "duration_s": 15.0,
+      "level_dbfs": -12.0
+    },
+    "sine_50": {
+      "type": "sine",
+      "frequency_hz": 50,
+      "description": "sine 50 Hz, 10 s; level defines grid row (level_dbfs)",
+      "duration_s": 10.0,
+      "level_dbfs": null
+    },
+    "sine_100": {
+      "type": "sine",
+      "frequency_hz": 100,
+      "description": "sine 100 Hz, 10 s; level defines grid row (level_dbfs)",
+      "duration_s": 10.0,
+      "level_dbfs": null
+    },
+    "sine_1000": {
+      "type": "sine",
+      "frequency_hz": 1000,
+      "description": "sine 1000 Hz, 10 s; level defines grid row (level_dbfs)",
+      "duration_s": 10.0,
+      "level_dbfs": null
+    },
+    "twotone_50_1000": {
+      "type": "two_tone",
+      "frequencies_hz": [
+        50,
+        1000
+      ],
+      "amplitude_ratio": "4:1 (50 Hz : 1000 Hz)",
+      "description": "two-tone IMD 50 Hz + 1000 Hz, 10 s; level defines grid row",
+      "duration_s": 10.0,
+      "level_dbfs": null
+    }
+  },
+  "row_count": 355,
+  "rows": [
+    {
+      "id": "boost_only-20-b010-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b010-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b020-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b020-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b030-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b030-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b040-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b040-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b050-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b050-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b060-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b060-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b070-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b070-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b080-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b080-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b090-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b090-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b100-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-20-b100-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b010-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b010-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b020-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b020-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b030-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b030-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b040-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b040-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b050-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b050-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b060-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b060-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b070-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b070-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b080-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b080-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b090-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b090-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b100-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-30-b100-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b010-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b010-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b020-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b020-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b030-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b030-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b040-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b040-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b050-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b050-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b060-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b060-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b070-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b070-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b080-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b080-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b090-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b090-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b100-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-60-b100-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b010-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b010-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b020-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b020-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b030-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b030-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b040-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b040-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b050-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b050-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b060-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b060-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b070-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b070-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b080-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b080-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b090-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b090-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b100-a000-44k1-imp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "boost_only-100-b100-a000-44k1-swp",
+      "group": "boost_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a010-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a010-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a020-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a020-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a030-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a030-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a040-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a040-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a050-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a050-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a060-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a060-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a070-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a070-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a080-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a080-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a090-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a090-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a100-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-20-b000-a100-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a010-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a010-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a020-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a020-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a030-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a030-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a040-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a040-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a050-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a050-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a060-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a060-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a070-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a070-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a080-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a080-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a090-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a090-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a100-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-30-b000-a100-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a010-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a010-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a020-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a020-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a030-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a030-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a040-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a040-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a050-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a050-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a060-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a060-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a070-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a070-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a080-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a080-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a090-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a090-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a100-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-60-b000-a100-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a010-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a010-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a020-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a020-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a030-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a030-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a040-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a040-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a050-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a050-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a060-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a060-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a070-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a070-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a080-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a080-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a090-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a090-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a100-44k1-imp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "atten_only-100-b000-a100-44k1-swp",
+      "group": "atten_only",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+    },
+    {
+      "id": "boost_atten_trick-20-b020-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b020-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b040-a040-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b040-a040-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b060-a060-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b060-a060-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a050-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a050-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b050-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b050-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b020-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-20-b020-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b040-a040-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b040-a040-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b060-a060-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b060-a060-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a050-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a050-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b050-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b050-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b040-a040-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b040-a040-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b060-a060-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b060-a060-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a050-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a050-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b050-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b050-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b040-a040-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b040-a040-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b060-a060-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b060-a060-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a050-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a050-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b050-a100-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b050-a100-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a020-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a020-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a080-44k1-imp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a080-44k1-swp",
+      "group": "boost_atten_trick",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Simultaneous boost+atten interaction at same CPS"
+    },
+    {
+      "id": "svc-transparent-44k1-imp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": false,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Reference path without plugin (null/calibration)"
+    },
+    {
+      "id": "svc-flat-44k1-imp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "All knobs zero, EQ in: path coloration check"
+    },
+    {
+      "id": "svc-hostbypass-44k1-imp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": true,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Host bypass: must equal transparent"
+    },
+    {
+      "id": "svc-eqoff-44k1-imp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": false,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "EQ IN off (conditional until dump confirms switch)"
+    },
+    {
+      "id": "svc-transparent-44k1-swp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": false,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Reference path without plugin (null/calibration)"
+    },
+    {
+      "id": "svc-flat-44k1-swp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "All knobs zero, EQ in: path coloration check"
+    },
+    {
+      "id": "svc-hostbypass-44k1-swp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": true,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Host bypass: must equal transparent"
+    },
+    {
+      "id": "svc-eqoff-44k1-swp",
+      "group": "service",
+      "priority": 1,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": false,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "EQ IN off (conditional until dump confirms switch)"
+    },
+    {
+      "id": "og-m12.0-44k1-swp",
+      "group": "output_gain",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": -12.0
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Output gain influence at characteristic config (60 CPS, B6/A4)"
+    },
+    {
+      "id": "og-m6.0-44k1-swp",
+      "group": "output_gain",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": -6.0
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Output gain influence at characteristic config (60 CPS, B6/A4)"
+    },
+    {
+      "id": "og-z0.0-44k1-swp",
+      "group": "output_gain",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": 0.0
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Output gain influence at characteristic config (60 CPS, B6/A4)"
+    },
+    {
+      "id": "og-p6.0-44k1-swp",
+      "group": "output_gain",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": 6.0
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Output gain influence at characteristic config (60 CPS, B6/A4)"
+    },
+    {
+      "id": "og-p12.0-44k1-swp",
+      "group": "output_gain",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": 12.0
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Output gain influence at characteristic config (60 CPS, B6/A4)"
+    },
+    {
+      "id": "lvl-flat-s50-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s50-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s50-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s50-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s50-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s100-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s100-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s100-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s100-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s100-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s1k-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s1k-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s1k-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s1k-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-flat-s1k-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "imd-flat-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "twotone_50_1000",
+      "level_dbfs": -12,
+      "purpose": "Two-tone IMD at characteristic/flat config"
+    },
+    {
+      "id": "imd-flat-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "twotone_50_1000",
+      "level_dbfs": -6,
+      "purpose": "Two-tone IMD at characteristic/flat config"
+    },
+    {
+      "id": "lvl-char60b6a4-s50-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s50-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s50-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s50-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s50-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_50",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s100-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s100-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s100-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s100-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s100-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_100",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-36db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -36,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-24db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -24,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-18db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -18,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -12,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "sine_1000",
+      "level_dbfs": -6,
+      "purpose": "Level dependence: gain vs input level, harmonics"
+    },
+    {
+      "id": "imd-char60b6a4-12db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "twotone_50_1000",
+      "level_dbfs": -12,
+      "purpose": "Two-tone IMD at characteristic/flat config"
+    },
+    {
+      "id": "imd-char60b6a4-6db",
+      "group": "level_dependence",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 44100,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "signal": "twotone_50_1000",
+      "level_dbfs": -6,
+      "purpose": "Two-tone IMD at characteristic/flat config"
+    },
+    {
+      "id": "sr_reduced-30-b030-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b030-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "svc-flat-48k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Flat reference at alternate SR"
+    },
+    {
+      "id": "svc-flat-48k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 48000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Flat reference at alternate SR"
+    },
+    {
+      "id": "sr_reduced-30-b030-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b030-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost"
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: atten"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "SR dependence check: boost+atten trick"
+    },
+    {
+      "id": "svc-flat-96k-imp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "impulse",
+      "level_dbfs": null,
+      "purpose": "Flat reference at alternate SR"
+    },
+    {
+      "id": "svc-flat-96k-swp",
+      "group": "sr_reduced",
+      "priority": 2,
+      "conditional": false,
+      "sample_rate_hz": 96000,
+      "plugin": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "signal": "sweep_log",
+      "level_dbfs": null,
+      "purpose": "Flat reference at alternate SR"
+    }
+  ]
+}

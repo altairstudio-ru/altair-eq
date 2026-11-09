@@ -1,5 +1,8 @@
 /build/
+/build-tools/
 /external/
+/measurements/signals/
+/measurements/renders/
 *.wav
 *.mp3
 *.flac
