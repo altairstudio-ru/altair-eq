@@ -1,0 +1,17 @@
+{
+  "schema": "altair-eq.pultec-lf-residual-svd-modes/1",
+  "sample_rate_hz": 44100,
+  "basis_nodes": 34,
+  "modes": [
+    {
+      "id": "cps30-mode01",
+      "source": "measurements/results/pultec_lf/joint_residual_svd_modes/cps30-mode01.csv",
+      "energy_fraction": 0.9526308448779435
+    },
+    {
+      "id": "cps30-mode02",
+      "source": "measurements/results/pultec_lf/joint_residual_svd_modes/cps30-mode02.csv",
+      "energy_fraction": 0.04406156865991625
+    }
+  ]
+}

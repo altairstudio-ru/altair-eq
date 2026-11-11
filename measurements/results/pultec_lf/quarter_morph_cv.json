@@ -1,0 +1,4213 @@
+{
+  "schema": "altair-eq.pultec-lf-quarter-morph-cv/1",
+  "method": "leave-one-out held-out measured half-steps between quarter SOS fits",
+  "sample_rate_hz": 44100,
+  "summary": {
+    "linear_roots": {
+      "pass": 5,
+      "total": 80,
+      "unstable": 0,
+      "max_phase_error_deg": 179.83228139932137,
+      "max_band_errors_db": {
+        "20-100": 102.12869863171568,
+        "100-1000": 75.03728145536572,
+        "1000-18000": 58.65829273500668
+      }
+    },
+    "linear_coefficients": {
+      "pass": 5,
+      "total": 80,
+      "unstable": 0,
+      "max_phase_error_deg": 179.86022667398186,
+      "max_band_errors_db": {
+        "20-100": 98.87267591921776,
+        "100-1000": 71.78151547444216,
+        "1000-18000": 59.626403183740386
+      }
+    },
+    "pchip_roots": {
+      "pass": 3,
+      "total": 80,
+      "unstable": 0,
+      "max_phase_error_deg": 179.79837992840788,
+      "max_band_errors_db": {
+        "20-100": 102.0795726362128,
+        "100-1000": 74.9851752652551,
+        "1000-18000": 59.939215496815706
+      }
+    },
+    "pchip_coefficients": {
+      "pass": 0,
+      "total": 80,
+      "unstable": 9,
+      "max_phase_error_deg": 179.99816232166333,
+      "max_band_errors_db": {
+        "20-100": 98.90691247956869,
+        "100-1000": 71.81311137550001,
+        "1000-18000": 59.79212275629407
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "cps20-boost-00p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.526610815874246,
+            "100-1000": 13.524732847302436,
+            "1000-18000": 41.70005573759743
+          },
+          "max_phase_error_deg": 174.82393030061385
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.3481907608845987,
+            "100-1000": 1.6435291121136129,
+            "1000-18000": 59.2978594894171
+          },
+          "max_phase_error_deg": 175.46469028474368
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.471925644916578,
+            "100-1000": 13.469952453963938,
+            "1000-18000": 41.43172963682743
+          },
+          "max_phase_error_deg": 177.37388309345357
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.2924669724961018,
+            "100-1000": 1.5848809940137958,
+            "1000-18000": 59.79212275629407
+          },
+          "max_phase_error_deg": 178.74193796923706
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-01p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.028468958573472314,
+            "100-1000": 0.02419733929518708,
+            "1000-18000": 0.026291248611926332
+          },
+          "max_phase_error_deg": 0.6406707082449159
+        },
+        "linear_coefficients": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.06299152199097002,
+            "100-1000": 0.03192138824819013,
+            "1000-18000": 0.026191579188159175
+          },
+          "max_phase_error_deg": 0.6420237548453309
+        },
+        "pchip_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.04962095396439703,
+            "100-1000": 0.033956596470509304,
+            "1000-18000": 0.035803821728012
+          },
+          "max_phase_error_deg": 0.5542852971855906
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 19.663351515324866,
+            "100-1000": 2.8650859908988124,
+            "1000-18000": 0.03114218337450092
+          },
+          "max_phase_error_deg": 33.10582229605993
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-02p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.26400507448034816,
+            "100-1000": 0.23452094842980542,
+            "1000-18000": 0.7771911408001595
+          },
+          "max_phase_error_deg": 4.776748992927358
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.3521553715951944,
+            "100-1000": 0.3076016950040539,
+            "1000-18000": 0.8520346737844389
+          },
+          "max_phase_error_deg": 6.5055274833352845
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.44790748051806784,
+            "100-1000": 0.3772770397452496,
+            "1000-18000": 0.7729096330731884
+          },
+          "max_phase_error_deg": 4.73114100448374
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.7306764038975873,
+            "100-1000": 1.6638805296951458,
+            "1000-18000": 0.838733605564369
+          },
+          "max_phase_error_deg": 9.962202737810154
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-03p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.4908330151663183,
+            "100-1000": 2.495870943976854,
+            "1000-18000": 12.242866774940753
+          },
+          "max_phase_error_deg": 66.99499625682971
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.243978511949738,
+            "100-1000": 2.2804834051319305,
+            "1000-18000": 11.891843547011534
+          },
+          "max_phase_error_deg": 67.69793411687216
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.1254810700725173,
+            "100-1000": 2.183520935574678,
+            "1000-18000": 12.230024657274638
+          },
+          "max_phase_error_deg": 66.86570756248805
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.9249719132118195,
+            "100-1000": 2.001979013820762,
+            "1000-18000": 11.88554178462138
+          },
+          "max_phase_error_deg": 67.64743589471288
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-04p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.8935882105092041,
+            "100-1000": 1.815626508975562,
+            "1000-18000": 17.721176624039884
+          },
+          "max_phase_error_deg": 81.91515198666475
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.995912218554186,
+            "100-1000": 1.8435564343632818,
+            "1000-18000": 17.837257302547304
+          },
+          "max_phase_error_deg": 87.8858222170078
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.254743305020275,
+            "100-1000": 1.7884267891070877,
+            "1000-18000": 17.70066613326688
+          },
+          "max_phase_error_deg": 81.43839922466654
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 45.06349021727247,
+            "100-1000": 32.03962739757649,
+            "1000-18000": 17.873172616318765
+          },
+          "max_phase_error_deg": 174.20657874746396
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-05p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.209959738148711,
+            "100-1000": 3.0582370688366582,
+            "1000-18000": 23.24070262941267
+          },
+          "max_phase_error_deg": 96.49699610463706
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.749501122104265,
+            "100-1000": 4.198669140810529,
+            "1000-18000": 21.312948784282337
+          },
+          "max_phase_error_deg": 103.26394969101229
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.4963369444010217,
+            "100-1000": 3.257399084888418,
+            "1000-18000": 23.244977438255283
+          },
+          "max_phase_error_deg": 96.49530604522764
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 27.84273850615959,
+            "100-1000": 8.681876933278087,
+            "1000-18000": 21.31336611991694
+          },
+          "max_phase_error_deg": 119.29914001244387
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-06p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.721186033349683,
+            "100-1000": 3.7954165516280702,
+            "1000-18000": 25.50181745994103
+          },
+          "max_phase_error_deg": 101.12044671618537
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.427212464677685,
+            "100-1000": 4.676672713718537,
+            "1000-18000": 22.03434167235018
+          },
+          "max_phase_error_deg": 107.90396949556236
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.326988562629908,
+            "100-1000": 4.073621546190491,
+            "1000-18000": 25.500183371239995
+          },
+          "max_phase_error_deg": 101.0314125511916
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.809057405117057,
+            "100-1000": 5.81550600961145,
+            "1000-18000": 22.06275651167057
+          },
+          "max_phase_error_deg": 107.83748775506905
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-07p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.316778718292472,
+            "100-1000": 3.1681054913642868,
+            "1000-18000": 25.366723739725035
+          },
+          "max_phase_error_deg": 100.74724153848481
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.3284036831432235,
+            "100-1000": 3.6054552321586977,
+            "1000-18000": 21.917767136616973
+          },
+          "max_phase_error_deg": 107.58097429735835
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.297758710929667,
+            "100-1000": 3.172677744440212,
+            "1000-18000": 25.360616511090942
+          },
+          "max_phase_error_deg": 100.70968154311014
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.17605222589085,
+            "100-1000": 1.8223166211456703,
+            "1000-18000": 21.92306859352261
+          },
+          "max_phase_error_deg": 123.77527046959712
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-08p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.7464404984871944,
+            "100-1000": 1.7864102136691726,
+            "1000-18000": 26.577425594893857
+          },
+          "max_phase_error_deg": 103.22694684655016
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.2029749101984777,
+            "100-1000": 1.876458368177431,
+            "1000-18000": 23.24707977817386
+          },
+          "max_phase_error_deg": 111.07926343977205
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.630584344303781,
+            "100-1000": 1.7534332798550767,
+            "1000-18000": 26.619199075650457
+          },
+          "max_phase_error_deg": 103.08364808642506
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 14.713341665446976,
+            "100-1000": 6.9998935576399335,
+            "1000-18000": 23.27957393066235
+          },
+          "max_phase_error_deg": 111.0015913052797
+        }
+      }
+    },
+    {
+      "id": "cps20-boost-09p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.8716642177368747,
+            "100-1000": 1.8305079738394237,
+            "1000-18000": 23.088844716435645
+          },
+          "max_phase_error_deg": 97.34820269784402
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.560251530752751,
+            "100-1000": 1.9320597957312724,
+            "1000-18000": 21.79084516206368
+          },
+          "max_phase_error_deg": 103.84423524633593
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.872785402869889,
+            "100-1000": 1.8209982944965104,
+            "1000-18000": 23.093009652279335
+          },
+          "max_phase_error_deg": 97.3199254613735
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.717029061586136,
+            "100-1000": 2.834396983758677,
+            "1000-18000": 21.797297145529203
+          },
+          "max_phase_error_deg": 103.82099937939783
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-00p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.477489103299467,
+            "100-1000": 4.4639760355116795,
+            "1000-18000": 39.795175727116785
+          },
+          "max_phase_error_deg": 136.00049142822147
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.019988242766113,
+            "100-1000": 8.113923310088062,
+            "1000-18000": 27.008707004331686
+          },
+          "max_phase_error_deg": 176.88608015728008
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.5426456785570295,
+            "100-1000": 5.529087298104145,
+            "1000-18000": 43.852853233275354
+          },
+          "max_phase_error_deg": 136.55421904376783
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.53416344587288,
+            "100-1000": 8.625709991274835,
+            "1000-18000": 26.101371775829826
+          },
+          "max_phase_error_deg": 179.45931701589453
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-01p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.016262766466954126,
+            "100-1000": 0.009444326250806045,
+            "1000-18000": 0.023200425597876384
+          },
+          "max_phase_error_deg": 0.6185871735228383
+        },
+        "linear_coefficients": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.06358707663661023,
+            "100-1000": 0.0544876666893539,
+            "1000-18000": 0.03258269690775761
+          },
+          "max_phase_error_deg": 0.6243371007369564
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.5982012514065598,
+            "100-1000": 1.595300668760998,
+            "1000-18000": 1.4536926139678674
+          },
+          "max_phase_error_deg": 6.52949138525819
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.4024266011080928,
+            "100-1000": 1.399008059293826,
+            "1000-18000": 1.3133226538695535
+          },
+          "max_phase_error_deg": 6.043050914206718
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-02p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 69.56393456284809,
+            "100-1000": 42.47914544450803,
+            "1000-18000": 4.807369826462947
+          },
+          "max_phase_error_deg": 166.15554941543718
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.79585200434235,
+            "100-1000": 53.682330314077355,
+            "1000-18000": 12.897498097709567
+          },
+          "max_phase_error_deg": 173.06983380756677
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 69.35697942561974,
+            "100-1000": 42.27334467306931,
+            "1000-18000": 4.918116215400584
+          },
+          "max_phase_error_deg": 166.0726230459805
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.70898610052691,
+            "100-1000": 53.599988833792786,
+            "1000-18000": 12.922707037829941
+          },
+          "max_phase_error_deg": 172.76834372818618
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-03p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 65.865648690343,
+            "100-1000": 38.786526490055216,
+            "1000-18000": 4.137902519073737
+          },
+          "max_phase_error_deg": 164.3383378898864
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 77.8872620406461,
+            "100-1000": 50.73367033571475,
+            "1000-18000": 9.79996112985874
+          },
+          "max_phase_error_deg": 172.48610244221067
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 64.54789401293097,
+            "100-1000": 37.48167024602204,
+            "1000-18000": 4.711834023471182
+          },
+          "max_phase_error_deg": 163.80877324597938
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 76.51779342043929,
+            "100-1000": 49.40183225201431,
+            "1000-18000": 8.624824172403375
+          },
+          "max_phase_error_deg": 171.39155686654303
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-04p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 35.7016998464467,
+            "100-1000": 10.441391676462226,
+            "1000-18000": 1.5645865215813233
+          },
+          "max_phase_error_deg": 138.45334224135908
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 44.58307270727015,
+            "100-1000": 17.359226763065067,
+            "1000-18000": 2.1916123608189144
+          },
+          "max_phase_error_deg": 151.94447713031795
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 34.953799519189914,
+            "100-1000": 9.749190563889368,
+            "1000-18000": 1.84840957881362
+          },
+          "max_phase_error_deg": 138.05686750271474
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 46.05920875726794,
+            "100-1000": 18.759389819768018,
+            "1000-18000": 2.5821917609884015
+          },
+          "max_phase_error_deg": 154.33064703452467
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-05p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.15346802927348335,
+            "100-1000": 0.053514779864648254,
+            "1000-18000": 0.13640091463725845
+          },
+          "max_phase_error_deg": 0.9671900086493697
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.25494992887399803,
+            "100-1000": 0.05444167221989571,
+            "1000-18000": 0.2197032812834372
+          },
+          "max_phase_error_deg": 1.271740736050185
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.27004709673176563,
+            "100-1000": 0.27369070398100614,
+            "1000-18000": 0.14560716568983234
+          },
+          "max_phase_error_deg": 1.0245431650876071
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.2215133691847493,
+            "100-1000": 0.23283916296571938,
+            "1000-18000": 0.23787443240194217
+          },
+          "max_phase_error_deg": 1.0218799406571528
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-06p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 81.4504424710555,
+            "100-1000": 66.31204778915661,
+            "1000-18000": 30.151973010941617
+          },
+          "max_phase_error_deg": 171.7598438434435
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 79.73562948507629,
+            "100-1000": 67.2087979650692,
+            "1000-18000": 31.402602644007658
+          },
+          "max_phase_error_deg": 172.36381752217434
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 81.84129768983188,
+            "100-1000": 66.30419706481958,
+            "1000-18000": 30.138655675412046
+          },
+          "max_phase_error_deg": 171.7647679721455
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 90.00605407613628,
+            "100-1000": 70.39069851046878,
+            "1000-18000": 31.430182331521898
+          },
+          "max_phase_error_deg": 179.99816232166333
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-07p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.965765895435513,
+            "100-1000": 1.4305244262423278,
+            "1000-18000": 0.14753612444090536
+          },
+          "max_phase_error_deg": 80.22115463033066
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.519555990923575,
+            "100-1000": 2.5711322335661544,
+            "1000-18000": 0.2390932277438319
+          },
+          "max_phase_error_deg": 113.22183086473868
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.879322197484303,
+            "100-1000": 1.5322480543056152,
+            "1000-18000": 0.1450875493916265
+          },
+          "max_phase_error_deg": 83.00222481575965
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.179753918733898,
+            "100-1000": 2.6385470911474336,
+            "1000-18000": 0.2361442931036689
+          },
+          "max_phase_error_deg": 115.22322513841164
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-08p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.084972840913597,
+            "100-1000": 0.5832548340725525,
+            "1000-18000": 0.14943463824180636
+          },
+          "max_phase_error_deg": 8.848660829146766
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.211946199797479,
+            "100-1000": 1.7914881459680982,
+            "1000-18000": 0.24295170257226717
+          },
+          "max_phase_error_deg": 16.386014987332718
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.0870794718439907,
+            "100-1000": 0.5621162463539715,
+            "1000-18000": 0.1504094799590745
+          },
+          "max_phase_error_deg": 8.927622500394419
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.397354350321809,
+            "100-1000": 1.655632471109156,
+            "1000-18000": 0.24368691721111846
+          },
+          "max_phase_error_deg": 18.02667266443687
+        }
+      }
+    },
+    {
+      "id": "cps20-atten-09p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.981427346355462,
+            "100-1000": 1.1182920586921146,
+            "1000-18000": 0.15052068913906913
+          },
+          "max_phase_error_deg": 48.041615760622754
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 15.793441640369247,
+            "100-1000": 2.0853641132293204,
+            "1000-18000": 0.2441895776250551
+          },
+          "max_phase_error_deg": 75.29579971460775
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.047693055408176,
+            "100-1000": 1.0842114490939498,
+            "1000-18000": 0.11387080082907919
+          },
+          "max_phase_error_deg": 48.30190213576916
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 15.825145919411655,
+            "100-1000": 2.0133982544039295,
+            "1000-18000": 0.24787277398208563
+          },
+          "max_phase_error_deg": 75.2695073676142
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-00p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.18512342628142,
+            "100-1000": 5.285873997243367,
+            "1000-18000": 35.53831676932664
+          },
+          "max_phase_error_deg": 161.10717982398467
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.097586950171699,
+            "100-1000": 2.0872062267129623,
+            "1000-18000": 51.47484113235471
+          },
+          "max_phase_error_deg": 177.74175067551946
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.521032263550622,
+            "100-1000": 3.649177621136332,
+            "1000-18000": 34.56288519863128
+          },
+          "max_phase_error_deg": 153.19021601574295
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.923418581562404,
+            "100-1000": 2.9129823960056367,
+            "1000-18000": 50.416130003352535
+          },
+          "max_phase_error_deg": 175.63498084413007
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-01p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.054023570040208,
+            "100-1000": 2.0749705196386503,
+            "1000-18000": 2.091078401060309
+          },
+          "max_phase_error_deg": 16.911312877015384
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.18251053752612623,
+            "100-1000": 0.20216751493135066,
+            "1000-18000": 0.47635041393608524
+          },
+          "max_phase_error_deg": 4.399407704367693
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.2408898556271337,
+            "100-1000": 2.2583346520296397,
+            "1000-18000": 2.2702083296429247
+          },
+          "max_phase_error_deg": 17.881891013920907
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.0247513598648377,
+            "100-1000": 2.041856859725406,
+            "1000-18000": 2.1055876569836407
+          },
+          "max_phase_error_deg": 17.204416439256285
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-02p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 102.12869863171568,
+            "100-1000": 75.03728145536572,
+            "1000-18000": 58.65829273500668
+          },
+          "max_phase_error_deg": 179.12574603130517
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 98.87267591921776,
+            "100-1000": 71.78151547444216,
+            "1000-18000": 50.02953460923522
+          },
+          "max_phase_error_deg": 178.36529277577245
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 102.0795726362128,
+            "100-1000": 74.9851752652551,
+            "1000-18000": 59.939215496815706
+          },
+          "max_phase_error_deg": 179.70795952981166
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 98.90691247956869,
+            "100-1000": 71.81311137550001,
+            "1000-18000": 50.143753202584584
+          },
+          "max_phase_error_deg": 178.1797160430132
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-03p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 51.820748492115825,
+            "100-1000": 24.975593260548813,
+            "1000-18000": 9.563233335448167
+          },
+          "max_phase_error_deg": 174.9496452905642
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 59.688737112176085,
+            "100-1000": 32.465433017766806,
+            "1000-18000": 1.4615655977901372
+          },
+          "max_phase_error_deg": 160.7232969334823
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 51.16677494893878,
+            "100-1000": 24.355606531831313,
+            "1000-18000": 9.756358786793278
+          },
+          "max_phase_error_deg": 173.33444776713807
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 59.058948148998994,
+            "100-1000": 31.84917796585878,
+            "1000-18000": 1.4916228318991518
+          },
+          "max_phase_error_deg": 160.18680134526005
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-04p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 37.08526410904201,
+            "100-1000": 12.839766155392748,
+            "1000-18000": 10.820812945489413
+          },
+          "max_phase_error_deg": 178.98095621744957
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 45.27660230243799,
+            "100-1000": 19.433928875860055,
+            "1000-18000": 4.685471136640907
+          },
+          "max_phase_error_deg": 160.93079515506344
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 36.56723493733345,
+            "100-1000": 12.447962641129394,
+            "1000-18000": 10.973152411349263
+          },
+          "max_phase_error_deg": 178.45495755350225
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 44.81391102345367,
+            "100-1000": 18.990898411690733,
+            "1000-18000": 4.673921191264789
+          },
+          "max_phase_error_deg": 162.66006006700533
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-05p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 25.52789202470266,
+            "100-1000": 5.759911164650612,
+            "1000-18000": 16.811311522922242
+          },
+          "max_phase_error_deg": 179.83228139932137
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 34.12480972143691,
+            "100-1000": 11.826769955856955,
+            "1000-18000": 16.943577080401774
+          },
+          "max_phase_error_deg": 173.0476365348255
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 26.482987140608813,
+            "100-1000": 4.906502841673067,
+            "1000-18000": 16.837854353802943
+          },
+          "max_phase_error_deg": 179.79837992840788
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 34.76294730729041,
+            "100-1000": 10.504243491258046,
+            "1000-18000": 16.953743753199547
+          },
+          "max_phase_error_deg": 172.75253419862563
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-06p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.981213509275038,
+            "100-1000": 7.296010333429444,
+            "1000-18000": 13.017322665516275
+          },
+          "max_phase_error_deg": 175.10316877779593
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.274870891657657,
+            "100-1000": 3.271755505314391,
+            "1000-18000": 9.56366806429824
+          },
+          "max_phase_error_deg": 158.2383032186151
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.995036629522787,
+            "100-1000": 7.2002991532487695,
+            "1000-18000": 12.937734374622474
+          },
+          "max_phase_error_deg": 175.4158662604157
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.301425815899559,
+            "100-1000": 3.088832446579538,
+            "1000-18000": 9.49798364528031
+          },
+          "max_phase_error_deg": 158.11429337271787
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-07p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.5972800419857442,
+            "100-1000": 1.979810164002037,
+            "1000-18000": 16.51007208255601
+          },
+          "max_phase_error_deg": 176.26305668306196
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.203281029808451,
+            "100-1000": 5.920975182593015,
+            "1000-18000": 16.671858566149425
+          },
+          "max_phase_error_deg": 173.6739455610976
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.688279997677668,
+            "100-1000": 1.995409782008784,
+            "1000-18000": 16.523291979230947
+          },
+          "max_phase_error_deg": 176.17385992746316
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.272073948735628,
+            "100-1000": 5.910062547256695,
+            "1000-18000": 16.674645214898035
+          },
+          "max_phase_error_deg": 173.40888155257628
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-08p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.613395846014587,
+            "100-1000": 1.8982441901112552,
+            "1000-18000": 10.2285784944762
+          },
+          "max_phase_error_deg": 170.60922326870912
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.585229934943099,
+            "100-1000": 4.400571132452047,
+            "1000-18000": 5.348369204165088
+          },
+          "max_phase_error_deg": 164.9275902015229
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.079925186003726,
+            "100-1000": 1.9230931172199284,
+            "1000-18000": 10.270467285963239
+          },
+          "max_phase_error_deg": 170.7681851917214
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.31643861273494,
+            "100-1000": 5.175656950832565,
+            "1000-18000": 5.316269530976993
+          },
+          "max_phase_error_deg": 164.70488615572407
+        }
+      }
+    },
+    {
+      "id": "cps30-boost-09p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.880797953836893,
+            "100-1000": 6.196446271979276,
+            "1000-18000": 11.979707280053576
+          },
+          "max_phase_error_deg": 177.4073389901737
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 19.106889296771236,
+            "100-1000": 2.209131185836367,
+            "1000-18000": 7.539633152736143
+          },
+          "max_phase_error_deg": 158.13955835876263
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.840581726791466,
+            "100-1000": 6.19875188631615,
+            "1000-18000": 11.99230120957653
+          },
+          "max_phase_error_deg": 177.31821924525158
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 19.069084693422298,
+            "100-1000": 2.2094438354408723,
+            "1000-18000": 7.548678756635626
+          },
+          "max_phase_error_deg": 158.01458580332718
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-00p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.551151270596845,
+            "100-1000": 13.546810282975287,
+            "1000-18000": 35.54926777000785
+          },
+          "max_phase_error_deg": 93.37122108864493
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.162432886923146,
+            "100-1000": 8.25371769544777,
+            "1000-18000": 42.37768807431687
+          },
+          "max_phase_error_deg": 167.88912576146097
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.573058081904843,
+            "100-1000": 13.568435793920557,
+            "1000-18000": 34.966907723868374
+          },
+          "max_phase_error_deg": 99.98874353998708
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.479011766242557,
+            "100-1000": 8.581394304542341,
+            "1000-18000": 41.984667434142345
+          },
+          "max_phase_error_deg": 170.62420316162488
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-01p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.10179309408732495,
+            "100-1000": 0.09817672073048145,
+            "1000-18000": 0.08744896550523817
+          },
+          "max_phase_error_deg": 0.5924431187621254
+        },
+        "linear_coefficients": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.02027228657316238,
+            "100-1000": 0.019342928055159136,
+            "1000-18000": 0.02729190891997657
+          },
+          "max_phase_error_deg": 0.5459004394842714
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.18799381113983782,
+            "100-1000": 0.1892370019232878,
+            "1000-18000": 0.17794136473339084
+          },
+          "max_phase_error_deg": 1.0142305916810626
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.5410732709686559,
+            "100-1000": 0.1283036123299629,
+            "1000-18000": 0.04198427792475534
+          },
+          "max_phase_error_deg": 6.354360248277154
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-02p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.5197311295446685,
+            "100-1000": 3.499065854057721,
+            "1000-18000": 13.12272454009922
+          },
+          "max_phase_error_deg": 83.73687060259967
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.0405415862327283,
+            "100-1000": 3.061537434059505,
+            "1000-18000": 13.437814256105938
+          },
+          "max_phase_error_deg": 87.2138197544574
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.706923253723889,
+            "100-1000": 3.6870101606244794,
+            "1000-18000": 14.204098388708152
+          },
+          "max_phase_error_deg": 84.62556254946601
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.159923277652631,
+            "100-1000": 3.1774478769872094,
+            "1000-18000": 14.151565349460997
+          },
+          "max_phase_error_deg": 88.07847139779132
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-03p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 83.36945769664271,
+            "100-1000": 56.28941499400311,
+            "1000-18000": 40.28857457417855
+          },
+          "max_phase_error_deg": 167.7173846275023
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 86.04542799730291,
+            "100-1000": 58.95861423395658,
+            "1000-18000": 36.47425196817363
+          },
+          "max_phase_error_deg": 171.59516207448735
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 82.69674674253116,
+            "100-1000": 55.614388265574114,
+            "1000-18000": 40.31378868192327
+          },
+          "max_phase_error_deg": 167.6014721746806
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 85.71196755180483,
+            "100-1000": 58.61132962570333,
+            "1000-18000": 36.6981629536027
+          },
+          "max_phase_error_deg": 172.04792859401564
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-04p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 67.2170664559006,
+            "100-1000": 40.25331502724196,
+            "1000-18000": 45.94191025732179
+          },
+          "max_phase_error_deg": 179.28451481001318
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 71.61406985910578,
+            "100-1000": 44.57953607694067,
+            "1000-18000": 40.98204824109559
+          },
+          "max_phase_error_deg": 169.41171673476163
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 67.47639383461575,
+            "100-1000": 40.49366525108099,
+            "1000-18000": 46.06930634114066
+          },
+          "max_phase_error_deg": 179.7402279122529
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 47.29993300321814,
+            "100-1000": 40.08098795958907,
+            "1000-18000": 41.045311094597444
+          },
+          "max_phase_error_deg": 173.9529477455087
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-05p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.845181343299446,
+            "100-1000": 3.16609757259739,
+            "1000-18000": 49.12999236813808
+          },
+          "max_phase_error_deg": 178.49435492592806
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.9270667217415625,
+            "100-1000": 3.0609084100300805,
+            "1000-18000": 46.82738223576641
+          },
+          "max_phase_error_deg": 178.90450983366202
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.423743737076757,
+            "100-1000": 3.257812579251533,
+            "1000-18000": 49.30532055239594
+          },
+          "max_phase_error_deg": 178.42664650109194
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.8006549178098794,
+            "100-1000": 3.804658164546632,
+            "1000-18000": 44.46404414243406
+          },
+          "max_phase_error_deg": 177.80497227218657
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-06p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 12.533921043648057,
+            "100-1000": 1.8448063018542964,
+            "1000-18000": 0.2496447347809444
+          },
+          "max_phase_error_deg": 52.807893196954
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 16.420002457566333,
+            "100-1000": 6.378219462050572,
+            "1000-18000": 0.5052893209059223
+          },
+          "max_phase_error_deg": 75.55247994521397
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.355952892907275,
+            "100-1000": 1.8030391952294789,
+            "1000-18000": 0.2524337642842921
+          },
+          "max_phase_error_deg": 56.63121578023919
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 15.655922557452836,
+            "100-1000": 6.5836704345123795,
+            "1000-18000": 0.4919283868028287
+          },
+          "max_phase_error_deg": 75.03331689353448
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-07p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.10749046827374,
+            "100-1000": 70.161339555913,
+            "1000-18000": 30.765684648288854
+          },
+          "max_phase_error_deg": 174.27603507689156
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 75.2550113578955,
+            "100-1000": 71.4626081368578,
+            "1000-18000": 32.159852430305016
+          },
+          "max_phase_error_deg": 174.73725857466337
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.56277242343927,
+            "100-1000": 70.23835289718626,
+            "1000-18000": 30.778087655955503
+          },
+          "max_phase_error_deg": 174.3685769119945
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 79.7434600930663,
+            "100-1000": 70.70839291240686,
+            "1000-18000": 32.17180401816829
+          },
+          "max_phase_error_deg": 174.82685896672945
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-08p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.648779333772413,
+            "100-1000": 7.846191438332797,
+            "1000-18000": 56.161773843575595
+          },
+          "max_phase_error_deg": 169.88467868239326
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.646713948084574,
+            "100-1000": 6.980742047218143,
+            "1000-18000": 59.37597048490978
+          },
+          "max_phase_error_deg": 171.95607865083875
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.808880724113454,
+            "100-1000": 7.947978635167784,
+            "1000-18000": 56.21699134087582
+          },
+          "max_phase_error_deg": 169.81203799515902
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.669481795989423,
+            "100-1000": 7.104046757394594,
+            "1000-18000": 59.50484166719324
+          },
+          "max_phase_error_deg": 171.89062826064017
+        }
+      }
+    },
+    {
+      "id": "cps30-atten-09p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.661441440365088,
+            "100-1000": 6.608310879979632,
+            "1000-18000": 56.13991942995894
+          },
+          "max_phase_error_deg": 169.6366348507102
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.551967465567641,
+            "100-1000": 6.07407928148357,
+            "1000-18000": 59.626403183740386
+          },
+          "max_phase_error_deg": 170.70687005549368
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.709774101413711,
+            "100-1000": 6.647699678678757,
+            "1000-18000": 56.15319890169795
+          },
+          "max_phase_error_deg": 169.6019793054762
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.607830584803542,
+            "100-1000": 6.116279856785958,
+            "1000-18000": 59.66073910817844
+          },
+          "max_phase_error_deg": 170.69152786873812
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-00p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.743221616079618,
+            "100-1000": 11.739541573667465,
+            "1000-18000": 28.986722543708513
+          },
+          "max_phase_error_deg": 97.82839558472494
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.447412198006164,
+            "100-1000": 4.478023158471633,
+            "1000-18000": 35.81159837901745
+          },
+          "max_phase_error_deg": 173.22289818367685
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.639771880455587,
+            "100-1000": 11.635884918205155,
+            "1000-18000": 30.184849012352537
+          },
+          "max_phase_error_deg": 163.51158988967134
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.824420117712031,
+            "100-1000": 4.863162539110538,
+            "1000-18000": 34.54402298925153
+          },
+          "max_phase_error_deg": 166.20953239424344
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-01p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.6335051716285677,
+            "100-1000": 0.6251087775625525,
+            "1000-18000": 0.6239540940477816
+          },
+          "max_phase_error_deg": 4.3127214517043075
+        },
+        "linear_coefficients": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.0397267309077427,
+            "100-1000": 0.03204737843367256,
+            "1000-18000": 0.08438221911533672
+          },
+          "max_phase_error_deg": 0.8015452896762923
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.671793933930815,
+            "100-1000": 0.6622300498057776,
+            "1000-18000": 0.6589371133537378
+          },
+          "max_phase_error_deg": 4.509352389733466
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.009096656858146535,
+            "100-1000": 0.006320994057458451,
+            "1000-18000": 0.14733303377172113
+          },
+          "max_phase_error_deg": 1.8989678268534875
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-02p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.1269287798412506,
+            "100-1000": 1.65308863896938,
+            "1000-18000": 7.597295046296937
+          },
+          "max_phase_error_deg": 52.03793703707019
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.3620020731485283,
+            "100-1000": 1.5519861438823026,
+            "1000-18000": 8.96342098427127
+          },
+          "max_phase_error_deg": 52.94248076082034
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.8605418611662186,
+            "100-1000": 2.3811942221183027,
+            "1000-18000": 8.91653213577821
+          },
+          "max_phase_error_deg": 44.746099361314826
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.355490541090113,
+            "100-1000": 2.5513677080855217,
+            "1000-18000": 10.355304608757757
+          },
+          "max_phase_error_deg": 50.82424092858027
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-03p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.292471342769348,
+            "100-1000": 2.3717102118617923,
+            "1000-18000": 19.878221674954325
+          },
+          "max_phase_error_deg": 136.69171065623755
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.1760963491494083,
+            "100-1000": 0.2581298268452201,
+            "1000-18000": 14.13078363143762
+          },
+          "max_phase_error_deg": 80.49062919679614
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.6802086725213785,
+            "100-1000": 2.680637681121527,
+            "1000-18000": 21.030513104415473
+          },
+          "max_phase_error_deg": 142.9464854161665
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.21945037585633598,
+            "100-1000": 0.2085587301009162,
+            "1000-18000": 13.574174454209645
+          },
+          "max_phase_error_deg": 89.38910150372885
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-04p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.0691997782216944,
+            "100-1000": 2.0646645170263147,
+            "1000-18000": 21.53543667119498
+          },
+          "max_phase_error_deg": 146.50879257481807
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.09390438375677146,
+            "100-1000": 0.2964203045329077,
+            "1000-18000": 10.086651073325172
+          },
+          "max_phase_error_deg": 61.02866022764201
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.3458647844237666,
+            "100-1000": 2.343030359481772,
+            "1000-18000": 21.660342721591856
+          },
+          "max_phase_error_deg": 146.96087853802496
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.46600497624933457,
+            "100-1000": 0.2729523526587623,
+            "1000-18000": 12.817584792441178
+          },
+          "max_phase_error_deg": 63.181842857360294
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-05p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 22.203528606735183,
+            "100-1000": 4.908955755313663,
+            "1000-18000": 31.409504550535097
+          },
+          "max_phase_error_deg": 169.94370775875228
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 29.828133088741307,
+            "100-1000": 3.693084695950419,
+            "1000-18000": 12.266832136121652
+          },
+          "max_phase_error_deg": 132.32696341110034
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 20.89132090976522,
+            "100-1000": 4.148951306070171,
+            "1000-18000": 32.16270135461866
+          },
+          "max_phase_error_deg": 174.44088756787815
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.071915314063467,
+            "100-1000": 1.3316201542211008,
+            "1000-18000": 12.542287872498553
+          },
+          "max_phase_error_deg": 158.25647056652357
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-06p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.34623378337718,
+            "100-1000": 8.66713049666216,
+            "1000-18000": 34.91599951833098
+          },
+          "max_phase_error_deg": 170.90579148351077
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.928151395470514,
+            "100-1000": 6.526498159932182,
+            "1000-18000": 13.319245730073751
+          },
+          "max_phase_error_deg": 80.24078879061226
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.58647950940672,
+            "100-1000": 8.893404425169575,
+            "1000-18000": 36.00045240569278
+          },
+          "max_phase_error_deg": 169.52293620428563
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.29759414216022,
+            "100-1000": 7.372520124332879,
+            "1000-18000": 13.441738635273254
+          },
+          "max_phase_error_deg": 81.62672050457434
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-07p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.0009467721781373,
+            "100-1000": 4.167140312792043,
+            "1000-18000": 38.8570169717554
+          },
+          "max_phase_error_deg": 174.06252551073706
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.4079061479120298,
+            "100-1000": 1.532211955359319,
+            "1000-18000": 14.2303887182911
+          },
+          "max_phase_error_deg": 81.92453162065813
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.93564755506605,
+            "100-1000": 6.156893246127335,
+            "1000-18000": 39.01206300404548
+          },
+          "max_phase_error_deg": 175.8397221622796
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.373564336396534,
+            "100-1000": 6.5458634220891945,
+            "1000-18000": 13.934292663790464
+          },
+          "max_phase_error_deg": 80.98765615181838
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-08p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.592619850334952,
+            "100-1000": 9.613791861141443,
+            "1000-18000": 37.641179775790725
+          },
+          "max_phase_error_deg": 172.30090282595657
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.883274272203149,
+            "100-1000": 7.667691730550659,
+            "1000-18000": 14.871081315335692
+          },
+          "max_phase_error_deg": 94.40627508535206
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.607127138866506,
+            "100-1000": 9.62984279003991,
+            "1000-18000": 37.65916207710004
+          },
+          "max_phase_error_deg": 172.61320729569175
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.249219946959631,
+            "100-1000": 3.324989801970318,
+            "1000-18000": 14.678276634062236
+          },
+          "max_phase_error_deg": 135.96194541838923
+        }
+      }
+    },
+    {
+      "id": "cps60-boost-09p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.717422236259548,
+            "100-1000": 9.724329818699404,
+            "1000-18000": 36.066837469857404
+          },
+          "max_phase_error_deg": 157.234958392477
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.051277015449801,
+            "100-1000": 7.687162302781511,
+            "1000-18000": 12.968712222025399
+          },
+          "max_phase_error_deg": 106.56327122893525
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.716599259414782,
+            "100-1000": 9.724282173154979,
+            "1000-18000": 36.084821894614834
+          },
+          "max_phase_error_deg": 157.58396264757496
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.048734285864311,
+            "100-1000": 7.684040270844809,
+            "1000-18000": 12.858394254059206
+          },
+          "max_phase_error_deg": 105.4975560126432
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-00p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.8540705737617085,
+            "100-1000": 4.83661763708688,
+            "1000-18000": 26.46356447611226
+          },
+          "max_phase_error_deg": 171.43327083833245
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.566125059309551,
+            "100-1000": 7.613322986025008,
+            "1000-18000": 34.80350787617222
+          },
+          "max_phase_error_deg": 167.62209558280682
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.493050636286625,
+            "100-1000": 5.475317018058211,
+            "1000-18000": 28.756993952609545
+          },
+          "max_phase_error_deg": 175.00300000527304
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.674431456928897,
+            "100-1000": 7.713981897247923,
+            "1000-18000": 33.466996872152976
+          },
+          "max_phase_error_deg": 169.6972440484881
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-01p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.356523958526788,
+            "100-1000": 3.3968358278883373,
+            "1000-18000": 29.186534701947636
+          },
+          "max_phase_error_deg": 170.14087181455702
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.6803377368730276,
+            "100-1000": 0.6086483418540459,
+            "1000-18000": 27.760057943381767
+          },
+          "max_phase_error_deg": 173.15303178707825
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 3.3922372010963437,
+            "100-1000": 3.425907494411141,
+            "1000-18000": 29.80132642855153
+          },
+          "max_phase_error_deg": 173.2861572699325
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.5489340051636667,
+            "100-1000": 0.47722321061545137,
+            "1000-18000": 27.796022315152566
+          },
+          "max_phase_error_deg": 165.74081473430513
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-02p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.670996719572532,
+            "100-1000": 6.581307222613776,
+            "1000-18000": 30.34264309223331
+          },
+          "max_phase_error_deg": 149.10227855187642
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.115040166916626,
+            "100-1000": 4.563754436297296,
+            "1000-18000": 12.295141977479979
+          },
+          "max_phase_error_deg": 157.09464930101552
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.129448106873888,
+            "100-1000": 7.083653759569526,
+            "1000-18000": 31.278417044016482
+          },
+          "max_phase_error_deg": 144.99668050989126
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 2.49292074184687,
+            "100-1000": 3.285577115057679,
+            "1000-18000": 14.802656966969082
+          },
+          "max_phase_error_deg": 167.88610206222876
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-03p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 57.9521727669741,
+            "100-1000": 36.620182269380926,
+            "1000-18000": 46.607257269461975
+          },
+          "max_phase_error_deg": 178.0229457561351
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 60.06203721777958,
+            "100-1000": 39.562085686310716,
+            "1000-18000": 54.638367387098576
+          },
+          "max_phase_error_deg": 175.0204503908706
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 62.16987003221465,
+            "100-1000": 37.24885161021587,
+            "1000-18000": 46.42953432636626
+          },
+          "max_phase_error_deg": 177.78564891613692
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 60.504397224278044,
+            "100-1000": 40.003712920840414,
+            "1000-18000": 55.24974393574768
+          },
+          "max_phase_error_deg": 174.9514694243845
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-04p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 48.60062970451502,
+            "100-1000": 21.90506048054547,
+            "1000-18000": 19.340767248449502
+          },
+          "max_phase_error_deg": 149.78740431230943
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 55.22333314530193,
+            "100-1000": 28.193898439643448,
+            "1000-18000": 24.36767352028552
+          },
+          "max_phase_error_deg": 173.3927561113699
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 48.37756718163321,
+            "100-1000": 21.68524418363465,
+            "1000-18000": 20.23866550479939
+          },
+          "max_phase_error_deg": 149.65697738181663
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 55.25023326047119,
+            "100-1000": 28.216404898487077,
+            "1000-18000": 25.161946548217387
+          },
+          "max_phase_error_deg": 172.5638080997258
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-05p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 42.51808073516069,
+            "100-1000": 16.25047224759111,
+            "1000-18000": 30.756564848263647
+          },
+          "max_phase_error_deg": 165.22379558769956
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 50.30555841241078,
+            "100-1000": 23.442090799950694,
+            "1000-18000": 30.224630010034897
+          },
+          "max_phase_error_deg": 165.88068679512008
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 42.25022057276029,
+            "100-1000": 15.99469375156766,
+            "1000-18000": 31.792296600925653
+          },
+          "max_phase_error_deg": 168.79665940795883
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 51.02024151900329,
+            "100-1000": 24.09550906990631,
+            "1000-18000": 31.130798019203635
+          },
+          "max_phase_error_deg": 165.43430303031496
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-06p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 16.438529603126096,
+            "100-1000": 13.25695864583861,
+            "1000-18000": 32.7139801946517
+          },
+          "max_phase_error_deg": 178.16168601432085
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 13.801574970304927,
+            "100-1000": 13.74357564509386,
+            "1000-18000": 45.43526798929871
+          },
+          "max_phase_error_deg": 169.60725722954174
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.01264441065158,
+            "100-1000": 14.15757524673654,
+            "1000-18000": 32.73074531210157
+          },
+          "max_phase_error_deg": 178.08531133713254
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 15.42832136987217,
+            "100-1000": 15.166505015578926,
+            "1000-18000": 45.45892785011548
+          },
+          "max_phase_error_deg": 169.48146825348778
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-07p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.713444627391244,
+            "100-1000": 13.52075692936208,
+            "1000-18000": 18.180646490909904
+          },
+          "max_phase_error_deg": 167.00564964527908
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 16.407238792752764,
+            "100-1000": 15.572943660841599,
+            "1000-18000": 42.437383580577084
+          },
+          "max_phase_error_deg": 172.08492575543147
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 19.615994014896142,
+            "100-1000": 13.763731253042035,
+            "1000-18000": 18.131204099630068
+          },
+          "max_phase_error_deg": 166.9400546449652
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.10843055510304,
+            "100-1000": 15.823163072858986,
+            "1000-18000": 42.385317015121444
+          },
+          "max_phase_error_deg": 172.11780208028117
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-08p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.877238356986847,
+            "100-1000": 6.195763112292397,
+            "1000-18000": 41.6910872075686
+          },
+          "max_phase_error_deg": 175.17997180540473
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.902283064825006,
+            "100-1000": 3.5980323488524313,
+            "1000-18000": 51.923354356657924
+          },
+          "max_phase_error_deg": 174.5444395184597
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.223061222917288,
+            "100-1000": 6.2736317852883445,
+            "1000-18000": 41.67764638940064
+          },
+          "max_phase_error_deg": 175.32025421942535
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.91196013331594,
+            "100-1000": 3.3288977848792314,
+            "1000-18000": 51.90663741783302
+          },
+          "max_phase_error_deg": 174.43106633080703
+        }
+      }
+    },
+    {
+      "id": "cps60-atten-09p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.564016661471975,
+            "100-1000": 5.640682907086628,
+            "1000-18000": 45.67297496812668
+          },
+          "max_phase_error_deg": 138.000837750426
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 4.633931739805206,
+            "100-1000": 2.7180587970412198,
+            "1000-18000": 47.49703693529065
+          },
+          "max_phase_error_deg": 179.59729032221605
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 9.290796011876036,
+            "100-1000": 6.227168816009595,
+            "1000-18000": 45.68233628855549
+          },
+          "max_phase_error_deg": 137.87149513869198
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.31100021530963,
+            "100-1000": 3.2169332044697114,
+            "1000-18000": 47.52035249555693
+          },
+          "max_phase_error_deg": 179.42625229728228
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-00p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.110407982023284,
+            "100-1000": 5.09352135697322,
+            "1000-18000": 33.22419328696058
+          },
+          "max_phase_error_deg": 158.18577458550723
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.606046654880347,
+            "100-1000": 6.651693305495321,
+            "1000-18000": 47.75891851436394
+          },
+          "max_phase_error_deg": 167.92291970623737
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.988503463864876,
+            "100-1000": 5.971346948746071,
+            "1000-18000": 32.76976936207503
+          },
+          "max_phase_error_deg": 176.15267013372687
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 6.857446370877423,
+            "100-1000": 6.897073759253031,
+            "1000-18000": 46.179569957683974
+          },
+          "max_phase_error_deg": 179.9600923564796
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-01p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.0336080430808523,
+            "100-1000": 0.03909612504872606,
+            "1000-18000": 0.4491482679655927
+          },
+          "max_phase_error_deg": 0.9034860088240555
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.07720593978828627,
+            "100-1000": 0.0774627536360517,
+            "1000-18000": 0.9037607028211629
+          },
+          "max_phase_error_deg": 2.689438994500087
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.17933547464105626,
+            "100-1000": 0.14815536986221844,
+            "1000-18000": 1.2377103622775147
+          },
+          "max_phase_error_deg": 6.818504558385382
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.29128940208316667,
+            "100-1000": 0.266828652088545,
+            "1000-18000": 0.6068657225937011
+          },
+          "max_phase_error_deg": 5.789508710770159
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-02p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.446319829716266,
+            "100-1000": 18.41275452066774,
+            "1000-18000": 27.717696329690384
+          },
+          "max_phase_error_deg": 154.06192841056944
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.267416759679012,
+            "100-1000": 17.40858527824061,
+            "1000-18000": 21.873981590244707
+          },
+          "max_phase_error_deg": 151.33497959743912
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 18.61181797568362,
+            "100-1000": 18.577441713561676,
+            "1000-18000": 27.73612577335539
+          },
+          "max_phase_error_deg": 154.40468358326564
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.40672367627985,
+            "100-1000": 17.533500924232833,
+            "1000-18000": 21.857801090853002
+          },
+          "max_phase_error_deg": 151.1511437528179
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-03p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 16.80100065573045,
+            "100-1000": 16.74309642310793,
+            "1000-18000": 21.27381864644287
+          },
+          "max_phase_error_deg": 107.72308254861186
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 14.382969755957042,
+            "100-1000": 14.35571426422562,
+            "1000-18000": 19.94856390577121
+          },
+          "max_phase_error_deg": 109.88592651365401
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 17.21967161233911,
+            "100-1000": 17.154697366075766,
+            "1000-18000": 21.295366509332148
+          },
+          "max_phase_error_deg": 107.63166219633113
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 14.62532795043672,
+            "100-1000": 14.601998973351192,
+            "1000-18000": 19.96359547244222
+          },
+          "max_phase_error_deg": 110.28029470539481
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-04p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 39.65224173490319,
+            "100-1000": 39.41358165097083,
+            "1000-18000": 27.736350973192266
+          },
+          "max_phase_error_deg": 149.98079896805217
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 34.8050382097903,
+            "100-1000": 34.909105596066794,
+            "1000-18000": 30.049450092760527
+          },
+          "max_phase_error_deg": 152.43331662297595
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 39.14085976756074,
+            "100-1000": 38.922119756677525,
+            "1000-18000": 27.742786543233606
+          },
+          "max_phase_error_deg": 149.70845036478954
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 34.35914847267576,
+            "100-1000": 34.565464165236236,
+            "1000-18000": 30.002357617603227
+          },
+          "max_phase_error_deg": 152.17859102734522
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-05p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 57.87464216605736,
+            "100-1000": 54.53436985971379,
+            "1000-18000": 28.79086399925502
+          },
+          "max_phase_error_deg": 159.01605307869966
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.20551899710574,
+            "100-1000": 53.16321229318654,
+            "1000-18000": 29.57532692591973
+          },
+          "max_phase_error_deg": 160.43691993010742
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 58.722194168938394,
+            "100-1000": 55.297973614489564,
+            "1000-18000": 28.82325878544935
+          },
+          "max_phase_error_deg": 159.52793420124246
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.89451713181913,
+            "100-1000": 53.849210030063105,
+            "1000-18000": 29.614434928737122
+          },
+          "max_phase_error_deg": 160.88043363247544
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-06p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 49.62688214042506,
+            "100-1000": 46.58069369301367,
+            "1000-18000": 28.34761215919257
+          },
+          "max_phase_error_deg": 154.80364076687465
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 50.0519961097428,
+            "100-1000": 49.31797012545356,
+            "1000-18000": 28.857733833953564
+          },
+          "max_phase_error_deg": 156.24267991229644
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 49.977234525496655,
+            "100-1000": 46.80545761396268,
+            "1000-18000": 28.260110032673786
+          },
+          "max_phase_error_deg": 154.7406856199222
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 50.37302899171446,
+            "100-1000": 49.62756540197898,
+            "1000-18000": 28.735294243660157
+          },
+          "max_phase_error_deg": 156.13623199360725
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-07p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 52.41613321348742,
+            "100-1000": 48.76499556708113,
+            "1000-18000": 28.622077028520312
+          },
+          "max_phase_error_deg": 156.80315821543178
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 52.770980051958674,
+            "100-1000": 51.26045208336187,
+            "1000-18000": 29.069974587070188
+          },
+          "max_phase_error_deg": 158.0825874160419
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 52.534391302245034,
+            "100-1000": 48.86678978984848,
+            "1000-18000": 28.64627628269695
+          },
+          "max_phase_error_deg": 156.96380416136594
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 52.909617360773574,
+            "100-1000": 51.384166515812424,
+            "1000-18000": 29.09923455326608
+          },
+          "max_phase_error_deg": 158.23418581510165
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-08p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.478335674824855,
+            "100-1000": 49.638322800622795,
+            "1000-18000": 28.73842344323466
+          },
+          "max_phase_error_deg": 157.58154492738808
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.79378544870262,
+            "100-1000": 51.934875990606365,
+            "1000-18000": 29.207753093420088
+          },
+          "max_phase_error_deg": 158.86530592279013
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.459764172237975,
+            "100-1000": 49.63047858590222,
+            "1000-18000": 28.717289699197742
+          },
+          "max_phase_error_deg": 157.57128386724926
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.783557501178734,
+            "100-1000": 51.922068575926325,
+            "1000-18000": 29.190014185760518
+          },
+          "max_phase_error_deg": 158.85224073952935
+        }
+      }
+    },
+    {
+      "id": "cps100-boost-09p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.93515357197241,
+            "100-1000": 50.06654822038449,
+            "1000-18000": 28.791435259183128
+          },
+          "max_phase_error_deg": 158.1551063383739
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 54.23480602277567,
+            "100-1000": 52.28813570392535,
+            "1000-18000": 29.287292602757734
+          },
+          "max_phase_error_deg": 159.48757221760073
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 53.970343295157335,
+            "100-1000": 50.095041612518855,
+            "1000-18000": 28.797325395861858
+          },
+          "max_phase_error_deg": 158.20646770532423
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 54.27408068239245,
+            "100-1000": 52.32538936342387,
+            "1000-18000": 29.29477349274553
+          },
+          "max_phase_error_deg": 159.53003856106872
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-00p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.25,
+        0.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.998580393448002,
+            "100-1000": 6.077807771639016,
+            "1000-18000": 36.28795394867546
+          },
+          "max_phase_error_deg": 171.08393104519143
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.8470110348713826,
+            "100-1000": 0.836740941799643,
+            "1000-18000": 52.19045043246312
+          },
+          "max_phase_error_deg": 179.86022667398186
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.108961774687151,
+            "100-1000": 5.2258865406566,
+            "1000-18000": 36.3010208579519
+          },
+          "max_phase_error_deg": 163.6264640567777
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 1.3857078687889224,
+            "100-1000": 1.3753735757995083,
+            "1000-18000": 50.73114055199052
+          },
+          "max_phase_error_deg": 175.93523317372737
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-01p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.25,
+        1.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.05319873397338759,
+            "100-1000": 0.03344946828780071,
+            "1000-18000": 0.14088628846396412
+          },
+          "max_phase_error_deg": 1.3585641767524275
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.010820892178937447,
+            "100-1000": 0.003822793947234615,
+            "1000-18000": 0.2610290543099357
+          },
+          "max_phase_error_deg": 0.7949425225718375
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.1589695963196739,
+            "100-1000": 0.12167192745948585,
+            "1000-18000": 0.2971762633012329
+          },
+          "max_phase_error_deg": 4.747372755431005
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.02500626882910173,
+            "100-1000": 0.033180678384959195,
+            "1000-18000": 0.1183393678037894
+          },
+          "max_phase_error_deg": 0.9467211755238629
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-02p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.25,
+        2.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 81.95811092847643,
+            "100-1000": 54.86034791361208,
+            "1000-18000": 33.9123196156383
+          },
+          "max_phase_error_deg": 178.34429418979826
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 92.74888878676677,
+            "100-1000": 65.6375575233236,
+            "1000-18000": 31.309841396707235
+          },
+          "max_phase_error_deg": 179.5065524113512
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.441334347336,
+            "100-1000": 53.34837566122328,
+            "1000-18000": 33.72953064765983
+          },
+          "max_phase_error_deg": 179.25045480881028
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 91.24356629811935,
+            "100-1000": 64.13258935154687,
+            "1000-18000": 31.04727079944152
+          },
+          "max_phase_error_deg": 179.19053879651702
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-03p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.25,
+        3.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 71.62299728629147,
+            "100-1000": 44.464730840501545,
+            "1000-18000": 18.84438755471744
+          },
+          "max_phase_error_deg": 163.8492347878856
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 78.9104275135584,
+            "100-1000": 51.65763291392523,
+            "1000-18000": 17.598232478407564
+          },
+          "max_phase_error_deg": 171.33354987454086
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 69.02530873550748,
+            "100-1000": 41.880108496421194,
+            "1000-18000": 18.41488275238992
+          },
+          "max_phase_error_deg": 163.64141956117567
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 76.18611443301508,
+            "100-1000": 48.92664489175351,
+            "1000-18000": 17.025764424927473
+          },
+          "max_phase_error_deg": 168.68115177692823
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-04p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.25,
+        4.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 73.38475379713503,
+            "100-1000": 46.26151648969818,
+            "1000-18000": 13.552847107245137
+          },
+          "max_phase_error_deg": 177.06392776548742
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 80.00272733848202,
+            "100-1000": 52.824102025384555,
+            "1000-18000": 12.372799759440431
+          },
+          "max_phase_error_deg": 170.98631109773302
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 73.42790511482028,
+            "100-1000": 46.3037195094194,
+            "1000-18000": 13.552868320375335
+          },
+          "max_phase_error_deg": 176.89079195396604
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 79.87692148078298,
+            "100-1000": 52.700287927870015,
+            "1000-18000": 12.381755167560302
+          },
+          "max_phase_error_deg": 170.80946271412122
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-05p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.25,
+        5.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.14553181963574602,
+            "100-1000": 0.13094058160569588,
+            "1000-18000": 0.016949883703955337
+          },
+          "max_phase_error_deg": 0.5692400969336717
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.26422587572038303,
+            "100-1000": 0.24853552630162135,
+            "1000-18000": 0.035721014490642355
+          },
+          "max_phase_error_deg": 0.9776919007191149
+        },
+        "pchip_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.09422758690927324,
+            "100-1000": 0.07383120503540397,
+            "1000-18000": 0.07198633003608368
+          },
+          "max_phase_error_deg": 0.5481319666792281
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 27.163933916186032,
+            "100-1000": 5.905728598244501,
+            "1000-18000": 0.02609872240073763
+          },
+          "max_phase_error_deg": 35.08681885857246
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-06p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.25,
+        6.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.08209593585946351,
+            "100-1000": 0.06921549115891068,
+            "1000-18000": 0.02033611038911387
+          },
+          "max_phase_error_deg": 0.5795032717479457
+        },
+        "linear_coefficients": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.13384769875974456,
+            "100-1000": 0.10851880957924642,
+            "1000-18000": 0.020904976702548983
+          },
+          "max_phase_error_deg": 0.5806211489755244
+        },
+        "pchip_roots": {
+          "pass": true,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.015367258357958491,
+            "100-1000": 0.010456350809317172,
+            "1000-18000": 0.025950586425323108
+          },
+          "max_phase_error_deg": 0.5912297364454459
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": false,
+          "band_max_magnitude_error_db": {
+            "20-100": 0.0246611455285084,
+            "100-1000": 0.015772311027207664,
+            "1000-18000": 0.020922795693014806
+          },
+          "max_phase_error_deg": 0.592199342524325
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-07p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.25,
+        7.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.202135319004874,
+            "100-1000": 9.442031799160276,
+            "1000-18000": 28.616801747772623
+          },
+          "max_phase_error_deg": 173.76759193324025
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 11.26296108503287,
+            "100-1000": 10.717243072796352,
+            "1000-18000": 43.84437818606437
+          },
+          "max_phase_error_deg": 178.27430114462592
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 10.875237330105072,
+            "100-1000": 9.024877067505251,
+            "1000-18000": 28.529128041603038
+          },
+          "max_phase_error_deg": 173.80767349782468
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 8.441600848530205,
+            "100-1000": 8.275647175021932,
+            "1000-18000": 43.85914515281746
+          },
+          "max_phase_error_deg": 178.48817417732963
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-08p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.25,
+        8.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.58091714285076,
+            "100-1000": 6.06012202160986,
+            "1000-18000": 39.45448038818559
+          },
+          "max_phase_error_deg": 167.4086457682797
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.126448089058588,
+            "100-1000": 5.716838198070372,
+            "1000-18000": 47.12926283725431
+          },
+          "max_phase_error_deg": 174.02382870951672
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.765633078882914,
+            "100-1000": 6.17724935124534,
+            "1000-18000": 39.40110371402362
+          },
+          "max_phase_error_deg": 167.42280761148515
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.304945288782836,
+            "100-1000": 5.865797932668016,
+            "1000-18000": 47.11020452629579
+          },
+          "max_phase_error_deg": 173.95142890070233
+        }
+      }
+    },
+    {
+      "id": "cps100-atten-09p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.25,
+        9.75
+      ],
+      "methods": {
+        "linear_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.852317146478228,
+            "100-1000": 6.071564172021898,
+            "1000-18000": 43.158254199711585
+          },
+          "max_phase_error_deg": 168.41041104507707
+        },
+        "linear_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.440537057175003,
+            "100-1000": 5.927849205870308,
+            "1000-18000": 48.98891530464705
+          },
+          "max_phase_error_deg": 175.60864791074218
+        },
+        "pchip_roots": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 7.915412677683733,
+            "100-1000": 6.10505547142818,
+            "1000-18000": 43.13006748747512
+          },
+          "max_phase_error_deg": 168.4027204610563
+        },
+        "pchip_coefficients": {
+          "pass": false,
+          "stable": true,
+          "band_max_magnitude_error_db": {
+            "20-100": 5.51874355458326,
+            "100-1000": 5.99178877659565,
+            "1000-18000": 48.97619683813516
+          },
+          "max_phase_error_deg": 175.55574471588494
+        }
+      }
+    }
+  ]
+}

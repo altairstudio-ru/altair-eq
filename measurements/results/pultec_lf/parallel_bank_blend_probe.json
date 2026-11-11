@@ -1,0 +1,5237 @@
+{
+  "schema": "altair-eq.pultec-lf-parallel-bank-blend/1",
+  "method": "linear audio-output/complex-response crossfade between neighboring stable fitted SOS banks",
+  "sample_rate_hz": 44100,
+  "summary": {
+    "interpolation_44k1_cps_focused_manifest.json": {
+      "pass": 16,
+      "total": 16,
+      "max_phase_error_deg": 0.6921365846904092,
+      "max_band_errors_db": {
+        "20-100": 0.07020709891541177,
+        "100-1000": 0.06228811738553475,
+        "1000-18000": 0.04987219483930039
+      }
+    },
+    "interpolation_44k1_eighth_manifest.json": {
+      "pass": 16,
+      "total": 16,
+      "max_phase_error_deg": 1.3564161623682005,
+      "max_band_errors_db": {
+        "20-100": 0.01365139844963803,
+        "100-1000": 0.007270470001200513,
+        "1000-18000": 0.07448884565989655
+      }
+    },
+    "interpolation_44k1_manifest.json": {
+      "pass": 55,
+      "total": 80,
+      "max_phase_error_deg": 1.6659359026484037,
+      "max_band_errors_db": {
+        "20-100": 0.26270958440165604,
+        "100-1000": 0.2477230009563982,
+        "1000-18000": 0.1801788440210208
+      }
+    },
+    "interpolation_44k1_quarter_full_manifest.json": {
+      "pass": 128,
+      "total": 128,
+      "max_phase_error_deg": 0.8355546385768974,
+      "max_band_errors_db": {
+        "20-100": 0.09037190189632582,
+        "100-1000": 0.06229962881895368,
+        "1000-18000": 0.0870665019712954
+      }
+    },
+    "interpolation_44k1_quarter_manifest.json": {
+      "pass": 16,
+      "total": 16,
+      "max_phase_error_deg": 0.9152019330723017,
+      "max_band_errors_db": {
+        "20-100": 0.012424224739659762,
+        "100-1000": 0.013320161685735465,
+        "1000-18000": 0.05337605957265379
+      }
+    },
+    "interpolation_44k1_sixteenth_manifest.json": {
+      "pass": 16,
+      "total": 16,
+      "max_phase_error_deg": 1.626169317354127,
+      "max_band_errors_db": {
+        "20-100": 0.01303986642590349,
+        "100-1000": 0.007449127706493863,
+        "1000-18000": 0.07780433972684764
+      }
+    }
+  },
+  "results": [
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-00p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02247497616705174,
+        "100-1000": 0.0222599929520233,
+        "1000-18000": 0.04429503112940247
+      },
+      "max_phase_error_deg": 0.6873114093913544
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-01p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06682552271529452,
+        "100-1000": 0.06572433060579419,
+        "1000-18000": 0.03414511665540787
+      },
+      "max_phase_error_deg": 0.6346520903142031
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-02p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1612492539950412,
+        "100-1000": 0.11365342467257822,
+        "1000-18000": 0.03310230541240078
+      },
+      "max_phase_error_deg": 0.9303881589055749
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-03p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2307372630333564,
+        "100-1000": 0.18455820671883894,
+        "1000-18000": 0.03569008087080272
+      },
+      "max_phase_error_deg": 1.6173463189609312
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-04p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.23156948701548963,
+        "100-1000": 0.1637061185709774,
+        "1000-18000": 0.03783658418219671
+      },
+      "max_phase_error_deg": 1.6659359026484037
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-05p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.19968742540462792,
+        "100-1000": 0.026558679800892104,
+        "1000-18000": 0.04844886740084198
+      },
+      "max_phase_error_deg": 0.8068896298183286
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-06p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.13096253229780608,
+        "100-1000": 0.0195711623121122,
+        "1000-18000": 0.03444193199721701
+      },
+      "max_phase_error_deg": 0.672557634029675
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-07p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06204209986538167,
+        "100-1000": 0.01535027580050441,
+        "1000-18000": 0.04145907357653844
+      },
+      "max_phase_error_deg": 0.6413124576832782
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-08p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.024890603758343843,
+        "100-1000": 0.01326555903158444,
+        "1000-18000": 0.07299406922715201
+      },
+      "max_phase_error_deg": 0.713385215146839
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-boost-09p5",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013614800655462389,
+        "100-1000": 0.013694768448707428,
+        "1000-18000": 0.06977465723065335
+      },
+      "max_phase_error_deg": 0.8850221316275825
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-00p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03726662948105264,
+        "100-1000": 0.03020318729449145,
+        "1000-18000": 0.04047145489619941
+      },
+      "max_phase_error_deg": 0.7826134214409788
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-01p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0771326642148582,
+        "100-1000": 0.07038116388888216,
+        "1000-18000": 0.045789506300538685
+      },
+      "max_phase_error_deg": 0.5545016004099803
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-02p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1121446071421145,
+        "100-1000": 0.08950731938641737,
+        "1000-18000": 0.07193688480634552
+      },
+      "max_phase_error_deg": 0.6962849062258013
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-03p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04844951462937308,
+        "100-1000": 0.11329164414762594,
+        "1000-18000": 0.031963057145074525
+      },
+      "max_phase_error_deg": 0.6369270892883587
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-04p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.11912845595982002,
+        "100-1000": 0.11811860250144424,
+        "1000-18000": 0.04397377798028301
+      },
+      "max_phase_error_deg": 0.7031815658009511
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-05p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2016035076365874,
+        "100-1000": 0.06836075894335902,
+        "1000-18000": 0.05439264668085664
+      },
+      "max_phase_error_deg": 0.8328122716976717
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-06p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.18545772358163504,
+        "100-1000": 0.017256669529819746,
+        "1000-18000": 0.058985707555841205
+      },
+      "max_phase_error_deg": 0.9327319444399317
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-07p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1199071172422208,
+        "100-1000": 0.017203855862856443,
+        "1000-18000": 0.05670191960648163
+      },
+      "max_phase_error_deg": 0.8161004416991181
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-08p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07015143351653208,
+        "100-1000": 0.014634904341606969,
+        "1000-18000": 0.07209000049268599
+      },
+      "max_phase_error_deg": 0.6384661455777316
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps20-atten-09p5",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04897533476552596,
+        "100-1000": 0.012778739422349084,
+        "1000-18000": 0.07278086795772387
+      },
+      "max_phase_error_deg": 0.584521674304903
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-00p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.022594836510481775,
+        "100-1000": 0.02367628232128416,
+        "1000-18000": 0.038040243593303935
+      },
+      "max_phase_error_deg": 0.7601007709501353
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-01p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06761851851622414,
+        "100-1000": 0.06672344262707175,
+        "1000-18000": 0.03831217559973066
+      },
+      "max_phase_error_deg": 0.6923644467840604
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-02p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.16306938574984464,
+        "100-1000": 0.15341141504500966,
+        "1000-18000": 0.08875828546899767
+      },
+      "max_phase_error_deg": 0.9178006476468255
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-03p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2550566851686771,
+        "100-1000": 0.1814250104504751,
+        "1000-18000": 0.03412251690594481
+      },
+      "max_phase_error_deg": 1.6088455221725215
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-04p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.20153060523611455,
+        "100-1000": 0.2313886690186413,
+        "1000-18000": 0.05234267274508486
+      },
+      "max_phase_error_deg": 1.6571287009605582
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-05p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1952276925491443,
+        "100-1000": 0.17596745706386585,
+        "1000-18000": 0.051380861204811
+      },
+      "max_phase_error_deg": 0.9934238704128103
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-06p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.13431379184689263,
+        "100-1000": 0.05105736678763595,
+        "1000-18000": 0.0764612910486746
+      },
+      "max_phase_error_deg": 0.6121392873736556
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-07p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.09088278804951067,
+        "100-1000": 0.018712289321225484,
+        "1000-18000": 0.07490625755630675
+      },
+      "max_phase_error_deg": 0.6970792274974761
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-08p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06427233658772735,
+        "100-1000": 0.014659829692829529,
+        "1000-18000": 0.06118656133465672
+      },
+      "max_phase_error_deg": 0.6797840710627248
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-boost-09p5",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.048687065924006845,
+        "100-1000": 0.01433004355343348,
+        "1000-18000": 0.05619165696769346
+      },
+      "max_phase_error_deg": 0.7326532845880503
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-00p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.037692354334642575,
+        "100-1000": 0.030339078100912076,
+        "1000-18000": 0.029850092893121682
+      },
+      "max_phase_error_deg": 0.7491954736388745
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-01p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07371675037932479,
+        "100-1000": 0.0704770272916816,
+        "1000-18000": 0.04824529220600127
+      },
+      "max_phase_error_deg": 0.5120600304554851
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-02p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.10649001906357086,
+        "100-1000": 0.09764759597648093,
+        "1000-18000": 0.08680219626087762
+      },
+      "max_phase_error_deg": 0.6987748811714227
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-03p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.050343120564790844,
+        "100-1000": 0.11386446555625418,
+        "1000-18000": 0.04192216733073999
+      },
+      "max_phase_error_deg": 0.6011481495510687
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-04p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.11656831492291797,
+        "100-1000": 0.12001682879407749,
+        "1000-18000": 0.03362262611130051
+      },
+      "max_phase_error_deg": 0.672654308518292
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-05p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2141209320136035,
+        "100-1000": 0.13229709786273602,
+        "1000-18000": 0.04578627288276216
+      },
+      "max_phase_error_deg": 0.8224611274189265
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-06p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.21487753370851692,
+        "100-1000": 0.06708070303356095,
+        "1000-18000": 0.046702339121421965
+      },
+      "max_phase_error_deg": 0.8964259041389295
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-07p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.162548007386091,
+        "100-1000": 0.03191724439262167,
+        "1000-18000": 0.04576025007178841
+      },
+      "max_phase_error_deg": 0.8570271529297907
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-08p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.11313001269856571,
+        "100-1000": 0.0233857768328658,
+        "1000-18000": 0.04511463299787433
+      },
+      "max_phase_error_deg": 0.754054548658935
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps30-atten-09p5",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08868326396313009,
+        "100-1000": 0.02307339049651791,
+        "1000-18000": 0.04448103139587778
+      },
+      "max_phase_error_deg": 0.6836815947679803
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-00p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.023409954462260796,
+        "100-1000": 0.02389059169955754,
+        "1000-18000": 0.04432204596123168
+      },
+      "max_phase_error_deg": 0.9681610126165834
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-01p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06779236376728148,
+        "100-1000": 0.06680154609425504,
+        "1000-18000": 0.05715106365822242
+      },
+      "max_phase_error_deg": 0.3819670399865676
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-02p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1635503116924113,
+        "100-1000": 0.1600245506815181,
+        "1000-18000": 0.08955362584586957
+      },
+      "max_phase_error_deg": 0.8836721955332345
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-03p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2616271256842566,
+        "100-1000": 0.2229217774328376,
+        "1000-18000": 0.13062159968358333
+      },
+      "max_phase_error_deg": 1.614053168350436
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-04p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2247504343817699,
+        "100-1000": 0.23075285071666496,
+        "1000-18000": 0.04770737614961096
+      },
+      "max_phase_error_deg": 1.6431760829636533
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-05p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.15137027933535663,
+        "100-1000": 0.19569882171477637,
+        "1000-18000": 0.04502437483041344
+      },
+      "max_phase_error_deg": 0.9642798875000322
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-06p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.12723901557605188,
+        "100-1000": 0.12313759221965093,
+        "1000-18000": 0.057854053558081375
+      },
+      "max_phase_error_deg": 0.7343263758828064
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-07p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.09439056510087163,
+        "100-1000": 0.04803864086647458,
+        "1000-18000": 0.043232381474052395
+      },
+      "max_phase_error_deg": 0.7012627438408787
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-08p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08320953610175508,
+        "100-1000": 0.020954682083412557,
+        "1000-18000": 0.058566976654394476
+      },
+      "max_phase_error_deg": 0.7612270247043493
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-boost-09p5",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0747788054109293,
+        "100-1000": 0.017714385897164675,
+        "1000-18000": 0.058237944591009616
+      },
+      "max_phase_error_deg": 0.7498621139987782
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-00p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03779722230616822,
+        "100-1000": 0.03095748815867716,
+        "1000-18000": 0.057380129071392116
+      },
+      "max_phase_error_deg": 0.7010591101890791
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-01p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07392054285500027,
+        "100-1000": 0.07172760576853177,
+        "1000-18000": 0.0655364288507424
+      },
+      "max_phase_error_deg": 0.5430609106036994
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-02p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1037566900863019,
+        "100-1000": 0.10115575177749425,
+        "1000-18000": 0.08915852319409004
+      },
+      "max_phase_error_deg": 0.7410618397492249
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-03p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.044619192087612,
+        "100-1000": 0.10339844791818131,
+        "1000-18000": 0.1137283350569358
+      },
+      "max_phase_error_deg": 0.5535447462002027
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-04p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.11361125491478408,
+        "100-1000": 0.12178623226188012,
+        "1000-18000": 0.05304670708331183
+      },
+      "max_phase_error_deg": 0.5998315400790164
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-05p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.22227469334866257,
+        "100-1000": 0.19920629501654474,
+        "1000-18000": 0.030318503662495555
+      },
+      "max_phase_error_deg": 0.8109524192754686
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-06p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.23692414986881616,
+        "100-1000": 0.16803124271861236,
+        "1000-18000": 0.03433055540827279
+      },
+      "max_phase_error_deg": 0.8419310428422566
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-07p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.19886157306200936,
+        "100-1000": 0.09346184606451047,
+        "1000-18000": 0.02900865461741442
+      },
+      "max_phase_error_deg": 0.7786725635028423
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-08p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1578801404189285,
+        "100-1000": 0.04851706536894618,
+        "1000-18000": 0.023231748013297415
+      },
+      "max_phase_error_deg": 0.7347724216800315
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps60-atten-09p5",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1357969154614409,
+        "100-1000": 0.048541662745909875,
+        "1000-18000": 0.02676409365217569
+      },
+      "max_phase_error_deg": 0.7068337174288785
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-00p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02248854592430205,
+        "100-1000": 0.023180767439620054,
+        "1000-18000": 0.04999993776634282
+      },
+      "max_phase_error_deg": 0.923420214960971
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-01p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06721125146191942,
+        "100-1000": 0.06657145573172718,
+        "1000-18000": 0.06347852819383859
+      },
+      "max_phase_error_deg": 0.35420685460152956
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-02p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.16395844071272903,
+        "100-1000": 0.1633596124915666,
+        "1000-18000": 0.09412005020706937
+      },
+      "max_phase_error_deg": 0.874019374567778
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-03p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.26270958440165604,
+        "100-1000": 0.2477230009563982,
+        "1000-18000": 0.1801788440210208
+      },
+      "max_phase_error_deg": 1.5957357491931452
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-04p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.23196483926682276,
+        "100-1000": 0.23277501124050115,
+        "1000-18000": 0.0664225847732327
+      },
+      "max_phase_error_deg": 1.6353668620068504
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-05p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08242592532817383,
+        "100-1000": 0.19663522537987532,
+        "1000-18000": 0.03155802567139798
+      },
+      "max_phase_error_deg": 0.9577089583010127
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-06p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.11559701345895768,
+        "100-1000": 0.1261142879301822,
+        "1000-18000": 0.05170574146822837
+      },
+      "max_phase_error_deg": 0.6899347707242033
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-07p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.09223790341467897,
+        "100-1000": 0.07065670484025333,
+        "1000-18000": 0.04549952698997317
+      },
+      "max_phase_error_deg": 0.6892630902339236
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-08p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08895496503301459,
+        "100-1000": 0.028340005421158665,
+        "1000-18000": 0.0786793745180484
+      },
+      "max_phase_error_deg": 0.9049395897081424
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-boost-09p5",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08391212959984173,
+        "100-1000": 0.023289439875721296,
+        "1000-18000": 0.054872539524354114
+      },
+      "max_phase_error_deg": 0.7267234090080406
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-00p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.5,
+      "bracket": [
+        0.0,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03750534725734278,
+        "100-1000": 0.0315664140599512,
+        "1000-18000": 0.046191750782658025
+      },
+      "max_phase_error_deg": 0.743669597857804
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-01p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 1.5,
+      "bracket": [
+        1.0,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07419646046852202,
+        "100-1000": 0.07247647944512214,
+        "1000-18000": 0.07066885324088956
+      },
+      "max_phase_error_deg": 0.5743290947760119
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-02p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 2.5,
+      "bracket": [
+        2.0,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.10390902065106183,
+        "100-1000": 0.10171620109555224,
+        "1000-18000": 0.08390756356846357
+      },
+      "max_phase_error_deg": 0.7687960160195167
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-03p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 3.5,
+      "bracket": [
+        3.0,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.044566226983773216,
+        "100-1000": 0.041474806634796746,
+        "1000-18000": 0.11319103105446549
+      },
+      "max_phase_error_deg": 0.547937977020835
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-04p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 4.5,
+      "bracket": [
+        4.0,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.1132182334104801,
+        "100-1000": 0.12228717661158317,
+        "1000-18000": 0.11234424898749706
+      },
+      "max_phase_error_deg": 0.5668271853843193
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-05p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 5.5,
+      "bracket": [
+        5.0,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.22370691590477065,
+        "100-1000": 0.21493342214938593,
+        "1000-18000": 0.029981922296036245
+      },
+      "max_phase_error_deg": 0.8082638444852999
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-06p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 6.5,
+      "bracket": [
+        6.0,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.24132793523554597,
+        "100-1000": 0.21296301332692202,
+        "1000-18000": 0.01996991884367283
+      },
+      "max_phase_error_deg": 0.8372506032480798
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-07p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 7.5,
+      "bracket": [
+        7.0,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.20726615327573938,
+        "100-1000": 0.15370431531120587,
+        "1000-18000": 0.02045892329191945
+      },
+      "max_phase_error_deg": 0.7146539623693209
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-08p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 8.5,
+      "bracket": [
+        8.0,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.16809680463648746,
+        "100-1000": 0.09173659286428659,
+        "1000-18000": 0.023307043468394517
+      },
+      "max_phase_error_deg": 0.6637482764380276
+    },
+    {
+      "grid": "interpolation_44k1_manifest.json",
+      "id": "cps100-atten-09p5",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 9.5,
+      "bracket": [
+        9.0,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.14593937753032193,
+        "100-1000": 0.05692741846330662,
+        "1000-18000": 0.031285413529338335
+      },
+      "max_phase_error_deg": 0.6421054658250808
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps20-boost-0p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0060848444727752415,
+        "100-1000": 0.007250882179663964,
+        "1000-18000": 0.04336012329740768
+      },
+      "max_phase_error_deg": 0.7178534180831843
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps20-boost-0p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009101054050195012,
+        "100-1000": 0.008611393289098102,
+        "1000-18000": 0.02435328653139046
+      },
+      "max_phase_error_deg": 0.5811551236053547
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps20-atten-0p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012084667408656324,
+        "100-1000": 0.005578539482076428,
+        "1000-18000": 0.04062503495711356
+      },
+      "max_phase_error_deg": 0.7572624963110788
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps20-atten-0p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.011449068439439047,
+        "100-1000": 0.009631287395397758,
+        "1000-18000": 0.0275102931584863
+      },
+      "max_phase_error_deg": 0.5482635781207373
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps30-boost-0p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006171721288086296,
+        "100-1000": 0.0072939615163614135,
+        "1000-18000": 0.03395915237219449
+      },
+      "max_phase_error_deg": 0.806950439490333
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps30-boost-0p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009119239305037219,
+        "100-1000": 0.008708814583385793,
+        "1000-18000": 0.02059132254670104
+      },
+      "max_phase_error_deg": 0.5677346434062787
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps30-atten-0p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.011871413017390697,
+        "100-1000": 0.005771272166304131,
+        "1000-18000": 0.03432519842146986
+      },
+      "max_phase_error_deg": 0.7415229436334234
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps30-atten-0p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012086368648690171,
+        "100-1000": 0.01030546879632066,
+        "1000-18000": 0.028187318234386805
+      },
+      "max_phase_error_deg": 0.5133446774616572
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps60-boost-0p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.008613918403636234,
+        "100-1000": 0.007043591487188916,
+        "1000-18000": 0.040932510414349976
+      },
+      "max_phase_error_deg": 0.9152019330723017
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps60-boost-0p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009772283060707432,
+        "100-1000": 0.0081482112928426,
+        "1000-18000": 0.011652489192307325
+      },
+      "max_phase_error_deg": 0.3140864406052428
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps60-atten-0p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.011798202241867006,
+        "100-1000": 0.006890943567732455,
+        "1000-18000": 0.04022356887234024
+      },
+      "max_phase_error_deg": 0.87685662263347
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps60-atten-0p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012424224739659762,
+        "100-1000": 0.011786306680107828,
+        "1000-18000": 0.02106557542169174
+      },
+      "max_phase_error_deg": 0.26664849483461295
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps100-boost-0p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0060476797753157285,
+        "100-1000": 0.0065401066299521915,
+        "1000-18000": 0.05337605957265379
+      },
+      "max_phase_error_deg": 0.8511071419795521
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps100-boost-0p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009514269942779041,
+        "100-1000": 0.00757218993701958,
+        "1000-18000": 0.038034209145182074
+      },
+      "max_phase_error_deg": 0.29137033241653015
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps100-atten-0p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.25,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01184981585626943,
+        "100-1000": 0.006638391924936871,
+        "1000-18000": 0.04143974571397868
+      },
+      "max_phase_error_deg": 0.910206507802024
+    },
+    {
+      "grid": "interpolation_44k1_quarter_manifest.json",
+      "id": "cps100-atten-0p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.75,
+      "bracket": [
+        0.5,
+        1.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012387735264430044,
+        "100-1000": 0.013320161685735465,
+        "1000-18000": 0.022014178353610747
+      },
+      "max_phase_error_deg": 0.33328139547661007
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps20-boost-3p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05742368996381897,
+        "100-1000": 0.042483992094240364,
+        "1000-18000": 0.014473497534400859
+      },
+      "max_phase_error_deg": 0.5608008747819402
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps20-boost-3p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05445576750598491,
+        "100-1000": 0.052653525084101815,
+        "1000-18000": 0.011778739794440107
+      },
+      "max_phase_error_deg": 0.5517459725623844
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps20-atten-3p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.027128072686425808,
+        "100-1000": 0.03005587038131008,
+        "1000-18000": 0.025042840864625715
+      },
+      "max_phase_error_deg": 0.5615629227652207
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps20-atten-3p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01204673222813879,
+        "100-1000": 0.030664308274757746,
+        "1000-18000": 0.030023512625044768
+      },
+      "max_phase_error_deg": 0.641928748631894
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps30-boost-3p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06229413125270611,
+        "100-1000": 0.04342693057164393,
+        "1000-18000": 0.02118965194834521
+      },
+      "max_phase_error_deg": 0.3673778767830642
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps30-boost-3p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06637004110257116,
+        "100-1000": 0.05313973478700884,
+        "1000-18000": 0.017896135526217716
+      },
+      "max_phase_error_deg": 0.444787192710546
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps30-atten-3p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0272892069415136,
+        "100-1000": 0.03181804151707335,
+        "1000-18000": 0.024343822418255973
+      },
+      "max_phase_error_deg": 0.5487447356628358
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps30-atten-3p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.011958427674859884,
+        "100-1000": 0.03248706484545649,
+        "1000-18000": 0.024836906093029132
+      },
+      "max_phase_error_deg": 0.6034627878924643
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps60-boost-3p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06345073114248567,
+        "100-1000": 0.0555313755563307,
+        "1000-18000": 0.0404649352945583
+      },
+      "max_phase_error_deg": 0.37794416214198334
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps60-boost-3p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06907381207531049,
+        "100-1000": 0.0537874320479399,
+        "1000-18000": 0.017828231198144695
+      },
+      "max_phase_error_deg": 0.4312574858393042
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps60-atten-3p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01835642189710618,
+        "100-1000": 0.020706564270860595,
+        "1000-18000": 0.03197516451150384
+      },
+      "max_phase_error_deg": 0.5898604336155185
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps60-atten-3p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.007156834836779424,
+        "100-1000": 0.03363215052349222,
+        "1000-18000": 0.034272024974085324
+      },
+      "max_phase_error_deg": 0.5874666443493135
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps100-boost-3p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06282294264460164,
+        "100-1000": 0.06124413528397854,
+        "1000-18000": 0.03980015391767777
+      },
+      "max_phase_error_deg": 0.6791605968923378
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps100-boost-3p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07020709891541177,
+        "100-1000": 0.06228811738553475,
+        "1000-18000": 0.04987219483930039
+      },
+      "max_phase_error_deg": 0.6921365846904092
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps100-atten-3p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 3.25,
+      "bracket": [
+        3.0,
+        3.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.021627065139406154,
+        "100-1000": 0.0159940276532331,
+        "1000-18000": 0.03341911900829797
+      },
+      "max_phase_error_deg": 0.42762666631804375
+    },
+    {
+      "grid": "interpolation_44k1_cps_focused_manifest.json",
+      "id": "cps100-atten-3p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 3.75,
+      "bracket": [
+        3.5,
+        4.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012400568752581442,
+        "100-1000": 0.02059325668672729,
+        "1000-18000": 0.031569364453472026
+      },
+      "max_phase_error_deg": 0.43360251711896486
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps20-boost-0p125",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006631111586680172,
+        "100-1000": 0.007103753424682058,
+        "1000-18000": 0.06310216212497
+      },
+      "max_phase_error_deg": 1.3277036281143864
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps20-boost-0p375",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.004892674298182742,
+        "100-1000": 0.005911701430815874,
+        "1000-18000": 0.02484867724774309
+      },
+      "max_phase_error_deg": 0.496692148291551
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps20-atten-0p125",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01365139844963803,
+        "100-1000": 0.0034978813115928986,
+        "1000-18000": 0.058878870250431814
+      },
+      "max_phase_error_deg": 1.3082685617916368
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps20-atten-0p375",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0074523834178163995,
+        "100-1000": 0.004229256045177099,
+        "1000-18000": 0.023762564046978407
+      },
+      "max_phase_error_deg": 0.4883796665097222
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps30-boost-0p125",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0065922205988817595,
+        "100-1000": 0.007124451323447412,
+        "1000-18000": 0.054530541118856246
+      },
+      "max_phase_error_deg": 1.3564161623682005
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps30-boost-0p375",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.004897232013306718,
+        "100-1000": 0.005800737452263061,
+        "1000-18000": 0.027845257802947998
+      },
+      "max_phase_error_deg": 0.3913461436863755
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps30-atten-0p125",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013479319908223264,
+        "100-1000": 0.003409392235923736,
+        "1000-18000": 0.05365095445785861
+      },
+      "max_phase_error_deg": 1.2967399002986557
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps30-atten-0p375",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.007185858155716707,
+        "100-1000": 0.004172721487482711,
+        "1000-18000": 0.021557811676760408
+      },
+      "max_phase_error_deg": 0.4757864207062371
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps60-boost-0p125",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009762059196441353,
+        "100-1000": 0.007270470001200513,
+        "1000-18000": 0.06515120704738386
+      },
+      "max_phase_error_deg": 1.3388850465114184
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps60-boost-0p375",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.008327010296695025,
+        "100-1000": 0.005550615914080126,
+        "1000-18000": 0.022038224227452052
+      },
+      "max_phase_error_deg": 0.5861480978612031
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps60-atten-0p125",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013534291801817089,
+        "100-1000": 0.003990359463285298,
+        "1000-18000": 0.06504359382799119
+      },
+      "max_phase_error_deg": 1.3253130070008043
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps60-atten-0p375",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.007030309072617591,
+        "100-1000": 0.00668811716747264,
+        "1000-18000": 0.02659721087940814
+      },
+      "max_phase_error_deg": 0.5704087356117439
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps100-boost-0p125",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006300724419589621,
+        "100-1000": 0.007079210244504974,
+        "1000-18000": 0.07448884565989655
+      },
+      "max_phase_error_deg": 1.2996868728484783
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps100-boost-0p375",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.005037251357041805,
+        "100-1000": 0.004651886522125004,
+        "1000-18000": 0.036829582808962646
+      },
+      "max_phase_error_deg": 0.46097078176426187
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps100-atten-0p125",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.125,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.25,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013483043576512088,
+        "100-1000": 0.003886963518203723,
+        "1000-18000": 0.06461721109132201
+      },
+      "max_phase_error_deg": 1.3312683127092444
+    },
+    {
+      "grid": "interpolation_44k1_eighth_manifest.json",
+      "id": "cps100-atten-0p375",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.375,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.75,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.007049895336475709,
+        "100-1000": 0.006442379956063782,
+        "1000-18000": 0.029059682633706063
+      },
+      "max_phase_error_deg": 0.6006671922858331
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps20-boost-0p0625",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009125489581740531,
+        "100-1000": 0.006347326606893189,
+        "1000-18000": 0.07050915580442263
+      },
+      "max_phase_error_deg": 1.620657153539315
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps20-boost-0p1875",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006131526346170313,
+        "100-1000": 0.007429728168719674,
+        "1000-18000": 0.05478009372413728
+      },
+      "max_phase_error_deg": 0.9845972362367841
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps20-atten-0p0625",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01300389339164032,
+        "100-1000": 0.002838424857391386,
+        "1000-18000": 0.07399940238579872
+      },
+      "max_phase_error_deg": 1.6129461566753098
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps20-atten-0p1875",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01244098470297672,
+        "100-1000": 0.004284338766324947,
+        "1000-18000": 0.05085228116908169
+      },
+      "max_phase_error_deg": 1.0551914141947416
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps30-boost-0p0625",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.009071049464126846,
+        "100-1000": 0.00653568432502083,
+        "1000-18000": 0.06119930018800013
+      },
+      "max_phase_error_deg": 1.626169317354127
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps30-boost-0p1875",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006125786249972398,
+        "100-1000": 0.007449127706493863,
+        "1000-18000": 0.041701281429453285
+      },
+      "max_phase_error_deg": 1.0488103687872716
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps30-atten-0p0625",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01303986642590349,
+        "100-1000": 0.0027670741647416452,
+        "1000-18000": 0.06327577810449836
+      },
+      "max_phase_error_deg": 1.6010262034909917
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps30-atten-0p1875",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012270830258160448,
+        "100-1000": 0.0040446159526743575,
+        "1000-18000": 0.043876240484004514
+      },
+      "max_phase_error_deg": 1.0357957180079773
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps60-boost-0p0625",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.010793473609680193,
+        "100-1000": 0.006402053406207253,
+        "1000-18000": 0.07064082702302477
+      },
+      "max_phase_error_deg": 1.580719604816243
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps60-boost-0p1875",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.008466208363427707,
+        "100-1000": 0.007017489371621055,
+        "1000-18000": 0.05369868376479647
+      },
+      "max_phase_error_deg": 1.085078404629151
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps60-atten-0p0625",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013003871626182884,
+        "100-1000": 0.0025161202170360664,
+        "1000-18000": 0.06965115156606538
+      },
+      "max_phase_error_deg": 1.5613879490328628
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps60-atten-0p1875",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012246730204541922,
+        "100-1000": 0.005088809820311013,
+        "1000-18000": 0.05418270353815535
+      },
+      "max_phase_error_deg": 1.0661431216349937
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps100-boost-0p0625",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0090281989196348,
+        "100-1000": 0.006273967111377177,
+        "1000-18000": 0.07780433972684764
+      },
+      "max_phase_error_deg": 1.551118364916811
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps100-boost-0p1875",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.006278754353393978,
+        "100-1000": 0.0071239141511303394,
+        "1000-18000": 0.06202401655110723
+      },
+      "max_phase_error_deg": 1.05107756753487
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps100-atten-0p0625",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.0625,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.125,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013034733801691178,
+        "100-1000": 0.0023975869613019896,
+        "1000-18000": 0.06864552138115321
+      },
+      "max_phase_error_deg": 1.5423663428203038
+    },
+    {
+      "grid": "interpolation_44k1_sixteenth_manifest.json",
+      "id": "cps100-atten-0p1875",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 0.1875,
+      "bracket": [
+        0.0,
+        0.5
+      ],
+      "fraction": 0.375,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.012310399094571212,
+        "100-1000": 0.005204272384007558,
+        "1000-18000": 0.051306503677135074
+      },
+      "max_phase_error_deg": 1.0879597672146053
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-1p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0137007383982366,
+        "100-1000": 0.013966921805308452,
+        "1000-18000": 0.026114525629040375
+      },
+      "max_phase_error_deg": 0.6190854139140368
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-1p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.022399165200889692,
+        "100-1000": 0.02253602612122596,
+        "1000-18000": 0.028384806054265743
+      },
+      "max_phase_error_deg": 0.6730708496354346
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-2p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0344609373664031,
+        "100-1000": 0.029488508224464915,
+        "1000-18000": 0.023072445373745865
+      },
+      "max_phase_error_deg": 0.6716738257712803
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-2p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.047180164868248387,
+        "100-1000": 0.028498327294300685,
+        "1000-18000": 0.027249134583645196
+      },
+      "max_phase_error_deg": 0.6514660222708815
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-4p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05534607978618489,
+        "100-1000": 0.04926289416834262,
+        "1000-18000": 0.016036112385770518
+      },
+      "max_phase_error_deg": 0.5154819118525461
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-4p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.062353895322353914,
+        "100-1000": 0.02333090205824284,
+        "1000-18000": 0.018052457456861237
+      },
+      "max_phase_error_deg": 0.41726418899701795
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-5p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.061843167434551205,
+        "100-1000": 0.006012721794232734,
+        "1000-18000": 0.02065928565897268
+      },
+      "max_phase_error_deg": 0.38195069804923054
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-5p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.051365058225091076,
+        "100-1000": 0.009018980782227404,
+        "1000-18000": 0.016704789547566157
+      },
+      "max_phase_error_deg": 0.3873921845326033
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-6p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04825630944721837,
+        "100-1000": 0.007021339964556006,
+        "1000-18000": 0.030613417726901737
+      },
+      "max_phase_error_deg": 0.37864558677683846
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-6p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04135520650022961,
+        "100-1000": 0.009989231785105579,
+        "1000-18000": 0.02932270672221504
+      },
+      "max_phase_error_deg": 0.3838588850684128
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-7p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03270880901381901,
+        "100-1000": 0.00926290458670298,
+        "1000-18000": 0.026218887594050333
+      },
+      "max_phase_error_deg": 0.34641764288994437
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-7p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02719555983561328,
+        "100-1000": 0.01888633105391313,
+        "1000-18000": 0.04094278263014173
+      },
+      "max_phase_error_deg": 0.4847994231051643
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-8p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01789642318978757,
+        "100-1000": 0.012652143461493903,
+        "1000-18000": 0.03806669250227479
+      },
+      "max_phase_error_deg": 0.5006335336471912
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-8p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01477911506583851,
+        "100-1000": 0.008388616815901084,
+        "1000-18000": 0.04303681743164289
+      },
+      "max_phase_error_deg": 0.4152895758093475
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-9p25",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.011229908592635951,
+        "100-1000": 0.009600756981043457,
+        "1000-18000": 0.03084159275263032
+      },
+      "max_phase_error_deg": 0.3833042749727942
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-boost-9p75",
+      "lf_cps_hz": 20,
+      "axis": "boost",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01075367456618892,
+        "100-1000": 0.019434964941535515,
+        "1000-18000": 0.03970492678107762
+      },
+      "max_phase_error_deg": 0.39807214620972753
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-1p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.016522848556515424,
+        "100-1000": 0.01385053085768817,
+        "1000-18000": 0.024594940590825898
+      },
+      "max_phase_error_deg": 0.5658364471733646
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-1p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.025967929382757382,
+        "100-1000": 0.019782644589612597,
+        "1000-18000": 0.024320336094695638
+      },
+      "max_phase_error_deg": 0.551835407969225
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-2p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03578196578356918,
+        "100-1000": 0.02499245135439304,
+        "1000-18000": 0.028037404124556242
+      },
+      "max_phase_error_deg": 0.5557005977238123
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-2p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03464644193914701,
+        "100-1000": 0.027774155847837226,
+        "1000-18000": 0.023944538793131964
+      },
+      "max_phase_error_deg": 0.5322873092392344
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-4p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.024640771106413606,
+        "100-1000": 0.030335017266442943,
+        "1000-18000": 0.042246253192998906
+      },
+      "max_phase_error_deg": 0.704835372934383
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-4p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.039591843208837574,
+        "100-1000": 0.02899331063086219,
+        "1000-18000": 0.049754895960540724
+      },
+      "max_phase_error_deg": 0.6816271034783657
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-5p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.049473230814392366,
+        "100-1000": 0.024238226599249124,
+        "1000-18000": 0.05326835278138453
+      },
+      "max_phase_error_deg": 0.6625394462047328
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-5p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05236071082625671,
+        "100-1000": 0.014526035974673057,
+        "1000-18000": 0.05951340619743983
+      },
+      "max_phase_error_deg": 0.6579785849496664
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-6p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05022252895998136,
+        "100-1000": 0.008580880434209348,
+        "1000-18000": 0.057795476776193344
+      },
+      "max_phase_error_deg": 0.6612787726932285
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-6p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04335785804823189,
+        "100-1000": 0.008704558086058967,
+        "1000-18000": 0.05662801857707045
+      },
+      "max_phase_error_deg": 0.6553155039493008
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-7p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03477923342988731,
+        "100-1000": 0.008385392200827457,
+        "1000-18000": 0.05668922318523684
+      },
+      "max_phase_error_deg": 0.6532936559156308
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-7p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02779177578687886,
+        "100-1000": 0.00862927610305464,
+        "1000-18000": 0.057391703157687934
+      },
+      "max_phase_error_deg": 0.6514870562764553
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-8p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02215430755549086,
+        "100-1000": 0.008389536322858326,
+        "1000-18000": 0.056811559615063234
+      },
+      "max_phase_error_deg": 0.6533442654966605
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-8p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.018333217141028868,
+        "100-1000": 0.007957436849540311,
+        "1000-18000": 0.07227853996795996
+      },
+      "max_phase_error_deg": 0.5843113150269249
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-9p25",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01614208506926218,
+        "100-1000": 0.007722942597435167,
+        "1000-18000": 0.07200636814311345
+      },
+      "max_phase_error_deg": 0.5829621532070295
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps20-atten-9p75",
+      "lf_cps_hz": 20,
+      "axis": "atten",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.01548063428508506,
+        "100-1000": 0.007626428232530458,
+        "1000-18000": 0.05696491004002602
+      },
+      "max_phase_error_deg": 0.6531867373502125
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-1p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.013924136445107482,
+        "100-1000": 0.01352050897070245,
+        "1000-18000": 0.015740426231720672
+      },
+      "max_phase_error_deg": 0.6205294541830616
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-1p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.022387614760420504,
+        "100-1000": 0.02229235245533956,
+        "1000-18000": 0.02886380918855247
+      },
+      "max_phase_error_deg": 0.611305046097031
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-2p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03487958876892239,
+        "100-1000": 0.03388890864729266,
+        "1000-18000": 0.019257428561433754
+      },
+      "max_phase_error_deg": 0.6248438352127575
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-2p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.050151845530365335,
+        "100-1000": 0.04317568470410382,
+        "1000-18000": 0.024395440378017996
+      },
+      "max_phase_error_deg": 0.6919878105798434
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-4p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.062026314889810585,
+        "100-1000": 0.05090320736947529,
+        "1000-18000": 0.013404957203582812
+      },
+      "max_phase_error_deg": 0.4452585657045828
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-4p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04948785765434671,
+        "100-1000": 0.05391498142849027,
+        "1000-18000": 0.018851343597329207
+      },
+      "max_phase_error_deg": 0.44769402586659024
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-5p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.060411306373003626,
+        "100-1000": 0.04199177692718514,
+        "1000-18000": 0.019159173115621986
+      },
+      "max_phase_error_deg": 0.5210972415619436
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-5p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.059770992732255834,
+        "100-1000": 0.026216062044999155,
+        "1000-18000": 0.026704105461273775
+      },
+      "max_phase_error_deg": 0.4429457224109543
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-6p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08479064605848485,
+        "100-1000": 0.01236928380555291,
+        "1000-18000": 0.034279259092850345
+      },
+      "max_phase_error_deg": 0.43880380500740285
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-6p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08373906514820995,
+        "100-1000": 0.01897637446099143,
+        "1000-18000": 0.029254261796048953
+      },
+      "max_phase_error_deg": 0.43257938463348744
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-7p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.09037190189632582,
+        "100-1000": 0.017629664714153392,
+        "1000-18000": 0.04282537624529292
+      },
+      "max_phase_error_deg": 0.5659339259822298
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-7p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08300993714058258,
+        "100-1000": 0.018966396342872116,
+        "1000-18000": 0.043246001977014004
+      },
+      "max_phase_error_deg": 0.47619208780588734
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-8p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.08185660956840479,
+        "100-1000": 0.02054035502341467,
+        "1000-18000": 0.05165353765049996
+      },
+      "max_phase_error_deg": 0.5041349121019842
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-8p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07639160074604945,
+        "100-1000": 0.02023979781692642,
+        "1000-18000": 0.03253659416684429
+      },
+      "max_phase_error_deg": 0.5601777852167958
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-9p25",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.07509926725590432,
+        "100-1000": 0.01824871475915213,
+        "1000-18000": 0.03831536754385079
+      },
+      "max_phase_error_deg": 0.40122995677334145
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-boost-9p75",
+      "lf_cps_hz": 30,
+      "axis": "boost",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0743568426229757,
+        "100-1000": 0.016579608638136456,
+        "1000-18000": 0.038277016203601244
+      },
+      "max_phase_error_deg": 0.4007508824507891
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-1p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.016778709379353773,
+        "100-1000": 0.014904313660896729,
+        "1000-18000": 0.02508247884262116
+      },
+      "max_phase_error_deg": 0.5296940707825561
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-1p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02244766871264725,
+        "100-1000": 0.019526332115757883,
+        "1000-18000": 0.02643445046930848
+      },
+      "max_phase_error_deg": 0.558075489577989
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-2p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.030057998046029672,
+        "100-1000": 0.02486905462232995,
+        "1000-18000": 0.025440836243009857
+      },
+      "max_phase_error_deg": 0.5679155442488272
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-2p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03506998396334449,
+        "100-1000": 0.028494763537339513,
+        "1000-18000": 0.02896315814039882
+      },
+      "max_phase_error_deg": 0.5570167441605056
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-4p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.022933614402091962,
+        "100-1000": 0.03193909341365053,
+        "1000-18000": 0.027739739592142376
+      },
+      "max_phase_error_deg": 0.6735508171620987
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-4p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.040340041966373086,
+        "100-1000": 0.03292950661896121,
+        "1000-18000": 0.03642830891638782
+      },
+      "max_phase_error_deg": 0.695915842139127
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-5p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05250359743799393,
+        "100-1000": 0.034871349797542806,
+        "1000-18000": 0.04431864412287789
+      },
+      "max_phase_error_deg": 0.683282303622483
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-5p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.057628662138389686,
+        "100-1000": 0.03000531654061689,
+        "1000-18000": 0.04809975982673398
+      },
+      "max_phase_error_deg": 0.6654210847944755
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-6p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05771930892161947,
+        "100-1000": 0.023278849319568806,
+        "1000-18000": 0.04750105066896737
+      },
+      "max_phase_error_deg": 0.6596304964315948
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-6p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05376711454701777,
+        "100-1000": 0.018912988426652788,
+        "1000-18000": 0.04755331288935061
+      },
+      "max_phase_error_deg": 0.6693471096072385
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-7p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04834090088056264,
+        "100-1000": 0.018435884911507827,
+        "1000-18000": 0.04666361327557911
+      },
+      "max_phase_error_deg": 0.6703185972012569
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-7p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04347832457296619,
+        "100-1000": 0.01870510933735936,
+        "1000-18000": 0.04563631778172739
+      },
+      "max_phase_error_deg": 0.6703130897602678
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-8p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.039070770612259054,
+        "100-1000": 0.019749990913632942,
+        "1000-18000": 0.044413629079299355
+      },
+      "max_phase_error_deg": 0.675941686817823
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-8p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03558700544768456,
+        "100-1000": 0.01985177401499527,
+        "1000-18000": 0.044495335884657816
+      },
+      "max_phase_error_deg": 0.6786943335826503
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-9p25",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03329014673185071,
+        "100-1000": 0.020020445134365517,
+        "1000-18000": 0.04452576129095953
+      },
+      "max_phase_error_deg": 0.6723683046441763
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps30-atten-9p75",
+      "lf_cps_hz": 30,
+      "axis": "atten",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.032201351405213074,
+        "100-1000": 0.020157058350495305,
+        "1000-18000": 0.04442545065444703
+      },
+      "max_phase_error_deg": 0.6752893988549366
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-1p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.015301053272823939,
+        "100-1000": 0.01303651073311074,
+        "1000-18000": 0.017145442728439653
+      },
+      "max_phase_error_deg": 0.28355737610654325
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-1p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.022828042848975327,
+        "100-1000": 0.02221217855346347,
+        "1000-18000": 0.022283722961520036
+      },
+      "max_phase_error_deg": 0.3025484448352987
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-2p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0353168125105332,
+        "100-1000": 0.03397715554818337,
+        "1000-18000": 0.020110398543081942
+      },
+      "max_phase_error_deg": 0.28739075330599145
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-2p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05044658917364053,
+        "100-1000": 0.04637727041620465,
+        "1000-18000": 0.026245001910426558
+      },
+      "max_phase_error_deg": 0.39047147925691583
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-4p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06798887826767963,
+        "100-1000": 0.05291791693862713,
+        "1000-18000": 0.017715185551372525
+      },
+      "max_phase_error_deg": 0.3873921658808843
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-4p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05208728996265677,
+        "100-1000": 0.05060130665279594,
+        "1000-18000": 0.01872188517729989
+      },
+      "max_phase_error_deg": 0.38522571066088573
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-5p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0393556710095897,
+        "100-1000": 0.04051608615324653,
+        "1000-18000": 0.024203696435464273
+      },
+      "max_phase_error_deg": 0.7217382578467076
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-5p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.050803397935546,
+        "100-1000": 0.04875198288899263,
+        "1000-18000": 0.038920851178001814
+      },
+      "max_phase_error_deg": 0.7129170785922699
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-6p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03296159916357411,
+        "100-1000": 0.03288474073526082,
+        "1000-18000": 0.06716696015122126
+      },
+      "max_phase_error_deg": 0.6510921288015932
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-6p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.032290926975484524,
+        "100-1000": 0.021462831816078776,
+        "1000-18000": 0.05332575928701644
+      },
+      "max_phase_error_deg": 0.7039048353940797
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-7p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03206017538779449,
+        "100-1000": 0.015545156601856291,
+        "1000-18000": 0.05970410171208074
+      },
+      "max_phase_error_deg": 0.6831494333243776
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-7p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03125348217253254,
+        "100-1000": 0.014127341918076741,
+        "1000-18000": 0.05183604963322508
+      },
+      "max_phase_error_deg": 0.7250942906896034
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-8p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03297649437261185,
+        "100-1000": 0.015016952184045529,
+        "1000-18000": 0.07506352664128457
+      },
+      "max_phase_error_deg": 0.7570972079997045
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-8p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03337913484516264,
+        "100-1000": 0.01643446305931473,
+        "1000-18000": 0.04270680492318646
+      },
+      "max_phase_error_deg": 0.7878148083395438
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-9p25",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.032640193547713636,
+        "100-1000": 0.019205217116288198,
+        "1000-18000": 0.04465456667941137
+      },
+      "max_phase_error_deg": 0.7692485364495892
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-boost-9p75",
+      "lf_cps_hz": 60,
+      "axis": "boost",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03258670893514548,
+        "100-1000": 0.020977505003585417,
+        "1000-18000": 0.052026090370377864
+      },
+      "max_phase_error_deg": 0.7283924395710285
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-1p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.016850489279473746,
+        "100-1000": 0.014768699581832467,
+        "1000-18000": 0.039773038362147406
+      },
+      "max_phase_error_deg": 0.6458834442444437
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-1p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02237845526533261,
+        "100-1000": 0.019969072094014495,
+        "1000-18000": 0.01849596130491271
+      },
+      "max_phase_error_deg": 0.6315181991369965
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-2p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02669625471206053,
+        "100-1000": 0.024967003925597808,
+        "1000-18000": 0.024034214080569605
+      },
+      "max_phase_error_deg": 0.601870421679004
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-2p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02611886672386121,
+        "100-1000": 0.02313894823471052,
+        "1000-18000": 0.0321242902591053
+      },
+      "max_phase_error_deg": 0.6008543424217028
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-4p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.021732818139875043,
+        "100-1000": 0.031286839093910945,
+        "1000-18000": 0.02332607703904821
+      },
+      "max_phase_error_deg": 0.5901617751075979
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-4p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.040056215716421484,
+        "100-1000": 0.03734067994429413,
+        "1000-18000": 0.017836146593032676
+      },
+      "max_phase_error_deg": 0.57791126093673
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-5p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05437067164934284,
+        "100-1000": 0.04831367567318878,
+        "1000-18000": 0.016265367137405562
+      },
+      "max_phase_error_deg": 0.5652830813825265
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-5p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.061524658365790685,
+        "100-1000": 0.050173941746741946,
+        "1000-18000": 0.023264672811813436
+      },
+      "max_phase_error_deg": 0.5778329699510979
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-6p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06357088680738876,
+        "100-1000": 0.044691463077230154,
+        "1000-18000": 0.021635249789121347
+      },
+      "max_phase_error_deg": 0.5835491452203446
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-6p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.061927323906305176,
+        "100-1000": 0.032453770052338626,
+        "1000-18000": 0.018936038460869442
+      },
+      "max_phase_error_deg": 0.5797079083908325
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-7p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05769505365036487,
+        "100-1000": 0.024831491789612414,
+        "1000-18000": 0.017596709530344534
+      },
+      "max_phase_error_deg": 0.5893085895675049
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-7p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05522546473222789,
+        "100-1000": 0.028313787859387318,
+        "1000-18000": 0.016343357391478297
+      },
+      "max_phase_error_deg": 0.5896950103908332
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-8p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05145879928471331,
+        "100-1000": 0.02825869654186519,
+        "1000-18000": 0.015035732379606648
+      },
+      "max_phase_error_deg": 0.6177719789140077
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-8p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04971570959570215,
+        "100-1000": 0.032218335520123986,
+        "1000-18000": 0.0181945624746358
+      },
+      "max_phase_error_deg": 0.6162709545779728
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-9p25",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04616921656569062,
+        "100-1000": 0.02987329087361168,
+        "1000-18000": 0.01907918742365866
+      },
+      "max_phase_error_deg": 0.6587127190499901
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps60-atten-9p75",
+      "lf_cps_hz": 60,
+      "axis": "atten",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.045510514729723894,
+        "100-1000": 0.031487274288821254,
+        "1000-18000": 0.019485497067246005
+      },
+      "max_phase_error_deg": 0.6616385810431202
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-1p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0151371118915411,
+        "100-1000": 0.012112737329978529,
+        "1000-18000": 0.05762520458629017
+      },
+      "max_phase_error_deg": 0.3131213403141472
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-1p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.023152667653284276,
+        "100-1000": 0.021686031635831826,
+        "1000-18000": 0.027189972848773003
+      },
+      "max_phase_error_deg": 0.41390764775842737
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-2p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03546539239451563,
+        "100-1000": 0.03466671147825262,
+        "1000-18000": 0.031781991061981874
+      },
+      "max_phase_error_deg": 0.6278226068529724
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-2p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04977711765405424,
+        "100-1000": 0.04886554072039173,
+        "1000-18000": 0.03158563098312883
+      },
+      "max_phase_error_deg": 0.6812672272461185
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-4p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06703657593264634,
+        "100-1000": 0.06229962881895368,
+        "1000-18000": 0.034691949461211014
+      },
+      "max_phase_error_deg": 0.7922044720671779
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-4p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.053068316551058814,
+        "100-1000": 0.05721270085825303,
+        "1000-18000": 0.02200579404001557
+      },
+      "max_phase_error_deg": 0.7595720470167249
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-5p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03250885264664305,
+        "100-1000": 0.05363035947431882,
+        "1000-18000": 0.03804839164756957
+      },
+      "max_phase_error_deg": 0.7060266433338634
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-5p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.019813327925673363,
+        "100-1000": 0.04422735240001252,
+        "1000-18000": 0.04291432508299686
+      },
+      "max_phase_error_deg": 0.7791955897015446
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-6p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.025791653615261367,
+        "100-1000": 0.034927923073791334,
+        "1000-18000": 0.04013924084606468
+      },
+      "max_phase_error_deg": 0.8193972455250527
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-6p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02748150701950358,
+        "100-1000": 0.0253628770342349,
+        "1000-18000": 0.053834135850598486
+      },
+      "max_phase_error_deg": 0.7203347465499974
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-7p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.029893369179143647,
+        "100-1000": 0.02009993276891109,
+        "1000-18000": 0.05171770626561045
+      },
+      "max_phase_error_deg": 0.8115989424301802
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-7p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.032985153671223344,
+        "100-1000": 0.018293382162869243,
+        "1000-18000": 0.043550739371699954
+      },
+      "max_phase_error_deg": 0.7296677382015864
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-8p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03615805285689078,
+        "100-1000": 0.01839028549811772,
+        "1000-18000": 0.05604359851543017
+      },
+      "max_phase_error_deg": 0.7941976874994396
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-8p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03739196811655887,
+        "100-1000": 0.022609076861173527,
+        "1000-18000": 0.0700057763197931
+      },
+      "max_phase_error_deg": 0.7542377618829729
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-9p25",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.03737234146453616,
+        "100-1000": 0.019547057446436256,
+        "1000-18000": 0.07610766046407036
+      },
+      "max_phase_error_deg": 0.8355546385768974
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-boost-9p75",
+      "lf_cps_hz": 100,
+      "axis": "boost",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0378008088156534,
+        "100-1000": 0.02043038294172117,
+        "1000-18000": 0.07623323801311233
+      },
+      "max_phase_error_deg": 0.7511902342240193
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-1p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 1.25,
+      "bracket": [
+        1.0,
+        1.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.017402605728703113,
+        "100-1000": 0.015742162552920824,
+        "1000-18000": 0.023825358174084932
+      },
+      "max_phase_error_deg": 0.22018914413340057
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-1p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 1.75,
+      "bracket": [
+        1.5,
+        2.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.02283706993877399,
+        "100-1000": 0.01946369396944836,
+        "1000-18000": 0.02388037537153176
+      },
+      "max_phase_error_deg": 0.28285493040598036
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-2p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 2.25,
+      "bracket": [
+        2.0,
+        2.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0313757290584972,
+        "100-1000": 0.02433288967441402,
+        "1000-18000": 0.03190743036557353
+      },
+      "max_phase_error_deg": 0.48584149131904364
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-2p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 2.75,
+      "bracket": [
+        2.5,
+        3.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.031200580394452837,
+        "100-1000": 0.023512637697295835,
+        "1000-18000": 0.0346567795440443
+      },
+      "max_phase_error_deg": 0.5188816952211932
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-4p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 4.25,
+      "bracket": [
+        4.0,
+        4.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.024572071421284924,
+        "100-1000": 0.024252448943721028,
+        "1000-18000": 0.03193712878068067
+      },
+      "max_phase_error_deg": 0.26266598857171963
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-4p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 4.75,
+      "bracket": [
+        4.5,
+        5.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.044203268051855815,
+        "100-1000": 0.043422119726639785,
+        "1000-18000": 0.019972563165910784
+      },
+      "max_phase_error_deg": 0.28623420530082183
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-5p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 5.25,
+      "bracket": [
+        5.0,
+        5.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.055242026136003375,
+        "100-1000": 0.05217437888093457,
+        "1000-18000": 0.08635973166524546
+      },
+      "max_phase_error_deg": 0.6142211514755109
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-5p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 5.75,
+      "bracket": [
+        5.5,
+        6.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06289619330469876,
+        "100-1000": 0.05763406646761737,
+        "1000-18000": 0.0870665019712954
+      },
+      "max_phase_error_deg": 0.6413310986109616
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-6p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 6.25,
+      "bracket": [
+        6.0,
+        6.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06494840594268503,
+        "100-1000": 0.05621087709341488,
+        "1000-18000": 0.07692594766521532
+      },
+      "max_phase_error_deg": 0.5862472800290242
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-6p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 6.75,
+      "bracket": [
+        6.5,
+        7.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.06339959715233157,
+        "100-1000": 0.04968450916364375,
+        "1000-18000": 0.07684727248589018
+      },
+      "max_phase_error_deg": 0.5917966146726846
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-7p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 7.25,
+      "bracket": [
+        7.0,
+        7.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0584651714945128,
+        "100-1000": 0.04015054675350527,
+        "1000-18000": 0.012811946667190988
+      },
+      "max_phase_error_deg": 0.5352565823685479
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-7p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 7.75,
+      "bracket": [
+        7.5,
+        8.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.05636220392057467,
+        "100-1000": 0.02921156787602186,
+        "1000-18000": 0.015304192985501563
+      },
+      "max_phase_error_deg": 0.5426058875593788
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-8p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 8.25,
+      "bracket": [
+        8.0,
+        8.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0516014933010176,
+        "100-1000": 0.025710076189417563,
+        "1000-18000": 0.01851998906992991
+      },
+      "max_phase_error_deg": 0.5639829014890185
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-8p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 8.75,
+      "bracket": [
+        8.5,
+        9.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.0498549126847756,
+        "100-1000": 0.031068058151110023,
+        "1000-18000": 0.020905100852059322
+      },
+      "max_phase_error_deg": 0.5716838565891039
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-9p25",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 9.25,
+      "bracket": [
+        9.0,
+        9.5
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04678766905476195,
+        "100-1000": 0.02850686093426269,
+        "1000-18000": 0.0220032302406592
+      },
+      "max_phase_error_deg": 0.5886757854023471
+    },
+    {
+      "grid": "interpolation_44k1_quarter_full_manifest.json",
+      "id": "cps100-atten-9p75",
+      "lf_cps_hz": 100,
+      "axis": "atten",
+      "value": 9.75,
+      "bracket": [
+        9.5,
+        10.0
+      ],
+      "fraction": 0.5,
+      "pass": true,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.04596084904279962,
+        "100-1000": 0.030767203394670872,
+        "1000-18000": 0.02290495331955089
+      },
+      "max_phase_error_deg": 0.596064800894138
+    }
+  ]
+}

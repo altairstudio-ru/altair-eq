@@ -36,14 +36,14 @@ def response(parameters, omega):
     return h
 
 
-def fit_curve(path, sr, seed, warm_start=None):
+def fit_curve(path, sr, seed, warm_start=None, max_starts=3, max_nfev=1200):
     freq, target, target_db, _ = read_target(path)
     omega = 2 * np.pi * freq / sr
     lower = np.array([-12.0] + [0.01, 1e-5, 0.01, 1e-5] * SECTIONS)
     upper = np.array([12.0] + [MAX_POLE_RADIUS, np.pi, 5.0, np.pi] * SECTIONS)
     starts = []
     centers = np.geomspace(24, sr * 0.27, SECTIONS)
-    for start_index in range(3):
+    for start_index in range(max_starts):
         rng = np.random.default_rng(seed + start_index * 104729 + 20261110)
         values = [float(np.median(target_db[:10]) * 0.115)]
         for center in centers:
@@ -69,7 +69,7 @@ def fit_curve(path, sr, seed, warm_start=None):
 
     best = None
     for index, start in enumerate(starts, 1):
-        result = least_squares(residual, start, bounds=(lower, upper), max_nfev=1200,
+        result = least_squares(residual, start, bounds=(lower, upper), max_nfev=max_nfev,
                                x_scale="jac", ftol=1e-9, xtol=1e-9, gtol=1e-9)
         score = float(np.dot(result.fun, result.fun))
         if best is None or score < best[0]:
