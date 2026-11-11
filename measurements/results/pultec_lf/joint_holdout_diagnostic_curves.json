@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "cps": 20,
+      "boost": 9,
+      "atten": 5,
+      "max_error_db_1k_18k": 0.2094895006091968,
+      "worst_hf_frequency_hz": 17494.907789,
+      "signed_error_at_worst_hf_db": -0.2094895006091968,
+      "max_phase_error_deg": 1.710064549126257
+    },
+    {
+      "cps": 30,
+      "boost": 6,
+      "atten": 9,
+      "max_error_db_1k_18k": 0.21539533230495,
+      "worst_hf_frequency_hz": 17494.907789,
+      "signed_error_at_worst_hf_db": -0.21539533230495,
+      "max_phase_error_deg": 1.6879383649596817
+    },
+    {
+      "cps": 60,
+      "boost": 5,
+      "atten": 7,
+      "max_error_db_1k_18k": 0.20853283075199658,
+      "worst_hf_frequency_hz": 17494.907789,
+      "signed_error_at_worst_hf_db": -0.20853283075199658,
+      "max_phase_error_deg": 1.4291309796720915
+    },
+    {
+      "cps": 100,
+      "boost": 9,
+      "atten": 6,
+      "max_error_db_1k_18k": 0.16884632711257175,
+      "worst_hf_frequency_hz": 17494.907789,
+      "signed_error_at_worst_hf_db": -0.16884632711257175,
+      "max_phase_error_deg": 1.4915451840507914
+    }
+  ],
+  "model": "measurements\\results\\pultec_lf\\joint_residual_sos_basis_fits_axisbase_8axis_6sec.json",
+  "axis": "measurements\\results\\pultec_lf\\axis_integer_8sos_fits.json",
+  "sample_rate_hz": 44100
+}

@@ -37,7 +37,7 @@ def response(parameters, omega, sections):
     return h
 
 
-def fit_residual(freq, target, sections, seed, starts, max_nfev):
+def fit_residual(freq, target, sections, seed, starts, max_nfev, hf_weight=1.0):
     omega = 2 * np.pi * freq / SR
     scale = float(np.sqrt(np.mean(np.abs(target) ** 2)))
     if scale < 1e-10:
@@ -47,8 +47,11 @@ def fit_residual(freq, target, sections, seed, starts, max_nfev):
     lower = np.array([-20.0] + [0.01, 1e-5, 0.01, 1e-5] * sections)
     upper = np.array([20.0] + [MAX_RADIUS, np.pi, 5.0, np.pi] * sections)
 
+    weights = np.where(freq >= 1000.0, hf_weight, 1.0)
+
     def residual(parameters):
         delta = (response(parameters, omega, sections) - target) / scale
+        delta *= weights
         return np.concatenate([delta.real, delta.imag])
 
     best = None
@@ -83,13 +86,18 @@ def main():
     parser.add_argument("--sections", type=int, default=4)
     parser.add_argument("--starts", type=int, default=2)
     parser.add_argument("--max-nfev", type=int, default=1200)
+    parser.add_argument("--hf-weight", type=float, default=1.0,
+                        help="multiply complex residual error at/above 1 kHz by this fit weight")
     parser.add_argument("--cps", type=int, nargs="*", default=[20, 30, 60, 100])
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--fit-axis-baseline", action="store_true",
                         help="define residual against stable SOS fits of both single-axis responses")
+    parser.add_argument("--axis-fits", type=Path, default=AXIS_FITS,
+                        help="axis SOS fit manifest used with --fit-axis-baseline")
     parser.add_argument("--output", type=Path, default=OUT)
     args = parser.parse_args()
     output = args.output if args.output.is_absolute() else ROOT / args.output
+    axis_fit_path = args.axis_fits if args.axis_fits.is_absolute() else ROOT / args.axis_fits
     data = {}
     for row in json.loads(BASE.read_text(encoding="utf-8"))["rows"]:
         if row["sample_rate_hz"] == SR:
@@ -103,7 +111,7 @@ def main():
     axis_fits = {}
     flat_parameters = None
     if args.fit_axis_baseline:
-        for row in json.loads(AXIS_FITS.read_text(encoding="utf-8"))["results"]:
+        for row in json.loads(axis_fit_path.read_text(encoding="utf-8"))["results"]:
             if row["sample_rate_hz"] != SR:
                 continue
             c = row["configuration"]
@@ -125,10 +133,12 @@ def main():
                 boost = data[(cps, float(b), 0.0)][1]
                 atten = data[(cps, 0.0, float(a))][1]
                 if args.fit_axis_baseline:
-                    boost = response(axis_fits[(cps, float(b), 0.0)]["parameters"],
-                                     2 * np.pi * freq / SR, 6)
-                    atten = response(axis_fits[(cps, 0.0, float(a))]["parameters"],
-                                     2 * np.pi * freq / SR, 6)
+                    boost_fit = axis_fits[(cps, float(b), 0.0)]
+                    atten_fit = axis_fits[(cps, 0.0, float(a))]
+                    boost = response(boost_fit["parameters"], 2 * np.pi * freq / SR,
+                                     boost_fit["sections"])
+                    atten = response(atten_fit["parameters"], 2 * np.pi * freq / SR,
+                                     atten_fit["sections"])
                     flat_response = response(flat_parameters, 2 * np.pi * freq / SR, 6)
                 else:
                     boost = data[(cps, float(b), 0.0)][1]
@@ -138,7 +148,7 @@ def main():
                 print(f"CPS={cps} Boost={b} Atten={a}; residual RMS={np.sqrt(np.mean(np.abs(target)**2)):.6g}", flush=True)
                 fit = fit_residual(freq, target, args.sections,
                                    cps * 100000 + b * 1000 + a * 37,
-                                   args.starts, args.max_nfev)
+                                   args.starts, args.max_nfev, args.hf_weight)
                 fit.update({"key": list(key), "sample_rate_hz": SR,
                             "sections": args.sections,
                             "source": "measured_joint - measured_boost_axis - measured_atten_axis + measured_flat"})
@@ -146,7 +156,8 @@ def main():
                 output.write_text(json.dumps({"schema": "altair-eq.pultec-lf-joint-residual-sos-basis/1",
                                               "fit_settings": {"sections": args.sections, "starts": args.starts,
                                                                 "max_nfev": args.max_nfev,
-                                                                "axis_baseline": "stable SOS fits" if args.fit_axis_baseline else "measured curves"},
+                                                                "hf_weight_at_or_above_1khz": args.hf_weight,
+                                                                "axis_baseline": str(axis_fit_path.relative_to(ROOT)).replace("\\", "/") if args.fit_axis_baseline else "measured curves"},
                                               "results": list(fits.values())},
                                              ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 print(f"  normalized complex RMS={fit['normalized_complex_rms']:.5g}; "

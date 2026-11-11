@@ -1,0 +1,405 @@
+{
+  "schema": "altair-eq.pultec-lf-joint-magnitude-residual-probe/1",
+  "sample_rate_hz": 44100,
+  "axis_source": "measured single-axis response",
+  "training_nodes_per_cps": 23,
+  "holdout_nodes_per_cps": 77,
+  "results": {
+    "20/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 5,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 41,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 44,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 0,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "20/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 46,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 48,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 0,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "20/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 1,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 33,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 42,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 0,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "30/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 4,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 33,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 3,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 43,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 1,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 18,
+          "polar_magnitude_holdout_fail": 1,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "30/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 2,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 41,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 48,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 12,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "30/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 30,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 43,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 11,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "60/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 4,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 26,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 5,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 49,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 40,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "60/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 6,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 35,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 1,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 51,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 40,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "60/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 3,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 29,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 1,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 47,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 40,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "100/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 2,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 25,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 5,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 49,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 49,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "100/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 6,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 34,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 3,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 52,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 48,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    },
+    "100/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 6,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 28,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.2
+        },
+        "100-1000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 2,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 47,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.15
+        },
+        "1000-18000": {
+          "complex_train_fail": 0,
+          "complex_holdout_fail": 0,
+          "magnitude_train_fail": 0,
+          "magnitude_holdout_fail": 50,
+          "polar_magnitude_holdout_fail": 0,
+          "polar_phase_holdout_fail_2deg": 0,
+          "tolerance_db": 0.1
+        }
+      }
+    }
+  }
+}

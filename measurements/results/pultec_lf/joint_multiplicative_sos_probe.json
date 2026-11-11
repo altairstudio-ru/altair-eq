@@ -1,0 +1,438 @@
+{
+  "schema": "altair-eq.pultec-lf-joint-multiplicative-sos-probe/1",
+  "sample_rate_hz": 44100,
+  "results": {
+    "20/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.052106918829318616,
+          "holdout_mag_max_db": 0.057030322673922385,
+          "train_phase_max_deg": 0.25948976512296557,
+          "holdout_phase_max_deg": 0.6870408693341559
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.030016773451751355,
+          "holdout_mag_max_db": 0.029407215200477177,
+          "train_phase_max_deg": 0.21874818455192013,
+          "holdout_phase_max_deg": 0.21779233871937
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 73,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 1,
+          "train_mag_max_db": 0.16912617921142636,
+          "holdout_mag_max_db": 0.17525077278023815,
+          "train_phase_max_deg": 1.5676748692686404,
+          "holdout_phase_max_deg": 2.0019016128990583
+        }
+      }
+    },
+    "20/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.052106918829318616,
+          "holdout_mag_max_db": 0.06225255323284884,
+          "train_phase_max_deg": 0.25948976512296557,
+          "holdout_phase_max_deg": 0.6869046745749683
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.030016773451751355,
+          "holdout_mag_max_db": 0.029587641112369445,
+          "train_phase_max_deg": 0.21874818455192013,
+          "holdout_phase_max_deg": 0.2181727332998872
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 74,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.16912617921142636,
+          "holdout_mag_max_db": 0.17828693748021007,
+          "train_phase_max_deg": 1.5676748692686404,
+          "holdout_phase_max_deg": 1.9179240972034362
+        }
+      }
+    },
+    "20/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.052106918829318616,
+          "holdout_mag_max_db": 0.05556581533508087,
+          "train_phase_max_deg": 0.25948976512296557,
+          "holdout_phase_max_deg": 0.6866083238358689
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.030016773451751355,
+          "holdout_mag_max_db": 0.029205947997772763,
+          "train_phase_max_deg": 0.21874818455192013,
+          "holdout_phase_max_deg": 0.21878825226792595
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 73,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 2,
+          "train_mag_max_db": 0.16912617921142636,
+          "holdout_mag_max_db": 0.17367128343736393,
+          "train_phase_max_deg": 1.5676748692686404,
+          "holdout_phase_max_deg": 2.123167265850306
+        }
+      }
+    },
+    "30/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.06563412895274467,
+          "holdout_mag_max_db": 0.0643936749199856,
+          "train_phase_max_deg": 0.29571188762944534,
+          "holdout_phase_max_deg": 0.7145255657851577
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.026613487820002987,
+          "holdout_mag_max_db": 0.0354417923432464,
+          "train_phase_max_deg": 0.21319046609840625,
+          "holdout_phase_max_deg": 0.24037652119368355
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 77,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.188802337667216,
+          "holdout_mag_max_db": 0.21017248121703103,
+          "train_phase_max_deg": 1.6731984809807214,
+          "holdout_phase_max_deg": 1.9050939688607254
+        }
+      }
+    },
+    "30/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.06563412895274467,
+          "holdout_mag_max_db": 0.06558938919737578,
+          "train_phase_max_deg": 0.29571188762944534,
+          "holdout_phase_max_deg": 0.7142668997744326
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.026613487820002987,
+          "holdout_mag_max_db": 0.03516547204974502,
+          "train_phase_max_deg": 0.21319046609840625,
+          "holdout_phase_max_deg": 0.24023721757702585
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 77,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.188802337667216,
+          "holdout_mag_max_db": 0.19197178961919348,
+          "train_phase_max_deg": 1.6731984809807214,
+          "holdout_phase_max_deg": 1.9062858804540659
+        }
+      }
+    },
+    "30/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.06563412895274467,
+          "holdout_mag_max_db": 0.06308835329874896,
+          "train_phase_max_deg": 0.29571188762944534,
+          "holdout_phase_max_deg": 0.713587586433248
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.026613487820002987,
+          "holdout_mag_max_db": 0.035492796650892125,
+          "train_phase_max_deg": 0.21319046609840625,
+          "holdout_phase_max_deg": 0.24075183842756548
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 77,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.188802337667216,
+          "holdout_mag_max_db": 0.21470398435779414,
+          "train_phase_max_deg": 1.6731984809807214,
+          "holdout_phase_max_deg": 1.9358987947687862
+        }
+      }
+    },
+    "60/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.0416883769218277,
+          "holdout_mag_max_db": 0.08062761773465787,
+          "train_phase_max_deg": 0.15480223635518994,
+          "holdout_phase_max_deg": 0.25535597246125247
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.032187915097009245,
+          "holdout_mag_max_db": 0.04504977183855896,
+          "train_phase_max_deg": 0.2663792973914149,
+          "holdout_phase_max_deg": 0.30830227759117224
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 77,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.1842573690166882,
+          "holdout_mag_max_db": 0.1882901182797797,
+          "train_phase_max_deg": 1.731935598494941,
+          "holdout_phase_max_deg": 1.9780133636825812
+        }
+      }
+    },
+    "60/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.0416883769218277,
+          "holdout_mag_max_db": 0.08790169811101478,
+          "train_phase_max_deg": 0.15480223635518994,
+          "holdout_phase_max_deg": 0.28286157650508287
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.032187915097009245,
+          "holdout_mag_max_db": 0.04455942331339058,
+          "train_phase_max_deg": 0.2663792973914149,
+          "holdout_phase_max_deg": 0.30193916855616354
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 77,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.1842573690166882,
+          "holdout_mag_max_db": 0.18620364379541499,
+          "train_phase_max_deg": 1.731935598494941,
+          "holdout_phase_max_deg": 1.9249084329899755
+        }
+      }
+    },
+    "60/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.0416883769218277,
+          "holdout_mag_max_db": 0.08164474625262308,
+          "train_phase_max_deg": 0.15480223635518994,
+          "holdout_phase_max_deg": 0.2610297414266771
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.032187915097009245,
+          "holdout_mag_max_db": 0.04528721104086664,
+          "train_phase_max_deg": 0.2663792973914149,
+          "holdout_phase_max_deg": 0.31087957857922643
+        },
+        "1000-18000": {
+          "train_mag_fail": 23,
+          "holdout_mag_fail": 76,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 2,
+          "train_mag_max_db": 0.1842573690166882,
+          "holdout_mag_max_db": 0.18913714863901798,
+          "train_phase_max_deg": 1.731935598494941,
+          "holdout_phase_max_deg": 2.01503360007569
+        }
+      }
+    },
+    "100/cubic": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.07963642190253672,
+          "holdout_mag_max_db": 0.11383427506640587,
+          "train_phase_max_deg": 0.35540689152005134,
+          "holdout_phase_max_deg": 0.6887458923108556
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.049402231946411135,
+          "holdout_mag_max_db": 0.0468359814579129,
+          "train_phase_max_deg": 0.31416662946304347,
+          "holdout_phase_max_deg": 0.40859650266646663
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 74,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.18398966576862597,
+          "holdout_mag_max_db": 0.1939840169751107,
+          "train_phase_max_deg": 1.5926433294520468,
+          "holdout_phase_max_deg": 1.95429313878909
+        }
+      }
+    },
+    "100/thin_plate_spline": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.07963642190253672,
+          "holdout_mag_max_db": 0.11345129633235729,
+          "train_phase_max_deg": 0.35540689152005134,
+          "holdout_phase_max_deg": 0.6921970241901685
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.049402231946411135,
+          "holdout_mag_max_db": 0.04744406111208832,
+          "train_phase_max_deg": 0.31416662946304347,
+          "holdout_phase_max_deg": 0.4010639506577074
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 75,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.18398966576862597,
+          "holdout_mag_max_db": 0.1896353419817628,
+          "train_phase_max_deg": 1.5926433294520468,
+          "holdout_phase_max_deg": 1.807567521312358
+        }
+      }
+    },
+    "100/multiquadric": {
+      "train_count": 23,
+      "holdout_count": 77,
+      "bands": {
+        "20-100": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.07963642190253672,
+          "holdout_mag_max_db": 0.11217896896492974,
+          "train_phase_max_deg": 0.35540689152005134,
+          "holdout_phase_max_deg": 0.6896727115451124
+        },
+        "100-1000": {
+          "train_mag_fail": 0,
+          "holdout_mag_fail": 0,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.049402231946411135,
+          "holdout_mag_max_db": 0.04650519113282847,
+          "train_phase_max_deg": 0.31416662946304347,
+          "holdout_phase_max_deg": 0.4111443252589678
+        },
+        "1000-18000": {
+          "train_mag_fail": 22,
+          "holdout_mag_fail": 74,
+          "train_phase_fail": 0,
+          "holdout_phase_fail": 0,
+          "train_mag_max_db": 0.18398966576862597,
+          "holdout_mag_max_db": 0.19637052013361844,
+          "train_phase_max_deg": 1.5926433294520468,
+          "holdout_phase_max_deg": 1.9904024105865064
+        }
+      }
+    }
+  }
+}

@@ -62,8 +62,11 @@ def main():
                         help="replace measured axis responses with their stable SOS fits")
     parser.add_argument("--fits", type=Path, default=FITS,
                         help="residual basis fit manifest")
+    parser.add_argument("--axis-fits", type=Path, default=AXIS_FITS,
+                        help="axis SOS fit manifest used with --fit-axes")
     args = parser.parse_args()
     fit_path = args.fits if args.fits.is_absolute() else ROOT / args.fits
+    axis_fit_path = args.axis_fits if args.axis_fits.is_absolute() else ROOT / args.axis_fits
     targets = {}
     for row in json.loads(BASE.read_text(encoding="utf-8"))["rows"]:
         if row["sample_rate_hz"] == SR:
@@ -77,7 +80,7 @@ def main():
     axis_fits = {}
     flat_parameters = None
     if args.fit_axes:
-        for row in json.loads(AXIS_FITS.read_text(encoding="utf-8"))["results"]:
+        for row in json.loads(axis_fit_path.read_text(encoding="utf-8"))["results"]:
             if row["sample_rate_hz"] != SR:
                 continue
             c = row["configuration"]
@@ -132,10 +135,11 @@ def main():
                           "max_band_errors_db": {band: max(r["band_max_magnitude_error_db"][band] for r in results if r["id"].startswith(f"cps{cps}-"))
                                                   for band in ("20-100", "100-1000", "1000-18000")}}
                for cps in by_cps}
-    output = (OUT.with_name(f"{fit_path.stem}_probe.json") if args.fit_axes else OUT)
+    output = (OUT.with_name(f"{fit_path.stem}_{axis_fit_path.stem}_probe.json")
+              if args.fit_axes else OUT.with_name(f"{fit_path.stem}_probe.json"))
     output.write_text(json.dumps({"schema": "altair-eq.pultec-lf-joint-residual-sos-basis-probe/1",
                                "method": "RBF-weighted sums of directly fitted stable SOS interaction residuals",
-                               "axis_responses": "six-section stable SOS fits" if args.fit_axes else "measured complex responses",
+                               "axis_responses": str(axis_fit_path.relative_to(ROOT)).replace("\\", "/") if args.fit_axes else "measured complex responses",
                                "residual_basis_fits": str(fit_path.relative_to(ROOT)).replace("\\", "/"),
                                "sample_rate_hz": SR, "summary": summary, "results": results},
                               ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

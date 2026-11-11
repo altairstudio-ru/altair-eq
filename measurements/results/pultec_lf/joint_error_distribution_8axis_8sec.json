@@ -1,0 +1,258 @@
+{
+  "holdout_count": 308,
+  "train_count": 92,
+  "axis_count": 80,
+  "band_summary": {
+    "20-100": {
+      "train_curves_exceeding_band_limit": 0,
+      "holdout_curves_exceeding_band_limit": 0,
+      "train_curve_count": 92,
+      "holdout_curve_count": 308,
+      "tolerance_db": 0.2,
+      "by_cps": {
+        "20": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "30": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "60": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "100": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        }
+      }
+    },
+    "100-1000": {
+      "train_curves_exceeding_band_limit": 0,
+      "holdout_curves_exceeding_band_limit": 0,
+      "train_curve_count": 92,
+      "holdout_curve_count": 308,
+      "tolerance_db": 0.15,
+      "by_cps": {
+        "20": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "30": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "60": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "100": {
+          "train_curves_exceeding_band_limit": 0,
+          "holdout_curves_exceeding_band_limit": 0,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        }
+      }
+    },
+    "1000-18000": {
+      "train_curves_exceeding_band_limit": 72,
+      "holdout_curves_exceeding_band_limit": 187,
+      "train_curve_count": 92,
+      "holdout_curve_count": 308,
+      "tolerance_db": 0.1,
+      "by_cps": {
+        "20": {
+          "train_curves_exceeding_band_limit": 21,
+          "holdout_curves_exceeding_band_limit": 58,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "30": {
+          "train_curves_exceeding_band_limit": 19,
+          "holdout_curves_exceeding_band_limit": 49,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "60": {
+          "train_curves_exceeding_band_limit": 16,
+          "holdout_curves_exceeding_band_limit": 35,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        },
+        "100": {
+          "train_curves_exceeding_band_limit": 16,
+          "holdout_curves_exceeding_band_limit": 45,
+          "train_curve_count": 23,
+          "holdout_curve_count": 77
+        }
+      }
+    }
+  },
+  "top_holdout_p90_bins": [
+    {
+      "freq_hz": 17494.907789,
+      "holdout_median_signed_db": -0.02706436141983093,
+      "holdout_median_abs_db": 0.04510333179654946,
+      "holdout_p90_abs_db": 0.15804364130167292,
+      "holdout_max_abs_db": 0.2389313034372853,
+      "train_median_signed_db": -0.03865294484686044,
+      "train_median_abs_db": 0.03922397200969169,
+      "train_p90_abs_db": 0.171057707657767,
+      "train_max_abs_db": 0.21699702679657062,
+      "axis_median_signed_db": -0.02941295353262452,
+      "axis_median_abs_db": 0.02941295353262452,
+      "axis_p90_abs_db": 0.04605626715957516,
+      "axis_max_abs_db": 0.07325850263688627
+    },
+    {
+      "freq_hz": 15174.256508,
+      "holdout_median_signed_db": 0.10495190533189708,
+      "holdout_median_abs_db": 0.10495190533189708,
+      "holdout_p90_abs_db": 0.1458529164572696,
+      "holdout_max_abs_db": 0.18820535840190045,
+      "train_median_signed_db": 0.11906770181964232,
+      "train_median_abs_db": 0.11906770181964232,
+      "train_p90_abs_db": 0.15071124202063044,
+      "train_max_abs_db": 0.19827396666470287,
+      "axis_median_signed_db": 0.0003031272951665165,
+      "axis_median_abs_db": 0.002384947282211336,
+      "axis_p90_abs_db": 0.010979595368542885,
+      "axis_max_abs_db": 0.024737372397566015
+    },
+    {
+      "freq_hz": 14748.456577,
+      "holdout_median_signed_db": 0.09643607143148647,
+      "holdout_median_abs_db": 0.09643607143148647,
+      "holdout_p90_abs_db": 0.1455839267921467,
+      "holdout_max_abs_db": 0.18912536950651826,
+      "train_median_signed_db": 0.11778515360198055,
+      "train_median_abs_db": 0.11778515360198055,
+      "train_p90_abs_db": 0.14723871868073138,
+      "train_max_abs_db": 0.1710926126685216,
+      "axis_median_signed_db": -0.0035832333097879365,
+      "axis_median_abs_db": 0.005193488131550794,
+      "axis_p90_abs_db": 0.015977439180171946,
+      "axis_max_abs_db": 0.02592709091897949
+    },
+    {
+      "freq_hz": 15612.34963,
+      "holdout_median_signed_db": 0.09684303679394979,
+      "holdout_median_abs_db": 0.09684303679394979,
+      "holdout_p90_abs_db": 0.14040833996966984,
+      "holdout_max_abs_db": 0.16783698766922173,
+      "train_median_signed_db": 0.11432340419543047,
+      "train_median_abs_db": 0.11432340419543047,
+      "train_p90_abs_db": 0.14654420064431253,
+      "train_max_abs_db": 0.16297147661509603,
+      "axis_median_signed_db": 0.0075260939596552,
+      "axis_median_abs_db": 0.008076313492156317,
+      "axis_p90_abs_db": 0.016041450459543607,
+      "axis_max_abs_db": 0.02951596173827309
+    },
+    {
+      "freq_hz": 14334.604881,
+      "holdout_median_signed_db": 0.08748757906254018,
+      "holdout_median_abs_db": 0.08748757906254018,
+      "holdout_p90_abs_db": 0.1356070127428469,
+      "holdout_max_abs_db": 0.1611504600762661,
+      "train_median_signed_db": 0.1080803419397019,
+      "train_median_abs_db": 0.1080803419397019,
+      "train_p90_abs_db": 0.14333858661577148,
+      "train_max_abs_db": 0.15873541728729368,
+      "axis_median_signed_db": -0.00662626202522526,
+      "axis_median_abs_db": 0.006957628301126451,
+      "axis_p90_abs_db": 0.01640141361000363,
+      "axis_max_abs_db": 0.03788674950591531
+    },
+    {
+      "freq_hz": 13932.366144,
+      "holdout_median_signed_db": 0.08077820429072197,
+      "holdout_median_abs_db": 0.08077820429072197,
+      "holdout_p90_abs_db": 0.12454809227500853,
+      "holdout_max_abs_db": 0.15573908438555817,
+      "train_median_signed_db": 0.10338575089603186,
+      "train_median_abs_db": 0.10338575089603186,
+      "train_p90_abs_db": 0.12742745839643757,
+      "train_max_abs_db": 0.1474548669311081,
+      "axis_median_signed_db": -0.007007031626758031,
+      "axis_median_abs_db": 0.007548216038561484,
+      "axis_p90_abs_db": 0.019724379066530538,
+      "axis_max_abs_db": 0.03662760074541671
+    },
+    {
+      "freq_hz": 16063.090856,
+      "holdout_median_signed_db": 0.06806194348447253,
+      "holdout_median_abs_db": 0.06806194348447253,
+      "holdout_p90_abs_db": 0.11791107786292546,
+      "holdout_max_abs_db": 0.15722226233771353,
+      "train_median_signed_db": 0.09313227505133959,
+      "train_median_abs_db": 0.09313227505133959,
+      "train_p90_abs_db": 0.12356579684833195,
+      "train_max_abs_db": 0.142241672196588,
+      "axis_median_signed_db": 0.015670369075792834,
+      "axis_median_abs_db": 0.015670369075792834,
+      "axis_p90_abs_db": 0.026379191013840023,
+      "axis_max_abs_db": 0.0490000555081932
+    },
+    {
+      "freq_hz": 18000.0,
+      "holdout_median_signed_db": -0.007854151671951526,
+      "holdout_median_abs_db": 0.0497469277075544,
+      "holdout_p90_abs_db": 0.1163231476747955,
+      "holdout_max_abs_db": 0.18177402727640257,
+      "train_median_signed_db": -6.861689669479532e-05,
+      "train_median_abs_db": 0.07345396274578153,
+      "train_p90_abs_db": 0.13943656422257555,
+      "train_max_abs_db": 0.17744606217761805,
+      "axis_median_signed_db": 0.007089728861076949,
+      "axis_median_abs_db": 0.007089728861076949,
+      "axis_p90_abs_db": 0.009171146621150952,
+      "axis_max_abs_db": 0.015286016669747493
+    },
+    {
+      "freq_hz": 13541.414498,
+      "holdout_median_signed_db": 0.07144576623477084,
+      "holdout_median_abs_db": 0.07144576623477084,
+      "holdout_p90_abs_db": 0.11585846962958289,
+      "holdout_max_abs_db": 0.14566873272242453,
+      "train_median_signed_db": 0.09193180788559319,
+      "train_median_abs_db": 0.09193180788559319,
+      "train_p90_abs_db": 0.12365113512261494,
+      "train_max_abs_db": 0.13725143123725791,
+      "axis_median_signed_db": -0.006501136814215824,
+      "axis_median_abs_db": 0.006818016730185561,
+      "axis_p90_abs_db": 0.01697253399095583,
+      "axis_max_abs_db": 0.03263715785056931
+    },
+    {
+      "freq_hz": 13161.433221,
+      "holdout_median_signed_db": 0.06411173993093289,
+      "holdout_median_abs_db": 0.06411173993093289,
+      "holdout_p90_abs_db": 0.10738812295411841,
+      "holdout_max_abs_db": 0.13789887509199028,
+      "train_median_signed_db": 0.08447919222440431,
+      "train_median_abs_db": 0.08447919222440431,
+      "train_p90_abs_db": 0.11026980832251572,
+      "train_max_abs_db": 0.1341328155085102,
+      "axis_median_signed_db": -0.006574170794128031,
+      "axis_median_abs_db": 0.0066732765118647785,
+      "axis_p90_abs_db": 0.017868994276352936,
+      "axis_max_abs_db": 0.0267831160892531
+    }
+  ]
+}
