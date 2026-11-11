@@ -1,0 +1,571 @@
+{
+  "schema": "altair-eq.separable-controls-probe/1",
+  "method": "multiply separately fitted boost-only and attenuation-only transfer functions",
+  "source_fit": "measurements/results/pultec_lf/stable_sos_six_section_fits_r0999.json",
+  "results": [
+    {
+      "id": "boost_atten_trick-20-b020-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.0909533705703098,
+        "100-1000": 1.1472480489534316,
+        "1000-18000": 1.1567695696270106
+      },
+      "max_phase_error_deg": 12.512959191181439
+    },
+    {
+      "id": "boost_atten_trick-20-b040-a040-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 4,
+      "lf_atten_ui": 4,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.2441624982435369,
+        "100-1000": 1.5118331316343891,
+        "1000-18000": 1.2474737952967272
+      },
+      "max_phase_error_deg": 12.695876192850614
+    },
+    {
+      "id": "boost_atten_trick-20-b060-a060-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 6,
+      "lf_atten_ui": 6,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 8.654184848411521,
+        "100-1000": 3.1089258814076457,
+        "1000-18000": 1.245254661321931
+      },
+      "max_phase_error_deg": 49.58483604441265
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 13.305424635335847,
+        "100-1000": 4.416476158193981,
+        "1000-18000": 1.245244397346746
+      },
+      "max_phase_error_deg": 73.74772050042601
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 14.391978660330984,
+        "100-1000": 4.783632675314635,
+        "1000-18000": 1.2702019792534274
+      },
+      "max_phase_error_deg": 79.724946300562
+    },
+    {
+      "id": "boost_atten_trick-20-b100-a050-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.400321878515566,
+        "100-1000": 2.5724894811959444,
+        "1000-18000": 1.2503547816343732
+      },
+      "max_phase_error_deg": 37.911239937412056
+    },
+    {
+      "id": "boost_atten_trick-20-b050-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 5,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 11.85335955588493,
+        "100-1000": 3.5597936017529292,
+        "1000-18000": 1.247699175536669
+      },
+      "max_phase_error_deg": 64.57925336818897
+    },
+    {
+      "id": "boost_atten_trick-20-b080-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.8290488897269237,
+        "100-1000": 1.198127789512363,
+        "1000-18000": 1.1954896021387038
+      },
+      "max_phase_error_deg": 12.496435680808759
+    },
+    {
+      "id": "boost_atten_trick-20-b020-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9935005636706105,
+        "100-1000": 1.2188158716146065,
+        "1000-18000": 1.1956276355324171
+      },
+      "max_phase_error_deg": 13.18081288087002
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.0909140239320871,
+        "100-1000": 1.1114318935053538,
+        "1000-18000": 1.1527341945770748
+      },
+      "max_phase_error_deg": 12.533569230476164
+    },
+    {
+      "id": "boost_atten_trick-30-b040-a040-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 4,
+      "lf_atten_ui": 4,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.289159722564606,
+        "100-1000": 1.5060536284598816,
+        "1000-18000": 1.4300171435192157
+      },
+      "max_phase_error_deg": 12.679335125443648
+    },
+    {
+      "id": "boost_atten_trick-30-b060-a060-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 6,
+      "lf_atten_ui": 6,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 9.250747143685746,
+        "100-1000": 5.070158110324805,
+        "1000-18000": 1.5687207907775413
+      },
+      "max_phase_error_deg": 47.64800805652727
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 15.105256225371322,
+        "100-1000": 5.9099896937279635,
+        "1000-18000": 1.596532861149663
+      },
+      "max_phase_error_deg": 69.63653669285247
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 16.81042802892997,
+        "100-1000": 5.929188694477063,
+        "1000-18000": 1.580877559018503
+      },
+      "max_phase_error_deg": 74.98577428003776
+    },
+    {
+      "id": "boost_atten_trick-30-b100-a050-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.828606758255614,
+        "100-1000": 4.395589247142483,
+        "1000-18000": 1.5702125190254657
+      },
+      "max_phase_error_deg": 37.56494243122637
+    },
+    {
+      "id": "boost_atten_trick-30-b050-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 5,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 13.99918965247959,
+        "100-1000": 4.318279423272907,
+        "1000-18000": 1.5660636640099819
+      },
+      "max_phase_error_deg": 60.72482433939212
+    },
+    {
+      "id": "boost_atten_trick-30-b080-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.5314082086386737,
+        "100-1000": 1.171250328566264,
+        "1000-18000": 1.195941517699768
+      },
+      "max_phase_error_deg": 12.53285534311809
+    },
+    {
+      "id": "boost_atten_trick-30-b020-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.6118618893684264,
+        "100-1000": 1.2053954198112649,
+        "1000-18000": 1.2030502953852442
+      },
+      "max_phase_error_deg": 12.647269840083691
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.0891370003482228,
+        "100-1000": 1.0953209348139745,
+        "1000-18000": 1.1260610349167086
+      },
+      "max_phase_error_deg": 12.49177557454499
+    },
+    {
+      "id": "boost_atten_trick-60-b040-a040-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 4,
+      "lf_atten_ui": 4,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.3015011502140368,
+        "100-1000": 1.2813394703999792,
+        "1000-18000": 1.5073941785086706
+      },
+      "max_phase_error_deg": 12.6285647054163
+    },
+    {
+      "id": "boost_atten_trick-60-b060-a060-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 6,
+      "lf_atten_ui": 6,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 9.458488133715656,
+        "100-1000": 8.342199245896008,
+        "1000-18000": 2.6977854018523466
+      },
+      "max_phase_error_deg": 48.636115904007426
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 15.961264131829044,
+        "100-1000": 12.469221265124062,
+        "1000-18000": 3.036366994285475
+      },
+      "max_phase_error_deg": 72.1415899815191
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 18.128261996399758,
+        "100-1000": 13.339425087957565,
+        "1000-18000": 3.0569529544301237
+      },
+      "max_phase_error_deg": 77.88048231527178
+    },
+    {
+      "id": "boost_atten_trick-60-b100-a050-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.9775012487504515,
+        "100-1000": 6.223868239948256,
+        "1000-18000": 2.448300479846289
+      },
+      "max_phase_error_deg": 37.265883411021875
+    },
+    {
+      "id": "boost_atten_trick-60-b050-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 5,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 15.201363568344545,
+        "100-1000": 10.87762905279709,
+        "1000-18000": 2.796161017230757
+      },
+      "max_phase_error_deg": 62.819562516122836
+    },
+    {
+      "id": "boost_atten_trick-60-b080-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4310769881730319,
+        "100-1000": 1.085356727936536,
+        "1000-18000": 1.1855267060454637
+      },
+      "max_phase_error_deg": 12.616016056672557
+    },
+    {
+      "id": "boost_atten_trick-60-b020-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.9811487278577187,
+        "100-1000": 1.2038540845135617,
+        "1000-18000": 1.221450914962255
+      },
+      "max_phase_error_deg": 12.641368143269766
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.089707358559234,
+        "100-1000": 1.0924622634521812,
+        "1000-18000": 1.1021802424003173
+      },
+      "max_phase_error_deg": 12.394624671271133
+    },
+    {
+      "id": "boost_atten_trick-100-b040-a040-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 4,
+      "lf_atten_ui": 4,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.3034912553831663,
+        "100-1000": 1.251759761435688,
+        "1000-18000": 1.4986816298409147
+      },
+      "max_phase_error_deg": 12.644992152413332
+    },
+    {
+      "id": "boost_atten_trick-100-b060-a060-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 6,
+      "lf_atten_ui": 6,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 9.493373371429824,
+        "100-1000": 9.076026297660734,
+        "1000-18000": 3.1153250708563913
+      },
+      "max_phase_error_deg": 48.76020155334973
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 16.104342909667622,
+        "100-1000": 14.61260899519113,
+        "1000-18000": 4.432384882382886
+      },
+      "max_phase_error_deg": 72.75018521415952
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 18.355726480321906,
+        "100-1000": 16.150203770782312,
+        "1000-18000": 4.798746183432741
+      },
+      "max_phase_error_deg": 78.62837952785202
+    },
+    {
+      "id": "boost_atten_trick-100-b100-a050-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 10,
+      "lf_atten_ui": 5,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 7.014103561450922,
+        "100-1000": 6.638498641055264,
+        "1000-18000": 2.5632191306313046
+      },
+      "max_phase_error_deg": 36.915415113902164
+    },
+    {
+      "id": "boost_atten_trick-100-b050-a100-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 5,
+      "lf_atten_ui": 10,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 15.394948904846293,
+        "100-1000": 13.475654844652647,
+        "1000-18000": 3.593203089159531
+      },
+      "max_phase_error_deg": 63.37830630357636
+    },
+    {
+      "id": "boost_atten_trick-100-b080-a020-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 8,
+      "lf_atten_ui": 2,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.40466233656142914,
+        "100-1000": 0.9495009455929821,
+        "1000-18000": 1.1694559082047131
+      },
+      "max_phase_error_deg": 12.49913241615827
+    },
+    {
+      "id": "boost_atten_trick-100-b020-a080-44k1-swp",
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "lf_boost_ui": 2,
+      "lf_atten_ui": 8,
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.039266636921693,
+        "100-1000": 1.4495750401930552,
+        "1000-18000": 1.2215619622743499
+      },
+      "max_phase_error_deg": 12.506558642387702
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-48k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-96k-swp",
+      "pass": null,
+      "reason": "missing axis node"
+    }
+  ]
+}

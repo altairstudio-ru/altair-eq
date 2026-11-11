@@ -1,0 +1,1303 @@
+{
+  "schema": "altair-eq.axis-interpolation-probe/1",
+  "method": "leave-one-out linear interpolation of matched SOS roots on single-control axes",
+  "fit_source": "measurements/results/pultec_lf/stable_sos_six_section_fits_r0999.json",
+  "results": [
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "boost_only-20-b020-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 24.60226838464961,
+        "100-1000": 10.598739603609602,
+        "1000-18000": 1.0215147855805984
+      },
+      "max_phase_error_deg": 89.73927307641331
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "boost_only-20-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 7.6074897628129765,
+        "100-1000": 2.148370963778044,
+        "1000-18000": 0.03153475219235791
+      },
+      "max_phase_error_deg": 84.24911934169094
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "boost_only-20-b040-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.0150188887346703,
+        "100-1000": 0.6055361531002799,
+        "1000-18000": 0.035820472790624724
+      },
+      "max_phase_error_deg": 5.141967444872988
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "boost_only-20-b050-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 7.556900311380154,
+        "100-1000": 1.0194021035898637,
+        "1000-18000": 0.07306001494440317
+      },
+      "max_phase_error_deg": 60.10991445717928
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "boost_only-20-b060-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.5468227261230574,
+        "100-1000": 0.6537018639759213,
+        "1000-18000": 0.03415650165874773
+      },
+      "max_phase_error_deg": 37.4545388237407
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "boost_only-20-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.30982302564805053,
+        "100-1000": 0.022569339439658442,
+        "1000-18000": 0.28326331396015303
+      },
+      "max_phase_error_deg": 1.388427004369454
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "boost_only-20-b080-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 3.0511604303407296,
+        "100-1000": 0.7531028779761302,
+        "1000-18000": 0.05535104780870248
+      },
+      "max_phase_error_deg": 38.650706199714996
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_boost_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "boost_only-20-b090-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.199743084199092,
+        "100-1000": 0.40416162353902596,
+        "1000-18000": 0.1826970412922394
+      },
+      "max_phase_error_deg": 25.473675346580343
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "atten_only-20-b000-a020-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.5432906670315312,
+        "100-1000": 1.3342464116877677,
+        "1000-18000": 0.3345413634273847
+      },
+      "max_phase_error_deg": 6.763464838190449
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "atten_only-20-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 5.175827525744065,
+        "100-1000": 5.067924950526478,
+        "1000-18000": 0.9157165853586032
+      },
+      "max_phase_error_deg": 21.461390672553517
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "atten_only-20-b000-a040-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 5.095558763240563,
+        "100-1000": 4.501824507283819,
+        "1000-18000": 0.4482737242970577
+      },
+      "max_phase_error_deg": 18.97006833265494
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "atten_only-20-b000-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.898608540009857,
+        "100-1000": 2.3900938856039273,
+        "1000-18000": 0.33604401956937224
+      },
+      "max_phase_error_deg": 22.999905060275207
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "atten_only-20-b000-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.4669955496008953,
+        "100-1000": 0.29435176147534126,
+        "1000-18000": 0.0540114765812133
+      },
+      "max_phase_error_deg": 6.186338184395753
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "atten_only-20-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.69648522166578,
+        "100-1000": 0.08534538890929522,
+        "1000-18000": 0.11259879145149931
+      },
+      "max_phase_error_deg": 3.6087839359310543
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "atten_only-20-b000-a080-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4021254991530494,
+        "100-1000": 0.09434160556346516,
+        "1000-18000": 0.6707072952304902
+      },
+      "max_phase_error_deg": 2.27513902524164
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 20,
+      "axis": "lf_atten_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "atten_only-20-b000-a090-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.26878043148938247,
+        "100-1000": 0.03561813507922729,
+        "1000-18000": 0.05689208020088676
+      },
+      "max_phase_error_deg": 1.8288505994586812
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "boost_only-30-b020-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 16.231085570546057,
+        "100-1000": 14.799844872473177,
+        "1000-18000": 7.659688627960593
+      },
+      "max_phase_error_deg": 67.13999246935826
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "boost_only-30-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.190766074653927,
+        "100-1000": 1.0709161239555498,
+        "1000-18000": 0.14655216361843593
+      },
+      "max_phase_error_deg": 72.77636205744943
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "boost_only-30-b040-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 25.951594498307916,
+        "100-1000": 3.2846276945678134,
+        "1000-18000": 0.6610065077072094
+      },
+      "max_phase_error_deg": 123.63084178017837
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "boost_only-30-b050-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.2794854633155772,
+        "100-1000": 0.6448627661145228,
+        "1000-18000": 0.04783202633424777
+      },
+      "max_phase_error_deg": 5.521453622262206
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "boost_only-30-b060-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.1424813840929513,
+        "100-1000": 0.18452697093215154,
+        "1000-18000": 0.038741160657409845
+      },
+      "max_phase_error_deg": 5.079419138761994
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "boost_only-30-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.6402961163741256,
+        "100-1000": 0.07016964778673662,
+        "1000-18000": 0.07316028776835803
+      },
+      "max_phase_error_deg": 2.899924790928926
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "boost_only-30-b080-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.34910120959394497,
+        "100-1000": 0.041948549218718156,
+        "1000-18000": 0.046399471768576506
+      },
+      "max_phase_error_deg": 1.6865832446514093
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "boost_only-30-b090-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.21188253287151682,
+        "100-1000": 0.030766667559582572,
+        "1000-18000": 0.060293087478585305
+      },
+      "max_phase_error_deg": 1.1336183263657664
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "atten_only-30-b000-a020-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.6223508753958589,
+        "100-1000": 1.5565938786824052,
+        "1000-18000": 0.247965219977334
+      },
+      "max_phase_error_deg": 6.755337643353427
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "atten_only-30-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 50.334459214882074,
+        "100-1000": 24.035587887550882,
+        "1000-18000": 2.7317675790305196
+      },
+      "max_phase_error_deg": 150.20318328559347
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "atten_only-30-b000-a040-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.625032301418547,
+        "100-1000": 1.5021975076013914,
+        "1000-18000": 0.16291472549284525
+      },
+      "max_phase_error_deg": 6.522413848613918
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "atten_only-30-b000-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.244410485826524,
+        "100-1000": 1.758173313979257,
+        "1000-18000": 0.19937968676679213
+      },
+      "max_phase_error_deg": 8.614823380518496
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "atten_only-30-b000-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.583070600133519,
+        "100-1000": 2.386220385795008,
+        "1000-18000": 0.2184634566063378
+      },
+      "max_phase_error_deg": 19.073118401304963
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "atten_only-30-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.8727608890265195,
+        "100-1000": 0.170757465051544,
+        "1000-18000": 0.04725385755408806
+      },
+      "max_phase_error_deg": 3.926400797289521
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "atten_only-30-b000-a080-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.5737397391582952,
+        "100-1000": 0.06144517916946235,
+        "1000-18000": 0.04629243940957273
+      },
+      "max_phase_error_deg": 2.7631826695597796
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "atten_only-30-b000-a090-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.3981534172923027,
+        "100-1000": 0.045593547013806024,
+        "1000-18000": 0.04476398687798255
+      },
+      "max_phase_error_deg": 2.1497864599252097
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "boost_only-60-b020-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.9630835633866748,
+        "100-1000": 1.9917036272286508,
+        "1000-18000": 17.875263423586375
+      },
+      "max_phase_error_deg": 129.9288690426141
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "boost_only-60-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.979993780854485,
+        "100-1000": 1.6851632238835008,
+        "1000-18000": 0.4703074669188232
+      },
+      "max_phase_error_deg": 8.964037163794996
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "boost_only-60-b040-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 25.294656311162413,
+        "100-1000": 2.913053052302673,
+        "1000-18000": 0.5028412246915299
+      },
+      "max_phase_error_deg": 127.09078617475714
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "boost_only-60-b050-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 22.897271091430166,
+        "100-1000": 3.823057319572012,
+        "1000-18000": 0.7770716516371796
+      },
+      "max_phase_error_deg": 111.61444711329098
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "boost_only-60-b060-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 12.813861655748333,
+        "100-1000": 1.3032683078781666,
+        "1000-18000": 0.1453760360886156
+      },
+      "max_phase_error_deg": 87.61696215471412
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "boost_only-60-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.7733090374308631,
+        "100-1000": 0.25442114959227347,
+        "1000-18000": 0.034862396693894904
+      },
+      "max_phase_error_deg": 3.193503500318182
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "boost_only-60-b080-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4428837433816746,
+        "100-1000": 0.09450126335522313,
+        "1000-18000": 0.08183756655624497
+      },
+      "max_phase_error_deg": 1.8171433100238457
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_boost_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "boost_only-60-b090-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.2867364309362159,
+        "100-1000": 0.042187444365707094,
+        "1000-18000": 0.046499005906530666
+      },
+      "max_phase_error_deg": 1.1690130283937181
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "atten_only-60-b000-a020-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.6711675433183151,
+        "100-1000": 0.6968876989598316,
+        "1000-18000": 6.878066988868376
+      },
+      "max_phase_error_deg": 44.774487148203306
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "atten_only-60-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 10.399502196971545,
+        "100-1000": 10.22866560716197,
+        "1000-18000": 2.740289581470968
+      },
+      "max_phase_error_deg": 42.256714999180936
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "atten_only-60-b000-a040-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 3.238543342852603,
+        "100-1000": 2.632392534295095,
+        "1000-18000": 0.7096280367704868
+      },
+      "max_phase_error_deg": 14.852345926660082
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "atten_only-60-b000-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 33.01799233558374,
+        "100-1000": 8.25553384264426,
+        "1000-18000": 1.2045221148098275
+      },
+      "max_phase_error_deg": 133.5145676005133
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "atten_only-60-b000-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.7347498809975885,
+        "100-1000": 1.503587931433204,
+        "1000-18000": 0.14569061509120063
+      },
+      "max_phase_error_deg": 6.4291143996282445
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "atten_only-60-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.009223830001691,
+        "100-1000": 0.6707518013458245,
+        "1000-18000": 0.05648129462100915
+      },
+      "max_phase_error_deg": 3.9489506506260175
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "atten_only-60-b000-a080-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.7103085765130466,
+        "100-1000": 0.3478937768711212,
+        "1000-18000": 0.028880033529502525
+      },
+      "max_phase_error_deg": 2.851509215460486
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 60,
+      "axis": "lf_atten_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "atten_only-60-b000-a090-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.5286277851752565,
+        "100-1000": 0.18884043543622298,
+        "1000-18000": 0.023350846396080427
+      },
+      "max_phase_error_deg": 2.2285030890241835
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "boost_only-100-b020-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.8820167344390608,
+        "100-1000": 1.5710757368437442,
+        "1000-18000": 12.744713652895225
+      },
+      "max_phase_error_deg": 116.43395167865759
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "boost_only-100-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 8.300564288403594,
+        "100-1000": 7.7635321640979384,
+        "1000-18000": 0.8535042054262236
+      },
+      "max_phase_error_deg": 30.642286573929987
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "boost_only-100-b040-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 10.15393593258866,
+        "100-1000": 1.0955534847515676,
+        "1000-18000": 0.6233519211588083
+      },
+      "max_phase_error_deg": 78.9897105448986
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "boost_only-100-b050-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 25.705245977934723,
+        "100-1000": 3.3495260365042476,
+        "1000-18000": 0.628009683522889
+      },
+      "max_phase_error_deg": 122.67155348231181
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "boost_only-100-b060-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 19.955119104863936,
+        "100-1000": 1.453843244704851,
+        "1000-18000": 0.3649114203138444
+      },
+      "max_phase_error_deg": 107.34412203789766
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "boost_only-100-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.8268577024507202,
+        "100-1000": 0.5035460168692012,
+        "1000-18000": 0.059279341013647624
+      },
+      "max_phase_error_deg": 3.246521441889262
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "boost_only-100-b080-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.48571204068100116,
+        "100-1000": 0.22562093429863062,
+        "1000-18000": 0.058812696629078065
+      },
+      "max_phase_error_deg": 1.8685714429890998
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "boost_only-100-b090-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.3167928381266485,
+        "100-1000": 0.11244694944543632,
+        "1000-18000": 0.08868600534679749
+      },
+      "max_phase_error_deg": 1.1863272167203558
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 2,
+      "bracket": [
+        1,
+        3
+      ],
+      "held_id": "atten_only-100-b000-a020-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.1450456822372104,
+        "100-1000": 1.152382423551179,
+        "1000-18000": 6.209091695200284
+      },
+      "max_phase_error_deg": 48.95928183630723
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 3,
+      "bracket": [
+        2,
+        4
+      ],
+      "held_id": "atten_only-100-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.6776283696547174,
+        "100-1000": 0.6737265451479788,
+        "1000-18000": 0.44078104099032067
+      },
+      "max_phase_error_deg": 4.1288225289691605
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 4,
+      "bracket": [
+        3,
+        5
+      ],
+      "held_id": "atten_only-100-b000-a040-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 53.832060614779586,
+        "100-1000": 27.03621085434479,
+        "1000-18000": 2.506369725570404
+      },
+      "max_phase_error_deg": 154.729891855215
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 5,
+      "bracket": [
+        4,
+        6
+      ],
+      "held_id": "atten_only-100-b000-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 3.1385311461851186,
+        "100-1000": 3.0841913018535685,
+        "1000-18000": 0.5786126701286718
+      },
+      "max_phase_error_deg": 13.324411041268613
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 6,
+      "bracket": [
+        5,
+        7
+      ],
+      "held_id": "atten_only-100-b000-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.5270558173247633,
+        "100-1000": 1.4524405085780732,
+        "1000-18000": 0.1280020685999994
+      },
+      "max_phase_error_deg": 5.727849573272819
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        6,
+        8
+      ],
+      "held_id": "atten_only-100-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 1.0467025365514342,
+        "100-1000": 0.9110644411061823,
+        "1000-18000": 0.07768709197368695
+      },
+      "max_phase_error_deg": 3.943544533034808
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 8,
+      "bracket": [
+        7,
+        9
+      ],
+      "held_id": "atten_only-100-b000-a080-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.7558260855689234,
+        "100-1000": 0.5744491968139869,
+        "1000-18000": 0.05593219729686005
+      },
+      "max_phase_error_deg": 2.7880912984339243
+    },
+    {
+      "sample_rate_hz": 44100,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 9,
+      "bracket": [
+        8,
+        10
+      ],
+      "held_id": "atten_only-100-b000-a090-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.5704406018003034,
+        "100-1000": 0.3685184976074467,
+        "1000-18000": 0.03930600473740409
+      },
+      "max_phase_error_deg": 2.125454369612965
+    },
+    {
+      "sample_rate_hz": 48000,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-30-b070-a000-48k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.10207897524724,
+        "100-1000": 2.898833123447001,
+        "1000-18000": 0.23016883175228475
+      },
+      "max_phase_error_deg": 19.697808289828973
+    },
+    {
+      "sample_rate_hz": 48000,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-30-b000-a070-48k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 23.36106214107664,
+        "100-1000": 6.425119919541618,
+        "1000-18000": 18.51796423666753
+      },
+      "max_phase_error_deg": 176.77038979013528
+    },
+    {
+      "sample_rate_hz": 48000,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-100-b070-a000-48k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 5.195567892429189,
+        "100-1000": 5.3979167916310455,
+        "1000-18000": 0.5211779495257463
+      },
+      "max_phase_error_deg": 22.460294249245244
+    },
+    {
+      "sample_rate_hz": 48000,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-100-b000-a070-48k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.992091959417875,
+        "100-1000": 4.339284288886088,
+        "1000-18000": 16.140677561512447
+      },
+      "max_phase_error_deg": 174.33021097511403
+    },
+    {
+      "sample_rate_hz": 96000,
+      "lf_cps_hz": 30,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-30-b070-a000-96k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 6.456328473512185,
+        "100-1000": 2.6755627990336013,
+        "1000-18000": 1.879461514831088
+      },
+      "max_phase_error_deg": 51.80503824027751
+    },
+    {
+      "sample_rate_hz": 96000,
+      "lf_cps_hz": 30,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-30-b000-a070-96k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 5.413723311875405,
+        "100-1000": 3.791287096916111,
+        "1000-18000": 1.9158881053637864
+      },
+      "max_phase_error_deg": 28.152870307435528
+    },
+    {
+      "sample_rate_hz": 96000,
+      "lf_cps_hz": 100,
+      "axis": "lf_boost_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-100-b070-a000-96k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 18.73814071479121,
+        "100-1000": 15.896126934710571,
+        "1000-18000": 1.6529441120133255
+      },
+      "max_phase_error_deg": 59.57689083481836
+    },
+    {
+      "sample_rate_hz": 96000,
+      "lf_cps_hz": 100,
+      "axis": "lf_atten_ui",
+      "held_control": 7,
+      "bracket": [
+        3,
+        10
+      ],
+      "held_id": "sr_reduced-100-b000-a070-96k-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 15.493780758876191,
+        "100-1000": 12.168222802765396,
+        "1000-18000": 2.331321884118167
+      },
+      "max_phase_error_deg": 51.07072165139792
+    }
+  ]
+}
