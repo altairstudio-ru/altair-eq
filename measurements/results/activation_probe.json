@@ -1,0 +1,18 @@
+{
+  "status": "diagnostic; impulse response may include nonlinear effects",
+  "sample_rate_hz": 44100,
+  "sha256": {
+    "pultec-unsandboxed": "14efd903d65476195ba651cb44f9c1ca563925725779e2a0da7b50f4e77d8d79",
+    "pultec-unsandboxed-flat": "92de0430edbbabda9cc13956e138f66726f23af8cc8f2084df65147c54c4e68f",
+    "pultec-unsandboxed-repeat": "14efd903d65476195ba651cb44f9c1ca563925725779e2a0da7b50f4e77d8d79"
+  },
+  "repeat_bit_identical_samples": true,
+  "repeat_difference_peak": 0.0,
+  "boost_vs_flat_impulse_fft_db": {
+    "20": 14.911946296691895,
+    "30": 13.526575088500977,
+    "60": 9.788445472717285,
+    "100": 6.533780097961426,
+    "1000": 0.1301724910736084
+  }
+}

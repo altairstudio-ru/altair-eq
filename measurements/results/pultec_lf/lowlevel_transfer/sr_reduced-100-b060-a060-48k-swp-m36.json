@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T18:18:40Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log_m36-48000-tail.wav": "b614384cfcc54d3659f6a34720ac636dd4b4313dd56e2cc553eff699c6960040",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\lowlevel_grid\\sr_reduced-100-b060-a060-48k-swp-m36.wav": "071c5831528fc7c7c62947029335555c7491b0e747a12b3ffa3fd31f7b1d90dc"
+  },
+  "sample_rate_hz": 48000,
+  "samples": 840000,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 10.56498092243665,
+      "phase_deg": -2.406817836035076,
+      "group_delay_ms": 0.6223838953816785
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 10.509979706157553,
+      "phase_deg": -5.929336090513384,
+      "group_delay_ms": 0.652982052763463
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 10.328918792556255,
+      "phase_deg": -11.732518727880949,
+      "group_delay_ms": 0.7109446334387661
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 10.205523122973851,
+      "phase_deg": -14.344274280040826,
+      "group_delay_ms": 0.9060866730905625
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 9.550983165242693,
+      "phase_deg": -23.50485828967764,
+      "group_delay_ms": 0.70011012315971
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": -3.875030332165761,
+      "phase_deg": -18.55305615852873,
+      "group_delay_ms": -0.2864560128174958
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 0.9502753028680191,
+      "phase_deg": -1.7775696651122845,
+      "group_delay_ms": -4.6420769967693465
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.8799753088217037,
+      "phase_deg": -8.57802535746179,
+      "group_delay_ms": 0.10611604952518884
+    }
+  ]
+}

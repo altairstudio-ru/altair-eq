@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--
+  AltaiR EQ - LF MVP - UI design proposal (Concept B "Graph-First Bench")
+  Date: 2026-11-09. Status: PROPOSAL / comparison variant only. NOT the selected direction.
+  Selected direction is Concept A "Compact Panel" (mockup.html). This file exists to justify that choice.
+  Self-contained HTML/CSS/SVG. No network resources. Fonts: locally installed Bahnschrift + Cascadia Mono.
+  Base window: 960 x 580 px at 100% scale (taller than Concept A on purpose: plot-dominant composition).
+  EVERY curve in the plot is DEMO: illustrative geometry, NOT measured, NOT produced by any DSP.
+  Boost / Attenuation are unitless 0-10 scales (NOT dB). Output Trim and A/B/COPY/RESET are proposals.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AltaiR EQ - LF MVP - Concept B (comparison only)</title>
+<style>
+  :root{
+    --bg:#14161A; --surface:#1B1E24; --surface-2:#262B33; --raised:#2E343E;
+    --line:#2E333C; --line-soft:#23272E; --line-strong:#454C58;
+    --text-hi:#ECEEF1; --text-mid:#A7AEB8; --text-low:#7C838C;
+    --boost:#E3A857; --atten:#6FB3D2; --trim:#A7AEB8;
+    --ok:#79C267; --ok-bg:#1E2A21; --ok-line:#3E5C46; --ok-text:#CFE6D3;
+    --focus:#8AB4F8; --readout-bg:#101216;
+    --plot-bg:#101318; --grid:#20252D; --grid-major:#2E343E; --trace:#DDE1E6;
+    --demo:#C9B458; --demo-bg:#2A2618; --demo-line:#5C5230;
+    --font-ui:Bahnschrift,"Segoe UI",sans-serif;
+    --font-mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{width:960px; height:580px; overflow:hidden; background:var(--bg);}
+  body{font-family:var(--font-ui); color:var(--text-hi); -webkit-font-smoothing:antialiased;}
+
+  .window{width:960px; height:580px; border-radius:8px; overflow:hidden;
+    box-shadow:inset 0 0 0 1px var(--line); display:flex; flex-direction:column;}
+
+  /* ---------- Header: 56 px (same control set as Concept A) ---------- */
+  header{flex:0 0 56px; display:flex; align-items:center; padding:0 20px;
+    border-bottom:1px solid var(--line-soft);}
+  .brand{font-size:20px; font-weight:600; letter-spacing:.3px; color:var(--text-hi); white-space:nowrap;}
+  .chip{display:inline-flex; align-items:center; height:16px; padding:0 6px;
+    border:1px solid #3A404A; border-radius:3px; font-size:9px; font-weight:600;
+    letter-spacing:1px; color:var(--text-mid); white-space:nowrap;}
+  .chip-proposal{color:#8A919B;}
+  .brand-chip{margin-left:10px;}
+  .hdiv{width:1px; height:20px; background:var(--line); margin:0 14px;}
+  .hdr-caption{font-size:10px; letter-spacing:1.5px; color:var(--text-low); white-space:nowrap;}
+  .hdr-right{margin-left:auto; display:flex; align-items:center;}
+  .hdr-right .chip-proposal{margin-right:8px;}
+
+  .seg{display:flex; border:1px solid var(--line); border-radius:4px; overflow:hidden; height:32px;}
+  .seg button{width:34px; height:30px; border:0; background:transparent; cursor:pointer;
+    font-family:var(--font-ui); font-size:12px; font-weight:600; color:var(--text-low);}
+  .seg button[aria-checked="true"]{background:var(--raised); color:var(--text-hi); font-weight:700;
+    box-shadow:inset 0 2px 0 var(--focus);}
+  .seg button:hover:not([aria-checked="true"]){color:var(--text-mid);}
+  .ab{margin-right:6px;}
+
+  .ubtn{height:32px; border:1px solid var(--line); border-radius:4px; background:var(--surface);
+    font-family:var(--font-ui); font-size:10px; font-weight:600; letter-spacing:.8px;
+    color:var(--text-mid); cursor:pointer;}
+  .ubtn:hover{border-color:var(--line-strong); color:var(--text-hi);}
+  .ubtn:active{background:var(--raised);}
+  .copy{width:54px; margin-right:6px;}
+  .reset{width:58px; margin-right:16px;}
+  .vdiv{width:1px; height:32px; background:var(--line); margin-right:16px;}
+
+  .eqin{width:104px; height:32px; border-radius:4px; display:flex; align-items:center;
+    justify-content:center; gap:8px; cursor:pointer;
+    font-family:var(--font-ui); font-size:12px; font-weight:700; letter-spacing:.5px;}
+  .eqin.on{background:var(--ok-bg); border:1px solid var(--ok-line); color:var(--ok-text);}
+  .eqin .led{width:8px; height:8px; border-radius:50%; background:var(--ok);}
+  .eqin.off{background:var(--surface); border:1px solid var(--line); color:var(--text-low);}
+  .eqin.off .led{background:transparent; border:1.5px solid var(--text-low);}
+
+  /* ---------- Plot: 312 px (svg 284 px, padding 14/20) ---------- */
+  .plotwrap{flex:0 0 312px; padding:14px 20px;}
+  .plotframe{width:920px; height:284px; background:var(--plot-bg);
+    border:1px solid var(--line-soft); border-radius:6px; position:relative;}
+  .plotframe svg{display:block;}
+  .demo-badge{position:absolute; left:12px; bottom:36px; display:flex; align-items:center; gap:8px;
+    height:22px; padding:0 8px; background:var(--demo-bg); border:1px solid var(--demo-line);
+    border-radius:3px; font-size:9px; font-weight:700; letter-spacing:1px; color:var(--demo);}
+  .demo-badge .dot{width:6px; height:6px; border-radius:50%; background:var(--demo);}
+  .legend{position:absolute; right:12px; top:10px; display:flex; align-items:center; gap:14px;
+    height:22px; font-size:9px; letter-spacing:.8px; color:var(--text-mid);}
+  .legend .sw{display:inline-block; width:18px; height:0; border-top:2px solid var(--trace);
+    margin-right:6px; vertical-align:middle;}
+  .legend .sw.b{border-top:2px dashed var(--boost);}
+  .legend .sw.a{border-top:2px dashed var(--atten);}
+
+  /* ---------- Control shelf: 174 px (content 144, padding 15/20) ---------- */
+  .shelf{flex:0 0 174px; display:flex; padding:15px 20px; border-top:1px solid var(--line-soft);}
+  .group{flex:none; display:flex; flex-direction:column; align-items:center;}
+  .g-freq{width:352px;}
+  .g-knob{width:168px;}
+  .g-trim{width:160px;}
+  .sep{flex:0 0 24px; display:flex; justify-content:center;}
+  .sep div{width:1px; height:144px; background:var(--line-soft);}
+
+  .glabel{height:14px; line-height:14px; font-size:11px; font-weight:600;
+    letter-spacing:1.2px; color:var(--text-mid); margin-bottom:4px;}
+  .glabel.boost{color:var(--boost);}
+  .glabel.atten{color:var(--atten);}
+  .glabel .chip{height:14px; font-size:8px; margin-left:6px;}
+
+  .freq-grid{display:grid; grid-template-columns:174px 174px; grid-template-rows:46px 46px; gap:4px;}
+  .freq-grid button{display:flex; align-items:center; justify-content:center;
+    background:var(--surface); border:1px solid var(--line); border-radius:4px; cursor:pointer;
+    font-family:var(--font-mono); font-size:13px; color:var(--text-mid);}
+  .freq-grid button:hover{border-color:var(--line-strong); color:var(--text-hi);}
+  .freq-grid button[aria-checked="true"]{background:var(--surface-2); border-color:var(--line-strong);
+    color:var(--text-hi); font-weight:700; box-shadow:inset 3px 0 0 #DDE1E6;}
+  .freq-default{margin-top:4px; height:26px; display:flex; align-items:center;
+    font-size:10px; letter-spacing:.4px; color:var(--text-low);}
+
+  .knob{cursor:ns-resize; outline:none; height:96px;}
+  .knob svg{display:block;}
+  .knob:hover .body{stroke:#5A626E;}
+
+  .readout{width:92px; height:26px; margin-top:4px; display:flex; align-items:center; justify-content:center;
+    background:var(--readout-bg); border:1px solid var(--line); border-radius:4px; cursor:text;
+    font-family:var(--font-mono); font-size:15px; color:var(--text-hi);}
+  .readout:hover{border-color:var(--line-strong);}
+  .readout.small{width:96px; font-size:13px;}
+
+  /* ---------- Footer: 38 px ---------- */
+  footer{flex:0 0 38px; display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px; border-top:1px solid var(--line-soft);}
+  .hint{font-size:11px; color:var(--text-low); letter-spacing:.2px;}
+  .foot-right{display:flex; align-items:center; gap:12px;}
+  .foot-tag{font-size:10px; letter-spacing:.5px; color:var(--text-low);}
+
+  button:focus-visible, .readout:focus-visible, .knob:focus-visible{
+    outline:2px solid var(--focus); outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="window">
+
+  <header>
+    <span class="brand">AltaiR EQ</span>
+    <span class="chip brand-chip">LF MVP</span>
+    <div class="hdiv"></div>
+    <span class="hdr-caption">CONCEPT B &#183; GRAPH-FIRST BENCH</span>
+
+    <div class="hdr-right">
+      <span class="chip chip-proposal" title="A/B, COPY and RESET are proposals for AltaiR EQ (not present on the reference)">PROPOSAL</span>
+      <div class="seg ab" role="radiogroup" aria-label="Compare banks A and B (proposal)">
+        <button role="radio" aria-checked="true" title="Bank A (active)">A</button>
+        <button role="radio" aria-checked="false" title="Bank B">B</button>
+      </div>
+      <button class="ubtn copy" title="Copy active bank to the other bank (proposal)">COPY</button>
+      <button class="ubtn reset" title="Reset active bank to defaults (proposal)">RESET</button>
+      <div class="vdiv"></div>
+      <button class="eqin on" aria-pressed="true" title="EQ correction enabled">
+        <span class="led"></span>EQ IN
+      </button>
+    </div>
+  </header>
+
+  <div class="plotwrap">
+    <div class="plotframe">
+      <svg width="918" height="282" viewBox="0 0 918 282" aria-hidden="true">
+        <!-- grid: x = log frequency 10 Hz .. 1 kHz, y = -12 .. +12 dB (DEMO axis) -->
+        <g stroke="#20252D" stroke-width="1">
+          <line x1="175.7" y1="12" x2="175.7" y2="250"/>
+          <line x1="251.6" y1="12" x2="251.6" y2="250"/>
+          <line x1="606.7" y1="12" x2="606.7" y2="250"/>
+          <line x1="682.6" y1="12" x2="682.6" y2="250"/>
+          <line x1="812.4" y1="12" x2="812.4" y2="250"/>
+          <line x1="46" y1="71.5" x2="908" y2="71.5"/>
+          <line x1="46" y1="190.5" x2="908" y2="190.5"/>
+        </g>
+        <g stroke="#2E343E" stroke-width="1">
+          <line x1="46" y1="12" x2="46" y2="250"/>
+          <line x1="381.4" y1="12" x2="381.4" y2="250"/>
+          <line x1="477" y1="12" x2="477" y2="250"/>
+          <line x1="908" y1="12" x2="908" y2="250"/>
+          <line x1="46" y1="12" x2="908" y2="12"/>
+          <line x1="46" y1="250" x2="908" y2="250"/>
+        </g>
+        <line x1="46" y1="131" x2="908" y2="131" stroke="#454C58" stroke-width="1"/>
+        <!-- selected frequency marker: 60 Hz -->
+        <line x1="381.4" y1="12" x2="381.4" y2="250" stroke="#5A626E" stroke-width="1" stroke-dasharray="3 4"/>
+        <g font-family="Cascadia Mono, Consolas, monospace" font-size="9" fill="#7C838C">
+          <text x="38" y="15" text-anchor="end">+12</text>
+          <text x="38" y="74.5" text-anchor="end">+6</text>
+          <text x="38" y="134" text-anchor="end">0</text>
+          <text x="38" y="193.5" text-anchor="end">-6</text>
+          <text x="38" y="253" text-anchor="end">-12</text>
+          <text x="10" y="134" fill="#7C838C">dB</text>
+        </g>
+        <g font-family="Cascadia Mono, Consolas, monospace" font-size="9" fill="#7C838C" text-anchor="middle">
+          <text x="46" y="266">10</text>
+          <text x="175.7" y="266">20</text>
+          <text x="251.6" y="266">30</text>
+          <text x="381.4" y="266" fill="#A7AEB8">60</text>
+          <text x="477" y="266">100</text>
+          <text x="606.7" y="266">200</text>
+          <text x="682.6" y="266">300</text>
+          <text x="812.4" y="266">600</text>
+          <text x="908" y="266">1k</text>
+          <text x="880" y="278" fill="#7C838C">Hz</text>
+        </g>
+        <!-- DEMO component traces: boost only / atten only (illustrative, not measured) -->
+        <polyline fill="none" stroke="#E3A857" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.75"
+          points="46,51.7 175.7,55.6 251.6,61.6 381.4,83.4 477,109.2 552.9,122.1 606.7,127 682.6,130 812.4,131 908,131"/>
+        <polyline fill="none" stroke="#6FB3D2" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.75"
+          points="46,145.9 175.7,144.9 251.6,144.9 381.4,144.9 477,146.9 552.9,155.8 606.7,156.8 682.6,149.8 812.4,137 908,132"/>
+        <!-- DEMO composite trace -->
+        <polyline fill="none" stroke="#DDE1E6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+          points="46,66.5 175.7,69.5 251.6,75.5 381.4,97.3 477,125.1 552.9,146.9 606.7,152.8 682.6,148.9 812.4,137 908,132"/>
+        <circle cx="381.4" cy="97.3" r="3.5" fill="#101318" stroke="#DDE1E6" stroke-width="1.5"/>
+      </svg>
+      <div class="demo-badge"><span class="dot"></span>DEMO &#183; ILLUSTRATIVE CURVE &#183; NOT MEASURED &#183; NOT DSP</div>
+      <div class="legend">
+        <span><span class="sw"></span>COMPOSITE</span>
+        <span><span class="sw b"></span>BOOST ONLY</span>
+        <span><span class="sw a"></span>ATTEN ONLY</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="shelf">
+    <!-- LF FREQUENCY: 2x2 grid, same 4 discrete steps -->
+    <section class="group g-freq" aria-label="LF frequency">
+      <div class="glabel">LF FREQUENCY</div>
+      <div class="freq-grid" role="radiogroup" aria-label="LF frequency, 4 steps">
+        <button role="radio" aria-checked="false">20 Hz</button>
+        <button role="radio" aria-checked="false">30 Hz</button>
+        <button role="radio" aria-checked="true">60 Hz</button>
+        <button role="radio" aria-checked="false">100 Hz</button>
+      </div>
+      <div class="freq-default">DEFAULT: 30 Hz</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- BOOST -->
+    <section class="group g-knob" aria-label="LF boost">
+      <div class="glabel boost">BOOST</div>
+      <div class="knob" tabindex="0" role="slider" aria-label="LF Boost, unitless scale 0 to 10"
+           aria-valuemin="0" aria-valuemax="10" aria-valuenow="6.4" aria-valuetext="6.40">
+        <svg width="110" height="96" viewBox="0 0 156 136" aria-hidden="true">
+          <defs>
+            <radialGradient id="gradBoostB" cx="50%" cy="38%" r="75%">
+              <stop offset="0%" stop-color="#2E333C"/>
+              <stop offset="70%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1C1F26"/>
+            </radialGradient>
+          </defs>
+          <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 42.64 105.36 A 50 50 0 0 1 108.65 30.49" fill="none" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+            <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+            <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+            <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+            <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+            <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+            <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+            <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+          </g>
+          <g stroke="#5A626E" stroke-width="1.5">
+            <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+            <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+            <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+          </g>
+          <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+            <text x="32.75" y="118.75">0</text>
+            <text x="78" y="9.5">5</text>
+            <text x="123.25" y="118.75">10</text>
+          </g>
+          <circle class="body" cx="78" cy="70" r="42" fill="url(#gradBoostB)" stroke="#3A404A" stroke-width="1"/>
+          <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout" tabindex="0" role="textbox" aria-label="Boost value, click to type">6.40</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- ATTENUATION -->
+    <section class="group g-knob" aria-label="LF attenuation">
+      <div class="glabel atten">ATTENUATION</div>
+      <div class="knob" tabindex="0" role="slider" aria-label="LF Attenuation, unitless scale 0 to 10"
+           aria-valuemin="0" aria-valuemax="10" aria-valuenow="4.2" aria-valuetext="4.20">
+        <svg width="110" height="96" viewBox="0 0 156 136" aria-hidden="true">
+          <defs>
+            <radialGradient id="gradAttenB" cx="50%" cy="38%" r="75%">
+              <stop offset="0%" stop-color="#2E333C"/>
+              <stop offset="70%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1C1F26"/>
+            </radialGradient>
+          </defs>
+          <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 42.64 105.36 A 50 50 0 0 1 59.59 23.51" fill="none" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+            <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+            <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+            <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+            <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+            <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+            <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+            <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+          </g>
+          <g stroke="#5A626E" stroke-width="1.5">
+            <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+            <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+            <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+          </g>
+          <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+            <text x="32.75" y="118.75">0</text>
+            <text x="78" y="9.5">5</text>
+            <text x="123.25" y="118.75">10</text>
+          </g>
+          <circle class="body" cx="78" cy="70" r="42" fill="url(#gradAttenB)" stroke="#3A404A" stroke-width="1"/>
+          <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout" tabindex="0" role="textbox" aria-label="Attenuation value, click to type">4.20</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- OUTPUT TRIM (proposal) -->
+    <section class="group g-trim" aria-label="Output trim, proposal">
+      <div class="glabel">OUTPUT TRIM <span class="chip chip-proposal">PROPOSAL</span></div>
+      <div class="knob" tabindex="0" role="slider" aria-label="Output trim, proposal, minus 12 to plus 12 decibels"
+           aria-valuemin="-12" aria-valuemax="12" aria-valuenow="0" aria-valuetext="plus 0.0 dB">
+        <svg width="79" height="96" viewBox="0 0 112 136" aria-hidden="true">
+          <defs>
+            <radialGradient id="gradTrimB" cx="50%" cy="38%" r="75%">
+              <stop offset="0%" stop-color="#2E333C"/>
+              <stop offset="70%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1C1F26"/>
+            </radialGradient>
+          </defs>
+          <path d="M 29.13 96.87 A 38 38 0 1 1 82.87 96.87" fill="none" stroke="#2E333C" stroke-width="2.5" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="26.3" y1="99.7" x2="23.47" y2="102.53"/>
+            <line x1="17.2" y1="53.93" x2="13.5" y2="52.4"/>
+            <line x1="94.8" y1="53.93" x2="98.5" y2="52.4"/>
+            <line x1="85.7" y1="99.7" x2="88.53" y2="102.53"/>
+          </g>
+          <line x1="56.0" y1="30.0" x2="56.0" y2="24.0" stroke="#5A626E" stroke-width="1.5"/>
+          <circle class="body" cx="56" cy="70" r="30" fill="url(#gradTrimB)" stroke="#3A404A" stroke-width="1"/>
+          <line x1="56" y1="52" x2="56" y2="44" stroke="#A7AEB8" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout small" tabindex="0" role="textbox" aria-label="Trim value, click to type">+0.0 dB</div>
+    </section>
+  </div>
+
+  <footer>
+    <span class="hint">Drag: adjust &#183; Shift+Drag: fine &#183; Double-click: reset &#183; Click value: type</span>
+    <span class="foot-right">
+      <span class="foot-tag">DESIGN PROPOSAL v0.1 &#183; CONCEPT B (COMPARISON ONLY)</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+        <g stroke="#454C58" stroke-width="1.5" stroke-linecap="round">
+          <line x1="3" y1="12" x2="12" y2="3"/>
+          <line x1="7" y1="12" x2="12" y2="7"/>
+          <line x1="11" y1="12" x2="12" y2="11"/>
+        </g>
+      </svg>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>

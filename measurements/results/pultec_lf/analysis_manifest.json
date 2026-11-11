@@ -1,0 +1,4043 @@
+{
+  "schema": "altair-eq.pultec-lf-analysis/1",
+  "grid_sha256": "3f2ecb6ddbda69baab3ee662607eceaed5d7924d2b1cfb03ade19bb9001bc128",
+  "analyzed_configurations": 154,
+  "configurations": [
+    {
+      "configuration_id": "atten_only-100-b000-a010-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a010-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a010-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a010-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a010-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03315000000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.008168999999999982,
+      "max_impulse_sweep_phase_difference_deg": 0.2996129999999937,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a020-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.030827999999999994,
+      "median_impulse_sweep_magnitude_difference_db": 0.007944000000000007,
+      "max_impulse_sweep_phase_difference_deg": 0.2606350000000077,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a030-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a030-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a030-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a030-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a030-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0273540000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.00873999999999997,
+      "max_impulse_sweep_phase_difference_deg": 0.1848889999999983,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a040-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.024125000000000174,
+      "median_impulse_sweep_magnitude_difference_db": 0.01105899999999993,
+      "max_impulse_sweep_phase_difference_deg": 0.10139499999999657,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a050-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.026481999999999672,
+      "median_impulse_sweep_magnitude_difference_db": 0.014772999999999925,
+      "max_impulse_sweep_phase_difference_deg": 0.04429099999998698,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a060-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.031658000000000186,
+      "median_impulse_sweep_magnitude_difference_db": 0.014499999999999957,
+      "max_impulse_sweep_phase_difference_deg": 0.07606300000000488,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a070-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a070-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a070-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a070-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a070-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04327900000000007,
+      "median_impulse_sweep_magnitude_difference_db": 0.012476999999999627,
+      "max_impulse_sweep_phase_difference_deg": 0.11841000000001145,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a080-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.056968999999998715,
+      "median_impulse_sweep_magnitude_difference_db": 0.011463000000000001,
+      "max_impulse_sweep_phase_difference_deg": 0.166246000000001,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a090-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a090-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a090-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a090-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a090-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06764199999999931,
+      "median_impulse_sweep_magnitude_difference_db": 0.01069100000000045,
+      "max_impulse_sweep_phase_difference_deg": 0.20551000000000386,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-100-b000-a100-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-100-b000-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07106900000000138,
+      "median_impulse_sweep_magnitude_difference_db": 0.010104000000000113,
+      "max_impulse_sweep_phase_difference_deg": 0.21545800000001236,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a010-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a010-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a010-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a010-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a010-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03370700000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.008518000000000026,
+      "max_impulse_sweep_phase_difference_deg": 0.3007470000000012,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a020-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03196600000000002,
+      "median_impulse_sweep_magnitude_difference_db": 0.00902900000000001,
+      "max_impulse_sweep_phase_difference_deg": 0.26033899999998766,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a030-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a030-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a030-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a030-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a030-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.029633999999999938,
+      "median_impulse_sweep_magnitude_difference_db": 0.009575999999999918,
+      "max_impulse_sweep_phase_difference_deg": 0.18391399999998725,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a040-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02737500000000015,
+      "median_impulse_sweep_magnitude_difference_db": 0.009535999999999989,
+      "max_impulse_sweep_phase_difference_deg": 0.10238699999999312,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a050-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.030997000000000163,
+      "median_impulse_sweep_magnitude_difference_db": 0.009151999999999993,
+      "max_impulse_sweep_phase_difference_deg": 0.05581499999999551,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a060-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03680400000000006,
+      "median_impulse_sweep_magnitude_difference_db": 0.008810999999999986,
+      "max_impulse_sweep_phase_difference_deg": 0.10093800000001352,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a070-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a070-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a070-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a070-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a070-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0442020000000003,
+      "median_impulse_sweep_magnitude_difference_db": 0.008611000000000035,
+      "max_impulse_sweep_phase_difference_deg": 0.1569159999999954,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a080-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04807600000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.008510999999999935,
+      "max_impulse_sweep_phase_difference_deg": 0.21868499999999358,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a090-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a090-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a090-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a090-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a090-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.048486999999999725,
+      "median_impulse_sweep_magnitude_difference_db": 0.008511000000000019,
+      "max_impulse_sweep_phase_difference_deg": 0.26405099999999493,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-20-b000-a100-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-20-b000-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04798900000000117,
+      "median_impulse_sweep_magnitude_difference_db": 0.008469999999999978,
+      "max_impulse_sweep_phase_difference_deg": 0.27932100000001014,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a010-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a010-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a010-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a010-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a010-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.033511999999999986,
+      "median_impulse_sweep_magnitude_difference_db": 0.008390999999999926,
+      "max_impulse_sweep_phase_difference_deg": 0.30019300000000726,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a020-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03174199999999999,
+      "median_impulse_sweep_magnitude_difference_db": 0.008843000000000045,
+      "max_impulse_sweep_phase_difference_deg": 0.26012499999998795,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a030-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a030-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a030-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a030-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a030-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02922899999999995,
+      "median_impulse_sweep_magnitude_difference_db": 0.009781999999999957,
+      "max_impulse_sweep_phase_difference_deg": 0.18412499999999454,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a040-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02699499999999988,
+      "median_impulse_sweep_magnitude_difference_db": 0.010175999999999963,
+      "max_impulse_sweep_phase_difference_deg": 0.0993880000000047,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a050-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.030723999999999307,
+      "median_impulse_sweep_magnitude_difference_db": 0.009472000000000036,
+      "max_impulse_sweep_phase_difference_deg": 0.05368400000000406,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a060-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03785100000000163,
+      "median_impulse_sweep_magnitude_difference_db": 0.008801000000000003,
+      "max_impulse_sweep_phase_difference_deg": 0.09410099999999488,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a070-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a070-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a070-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a070-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a070-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.050068000000001334,
+      "median_impulse_sweep_magnitude_difference_db": 0.008720000000000006,
+      "max_impulse_sweep_phase_difference_deg": 0.15369499999999903,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a080-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.060120000000001284,
+      "median_impulse_sweep_magnitude_difference_db": 0.008499999999999952,
+      "max_impulse_sweep_phase_difference_deg": 0.2112250000000131,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a090-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a090-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a090-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a090-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a090-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06616100000000102,
+      "median_impulse_sweep_magnitude_difference_db": 0.008521,
+      "max_impulse_sweep_phase_difference_deg": 0.25316499999999564,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-30-b000-a100-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-30-b000-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06809000000000154,
+      "median_impulse_sweep_magnitude_difference_db": 0.008504000000000012,
+      "max_impulse_sweep_phase_difference_deg": 0.27251300000000356,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a010-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 1,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a010-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a010-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a010-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a010-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.033213999999999966,
+      "median_impulse_sweep_magnitude_difference_db": 0.00822999999999996,
+      "max_impulse_sweep_phase_difference_deg": 0.29951399999998785,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a020-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03126699999999999,
+      "median_impulse_sweep_magnitude_difference_db": 0.008469999999999978,
+      "max_impulse_sweep_phase_difference_deg": 0.25990600000000086,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a030-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a030-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a030-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a030-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a030-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.028386000000000022,
+      "median_impulse_sweep_magnitude_difference_db": 0.009417000000000009,
+      "max_impulse_sweep_phase_difference_deg": 0.18449699999999325,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a040-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02566500000000005,
+      "median_impulse_sweep_magnitude_difference_db": 0.011595000000000244,
+      "max_impulse_sweep_phase_difference_deg": 0.09938500000001227,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a050-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.028890999999999778,
+      "median_impulse_sweep_magnitude_difference_db": 0.012858000000000036,
+      "max_impulse_sweep_phase_difference_deg": 0.04930300000000898,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a060-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03541300000000014,
+      "median_impulse_sweep_magnitude_difference_db": 0.011178999999999828,
+      "max_impulse_sweep_phase_difference_deg": 0.08370899999999892,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a070-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a070-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a070-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a070-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a070-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04884899999999881,
+      "median_impulse_sweep_magnitude_difference_db": 0.010019999999999918,
+      "max_impulse_sweep_phase_difference_deg": 0.13799900000000775,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a080-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06321700000000163,
+      "median_impulse_sweep_magnitude_difference_db": 0.009030000000000094,
+      "max_impulse_sweep_phase_difference_deg": 0.18861899999998855,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a090-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 9,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a090-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a090-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a090-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a090-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07425299999999879,
+      "median_impulse_sweep_magnitude_difference_db": 0.008896000000000015,
+      "max_impulse_sweep_phase_difference_deg": 0.22935200000000577,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "atten_only-60-b000-a100-44k1",
+      "group": "atten_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\atten_only-60-b000-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07780599999999893,
+      "median_impulse_sweep_magnitude_difference_db": 0.008996000000000226,
+      "max_impulse_sweep_phase_difference_deg": 0.24479500000001053,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b020-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.032945,
+      "median_impulse_sweep_magnitude_difference_db": 0.008167000000000035,
+      "max_impulse_sweep_phase_difference_deg": 0.29546199999998635,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b020-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b020-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04099199999999925,
+      "median_impulse_sweep_magnitude_difference_db": 0.012386999999999482,
+      "max_impulse_sweep_phase_difference_deg": 0.1097780000000057,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b040-a040-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b040-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b040-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b040-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b040-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.039827999999999975,
+      "median_impulse_sweep_magnitude_difference_db": 0.007295999999999969,
+      "max_impulse_sweep_phase_difference_deg": 0.4270710000000122,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b050-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b050-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b050-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b050-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b050-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06617999999999924,
+      "median_impulse_sweep_magnitude_difference_db": 0.007674000000000625,
+      "max_impulse_sweep_phase_difference_deg": 0.7050140000000056,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b060-a060-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b060-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b060-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b060-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b060-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.15897999999999968,
+      "median_impulse_sweep_magnitude_difference_db": 0.008093999999999824,
+      "max_impulse_sweep_phase_difference_deg": 1.6138730000000123,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b080-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.31620399999999904,
+      "median_impulse_sweep_magnitude_difference_db": 0.014440000000000008,
+      "max_impulse_sweep_phase_difference_deg": 3.4388669999999877,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b080-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b080-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.2897400000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.015238000000000002,
+      "max_impulse_sweep_phase_difference_deg": 3.1032690000000116,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b100-a050-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.34717799999999954,
+      "median_impulse_sweep_magnitude_difference_db": 0.01721800000000062,
+      "max_impulse_sweep_phase_difference_deg": 3.7768529999999885,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-100-b100-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-100-b100-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.33848000000000056,
+      "median_impulse_sweep_magnitude_difference_db": 0.015452000000000021,
+      "max_impulse_sweep_phase_difference_deg": 3.671336999999994,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b020-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03368899999999997,
+      "median_impulse_sweep_magnitude_difference_db": 0.008699000000000012,
+      "max_impulse_sweep_phase_difference_deg": 0.29503700000000777,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b020-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b020-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.039972999999999814,
+      "median_impulse_sweep_magnitude_difference_db": 0.008480000000000043,
+      "max_impulse_sweep_phase_difference_deg": 0.13605400000000145,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b040-a040-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b040-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b040-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b040-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b040-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.040675999999999934,
+      "median_impulse_sweep_magnitude_difference_db": 0.009017000000000053,
+      "max_impulse_sweep_phase_difference_deg": 0.43459300000000667,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b050-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b050-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b050-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b050-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b050-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0743330000000002,
+      "median_impulse_sweep_magnitude_difference_db": 0.009781999999999999,
+      "max_impulse_sweep_phase_difference_deg": 0.7801010000000019,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b060-a060-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b060-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b060-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b060-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b060-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.2146290000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.010078000000000031,
+      "max_impulse_sweep_phase_difference_deg": 2.064571000000001,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b080-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.49812499999999993,
+      "median_impulse_sweep_magnitude_difference_db": 0.013749000000000011,
+      "max_impulse_sweep_phase_difference_deg": 5.701479000000006,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b080-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b080-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.4721460000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.013016999999999612,
+      "max_impulse_sweep_phase_difference_deg": 5.428414000000004,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b100-a050-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.5677069999999995,
+      "median_impulse_sweep_magnitude_difference_db": 0.014336999999999933,
+      "max_impulse_sweep_phase_difference_deg": 6.872592999999995,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-20-b100-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-20-b100-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.5795310000000002,
+      "median_impulse_sweep_magnitude_difference_db": 0.014363000000000126,
+      "max_impulse_sweep_phase_difference_deg": 6.813889000000017,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b020-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03361800000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.008633000000000002,
+      "max_impulse_sweep_phase_difference_deg": 0.2954459999999983,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b020-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b020-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04473899999999986,
+      "median_impulse_sweep_magnitude_difference_db": 0.00856399999999996,
+      "max_impulse_sweep_phase_difference_deg": 0.13174100000000522,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b040-a040-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b040-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b040-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b040-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b040-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04011500000000012,
+      "median_impulse_sweep_magnitude_difference_db": 0.008769999999999945,
+      "max_impulse_sweep_phase_difference_deg": 0.42836500000001365,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b050-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b050-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b050-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b050-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b050-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06678300000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.009494000000000002,
+      "max_impulse_sweep_phase_difference_deg": 0.7189070000000015,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b060-a060-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b060-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b060-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b060-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b060-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.17092499999999866,
+      "median_impulse_sweep_magnitude_difference_db": 0.010775999999999897,
+      "max_impulse_sweep_phase_difference_deg": 1.6924769999999967,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b080-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3905440000000002,
+      "median_impulse_sweep_magnitude_difference_db": 0.013848000000000082,
+      "max_impulse_sweep_phase_difference_deg": 3.947509999999994,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b080-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b080-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3625209999999992,
+      "median_impulse_sweep_magnitude_difference_db": 0.015281999999999907,
+      "max_impulse_sweep_phase_difference_deg": 3.6180610000000115,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b100-a050-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.45511499999999927,
+      "median_impulse_sweep_magnitude_difference_db": 0.015589999999999993,
+      "max_impulse_sweep_phase_difference_deg": 4.574961999999999,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-30-b100-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-30-b100-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.44884900000000094,
+      "median_impulse_sweep_magnitude_difference_db": 0.016506000000000576,
+      "max_impulse_sweep_phase_difference_deg": 4.48621,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b020-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03321699999999994,
+      "median_impulse_sweep_magnitude_difference_db": 0.00828300000000004,
+      "max_impulse_sweep_phase_difference_deg": 0.295061000000004,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b020-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b020-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.044627000000000194,
+      "median_impulse_sweep_magnitude_difference_db": 0.009894999999999765,
+      "max_impulse_sweep_phase_difference_deg": 0.1204309999999964,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b040-a040-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b040-a040-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b040-a040-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b040-a040-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b040-a040-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.039522999999999975,
+      "median_impulse_sweep_magnitude_difference_db": 0.008172999999999986,
+      "max_impulse_sweep_phase_difference_deg": 0.42659399999999437,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b050-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b050-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b050-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b050-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b050-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06591900000000006,
+      "median_impulse_sweep_magnitude_difference_db": 0.009135000000000115,
+      "max_impulse_sweep_phase_difference_deg": 0.7087980000000016,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b060-a060-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b060-a060-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b060-a060-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b060-a060-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b060-a060-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.16121000000000052,
+      "median_impulse_sweep_magnitude_difference_db": 0.010791999999999913,
+      "max_impulse_sweep_phase_difference_deg": 1.6280810000000088,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b080-a020-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 2,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a020-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a020-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a020-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a020-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3326279999999997,
+      "median_impulse_sweep_magnitude_difference_db": 0.014234999999999998,
+      "max_impulse_sweep_phase_difference_deg": 3.5404020000000003,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b080-a080-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 8,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a080-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a080-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a080-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b080-a080-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.30614000000000097,
+      "median_impulse_sweep_magnitude_difference_db": 0.016690000000000094,
+      "max_impulse_sweep_phase_difference_deg": 3.205309999999997,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b100-a050-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a050-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a050-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a050-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a050-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.37243700000000146,
+      "median_impulse_sweep_magnitude_difference_db": 0.01844900000000005,
+      "max_impulse_sweep_phase_difference_deg": 3.9371299999999962,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_atten_trick-60-b100-a100-44k1",
+      "group": "boost_atten_trick",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a100-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a100-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a100-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_atten_trick-60-b100-a100-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3647160000000014,
+      "median_impulse_sweep_magnitude_difference_db": 0.018330999999999986,
+      "max_impulse_sweep_phase_difference_deg": 3.835847000000001,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b010-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b010-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b010-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b010-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b010-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.034872000000000014,
+      "median_impulse_sweep_magnitude_difference_db": 0.008554000000000173,
+      "max_impulse_sweep_phase_difference_deg": 0.32153099999999313,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b020-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b020-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b020-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b020-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b020-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03681599999999996,
+      "median_impulse_sweep_magnitude_difference_db": 0.008528000000000091,
+      "max_impulse_sweep_phase_difference_deg": 0.348479999999995,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b030-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b030-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b030-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b030-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b030-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04112500000000008,
+      "median_impulse_sweep_magnitude_difference_db": 0.008014999999999994,
+      "max_impulse_sweep_phase_difference_deg": 0.43767800000000534,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b040-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b040-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b040-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b040-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b040-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06758299999999995,
+      "median_impulse_sweep_magnitude_difference_db": 0.007149000000000072,
+      "max_impulse_sweep_phase_difference_deg": 0.7293840000000102,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b050-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b050-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b050-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b050-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b050-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.12490999999999985,
+      "median_impulse_sweep_magnitude_difference_db": 0.007099999999999995,
+      "max_impulse_sweep_phase_difference_deg": 1.2745060000000024,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b060-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b060-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b060-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b060-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b060-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.19511199999999995,
+      "median_impulse_sweep_magnitude_difference_db": 0.008767999999999887,
+      "max_impulse_sweep_phase_difference_deg": 2.0334469999999953,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b070-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b070-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b070-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b070-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b070-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.26509300000000025,
+      "median_impulse_sweep_magnitude_difference_db": 0.010687000000000113,
+      "max_impulse_sweep_phase_difference_deg": 2.8347719999999867,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b080-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b080-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b080-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b080-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b080-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3192540000000008,
+      "median_impulse_sweep_magnitude_difference_db": 0.013371000000000022,
+      "max_impulse_sweep_phase_difference_deg": 3.479822000000013,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b090-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b090-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b090-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b090-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b090-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3535819999999994,
+      "median_impulse_sweep_magnitude_difference_db": 0.013886999999999983,
+      "max_impulse_sweep_phase_difference_deg": 3.8756349999999884,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-100-b100-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b100-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b100-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b100-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-100-b100-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.36428499999999886,
+      "median_impulse_sweep_magnitude_difference_db": 0.015530999999999962,
+      "max_impulse_sweep_phase_difference_deg": 4.008317000000005,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b010-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b010-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b010-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b010-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b010-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0345390000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.008391999999999955,
+      "max_impulse_sweep_phase_difference_deg": 0.3220019999999977,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b020-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b020-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b020-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b020-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b020-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.036176999999999904,
+      "median_impulse_sweep_magnitude_difference_db": 0.008253000000000066,
+      "max_impulse_sweep_phase_difference_deg": 0.3486249999999984,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b030-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b030-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b030-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b030-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b030-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.040525000000000144,
+      "median_impulse_sweep_magnitude_difference_db": 0.008242000000000083,
+      "max_impulse_sweep_phase_difference_deg": 0.4381469999999865,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b040-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b040-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b040-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b040-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b040-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0692440000000003,
+      "median_impulse_sweep_magnitude_difference_db": 0.00800500000000004,
+      "max_impulse_sweep_phase_difference_deg": 0.7368309999999951,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b050-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b050-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b050-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b050-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b050-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.13789799999999985,
+      "median_impulse_sweep_magnitude_difference_db": 0.008888999999999925,
+      "max_impulse_sweep_phase_difference_deg": 1.3607680000000073,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b060-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b060-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b060-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b060-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b060-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.25693500000000036,
+      "median_impulse_sweep_magnitude_difference_db": 0.009470000000000312,
+      "max_impulse_sweep_phase_difference_deg": 2.5118889999999965,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b070-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b070-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b070-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b070-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b070-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.39961300000000044,
+      "median_impulse_sweep_magnitude_difference_db": 0.010703999999999825,
+      "max_impulse_sweep_phase_difference_deg": 4.175888999999984,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b080-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b080-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b080-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b080-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b080-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.501417,
+      "median_impulse_sweep_magnitude_difference_db": 0.012767000000000084,
+      "max_impulse_sweep_phase_difference_deg": 5.732899000000003,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b090-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b090-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b090-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b090-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b090-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.5424699999999998,
+      "median_impulse_sweep_magnitude_difference_db": 0.013526000000000149,
+      "max_impulse_sweep_phase_difference_deg": 6.704504999999983,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-20-b100-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 20,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b100-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b100-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b100-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-20-b100-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.5540629999999993,
+      "median_impulse_sweep_magnitude_difference_db": 0.013574999999999893,
+      "max_impulse_sweep_phase_difference_deg": 7.010563999999988,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b010-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b010-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b010-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b010-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b010-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.034584999999999866,
+      "median_impulse_sweep_magnitude_difference_db": 0.008470999999999895,
+      "max_impulse_sweep_phase_difference_deg": 0.3219100000000026,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b020-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b020-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b020-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b020-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b020-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.036302000000000056,
+      "median_impulse_sweep_magnitude_difference_db": 0.008224000000000009,
+      "max_impulse_sweep_phase_difference_deg": 0.34877800000001,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b030-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b030-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b030-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b030-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b030-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04050500000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.007829000000000086,
+      "max_impulse_sweep_phase_difference_deg": 0.4367819999999938,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b040-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b040-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b040-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b040-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b040-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06832199999999933,
+      "median_impulse_sweep_magnitude_difference_db": 0.007949999999999902,
+      "max_impulse_sweep_phase_difference_deg": 0.7304430000000082,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b050-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b050-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b050-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b050-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b050-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.1274949999999997,
+      "median_impulse_sweep_magnitude_difference_db": 0.008367000000000013,
+      "max_impulse_sweep_phase_difference_deg": 1.2888269999999977,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b060-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b060-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b060-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b060-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b060-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.20891900000000163,
+      "median_impulse_sweep_magnitude_difference_db": 0.010034000000000098,
+      "max_impulse_sweep_phase_difference_deg": 2.1166049999999927,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b070-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b070-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b070-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b070-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b070-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3047760000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.01226700000000136,
+      "max_impulse_sweep_phase_difference_deg": 3.0967540000000042,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b080-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b080-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b080-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b080-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b080-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.39298699999999975,
+      "median_impulse_sweep_magnitude_difference_db": 0.013325999999999949,
+      "max_impulse_sweep_phase_difference_deg": 3.9862380000000144,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b090-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b090-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b090-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b090-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b090-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.4516270000000002,
+      "median_impulse_sweep_magnitude_difference_db": 0.01327900000000004,
+      "max_impulse_sweep_phase_difference_deg": 4.580925000000008,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-30-b100-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b100-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b100-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b100-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-30-b100-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.4723620000000004,
+      "median_impulse_sweep_magnitude_difference_db": 0.012577999999999978,
+      "max_impulse_sweep_phase_difference_deg": 4.784493999999995,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b010-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 1,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b010-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b010-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b010-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b010-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.03472200000000014,
+      "median_impulse_sweep_magnitude_difference_db": 0.008461000000000052,
+      "max_impulse_sweep_phase_difference_deg": 0.3213619999999935,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b020-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 2,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b020-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b020-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b020-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b020-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.036575000000000024,
+      "median_impulse_sweep_magnitude_difference_db": 0.008230999999999877,
+      "max_impulse_sweep_phase_difference_deg": 0.3482889999999941,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b030-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b030-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b030-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b030-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b030-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.04082499999999989,
+      "median_impulse_sweep_magnitude_difference_db": 0.007837000000000316,
+      "max_impulse_sweep_phase_difference_deg": 0.43736999999998716,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b040-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 4,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b040-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b040-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b040-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b040-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06793200000000077,
+      "median_impulse_sweep_magnitude_difference_db": 0.007519999999999971,
+      "max_impulse_sweep_phase_difference_deg": 0.7292339999999911,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b050-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b050-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b050-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b050-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b050-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.12564799999999998,
+      "median_impulse_sweep_magnitude_difference_db": 0.007513000000000103,
+      "max_impulse_sweep_phase_difference_deg": 1.2771749999999997,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b060-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b060-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b060-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b060-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b060-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.19824900000000056,
+      "median_impulse_sweep_magnitude_difference_db": 0.009019,
+      "max_impulse_sweep_phase_difference_deg": 2.049577999999997,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b070-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b070-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b070-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b070-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b070-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.27371500000000104,
+      "median_impulse_sweep_magnitude_difference_db": 0.011152999999999968,
+      "max_impulse_sweep_phase_difference_deg": 2.885952000000003,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b080-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 8,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b080-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b080-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b080-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b080-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.33557599999999965,
+      "median_impulse_sweep_magnitude_difference_db": 0.01330000000000009,
+      "max_impulse_sweep_phase_difference_deg": 3.5800570000000107,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b090-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 9,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b090-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b090-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b090-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b090-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3766110000000005,
+      "median_impulse_sweep_magnitude_difference_db": 0.015320999999999918,
+      "max_impulse_sweep_phase_difference_deg": 4.018740000000008,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "boost_only-60-b100-a000-44k1",
+      "group": "boost_only",
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b100-a000-44k1-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b100-a000-44k1-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b100-a000-44k1-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\boost_only-60-b100-a000-44k1-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.3903640000000017,
+      "median_impulse_sweep_magnitude_difference_db": 0.01590199999999986,
+      "max_impulse_sweep_phase_difference_deg": 4.165288000000004,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a030-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0374540000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.00901699999999983,
+      "max_impulse_sweep_phase_difference_deg": 0.11000300000000607,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a030-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a030-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02667799999999998,
+      "median_impulse_sweep_magnitude_difference_db": 0.0032959999999999656,
+      "max_impulse_sweep_phase_difference_deg": 0.10695899999998915,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a070-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.044781999999999655,
+      "median_impulse_sweep_magnitude_difference_db": 0.012736000000000303,
+      "max_impulse_sweep_phase_difference_deg": 0.12258600000001252,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a070-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a070-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.018489999999999895,
+      "median_impulse_sweep_magnitude_difference_db": 0.005001000000000033,
+      "max_impulse_sweep_phase_difference_deg": 0.050097999999991316,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a100-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07286999999999821,
+      "median_impulse_sweep_magnitude_difference_db": 0.010573999999999195,
+      "max_impulse_sweep_phase_difference_deg": 0.22028099999999995,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b000-a100-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b000-a100-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.028631999999998214,
+      "median_impulse_sweep_magnitude_difference_db": 0.004153999999999769,
+      "max_impulse_sweep_phase_difference_deg": 0.08887900000001991,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b030-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.09433700000000034,
+      "median_impulse_sweep_magnitude_difference_db": 0.007983999999999991,
+      "max_impulse_sweep_phase_difference_deg": 0.2467969999999866,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b030-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b030-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07455699999999998,
+      "median_impulse_sweep_magnitude_difference_db": 0.0028489999999998794,
+      "max_impulse_sweep_phase_difference_deg": 0.30401699999998755,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b050-a100-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.13562100000000044,
+      "median_impulse_sweep_magnitude_difference_db": 0.007985000000000131,
+      "max_impulse_sweep_phase_difference_deg": 0.38293600000000083,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b050-a100-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b050-a100-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.11636099999999949,
+      "median_impulse_sweep_magnitude_difference_db": 0.0031840000000000757,
+      "max_impulse_sweep_phase_difference_deg": 0.47709800000001223,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b060-a060-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.28544899999999984,
+      "median_impulse_sweep_magnitude_difference_db": 0.008026000000000977,
+      "max_impulse_sweep_phase_difference_deg": 0.896347999999989,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b060-a060-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b060-a060-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.2624670000000009,
+      "median_impulse_sweep_magnitude_difference_db": 0.0055080000000002904,
+      "max_impulse_sweep_phase_difference_deg": 1.1650569999999902,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b070-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.49304399999999937,
+      "median_impulse_sweep_magnitude_difference_db": 0.012245000000000061,
+      "max_impulse_sweep_phase_difference_deg": 1.7264360000000067,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b070-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b070-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.4656979999999997,
+      "median_impulse_sweep_magnitude_difference_db": 0.008819000000000132,
+      "max_impulse_sweep_phase_difference_deg": 2.0199619999999925,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b100-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.685414999999999,
+      "median_impulse_sweep_magnitude_difference_db": 0.01733899999999977,
+      "max_impulse_sweep_phase_difference_deg": 2.5292180000000144,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b100-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.653488000000003,
+      "median_impulse_sweep_magnitude_difference_db": 0.012731999999999966,
+      "max_impulse_sweep_phase_difference_deg": 2.8350090000000137,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b100-a050-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.6466560000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.020231,
+      "max_impulse_sweep_phase_difference_deg": 2.384366,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-100-b100-a050-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 100,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-100-b100-a050-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.6158149999999978,
+      "median_impulse_sweep_magnitude_difference_db": 0.015351000000000115,
+      "max_impulse_sweep_phase_difference_deg": 2.675758000000002,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a030-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.0392300000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.009944999999999996,
+      "max_impulse_sweep_phase_difference_deg": 0.10932900000000245,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a030-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 3,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a030-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02750000000000008,
+      "median_impulse_sweep_magnitude_difference_db": 0.0034860000000001,
+      "max_impulse_sweep_phase_difference_deg": 0.10749500000000012,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a070-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.050043999999999755,
+      "median_impulse_sweep_magnitude_difference_db": 0.008729,
+      "max_impulse_sweep_phase_difference_deg": 0.1549229999999966,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a070-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 7,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a070-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.019693999999999434,
+      "median_impulse_sweep_magnitude_difference_db": 0.0031320000000000237,
+      "max_impulse_sweep_phase_difference_deg": 0.06117499999999154,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a100-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06857499999999916,
+      "median_impulse_sweep_magnitude_difference_db": 0.008594999999999964,
+      "max_impulse_sweep_phase_difference_deg": 0.27816500000000133,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b000-a100-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b000-a100-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.02552599999999927,
+      "median_impulse_sweep_magnitude_difference_db": 0.0030129999999999324,
+      "max_impulse_sweep_phase_difference_deg": 0.10837799999998765,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b030-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.09371000000000018,
+      "median_impulse_sweep_magnitude_difference_db": 0.007637999999999812,
+      "max_impulse_sweep_phase_difference_deg": 0.24635699999998906,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b030-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 3,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b030-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.07435400000000003,
+      "median_impulse_sweep_magnitude_difference_db": 0.0028610000000002245,
+      "max_impulse_sweep_phase_difference_deg": 0.3040770000000066,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b050-a100-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.13766799999999968,
+      "median_impulse_sweep_magnitude_difference_db": 0.009797,
+      "max_impulse_sweep_phase_difference_deg": 0.38602399999999193,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b050-a100-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 5,
+        "lf_atten_ui": 10,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b050-a100-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.11798300000000062,
+      "median_impulse_sweep_magnitude_difference_db": 0.004074000000000008,
+      "max_impulse_sweep_phase_difference_deg": 0.4834799999999859,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b060-a060-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.292762999999999,
+      "median_impulse_sweep_magnitude_difference_db": 0.011122999999999994,
+      "max_impulse_sweep_phase_difference_deg": 1.030699999999996,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b060-a060-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 6,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b060-a060-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.26951500000000017,
+      "median_impulse_sweep_magnitude_difference_db": 0.005481999999999987,
+      "max_impulse_sweep_phase_difference_deg": 1.2264519999999948,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b070-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.5149640000000009,
+      "median_impulse_sweep_magnitude_difference_db": 0.012188000000000088,
+      "max_impulse_sweep_phase_difference_deg": 2.0960110000000043,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b070-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 7,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b070-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.4828550000000007,
+      "median_impulse_sweep_magnitude_difference_db": 0.008554999999999868,
+      "max_impulse_sweep_phase_difference_deg": 2.1841640000000098,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b100-a000-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.7417309999999979,
+      "median_impulse_sweep_magnitude_difference_db": 0.016388999999999987,
+      "max_impulse_sweep_phase_difference_deg": 3.242118000000005,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b100-a000-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a000-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.6958770000000012,
+      "median_impulse_sweep_magnitude_difference_db": 0.013161999999999896,
+      "max_impulse_sweep_phase_difference_deg": 3.4402729999999906,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b100-a050-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.706316000000001,
+      "median_impulse_sweep_magnitude_difference_db": 0.017685000000000173,
+      "max_impulse_sweep_phase_difference_deg": 3.111124999999987,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "sr_reduced-30-b100-a050-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 30,
+        "lf_boost_ui": 10,
+        "lf_atten_ui": 5,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\sr_reduced-30-b100-a050-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.660183,
+      "median_impulse_sweep_magnitude_difference_db": 0.012012999999999607,
+      "max_impulse_sweep_phase_difference_deg": 3.288961999999998,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "svc-flat-48k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 48000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\svc-flat-48k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\svc-flat-48k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\svc-flat-48k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\svc-flat-48k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.06741799999999998,
+      "median_impulse_sweep_magnitude_difference_db": 0.008783999999999903,
+      "max_impulse_sweep_phase_difference_deg": 0.15781499999999937,
+      "csv_point_count": 246
+    },
+    {
+      "configuration_id": "svc-flat-96k",
+      "group": "sr_reduced",
+      "sample_rate_hz": 96000,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "impulse_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\svc-flat-96k-imp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\svc-flat-96k-imp.csv"
+      },
+      "sweep_transfer": {
+        "json": "measurements\\results\\pultec_lf\\transfer\\svc-flat-96k-swp.json",
+        "csv": "measurements\\results\\pultec_lf\\transfer\\svc-flat-96k-swp.csv"
+      },
+      "max_impulse_sweep_magnitude_difference_db": 0.047987,
+      "median_impulse_sweep_magnitude_difference_db": 0.0030530000000001944,
+      "max_impulse_sweep_phase_difference_deg": 0.20560499999999138,
+      "csv_point_count": 246
+    }
+  ],
+  "service_checks": [
+    {
+      "id": "svc-transparent-44k1-imp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-transparent-44k1-imp-null.json",
+      "result": "null: peak=0.000e+00 rms=0.000e+00 bit_identical=True"
+    },
+    {
+      "id": "svc-hostbypass-44k1-imp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-hostbypass-44k1-imp.json",
+      "csv": "measurements\\results\\pultec_lf\\transfer\\svc-hostbypass-44k1-imp.csv"
+    },
+    {
+      "id": "svc-eqoff-44k1-imp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-eqoff-44k1-imp.json",
+      "csv": "measurements\\results\\pultec_lf\\transfer\\svc-eqoff-44k1-imp.csv"
+    },
+    {
+      "id": "svc-transparent-44k1-swp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-transparent-44k1-swp-null.json",
+      "result": "null: peak=0.000e+00 rms=0.000e+00 bit_identical=True"
+    },
+    {
+      "id": "svc-hostbypass-44k1-swp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-hostbypass-44k1-swp.json",
+      "csv": "measurements\\results\\pultec_lf\\transfer\\svc-hostbypass-44k1-swp.csv"
+    },
+    {
+      "id": "svc-eqoff-44k1-swp",
+      "analysis": "measurements\\results\\pultec_lf\\transfer\\svc-eqoff-44k1-swp.json",
+      "csv": "measurements\\results\\pultec_lf\\transfer\\svc-eqoff-44k1-swp.csv"
+    }
+  ]
+}

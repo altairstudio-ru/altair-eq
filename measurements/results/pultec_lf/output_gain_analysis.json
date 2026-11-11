@@ -1,0 +1,61 @@
+{
+  "schema": "altair-eq.output-trim-analysis/1",
+  "method": "sweep FFT transfer; relative to measured 0 dB setting",
+  "summary": [
+    {
+      "id": "og-m12.0-44k1-swp",
+      "requested_db": -12.0,
+      "measured_delta_vs_zero_trim_db": {
+        "min": -11.9523,
+        "max": -11.952296,
+        "mean": -11.952297821138208
+      },
+      "max_abs_error_from_requested_db": 0.047703999999999525,
+      "frequency_bins": 246
+    },
+    {
+      "id": "og-m6.0-44k1-swp",
+      "requested_db": -6.0,
+      "measured_delta_vs_zero_trim_db": {
+        "min": -6.0001679999999995,
+        "max": -6.000165,
+        "mean": -6.000166617886176
+      },
+      "max_abs_error_from_requested_db": 0.00016799999999950188,
+      "frequency_bins": 246
+    },
+    {
+      "id": "og-z0.0-44k1-swp",
+      "requested_db": 0.0,
+      "measured_delta_vs_zero_trim_db": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "max_abs_error_from_requested_db": 0.0,
+      "frequency_bins": 246
+    },
+    {
+      "id": "og-p6.0-44k1-swp",
+      "requested_db": 6.0,
+      "measured_delta_vs_zero_trim_db": {
+        "min": 5.9989989999999995,
+        "max": 5.999002,
+        "mean": 5.999000646341464
+      },
+      "max_abs_error_from_requested_db": 0.0010010000000004737,
+      "frequency_bins": 246
+    },
+    {
+      "id": "og-p12.0-44k1-swp",
+      "requested_db": 12.0,
+      "measured_delta_vs_zero_trim_db": {
+        "min": 11.997772,
+        "max": 11.997776,
+        "mean": 11.997773719512187
+      },
+      "max_abs_error_from_requested_db": 0.002228000000000563,
+      "frequency_bins": 246
+    }
+  ]
+}

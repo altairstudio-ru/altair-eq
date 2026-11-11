@@ -1,0 +1,17 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "latency",
+  "created_utc": "2026-11-09T23:58:58Z",
+  "inputs": {
+    "measurements/signals/impulse-44100.wav": "b8e9e316407e4a007675feb6c306dad4ae197949790f4dca8dc1d7cb58a9aa59",
+    "measurements/renders/pultec_lf/pilot-60cps-b6-a0-imp.wav": "dcffad42130e8d6328262535f3355b4bc0384ee993002bacd4346306b19cf798"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "latency_samples": 86,
+  "latency_ms": 1.9501133786848073,
+  "input_peak_position": 8820,
+  "render_peak_position": 8906,
+  "peak_shift_samples": 86,
+  "stereo_difference_peak": 0.0
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "altair-eq.lowlevel-grid-inputs/1",
+  "files": [
+    {
+      "path": "measurements/signals/sweep_log_m36-44100-tail.wav",
+      "sha256": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+      "sample_rate_hz": 44100,
+      "samples": 771750,
+      "channels": 2,
+      "format": "wav_float32",
+      "type": "log_sweep",
+      "level_dbfs": -36,
+      "duration_total_s": 17.5,
+      "duration_sweep_s": 15.0,
+      "f_start_hz": 1.0,
+      "f_end_hz": 19845.0,
+      "fade_s": 0.05,
+      "lead_s": 0.5,
+      "tail_s": 2.0
+    },
+    {
+      "path": "measurements/signals/sweep_log_m36-48000-tail.wav",
+      "sha256": "b614384cfcc54d3659f6a34720ac636dd4b4313dd56e2cc553eff699c6960040",
+      "sample_rate_hz": 48000,
+      "samples": 840000,
+      "channels": 2,
+      "format": "wav_float32",
+      "type": "log_sweep",
+      "level_dbfs": -36,
+      "duration_total_s": 17.5,
+      "duration_sweep_s": 15.0,
+      "f_start_hz": 1.0,
+      "f_end_hz": 21600.0,
+      "fade_s": 0.05,
+      "lead_s": 0.5,
+      "tail_s": 2.0
+    },
+    {
+      "path": "measurements/signals/sweep_log_m36-96000-tail.wav",
+      "sha256": "d9181022fdf42a40df9c78793625926f4c8373122694e79271190556303e0f01",
+      "sample_rate_hz": 96000,
+      "samples": 1680000,
+      "channels": 2,
+      "format": "wav_float32",
+      "type": "log_sweep",
+      "level_dbfs": -36,
+      "duration_total_s": 17.5,
+      "duration_sweep_s": 15.0,
+      "f_start_hz": 1.0,
+      "f_end_hz": 43200.0,
+      "fade_s": 0.05,
+      "lead_s": 0.5,
+      "tail_s": 2.0
+    }
+  ]
+}

@@ -27,3 +27,8 @@ target_link_libraries(vst3paramdump PRIVATE
     juce::juce_audio_processors
     juce::juce_events
     juce::juce_recommended_config_flags)
+
+juce_add_console_app(vst3render PRODUCT_NAME "vst3render")
+target_sources(vst3render PRIVATE ../vst3render/Main.cpp)
+target_compile_definitions(vst3render PRIVATE JUCE_MODAL_LOOPS_PERMITTED=1 JUCE_PLUGINHOST_VST3=1 JUCE_PLUGINHOST_VST=0 JUCE_PLUGINHOST_AU=0 JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0)
+target_link_libraries(vst3render PRIVATE juce::juce_audio_processors juce::juce_audio_formats juce::juce_events juce::juce_recommended_config_flags)

@@ -1,0 +1,58 @@
+{
+  "schema": "altair-eq.single-node-cap-probe/1",
+  "result": {
+    "parameters": [
+      -0.013678328728493415,
+      0.9989999936545333,
+      0.0013364933252298246,
+      0.9989802511951157,
+      0.0012227061230495895,
+      0.9832617159761676,
+      1.0047441198683885e-05,
+      0.9899644915099304,
+      1.8585171106106127e-05,
+      0.9621425530982332,
+      0.004856152875640252,
+      0.9728081898931819,
+      1.0028286404606282e-05,
+      0.8579840124054797,
+      3.141395073299809,
+      1.28772429293939,
+      3.141571741489175,
+      0.9939649695252528,
+      1.8362875406450733e-05,
+      0.9957142103345968,
+      1.6056501722184733e-05,
+      0.9989903605359124,
+      3.04418679168653,
+      0.7723950742631126,
+      2.7234843309336125
+    ],
+    "max_pole_radius": 0.9989999936545333,
+    "rms_magnitude_error_db": 0.006909595313749607,
+    "band_max_magnitude_error_db": {
+      "20-100": 0.005648149881494646,
+      "100-1000": 0.0067048847650034715,
+      "1000-18000": 0.059993829817160615
+    },
+    "max_phase_error_deg": 1.0215806631522755,
+    "rms_phase_error_deg": 0.18075716491669908,
+    "worst_magnitude_frequency_hz": 18000.0,
+    "id": "sr_reduced-30-b000-a100-48k-swp",
+    "sample_rate_hz": 48000,
+    "configuration": {
+      "fx_present": true,
+      "host_bypass": false,
+      "eq_in": true,
+      "lf_cps_hz": 30,
+      "lf_boost_ui": 0,
+      "lf_atten_ui": 10,
+      "output_gain_ui": null
+    },
+    "source": "measurements/results/pultec_lf/lowlevel_transfer/sr_reduced-30-b000-a100-48k-swp-m36.csv",
+    "method_version": 2,
+    "source_model": "retry from unconstrained six-section warm start under radius cap",
+    "max_pole_radius_limit": 0.999,
+    "pass": true
+  }
+}

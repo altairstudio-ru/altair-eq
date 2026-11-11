@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:45:35Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-96000.wav": "9dc8d83e1485a1f2e5aa234993c6a2c75fca3d8a55da998574f77b5d2ad7f958",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\sr_reduced-100-b000-a100-96k-swp.wav": "cc40140508aec1362933d161fceb2cd4cc0455225bc05fc9e64e0524a3a0b75f"
+  },
+  "sample_rate_hz": 96000,
+  "samples": 1680000,
+  "latency_compensated_samples": 118,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": -19.05278304137443,
+      "phase_deg": 10.419945988777826,
+      "group_delay_ms": -0.600511024078465
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": -18.93377372387984,
+      "phase_deg": 13.136800361074823,
+      "group_delay_ms": -0.8193049218009275
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": -18.588885513860408,
+      "phase_deg": 19.305542159204865,
+      "group_delay_ms": -0.7771185573163802
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": -18.36923128361321,
+      "phase_deg": 22.328343670915405,
+      "group_delay_ms": -0.5669130349936261
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": -17.27437513427374,
+      "phase_deg": 32.84391985652066,
+      "group_delay_ms": -0.5608569084979353
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": -3.4696543855400015,
+      "phase_deg": 46.47899698311116,
+      "group_delay_ms": 0.0615652824072406
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.0623769228549635,
+      "phase_deg": 1.1024518663999834,
+      "group_delay_ms": -0.10570498509702803
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.9311478779993434,
+      "phase_deg": -7.061879555769895,
+      "group_delay_ms": 0.06509592236865697
+    }
+  ]
+}

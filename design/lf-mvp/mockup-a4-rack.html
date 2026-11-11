@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--
+  AltaiR EQ - LF MVP - UI design proposal (Concept A "Compact Panel", variant A4 "Rack module faceplate")
+  Date: 2026-11-10. Status: PROPOSAL. Not a specification, not a product implementation.
+  Base: mockup-a3-freq-knob.html (A3, which reuses the A2 volumetric knob treatment 1:1).
+  This variant re-styles the SAME content as a faceplate of a 19"-style rack module (hardware styling):
+  graphite powder-coat plate, rack ears with mounting screws at both sides, four corner screws,
+  engraved (paint-filled) labels, and a PHYSICAL two-position toggle lever for EQ IN.
+  IMPORTANT semantic note: the toggle is EQ IN (section enable - a confirmed reference parameter),
+  NOT host bypass. Host-bypass mapping is a separate topic (spec 02-ui-spec.md section 4); the caption
+  under the toggle states "NOT HOST BYPASS". Hardware look is a STYLE choice only: it does NOT claim
+  hardware emulation, measured audio quality, or any DSP property.
+  Content contract unchanged from A2/A3: LF Frequency stepped knob 20/30/60/100 Hz (60 Hz shown),
+  Boost / Attenuation unitless 0-10 (NOT dB; 6.40 / 4.20 shown), Output Trim -12..+12 dB (PROPOSAL,
+  +0.0 dB shown), A/B/COPY/RESET (PROPOSAL), PROPOSAL chips kept. No frequency-response graph anywhere.
+  Knob SVG geometry and volumetric treatment are reused 1:1 from A3 (radial gradient, inner cap,
+  bevel rim-light, drop shadow, bottom inner shade, specular arc, volumetric pointer).
+  Two static frames share this file: ON (default) and OFF via "#off" URL hash. The hash class switch
+  is a RENDER AID for the OFF screenshot only; interaction (click / Space / Enter on the toggle,
+  drag, keyboard, entry) remains a PROPOSAL documented in 05-variant-rack.md, not executed here.
+  In the OFF frame only the toggle changes (lever position + LED); all controls stay editable-looking
+  (no dimming), matching spec section 4.
+  Self-contained HTML/CSS/SVG. No network resources, no bitmap textures: powder-coat grain is an
+  in-SVG feTurbulence filter, all metal is gradients. Fonts: locally installed Bahnschrift + Cascadia Mono.
+  Base window: 960 x 460 px at 100% scale (module is taller than the 960x340 baseline - deliberate
+  trade-off for the toggle column and plate margins, documented in 05-variant-rack.md).
+  New material tones (plate / ears / recesses / steel) are documented in 05-variant-rack.md.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AltaiR EQ - LF MVP - Design Proposal (A4 Rack Module)</title>
+<style>
+  :root{
+    /* tokens carried over from spec 02 section 5 (unchanged) */
+    --bg:#14161A; --surface:#1B1E24; --surface-2:#262B33; --raised:#2E343E;
+    --line:#2E333C; --line-soft:#23272E; --line-strong:#454C58;
+    --text-hi:#ECEEF1; --text-mid:#A7AEB8; --text-low:#7C838C;
+    --boost:#E3A857; --atten:#6FB3D2; --trim:#A7AEB8;
+    --ok:#79C267; --ok-bg:#1E2A21; --ok-line:#3E5C46; --ok-text:#CFE6D3;
+    --focus:#8AB4F8; --readout-bg:#101216;
+    --chip-line:#3A404A; --chip-text:#8A919B;
+    --select-bar:#DDE1E6;
+    /* A4 material tones (new, hardware-only; documented in 05-variant-rack.md) */
+    --plate-hi:#2C313A; --plate-mid:#262B33; --plate-lo:#1F232B;
+    --ear-hi:#262B33; --ear-mid:#1E222A; --ear-lo:#171A20;
+    --recess-hi:#191C23; --recess-lo:#15181D; --recess-line:#0D0F13;
+    --bezel-hi:#13161C; --bezel-lo:#0C0E12; --slot:#08090C;
+    --steel-hi:#CBD1DA; --steel-mid:#9AA2AD; --steel-deep:#5A626D; --steel-dark:#333943;
+    --screw-hi:#5A626E; --screw-mid:#343A44; --screw-lo:#191C22; --screw-lip:#6B7482;
+    --font-ui:Bahnschrift,"Segoe UI",sans-serif;
+    --font-mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{width:960px; height:460px; overflow:hidden;}
+  body{font-family:var(--font-ui); color:var(--text-hi); -webkit-font-smoothing:antialiased;
+    background:radial-gradient(140% 130% at 50% 0%, #12151A 0%, #0B0D10 55%, #070809 100%);}
+  .defs{position:absolute; width:0; height:0; overflow:hidden;}
+
+  /* engraved (paint-filled) text treatment */
+  .etch{text-shadow:0 -1px 0 rgba(0,0,0,0.55), 0 1px 0 rgba(255,255,255,0.06);}
+
+  .scene{position:relative; width:960px; height:460px;}
+  .module{position:absolute; left:12px; top:14px; width:936px; height:432px; display:flex;
+    border-radius:4px; box-shadow:0 16px 44px rgba(0,0,0,0.66), 0 4px 14px rgba(0,0,0,0.5);}
+
+  /* ---------- rack ears ---------- */
+  .ear{flex:0 0 16px; display:flex; flex-direction:column; align-items:center;
+    justify-content:space-between; padding:26px 0; background:linear-gradient(90deg, var(--ear-hi), var(--ear-mid) 55%, var(--ear-lo));}
+  .ear-l{border-radius:3px 0 0 3px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.07), inset 0 -1px 0 rgba(0,0,0,0.5),
+      inset 1px 0 0 rgba(255,255,255,0.05), inset -2px 0 3px -2px rgba(0,0,0,0.8);}
+  .ear-r{border-radius:0 3px 3px 0; background:linear-gradient(270deg, var(--ear-hi), var(--ear-mid) 55%, var(--ear-lo));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.07), inset 0 -1px 0 rgba(0,0,0,0.5),
+      inset -1px 0 0 rgba(255,255,255,0.05), inset 2px 0 3px -2px rgba(0,0,0,0.8);}
+  .ear-screw{filter:drop-shadow(0 1px 1px rgba(0,0,0,0.6));}
+
+  /* ---------- faceplate ---------- */
+  .faceplate{flex:1 1 auto; position:relative; display:flex; flex-direction:column; border-radius:3px;
+    background:linear-gradient(160deg, var(--plate-hi) 0%, var(--plate-mid) 45%, var(--plate-lo) 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -1px 0 rgba(0,0,0,0.6),
+      inset 2px 0 2px -2px rgba(255,255,255,0.05), inset -2px 0 2px -2px rgba(0,0,0,0.5);}
+  .fp-grain{position:absolute; inset:0; width:100%; height:100%; opacity:0.7; pointer-events:none; z-index:30;}
+  .corner-screw{position:absolute; z-index:20; filter:drop-shadow(0 1px 1px rgba(0,0,0,0.65));}
+  .cs-tl{top:6px; left:6px;} .cs-tr{top:6px; right:6px;}
+  .cs-bl{bottom:6px; left:6px;} .cs-br{bottom:6px; right:6px;}
+
+  /* ---------- header band ---------- */
+  .fp-header{flex:0 0 54px; display:flex; align-items:center; padding:0 44px 0 42px;
+    border-bottom:1px solid rgba(0,0,0,0.55); box-shadow:0 1px 0 rgba(255,255,255,0.05); z-index:10;}
+  .nameplate{display:flex; align-items:center; height:30px; padding:0 12px; border-radius:5px;
+    background:linear-gradient(180deg, #333944, #252A32); border:1px solid #10131A;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), inset 0 -1px 0 rgba(0,0,0,0.55), 0 2px 4px rgba(0,0,0,0.45);}
+  .brand{font-size:15px; font-weight:700; letter-spacing:0.4px; color:var(--text-hi); white-space:nowrap;}
+  .chip{display:inline-flex; align-items:center; height:16px; padding:0 6px;
+    border:1px solid var(--chip-line); border-radius:3px; font-size:9px; font-weight:600;
+    letter-spacing:1px; color:var(--text-mid); background:rgba(20,22,26,0.5);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.4); white-space:nowrap;}
+  .chip-proposal{color:var(--chip-text);}
+  .brand-chip{margin-left:10px;}
+  .hgroove{width:1px; height:20px; margin:0 14px; background:rgba(0,0,0,0.55);
+    box-shadow:1px 0 0 rgba(255,255,255,0.05);}
+  .hdr-caption{font-size:10px; letter-spacing:1.5px; color:var(--text-low); white-space:nowrap;}
+  .hdr-right{margin-left:auto; display:flex; align-items:center; gap:7px;}
+  .hdr-right .chip-proposal{margin-right:3px;}
+
+  /* hardware keycaps (A/B, COPY, RESET) */
+  .cap{height:28px; border:1px solid #0F1216; border-radius:5px; cursor:pointer;
+    background:linear-gradient(180deg, #343A44 0%, #282D35 55%, #23282F 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -2px 3px rgba(0,0,0,0.35), 0 2px 3px rgba(0,0,0,0.5);
+    font-family:var(--font-ui); font-size:10px; font-weight:600; letter-spacing:0.8px;
+    color:var(--text-mid); white-space:nowrap;}
+  .copy{width:54px;} .reset{width:58px;}
+  .ab{display:flex; gap:2px; padding:2px; border-radius:6px; border:1px solid #0C0E12;
+    background:#14171C; box-shadow:inset 0 1px 3px rgba(0,0,0,0.6);}
+  .ab .cap{width:30px; height:24px; border-radius:4px; color:#7C838C;
+    background:linear-gradient(180deg, #2C313A, #232830);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 1px 2px rgba(0,0,0,0.5);}
+  .ab .cap[aria-checked="true"]{background:linear-gradient(180deg, #2E343E, #262B33); color:var(--text-hi);
+    font-weight:700; box-shadow:inset 0 2px 0 var(--focus), inset 0 1px 0 rgba(255,255,255,0.08);}
+
+  /* ---------- main row ---------- */
+  .fp-main{flex:1 1 auto; display:flex; align-items:stretch; padding:0 15px; z-index:10;}
+  .group{flex:none; display:flex; flex-direction:column;}
+  .g-freq{flex-basis:168px;} .g-knob{flex-basis:204px;} .g-trim{flex-basis:150px;} .g-toggle{flex-basis:90px;}
+  .sep{flex:0 0 14px; display:flex; justify-content:center;}
+  .sep div{width:1px; height:216px; margin-top:16px; background:rgba(0,0,0,0.5);
+    box-shadow:1px 0 0 rgba(255,255,255,0.05);}
+
+  .glabel{height:14px; margin-top:8px; font-size:11px; font-weight:600; letter-spacing:1.2px;
+    color:var(--text-mid); text-align:center; white-space:nowrap;}
+  .glabel.big{font-size:12px; letter-spacing:1.5px;}
+  .glabel.boost{color:var(--boost);}
+  .glabel.atten{color:var(--atten);}
+  .g-trim .glabel{display:flex; align-items:center; justify-content:center; gap:6px;}
+  .g-trim .glabel .chip{height:14px; font-size:8px;}
+
+  .content{flex:1 1 auto; display:flex; align-items:center; justify-content:center;}
+  .knob{width:156px; height:136px; cursor:ns-resize; outline:none;}
+  .knob svg{display:block;}
+  .knob:hover .body, .knob:hover .bevel{stroke:#5A626E;}
+  .knob.trim-knob{width:112px; height:136px;}
+  .knob.freq-knob{width:150px; height:136px;}
+
+  .readout-band{flex:0 0 34px; display:flex; align-items:center; justify-content:center;}
+  .readout{width:92px; height:30px; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(180deg, #0B0D10, var(--readout-bg)); border:1px solid var(--line);
+    border-radius:4px; cursor:text;
+    box-shadow:inset 0 2px 4px rgba(0,0,0,0.65), inset 0 -1px 0 rgba(255,255,255,0.04), 0 1px 0 rgba(255,255,255,0.05);
+    font-family:var(--font-mono); font-size:18px; color:var(--text-hi);}
+  .readout:hover{border-color:var(--line-strong);}
+  .readout.small{width:96px; height:30px; font-size:14px;}
+  .scale-caption{flex:0 0 12px; margin:2px 0 10px; font-size:10px; letter-spacing:0.8px;
+    color:var(--text-low); text-align:center; white-space:nowrap;}
+  .scale-caption.narrow{letter-spacing:0.4px; font-size:9.5px;}
+
+  /* ---------- EQ IN toggle (physical two-position lever) ---------- */
+  .toggle{width:64px; height:150px; cursor:pointer; outline:none;}
+  .toggle svg{display:block;}
+  .lever-off{display:none;}
+  .is-off .lever-on{display:none;}
+  .is-off .lever-off{display:inline;}
+  .lbl{font-family:"Cascadia Mono",Consolas,monospace; font-size:10px;}
+  .lbl-on{fill:var(--select-bar); font-weight:700;}
+  .lbl-off{fill:#7C838C;}
+  .is-off .lbl-on{fill:#7C838C; font-weight:400;}
+  .is-off .lbl-off{fill:var(--select-bar); font-weight:700;}
+
+  .led-band{flex:0 0 34px; display:flex; align-items:center; justify-content:center;}
+  .led-ring{width:15px; height:15px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(180deg, #20242C, #0D0F13);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.06);}
+  .led{width:8px; height:8px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #B7EBA9, var(--ok) 55%, #3E5C46 100%);
+    box-shadow:0 0 9px rgba(121,194,103,0.5), 0 0 2px rgba(121,194,103,0.8);}
+  .is-off .led{background:#101318; border:1px solid var(--chip-line); box-shadow:inset 0 1px 2px rgba(0,0,0,0.8);}
+
+  /* ---------- service strip ---------- */
+  .fp-service{flex:0 0 52px; margin:0 34px 14px; border-radius:6px; display:flex; align-items:center;
+    justify-content:space-between; padding:0 18px; z-index:10;
+    background:linear-gradient(180deg, var(--recess-lo), var(--recess-hi));
+    border:1px solid var(--recess-line);
+    box-shadow:inset 0 2px 5px rgba(0,0,0,0.55), inset 0 -1px 0 rgba(255,255,255,0.04);}
+  .hint{font-size:11px; color:var(--text-low); letter-spacing:0.2px; white-space:nowrap;}
+  .foot-right{display:flex; align-items:center; gap:16px;}
+  .foot-tag{font-size:9.5px; letter-spacing:0.8px; color:var(--text-low); white-space:nowrap;}
+
+  button:focus-visible, .readout:focus-visible, .knob:focus-visible, .toggle:focus-visible{
+    outline:2px solid var(--focus); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<!-- shared defs: powder-coat grain filter + screw symbols -->
+<svg class="defs" aria-hidden="true">
+  <defs>
+    <filter id="grainF" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.75  0 0 0 0 0.78  0 0 0 0 0.82  0 0 0 0.10 0"/>
+    </filter>
+    <radialGradient id="gradScrew" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#5A626E"/>
+      <stop offset="45%" stop-color="#343A44"/>
+      <stop offset="100%" stop-color="#191C22"/>
+    </radialGradient>
+    <!-- corner screw, 14x14, Phillips dome head -->
+    <g id="screw12">
+      <circle cx="7" cy="7" r="5.8" fill="url(#gradScrew)" stroke="#0B0D10" stroke-width="1"/>
+      <path d="M 2.3 5.5 A 5 5 0 0 1 11.7 5.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1" stroke-linecap="round"/>
+      <g stroke="#0D1015" stroke-width="2.1" stroke-linecap="round">
+        <line x1="3.4" y1="7" x2="10.6" y2="7"/>
+        <line x1="7" y1="3.4" x2="7" y2="10.6"/>
+      </g>
+      <g stroke="#6B7482" stroke-opacity="0.45" stroke-width="0.8" stroke-linecap="round">
+        <line x1="3.4" y1="7.8" x2="10.6" y2="7.8"/>
+        <line x1="7.8" y1="3.4" x2="7.8" y2="10.6"/>
+      </g>
+    </g>
+    <!-- ear mounting screw, 20x20, sits in a drilled hole -->
+    <g id="screw16">
+      <circle cx="10" cy="10" r="9.3" fill="#0B0D10"/>
+      <circle cx="10" cy="10" r="7" fill="url(#gradScrew)" stroke="#0B0D10" stroke-width="1"/>
+      <path d="M 4.1 8.2 A 6.2 6.2 0 0 1 15.9 8.2" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1" stroke-linecap="round"/>
+      <g stroke="#0D1015" stroke-width="2.6" stroke-linecap="round">
+        <line x1="5.6" y1="10" x2="14.4" y2="10"/>
+        <line x1="10" y1="5.6" x2="10" y2="14.4"/>
+      </g>
+      <g stroke="#6B7482" stroke-opacity="0.45" stroke-width="0.9" stroke-linecap="round">
+        <line x1="5.6" y1="10.9" x2="14.4" y2="10.9"/>
+        <line x1="10.9" y1="5.6" x2="10.9" y2="14.4"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<div class="scene">
+  <div class="module">
+
+    <div class="ear ear-l">
+      <svg class="ear-screw" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><use href="#screw16"/></svg>
+      <svg class="ear-screw" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><use href="#screw16"/></svg>
+    </div>
+
+    <div class="faceplate">
+      <svg class="fp-grain" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" filter="url(#grainF)"/></svg>
+      <svg class="corner-screw cs-tl" width="14" height="14" aria-hidden="true"><use href="#screw12"/></svg>
+      <svg class="corner-screw cs-tr" width="14" height="14" aria-hidden="true"><use href="#screw12"/></svg>
+      <svg class="corner-screw cs-bl" width="14" height="14" aria-hidden="true"><use href="#screw12"/></svg>
+      <svg class="corner-screw cs-br" width="14" height="14" aria-hidden="true"><use href="#screw12"/></svg>
+
+      <header class="fp-header">
+        <div class="nameplate"><span class="brand etch">AltaiR EQ</span></div>
+        <span class="chip brand-chip etch">LF MVP</span>
+        <div class="hgroove"></div>
+        <span class="hdr-caption etch">LOW-FREQUENCY SECTION</span>
+
+        <div class="hdr-right">
+          <span class="chip chip-proposal etch" title="A/B, COPY and RESET are proposals for AltaiR EQ (not present on the reference)">PROPOSAL</span>
+          <div class="ab" role="radiogroup" aria-label="Compare banks A and B (proposal)">
+            <button class="cap" role="radio" aria-checked="true" title="Bank A (active)">A</button>
+            <button class="cap" role="radio" aria-checked="false" title="Bank B">B</button>
+          </div>
+          <button class="cap copy" title="Copy active bank to the other bank (proposal)">COPY</button>
+          <button class="cap reset" title="Reset active bank to defaults (proposal)">RESET</button>
+        </div>
+      </header>
+
+      <main class="fp-main">
+
+        <!-- LF FREQUENCY: A3 stepped (detented) knob, 4 positions over 270 degrees -->
+        <section class="group g-freq" aria-label="LF frequency">
+          <div class="glabel etch">LF FREQUENCY &#183; Hz</div>
+          <div class="content">
+            <div class="knob freq-knob" tabindex="0" role="slider"
+                 aria-label="LF frequency, stepped control, 4 positions: 20, 30, 60, 100 hertz"
+                 aria-valuemin="1" aria-valuemax="4" aria-valuenow="3" aria-valuetext="60 Hz">
+              <svg width="150" height="136" viewBox="0 0 150 136" aria-hidden="true">
+                <defs>
+                  <radialGradient id="gradFreq" cx="40%" cy="30%" r="78%">
+                    <stop offset="0%" stop-color="#3B4250"/>
+                    <stop offset="32%" stop-color="#2A2F39"/>
+                    <stop offset="70%" stop-color="#1F232B"/>
+                    <stop offset="100%" stop-color="#171A20"/>
+                  </radialGradient>
+                  <radialGradient id="capFreq" cx="42%" cy="32%" r="80%">
+                    <stop offset="0%" stop-color="#2C313B"/>
+                    <stop offset="65%" stop-color="#23272F"/>
+                    <stop offset="100%" stop-color="#1A1D24"/>
+                  </radialGradient>
+                  <linearGradient id="bevFreq" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#576172"/>
+                    <stop offset="45%" stop-color="#2E333C"/>
+                    <stop offset="100%" stop-color="#15181D"/>
+                  </linearGradient>
+                  <filter id="knobShadow4" x="-25%" y="-25%" width="150%" height="150%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <path d="M 43.89 99.11 A 44 44 0 1 1 106.11 99.11" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 43.89 99.11 A 44 44 0 0 1 106.11 36.89" fill="none" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round"/>
+                <g stroke="#5A626E" stroke-width="2">
+                  <line x1="42.47" y1="100.53" x2="36.82" y2="106.18"/>
+                  <line x1="42.47" y1="35.47" x2="36.82" y2="29.82"/>
+                  <line x1="107.53" y1="100.53" x2="113.18" y2="106.18"/>
+                </g>
+                <line x1="107.53" y1="35.47" x2="113.18" y2="29.82" stroke="#DDE1E6" stroke-width="2.5"/>
+                <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+                  <text x="29.75" y="116.75">20</text>
+                  <text x="29.75" y="22.75">30</text>
+                  <text x="120.25" y="116.75">100</text>
+                  <text x="120.25" y="22.75" fill="#ECEEF1" font-weight="700">60</text>
+                </g>
+                <circle class="body" cx="75" cy="68" r="36" fill="url(#gradFreq)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow4)"/>
+                <path d="M 43.05 79.63 A 34 34 0 0 0 106.95 79.63" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="75" cy="68" r="30" fill="url(#capFreq)" stroke="#14171C" stroke-width="1"/>
+                <circle class="bevel" cx="75" cy="68" r="35.5" fill="none" stroke="url(#bevFreq)" stroke-width="1.5"/>
+                <path d="M 43.99 56.71 A 33 33 0 0 1 106.01 56.71" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+                <line x1="89.85" y1="53.15" x2="96.92" y2="46.08" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+                <line x1="89.85" y1="53.15" x2="96.92" y2="46.08" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="readout-band">
+            <div class="readout" tabindex="0" role="textbox" aria-label="LF frequency value, click to type; accepts only 20, 30, 60 or 100">60 Hz</div>
+          </div>
+          <div class="scale-caption etch">DEFAULT: 30 Hz</div>
+        </section>
+
+        <div class="sep"><div></div></div>
+
+        <!-- BOOST -->
+        <section class="group g-knob" aria-label="LF boost">
+          <div class="glabel big boost etch">BOOST</div>
+          <div class="content">
+            <div class="knob" tabindex="0" role="slider" aria-label="LF Boost, unitless scale 0 to 10"
+                 aria-valuemin="0" aria-valuemax="10" aria-valuenow="6.4" aria-valuetext="6.40">
+              <svg width="156" height="136" viewBox="0 0 156 136" aria-hidden="true">
+                <defs>
+                  <radialGradient id="gradBoost" cx="40%" cy="30%" r="78%">
+                    <stop offset="0%" stop-color="#3B4250"/>
+                    <stop offset="32%" stop-color="#2A2F39"/>
+                    <stop offset="70%" stop-color="#1F232B"/>
+                    <stop offset="100%" stop-color="#171A20"/>
+                  </radialGradient>
+                  <radialGradient id="capBoost" cx="42%" cy="32%" r="80%">
+                    <stop offset="0%" stop-color="#2C313B"/>
+                    <stop offset="65%" stop-color="#23272F"/>
+                    <stop offset="100%" stop-color="#1A1D24"/>
+                  </radialGradient>
+                  <linearGradient id="bevBoost" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#576172"/>
+                    <stop offset="45%" stop-color="#2E333C"/>
+                    <stop offset="100%" stop-color="#15181D"/>
+                  </linearGradient>
+                  <filter id="knobShadow" x="-25%" y="-25%" width="150%" height="150%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 42.64 105.36 A 50 50 0 0 1 108.65 30.49" fill="none" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+                <g stroke="#464D58" stroke-width="1">
+                  <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+                  <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+                  <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+                  <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+                  <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+                  <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+                  <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+                  <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+                </g>
+                <g stroke="#5A626E" stroke-width="1.5">
+                  <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+                  <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+                  <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+                </g>
+                <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+                  <text x="32.75" y="118.75">0</text>
+                  <text x="78" y="9.5">5</text>
+                  <text x="123.25" y="118.75">10</text>
+                </g>
+                <circle class="body" cx="78" cy="70" r="42" fill="url(#gradBoost)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow)"/>
+                <path d="M 40.41 83.68 A 40 40 0 0 0 115.59 83.68" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="78" cy="70" r="35" fill="url(#capBoost)" stroke="#14171C" stroke-width="1"/>
+                <circle class="bevel" cx="78" cy="70" r="41.5" fill="none" stroke="url(#bevBoost)" stroke-width="1.5"/>
+                <path d="M 41.35 56.66 A 39 39 0 0 1 114.65 56.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+                <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+                <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="readout-band">
+            <div class="readout" tabindex="0" role="textbox" aria-label="Boost value, click to type">6.40</div>
+          </div>
+          <div class="scale-caption etch">SCALE 0&#8211;10</div>
+        </section>
+
+        <div class="sep"><div></div></div>
+
+        <!-- ATTENUATION -->
+        <section class="group g-knob" aria-label="LF attenuation">
+          <div class="glabel big atten etch">ATTENUATION</div>
+          <div class="content">
+            <div class="knob" tabindex="0" role="slider" aria-label="LF Attenuation, unitless scale 0 to 10"
+                 aria-valuemin="0" aria-valuemax="10" aria-valuenow="4.2" aria-valuetext="4.20">
+              <svg width="156" height="136" viewBox="0 0 156 136" aria-hidden="true">
+                <defs>
+                  <radialGradient id="gradAtten" cx="40%" cy="30%" r="78%">
+                    <stop offset="0%" stop-color="#3B4250"/>
+                    <stop offset="32%" stop-color="#2A2F39"/>
+                    <stop offset="70%" stop-color="#1F232B"/>
+                    <stop offset="100%" stop-color="#171A20"/>
+                  </radialGradient>
+                  <radialGradient id="capAtten" cx="42%" cy="32%" r="80%">
+                    <stop offset="0%" stop-color="#2C313B"/>
+                    <stop offset="65%" stop-color="#23272F"/>
+                    <stop offset="100%" stop-color="#1A1D24"/>
+                  </radialGradient>
+                  <linearGradient id="bevAtten" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#576172"/>
+                    <stop offset="45%" stop-color="#2E333C"/>
+                    <stop offset="100%" stop-color="#15181D"/>
+                  </linearGradient>
+                  <filter id="knobShadow2" x="-25%" y="-25%" width="150%" height="150%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 42.64 105.36 A 50 50 0 0 1 59.59 23.51" fill="none" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+                <g stroke="#464D58" stroke-width="1">
+                  <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+                  <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+                  <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+                  <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+                  <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+                  <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+                  <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+                  <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+                </g>
+                <g stroke="#5A626E" stroke-width="1.5">
+                  <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+                  <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+                  <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+                </g>
+                <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+                  <text x="32.75" y="118.75">0</text>
+                  <text x="78" y="9.5">5</text>
+                  <text x="123.25" y="118.75">10</text>
+                </g>
+                <circle class="body" cx="78" cy="70" r="42" fill="url(#gradAtten)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow2)"/>
+                <path d="M 40.41 83.68 A 40 40 0 0 0 115.59 83.68" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="78" cy="70" r="35" fill="url(#capAtten)" stroke="#14171C" stroke-width="1"/>
+                <circle class="bevel" cx="78" cy="70" r="41.5" fill="none" stroke="url(#bevAtten)" stroke-width="1.5"/>
+                <path d="M 41.35 56.66 A 39 39 0 0 1 114.65 56.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+                <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+                <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="readout-band">
+            <div class="readout" tabindex="0" role="textbox" aria-label="Attenuation value, click to type">4.20</div>
+          </div>
+          <div class="scale-caption etch">SCALE 0&#8211;10</div>
+        </section>
+
+        <div class="sep"><div></div></div>
+
+        <!-- OUTPUT TRIM (proposal) -->
+        <section class="group g-trim" aria-label="Output trim, proposal">
+          <div class="glabel etch">OUTPUT TRIM <span class="chip chip-proposal etch">PROPOSAL</span></div>
+          <div class="content">
+            <div class="knob trim-knob" tabindex="0" role="slider" aria-label="Output trim, proposal, minus 12 to plus 12 decibels"
+                 aria-valuemin="-12" aria-valuemax="12" aria-valuenow="0" aria-valuetext="plus 0.0 dB">
+              <svg width="112" height="136" viewBox="0 0 112 136" aria-hidden="true">
+                <defs>
+                  <radialGradient id="gradTrim" cx="40%" cy="30%" r="78%">
+                    <stop offset="0%" stop-color="#3B4250"/>
+                    <stop offset="32%" stop-color="#2A2F39"/>
+                    <stop offset="70%" stop-color="#1F232B"/>
+                    <stop offset="100%" stop-color="#171A20"/>
+                  </radialGradient>
+                  <radialGradient id="capTrim" cx="42%" cy="32%" r="80%">
+                    <stop offset="0%" stop-color="#2C313B"/>
+                    <stop offset="65%" stop-color="#23272F"/>
+                    <stop offset="100%" stop-color="#1A1D24"/>
+                  </radialGradient>
+                  <linearGradient id="bevTrim" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#576172"/>
+                    <stop offset="45%" stop-color="#2E333C"/>
+                    <stop offset="100%" stop-color="#15181D"/>
+                  </linearGradient>
+                  <filter id="knobShadow3" x="-25%" y="-25%" width="150%" height="150%">
+                    <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <path d="M 29.13 96.87 A 38 38 0 1 1 82.87 96.87" fill="none" stroke="#2E333C" stroke-width="2.5" stroke-linecap="round"/>
+                <g stroke="#464D58" stroke-width="1">
+                  <line x1="26.3" y1="99.7" x2="23.47" y2="102.53"/>
+                  <line x1="17.2" y1="53.93" x2="13.5" y2="52.4"/>
+                  <line x1="94.8" y1="53.93" x2="98.5" y2="52.4"/>
+                  <line x1="85.7" y1="99.7" x2="88.53" y2="102.53"/>
+                </g>
+                <line x1="56.0" y1="30.0" x2="56.0" y2="24.0" stroke="#5A626E" stroke-width="1.5"/>
+                <circle class="body" cx="56" cy="70" r="30" fill="url(#gradTrim)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow3)"/>
+                <path d="M 29.22 79.75 A 28.5 28.5 0 0 0 82.78 79.75" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="56" cy="70" r="24.5" fill="url(#capTrim)" stroke="#14171C" stroke-width="1"/>
+                <circle class="bevel" cx="56" cy="70" r="29.5" fill="none" stroke="url(#bevTrim)" stroke-width="1.5"/>
+                <path d="M 29.69 60.42 A 28 28 0 0 1 82.31 60.42" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="56" y1="52" x2="56" y2="44" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="4.5" stroke-linecap="round"/>
+                <line x1="56" y1="52" x2="56" y2="44" stroke="#A7AEB8" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="readout-band">
+            <div class="readout small" tabindex="0" role="textbox" aria-label="Trim value, click to type">+0.0 dB</div>
+          </div>
+          <div class="scale-caption etch">&#8722;12 &#8230; +12 dB</div>
+        </section>
+
+        <div class="sep"><div></div></div>
+
+        <!-- EQ IN: physical two-position toggle lever (section enable, NOT host bypass) -->
+        <section class="group g-toggle" aria-label="EQ IN">
+          <div class="glabel etch">EQ IN</div>
+          <div class="content">
+            <div class="toggle" tabindex="0" role="switch" aria-checked="true"
+                 aria-label="EQ IN, section enable; not host bypass"
+                 title="EQ IN &#8212; correction enable (not host bypass)">
+              <svg width="64" height="150" viewBox="0 0 64 150" aria-hidden="true">
+                <defs>
+                  <linearGradient id="leverSteel" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#CBD1DA"/>
+                    <stop offset="28%" stop-color="#9AA2AD"/>
+                    <stop offset="55%" stop-color="#5A626D"/>
+                    <stop offset="85%" stop-color="#333943"/>
+                    <stop offset="100%" stop-color="#2A2F37"/>
+                  </linearGradient>
+                  <radialGradient id="collarSteel" cx="40%" cy="30%" r="80%">
+                    <stop offset="0%" stop-color="#7E8794"/>
+                    <stop offset="45%" stop-color="#4A515C"/>
+                    <stop offset="80%" stop-color="#2B303A"/>
+                    <stop offset="100%" stop-color="#1D2129"/>
+                  </radialGradient>
+                  <linearGradient id="bezelRecess" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#0C0E12"/>
+                    <stop offset="100%" stop-color="#13161C"/>
+                  </linearGradient>
+                  <filter id="leverShadow" x="-60%" y="-60%" width="220%" height="220%">
+                    <feDropShadow dx="0" dy="3" stdDeviation="2.6" flood-color="#000000" flood-opacity="0.6"/>
+                  </filter>
+                  <filter id="collarShadow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.55"/>
+                  </filter>
+                </defs>
+                <text class="lbl lbl-on" x="32" y="11" text-anchor="middle">ON</text>
+                <rect x="4" y="18" width="56" height="108" rx="7" fill="url(#bezelRecess)" stroke="#060709" stroke-width="1"/>
+                <rect x="5.5" y="19.5" width="53" height="105" rx="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+                <rect x="27" y="34" width="10" height="76" rx="5" fill="#08090C" stroke="#050608" stroke-width="1"/>
+                <line x1="28.5" y1="108.6" x2="35.5" y2="108.6" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+                <g filter="url(#leverShadow)">
+                  <circle cx="32" cy="72" r="17.5" fill="url(#collarSteel)" stroke="#101318" stroke-width="1"/>
+                </g>
+                <path d="M 17.7 66 A 15.5 15.5 0 0 1 46.3 66" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="32" cy="72" r="9.5" fill="#0A0C0F" stroke="#060709" stroke-width="1"/>
+                <path d="M 26.5 79 A 8.5 8.5 0 0 0 37.5 79" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" stroke-linecap="round"/>
+                <!-- lever, ON position (up) -->
+                <g class="lever-on" filter="url(#leverShadow)">
+                  <rect x="28.25" y="37" width="7.5" height="38" rx="3.75" fill="url(#leverSteel)"/>
+                  <line x1="30.2" y1="41" x2="30.2" y2="68" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.4" stroke-linecap="round"/>
+                  <circle cx="32" cy="39.5" r="5.75" fill="url(#leverSteel)"/>
+                  <path d="M 28.3 37.8 A 5.2 5.2 0 0 1 35.7 37.8" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1" stroke-linecap="round"/>
+                </g>
+                <!-- lever, OFF position (down); visibility switches via .is-off (render aid for the OFF frame) -->
+                <g class="lever-off" filter="url(#leverShadow)">
+                  <rect x="28.25" y="69" width="7.5" height="38" rx="3.75" fill="url(#leverSteel)"/>
+                  <line x1="30.2" y1="73" x2="30.2" y2="100" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.4" stroke-linecap="round"/>
+                  <circle cx="32" cy="104.5" r="5.75" fill="url(#leverSteel)"/>
+                  <path d="M 28.3 106.2 A 5.2 5.2 0 0 0 35.7 106.2" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1" stroke-linecap="round"/>
+                </g>
+                <text class="lbl lbl-off" x="32" y="141" text-anchor="middle">OFF</text>
+              </svg>
+            </div>
+          </div>
+          <div class="led-band"><span class="led-ring"><span class="led"></span></span></div>
+          <div class="scale-caption narrow etch">NOT HOST BYPASS</div>
+        </section>
+      </main>
+
+      <footer class="fp-service">
+        <span class="hint etch">Drag: adjust &#183; Shift+Drag: fine &#183; Double-click: reset &#183; Click value: type</span>
+        <span class="foot-right">
+          <span class="foot-tag etch">LF-1 &#183; REV A</span>
+          <span class="foot-tag etch">DESIGN PROPOSAL v0.1</span>
+        </span>
+      </footer>
+    </div>
+
+    <div class="ear ear-r">
+      <svg class="ear-screw" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><use href="#screw16"/></svg>
+      <svg class="ear-screw" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><use href="#screw16"/></svg>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  /* Render aid ONLY: "#off" selects the static OFF frame for the mockup-a4-rack-off.png screenshot.
+     No interaction is implemented here; toggle/click/keyboard behavior stays a PROPOSAL
+     documented in 05-variant-rack.md. */
+  if (location.hash === '#off') {
+    document.documentElement.classList.add('is-off');
+    var t = document.querySelector('.toggle');
+    if (t) { t.setAttribute('aria-checked', 'false'); }
+  }
+</script>
+</body>
+</html>

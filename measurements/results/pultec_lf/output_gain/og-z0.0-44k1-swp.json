@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:48:29Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-44100.wav": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\og-z0.0-44k1-swp-corrected.wav": "491b9edfcdaaff59bdaad50714ca42359b9b319cc8675a825d66bba5c82c1b5d"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 11.096070312617517,
+      "phase_deg": -3.1589915439357017,
+      "group_delay_ms": 39.2915294512609
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 11.124701376546062,
+      "phase_deg": -10.358644129102657,
+      "group_delay_ms": 0.31511911229525613
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 10.60982165838502,
+      "phase_deg": -17.012278694707838,
+      "group_delay_ms": 8.756512723138492
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 10.447318654539444,
+      "phase_deg": -20.878394888112826,
+      "group_delay_ms": -10.663976996584255
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 9.063194197757355,
+      "phase_deg": -30.869288681294016,
+      "group_delay_ms": 2.5131536074579994
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": -1.7088920184493084,
+      "phase_deg": -9.720111466068184,
+      "group_delay_ms": 0.5291400662141684
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 0.974248026030612,
+      "phase_deg": -4.3020049721905504,
+      "group_delay_ms": 3.9997974305719333
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.805637010552847,
+      "phase_deg": -10.600125436321775,
+      "group_delay_ms": 2.3093556764464416
+    }
+  ]
+}

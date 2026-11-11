@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:47:10Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-96000.wav": "9dc8d83e1485a1f2e5aa234993c6a2c75fca3d8a55da998574f77b5d2ad7f958",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\svc-flat-96k-swp.wav": "5a574a71351b072f3c5088ee7d0761a5c13ee3d0016aa073afa1e788f1941a86"
+  },
+  "sample_rate_hz": 96000,
+  "samples": 1680000,
+  "latency_compensated_samples": 118,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 1.1482753473229033,
+      "phase_deg": 2.997352729460536,
+      "group_delay_ms": -2.2621949005937534
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 1.1255583289201179,
+      "phase_deg": 1.9265206995085888,
+      "group_delay_ms": 1.960784112777479
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 1.1453839159685724,
+      "phase_deg": 1.0958368779961603,
+      "group_delay_ms": -0.8394786142906928
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 1.1445128165768472,
+      "phase_deg": 0.9294414392970086,
+      "group_delay_ms": -0.6120034123399406
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 1.1423325998712308,
+      "phase_deg": 0.518422244277648,
+      "group_delay_ms": 0.01648044104103022
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 1.1433345401792294,
+      "phase_deg": -0.5345346779312404,
+      "group_delay_ms": -0.07380833581505178
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.0681854984432173,
+      "phase_deg": -5.976128650176639,
+      "group_delay_ms": -0.051984559249797835
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.8893372489079918,
+      "phase_deg": -10.848050405027758,
+      "group_delay_ms": 0.1898181507034787
+    }
+  ]
+}

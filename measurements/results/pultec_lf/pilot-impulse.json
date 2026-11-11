@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-09T23:59:01Z",
+  "inputs": {
+    "measurements/signals/impulse-44100.wav": "b8e9e316407e4a007675feb6c306dad4ae197949790f4dca8dc1d7cb58a9aa59",
+    "measurements/renders/pultec_lf/pilot-60cps-b6-a0-imp.wav": "dcffad42130e8d6328262535f3355b4bc0384ee993002bacd4346306b19cf798"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 89901,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 12.24990612114068,
+      "phase_deg": -4.001606528998113,
+      "group_delay_ms": 1.326807928687186
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 12.123085295261564,
+      "phase_deg": -8.232476003080327,
+      "group_delay_ms": 1.0649952183720894
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 11.73044169313778,
+      "phase_deg": -15.00192774925753,
+      "group_delay_ms": 0.8377644186805869
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 11.48179788626556,
+      "phase_deg": -17.858780012803273,
+      "group_delay_ms": 0.7513846811692224
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 10.301913045638123,
+      "phase_deg": -26.45967544586639,
+      "group_delay_ms": 0.45591532819746444
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 1.8046383164075506,
+      "phase_deg": -17.477893313963804,
+      "group_delay_ms": -0.038540828467419214
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.012539693318816,
+      "phase_deg": -8.369304281803345,
+      "group_delay_ms": 0.0014073969954358874
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.7857573382318411,
+      "phase_deg": -12.793547370742367,
+      "group_delay_ms": 0.0017643004558182207
+    }
+  ]
+}

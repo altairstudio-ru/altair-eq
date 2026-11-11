@@ -1,0 +1,68 @@
+{
+  "schema": "altair-eq.stage6-sweep-calibration/1",
+  "date": "2026-11-10",
+  "purpose": "validate analyzer with known RBJ filter on the same -36 dBFS low-level sweep used by the LF grid",
+  "reference_filter": {
+    "plugin": "AltaiR CalFilter",
+    "type": "RBJ peaking biquad",
+    "frequency_hz": 1000,
+    "gain_db": 6,
+    "q": 1
+  },
+  "tolerances": {
+    "magnitude_db": 0.05,
+    "phase_deg": 1,
+    "frequency_range_hz": [
+      20,
+      18000
+    ]
+  },
+  "rows": [
+    {
+      "sample_rate_hz": 44100,
+      "input": "measurements/signals/sweep_log_m36-44100-tail.wav",
+      "render": "measurements/renders/calibration/stage6/calfilter-sweep-44100.wav",
+      "render_report": "measurements/renders/calibration/stage6/calfilter-sweep-44100.json",
+      "analysis_report": "measurements/renders/calibration/stage6/calfilter-sweep-44100-analysis.json",
+      "input_sha256": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+      "output_sha256": "f5691f5711485e2fa2eb669809424442a0f9fa761211e921deeb52f2b565884d",
+      "samples": 771750,
+      "in_band_bins": 314651,
+      "latency_samples": 0,
+      "max_error_db": 1.9776747915345103e-06,
+      "max_error_phase_deg": 1.2684174796998208e-05,
+      "pass": true
+    },
+    {
+      "sample_rate_hz": 48000,
+      "input": "measurements/signals/sweep_log_m36-48000-tail.wav",
+      "render": "measurements/renders/calibration/stage6/calfilter-sweep-48000.wav",
+      "render_report": "measurements/renders/calibration/stage6/calfilter-sweep-48000.json",
+      "analysis_report": "measurements/renders/calibration/stage6/calfilter-sweep-48000-analysis.json",
+      "input_sha256": "b614384cfcc54d3659f6a34720ac636dd4b4313dd56e2cc553eff699c6960040",
+      "output_sha256": "05a0973dd1a7a18ced0c65ee59018d5a3db56a3d1e3ee195ed0755cf4c1dd4b2",
+      "samples": 840000,
+      "in_band_bins": 314651,
+      "latency_samples": 0,
+      "max_error_db": 1.9525074259670733e-06,
+      "max_error_phase_deg": 1.337813948242467e-05,
+      "pass": true
+    },
+    {
+      "sample_rate_hz": 96000,
+      "input": "measurements/signals/sweep_log_m36-96000-tail.wav",
+      "render": "measurements/renders/calibration/stage6/calfilter-sweep-96000.wav",
+      "render_report": "measurements/renders/calibration/stage6/calfilter-sweep-96000.json",
+      "analysis_report": "measurements/renders/calibration/stage6/calfilter-sweep-96000-analysis.json",
+      "input_sha256": "d9181022fdf42a40df9c78793625926f4c8373122694e79271190556303e0f01",
+      "output_sha256": "1d16d83113cfdc3d22a0c4482c340e1f3f4c932c1fd15a5220d025a9dab0bc88",
+      "samples": 1680000,
+      "in_band_bins": 314651,
+      "latency_samples": 0,
+      "max_error_db": 1.3997750328356706e-06,
+      "max_error_phase_deg": 1.0630092411691606e-05,
+      "pass": true
+    }
+  ],
+  "status": "complete"
+}

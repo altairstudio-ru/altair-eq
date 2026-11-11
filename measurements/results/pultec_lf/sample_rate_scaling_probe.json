@@ -1,0 +1,475 @@
+{
+  "schema": "altair-eq.sample-rate-scaling-probe/1",
+  "method": "scale pole/zero angles and log-radii by source_rate/target_rate",
+  "source_fit": "measurements/results/pultec_lf/stable_sos_six_section_fits.json",
+  "results": [
+    {
+      "id": "sr_reduced-30-b030-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-30-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4323733689254965,
+        "100-1000": 0.4319997297388829,
+        "1000-18000": 2.4792791190900667
+      },
+      "max_phase_error_deg": 11.254372441099918,
+      "rms_phase_error_deg": 1.1542669492254602
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-30-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4457628747989426,
+        "100-1000": 0.4478538677620041,
+        "1000-18000": 2.511080128703788
+      },
+      "max_phase_error_deg": 10.723787352710533,
+      "rms_phase_error_deg": 1.1030383430780863
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-30-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9433536283218444,
+        "100-1000": 0.9484348838813332,
+        "1000-18000": 5.941544759143839
+      },
+      "max_phase_error_deg": 11.419224559359993,
+      "rms_phase_error_deg": 1.5469241344816085
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-30-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9564543005453263,
+        "100-1000": 0.9542157975972558,
+        "1000-18000": 5.862231837365433
+      },
+      "max_phase_error_deg": 11.898984455259434,
+      "rms_phase_error_deg": 1.5912925981144326
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-30-b100-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9384275060815916,
+        "100-1000": 0.9412237528900137,
+        "1000-18000": 5.839386857287298
+      },
+      "max_phase_error_deg": 12.103215850473653,
+      "rms_phase_error_deg": 1.5970936857166047
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-30-b000-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9851231184613027,
+        "100-1000": 0.9610219717759785,
+        "1000-18000": 5.8738694346373395
+      },
+      "max_phase_error_deg": 11.664468363414281,
+      "rms_phase_error_deg": 1.5670155800771777
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-30-b060-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9585328538894959,
+        "100-1000": 0.9523622000204688,
+        "1000-18000": 5.882361701959855
+      },
+      "max_phase_error_deg": 11.889720761722314,
+      "rms_phase_error_deg": 1.5981733407110261
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-30-b100-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.6257347973314733,
+        "100-1000": 0.5421949995929491,
+        "1000-18000": 2.57021374427857
+      },
+      "max_phase_error_deg": 10.892443381081796,
+      "rms_phase_error_deg": 1.1551832066909218
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-30-b050-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.5943626374470057,
+        "100-1000": 0.4774147817972736,
+        "1000-18000": 2.4452082543988474
+      },
+      "max_phase_error_deg": 11.241878932101853,
+      "rms_phase_error_deg": 1.2056347521158899
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-100-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4192599760532243,
+        "100-1000": 0.41956026723429796,
+        "1000-18000": 2.6494708721663587
+      },
+      "max_phase_error_deg": 10.416338218881402,
+      "rms_phase_error_deg": 1.043627420479499
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-100-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4226111588448134,
+        "100-1000": 0.4214809592092392,
+        "1000-18000": 2.4260040265595206
+      },
+      "max_phase_error_deg": 7.932186854517517,
+      "rms_phase_error_deg": 0.8266167155103613
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-100-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9375386483143373,
+        "100-1000": 0.9397122314367188,
+        "1000-18000": 5.9188126544048645
+      },
+      "max_phase_error_deg": 12.69909333998251,
+      "rms_phase_error_deg": 1.6860684180713257
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-100-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9468191589401567,
+        "100-1000": 0.9529612482170942,
+        "1000-18000": 5.768868712642578
+      },
+      "max_phase_error_deg": 9.161781971777256,
+      "rms_phase_error_deg": 1.2670269613733993
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_only-100-b100-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9500558954142058,
+        "100-1000": 0.9519430786239003,
+        "1000-18000": 6.006547292014808
+      },
+      "max_phase_error_deg": 12.138644024604428,
+      "rms_phase_error_deg": 1.64437798408349
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "atten_only-100-b000-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9598911811079205,
+        "100-1000": 0.9608752813108445,
+        "1000-18000": 5.680955152306824
+      },
+      "max_phase_error_deg": 9.018168563737254,
+      "rms_phase_error_deg": 1.2329885018097504
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-100-b060-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9516053172866812,
+        "100-1000": 0.9412055601559137,
+        "1000-18000": 5.698924464583744
+      },
+      "max_phase_error_deg": 9.040573600195044,
+      "rms_phase_error_deg": 1.229521114536813
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-100-b100-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.4486929581741368,
+        "100-1000": 0.4529124949832577,
+        "1000-18000": 2.490626638421149
+      },
+      "max_phase_error_deg": 9.93238972422862,
+      "rms_phase_error_deg": 1.0231981712095728
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-48k-swp",
+      "sample_rate_hz": 48000,
+      "source_fit_id": "boost_atten_trick-100-b050-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 0.9290684290396447,
+        "100-1000": 0.9337499118226995,
+        "1000-18000": 5.794153886399314
+      },
+      "max_phase_error_deg": 9.486590418352973,
+      "rms_phase_error_deg": 1.3113245321272335
+    },
+    {
+      "id": "sr_reduced-30-b030-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-30-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.102602651439391,
+        "100-1000": 2.1028705359512276,
+        "1000-18000": 5.525043881554826
+      },
+      "max_phase_error_deg": 19.402285620637592,
+      "rms_phase_error_deg": 2.682870423840326
+    },
+    {
+      "id": "sr_reduced-30-b000-a030-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-30-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.191111310824449,
+        "100-1000": 2.193127225847438,
+        "1000-18000": 5.6196500355410866
+      },
+      "max_phase_error_deg": 18.909214890741133,
+      "rms_phase_error_deg": 2.6806749643269474
+    },
+    {
+      "id": "sr_reduced-30-b070-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-30-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.3980979760398125,
+        "100-1000": 4.405068161285419,
+        "1000-18000": 12.740984046315225
+      },
+      "max_phase_error_deg": 22.403947634042026,
+      "rms_phase_error_deg": 3.6141254123147757
+    },
+    {
+      "id": "sr_reduced-30-b000-a070-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-30-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.489295162628453,
+        "100-1000": 4.4875494924788795,
+        "1000-18000": 12.694663308691911
+      },
+      "max_phase_error_deg": 23.210127106768848,
+      "rms_phase_error_deg": 3.7583212619871005
+    },
+    {
+      "id": "sr_reduced-30-b100-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-30-b100-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.369138520753436,
+        "100-1000": 4.376849760968278,
+        "1000-18000": 12.598057154058763
+      },
+      "max_phase_error_deg": 23.20627286438501,
+      "rms_phase_error_deg": 3.696400460862861
+    },
+    {
+      "id": "sr_reduced-30-b000-a100-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-30-b000-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.513919951342789,
+        "100-1000": 4.490691541789094,
+        "1000-18000": 12.704965929476513
+      },
+      "max_phase_error_deg": 22.860847124283282,
+      "rms_phase_error_deg": 3.7161420035000075
+    },
+    {
+      "id": "sr_reduced-30-b060-a060-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-30-b060-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.461626663611677,
+        "100-1000": 4.461668875101251,
+        "1000-18000": 12.703050106418921
+      },
+      "max_phase_error_deg": 23.185991252238527,
+      "rms_phase_error_deg": 3.7397256658336815
+    },
+    {
+      "id": "sr_reduced-30-b100-a050-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-30-b100-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.346891046973516,
+        "100-1000": 2.2615993797637346,
+        "1000-18000": 5.677010935329213
+      },
+      "max_phase_error_deg": 18.69667066784225,
+      "rms_phase_error_deg": 2.6484117212637766
+    },
+    {
+      "id": "sr_reduced-30-b050-a100-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-30-b050-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.3256433289236713,
+        "100-1000": 2.2110292954383994,
+        "1000-18000": 5.534284990212363
+      },
+      "max_phase_error_deg": 19.674034549958172,
+      "rms_phase_error_deg": 2.784599190909366
+    },
+    {
+      "id": "sr_reduced-100-b030-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-100-b030-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.0047730224798657,
+        "100-1000": 2.0059025154477,
+        "1000-18000": 5.666801341796094
+      },
+      "max_phase_error_deg": 17.86760761721909,
+      "rms_phase_error_deg": 2.429794946648763
+    },
+    {
+      "id": "sr_reduced-100-b000-a030-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-100-b000-a030-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.1289485267338044,
+        "100-1000": 2.128959344450923,
+        "1000-18000": 5.382793609691576
+      },
+      "max_phase_error_deg": 15.248252282106034,
+      "rms_phase_error_deg": 2.2983089238701186
+    },
+    {
+      "id": "sr_reduced-100-b070-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-100-b070-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.3550210133170495,
+        "100-1000": 4.358862932447191,
+        "1000-18000": 12.653906972347054
+      },
+      "max_phase_error_deg": 24.10181142155118,
+      "rms_phase_error_deg": 3.804064489859695
+    },
+    {
+      "id": "sr_reduced-100-b000-a070-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-100-b000-a070-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.512726917801297,
+        "100-1000": 4.523046370258283,
+        "1000-18000": 12.527219722837735
+      },
+      "max_phase_error_deg": 19.532216449861135,
+      "rms_phase_error_deg": 3.3385911515406788
+    },
+    {
+      "id": "sr_reduced-100-b100-a000-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_only-100-b100-a000-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.385495362176913,
+        "100-1000": 4.38923262615293,
+        "1000-18000": 12.792731673074105
+      },
+      "max_phase_error_deg": 23.38975678705421,
+      "rms_phase_error_deg": 3.739964497926724
+    },
+    {
+      "id": "sr_reduced-100-b000-a100-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "atten_only-100-b000-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.450872441214436,
+        "100-1000": 4.454635945245313,
+        "1000-18000": 12.303971774091005
+      },
+      "max_phase_error_deg": 19.099826156244653,
+      "rms_phase_error_deg": 3.2429819842794463
+    },
+    {
+      "id": "sr_reduced-100-b060-a060-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-100-b060-a060-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.3185706444676555,
+        "100-1000": 4.316101765053473,
+        "1000-18000": 12.196867031612863
+      },
+      "max_phase_error_deg": 18.860136013707177,
+      "rms_phase_error_deg": 3.1474407912810403
+    },
+    {
+      "id": "sr_reduced-100-b100-a050-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-100-b100-a050-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 2.2141246886451995,
+        "100-1000": 2.222429940482893,
+        "1000-18000": 5.574470608003201
+      },
+      "max_phase_error_deg": 17.900911328982975,
+      "rms_phase_error_deg": 2.5967470438315856
+    },
+    {
+      "id": "sr_reduced-100-b050-a100-96k-swp",
+      "sample_rate_hz": 96000,
+      "source_fit_id": "boost_atten_trick-100-b050-a100-44k1-swp",
+      "pass": false,
+      "band_max_magnitude_error_db": {
+        "20-100": 4.411925445617817,
+        "100-1000": 4.418508107609423,
+        "1000-18000": 12.486392134791739
+      },
+      "max_phase_error_deg": 19.745518027146264,
+      "rms_phase_error_deg": 3.34348656911143
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "altair-eq.level-sweep-inputs/1",
+  "purpose": "Supplemental stage-4 level-dependence sweeps; no renders performed by this generator.",
+  "files": [
+    {
+      "path": "measurements/signals/sweep_log_m36-44100-tail.wav",
+      "sha256": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+      "sample_rate_hz": 44100,
+      "samples": 771750,
+      "channels": 2,
+      "format": "wav_float32",
+      "type": "log_sweep",
+      "level_dbfs": -36,
+      "duration_total_s": 17.5,
+      "duration_sweep_s": 15.0,
+      "f_start_hz": 1.0,
+      "f_end_hz": 19845.0,
+      "fade_s": 0.05,
+      "lead_s": 0.5,
+      "tail_s": 2.0
+    },
+    {
+      "path": "measurements/signals/sweep_log_m24-44100-tail.wav",
+      "sha256": "a24231bbcf1332c5bf32cae924bd3ca4ec7f0953676249e5add03c48783210b7",
+      "sample_rate_hz": 44100,
+      "samples": 771750,
+      "channels": 2,
+      "format": "wav_float32",
+      "type": "log_sweep",
+      "level_dbfs": -24,
+      "duration_total_s": 17.5,
+      "duration_sweep_s": 15.0,
+      "f_start_hz": 1.0,
+      "f_end_hz": 19845.0,
+      "fade_s": 0.05,
+      "lead_s": 0.5,
+      "tail_s": 2.0
+    }
+  ]
+}

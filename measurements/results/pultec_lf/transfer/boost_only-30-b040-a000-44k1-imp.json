@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:44:31Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\impulse-44100.wav": "b8e9e316407e4a007675feb6c306dad4ae197949790f4dca8dc1d7cb58a9aa59",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\boost_only-30-b040-a000-44k1-imp.wav": "409f5f3ba3c59dfcd65804c710fcf751bd1732ec5c80b4453c7c9ede44666bec"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 89901,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 5.423945527469821,
+      "phase_deg": 1.11787907859826,
+      "group_delay_ms": 0.6362652791758943
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 5.409919626905713,
+      "phase_deg": -0.6940526899796345,
+      "group_delay_ms": 0.4134368512740376
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 5.350126731594757,
+      "phase_deg": -3.1259084932359746,
+      "group_delay_ms": 0.28975160221796026
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 5.308589438299705,
+      "phase_deg": -4.1188302587753,
+      "group_delay_ms": 0.2633863349147295
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 5.081049147288066,
+      "phase_deg": -7.410480328581918,
+      "group_delay_ms": 0.19934797544687138
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 1.5494057508838108,
+      "phase_deg": -9.232039847423437,
+      "group_delay_ms": -0.016418511043284196
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.0170500123809616,
+      "phase_deg": -7.422286691829252,
+      "group_delay_ms": 0.002724456876330839
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.8036691794005593,
+      "phase_deg": -12.213639112184081,
+      "group_delay_ms": 0.0011992860812790722
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:48:31Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-44100.wav": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\og-p12.0-44k1-swp-corrected.wav": "65f86e88a381c96a35b28c204cc12bb3edeac08bf45c3ae7baff602244ddc818"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 23.093844046052908,
+      "phase_deg": -3.15899173123008,
+      "group_delay_ms": 39.291528685482405
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 23.122475143293837,
+      "phase_deg": -10.358644087411367,
+      "group_delay_ms": 0.31511746725070194
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 22.607595350663278,
+      "phase_deg": -17.012279181102187,
+      "group_delay_ms": 8.756513677533324
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 22.4450924230924,
+      "phase_deg": -20.878394962763,
+      "group_delay_ms": -10.66398123195299
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 21.060967989834506,
+      "phase_deg": -30.86928917770824,
+      "group_delay_ms": 2.513144966788818
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 10.288881908149087,
+      "phase_deg": -9.720108144846128,
+      "group_delay_ms": 0.5290827178510665
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 12.972022834138352,
+      "phase_deg": -4.302003130178115,
+      "group_delay_ms": 3.9998568468861406
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 12.803412836988583,
+      "phase_deg": -10.600118865804767,
+      "group_delay_ms": 2.3093908734995368
+    }
+  ]
+}

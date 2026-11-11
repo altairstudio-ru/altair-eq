@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:47:19Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-44100.wav": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\svc-eqoff-44k1-swp.wav": "e7e12f94d5d1f33a89b79e280f3b0aaa0c7652cccb389ac7ab7a24138f1ec4c2"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 1.1578288155018583,
+      "phase_deg": 3.1710710605907884,
+      "group_delay_ms": 6.651921325073019
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 1.19207803074315,
+      "phase_deg": 1.9201841361304541,
+      "group_delay_ms": -2.176099608173873
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 1.185115572963872,
+      "phase_deg": 1.2562098505566068,
+      "group_delay_ms": 0.05196513916094591
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 1.194210298908678,
+      "phase_deg": 1.0584656989101722,
+      "group_delay_ms": -1.173612045692829
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 1.1909751107071433,
+      "phase_deg": 0.7292896932909185,
+      "group_delay_ms": -0.2993602365671258
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 1.3077684201616857,
+      "phase_deg": 1.2625424181757123,
+      "group_delay_ms": -0.08847767643703586
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.858162686051394,
+      "phase_deg": -6.186936644119906,
+      "group_delay_ms": -0.009848417654674564
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 1.6106711648761805,
+      "phase_deg": -12.649662095292381,
+      "group_delay_ms": -0.43533793266377485
+    }
+  ]
+}

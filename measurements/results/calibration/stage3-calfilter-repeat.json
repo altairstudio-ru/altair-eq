@@ -1,0 +1,16 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "null",
+  "created_utc": "2026-11-09T17:59:55Z",
+  "inputs": {
+    "measurements/renders/calibration/stage3-calfilter-impulse.wav": "5866cd31f1a1a1da9a23334d7b6406d482b6027cf1ad3c9919db59f63dd92e77",
+    "measurements/renders/calibration/stage3-calfilter-impulse-repeat.wav": "5866cd31f1a1a1da9a23334d7b6406d482b6027cf1ad3c9919db59f63dd92e77"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "bit_identical_samples": true,
+  "difference_peak": 0.0,
+  "difference_rms": 0.0,
+  "stereo_difference_peak_a": 0.0,
+  "stereo_difference_peak_b": 0.0
+}

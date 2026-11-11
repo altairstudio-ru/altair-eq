@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AltaiR EQ - LF MVP - Concept A "Compact Panel" - standalone vector export.
+  Date: 2026-11-10. Status: PROPOSAL (design rendition, not a product implementation).
+  Source of truth for layout/interaction: mockup.html (same directory). Raster check: mockup.png.
+  Canvas: 960 x 340 px at 100% scale. Values shown are an illustrative edited state
+  (60 Hz / Boost 6.40 / Atten 4.20 / Trim +0.0 dB); parameter DEFAULTS: 30 Hz / 0 / 0 / 0 dB.
+  Boost and Attenuation are unitless 0-10 scales (NOT dB). Output Trim and A/B/COPY/RESET are PROPOSALS.
+  No frequency-response curve is drawn here: any future curve must be labelled DEMO until DSP is verified.
+  Fonts are local system faces (Bahnschrift / Cascadia Mono); no external resources.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
+  <title id="t">AltaiR EQ - LF MVP - Concept A Compact Panel (design proposal)</title>
+  <desc id="d">Dark precision-instrument panel: LF frequency 20/30/60/100 Hz selector, unitless Boost and Attenuation knobs 0-10, proposed Output Trim -12..+12 dB, EQ IN switch, proposed A/B, COPY, RESET.</desc>
+  <defs>
+    <radialGradient id="gradBoost" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#2E333C"/>
+      <stop offset="70%" stop-color="#23272F"/>
+      <stop offset="100%" stop-color="#1C1F26"/>
+    </radialGradient>
+    <radialGradient id="gradAtten" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#2E333C"/>
+      <stop offset="70%" stop-color="#23272F"/>
+      <stop offset="100%" stop-color="#1C1F26"/>
+    </radialGradient>
+    <radialGradient id="gradTrim" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#2E333C"/>
+      <stop offset="70%" stop-color="#23272F"/>
+      <stop offset="100%" stop-color="#1C1F26"/>
+    </radialGradient>
+    <clipPath id="win"><rect x="0" y="0" width="960" height="340" rx="8"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#win)" font-family="Bahnschrift, 'Segoe UI', sans-serif">
+    <rect x="0" y="0" width="960" height="340" fill="#14161A"/>
+
+    <!-- ================= HEADER 0..56 ================= -->
+    <line x1="0" y1="56" x2="960" y2="56" stroke="#23272E" stroke-width="1"/>
+    <text x="20" y="35" font-size="20" font-weight="600" letter-spacing="0.3" fill="#ECEEF1">AltaiR EQ</text>
+    <rect x="118" y="20" width="48" height="16" rx="3" fill="none" stroke="#3A404A"/>
+    <text x="142" y="31.5" font-size="9" font-weight="600" letter-spacing="1" fill="#A7AEB8" text-anchor="middle">LF MVP</text>
+    <line x1="180.5" y1="18" x2="180.5" y2="38" stroke="#2E333C" stroke-width="1"/>
+    <text x="195" y="32" font-size="10" letter-spacing="1.5" fill="#7C838C">LOW-FREQUENCY SECTION</text>
+
+    <!-- header right: PROPOSAL chip, A/B, COPY, RESET, EQ IN -->
+    <rect x="541" y="20" width="60" height="16" rx="3" fill="none" stroke="#3A404A"/>
+    <text x="571" y="31.5" font-size="9" font-weight="600" letter-spacing="1" fill="#8A919B" text-anchor="middle">PROPOSAL</text>
+    <rect x="609" y="12" width="70" height="32" rx="4" fill="#14161A" stroke="#2E333C"/>
+    <rect x="610" y="13" width="34" height="30" fill="#2E343E"/>
+    <rect x="610" y="13" width="34" height="2" fill="#8AB4F8"/>
+    <text x="627" y="32" font-size="12" font-weight="700" fill="#ECEEF1" text-anchor="middle">A</text>
+    <text x="661" y="32" font-size="12" font-weight="600" fill="#7C838C" text-anchor="middle">B</text>
+    <rect x="685" y="12" width="54" height="32" rx="4" fill="#1B1E24" stroke="#2E333C"/>
+    <text x="712" y="31.5" font-size="10" font-weight="600" letter-spacing="0.8" fill="#A7AEB8" text-anchor="middle">COPY</text>
+    <rect x="745" y="12" width="58" height="32" rx="4" fill="#1B1E24" stroke="#2E333C"/>
+    <text x="774" y="31.5" font-size="10" font-weight="600" letter-spacing="0.8" fill="#A7AEB8" text-anchor="middle">RESET</text>
+    <line x1="819.5" y1="12" x2="819.5" y2="44" stroke="#2E333C" stroke-width="1"/>
+    <rect x="836" y="12" width="104" height="32" rx="4" fill="#1E2A21" stroke="#3E5C46"/>
+    <circle cx="865" cy="28" r="4" fill="#79C267"/>
+    <text x="877" y="32.5" font-size="12" font-weight="700" letter-spacing="0.5" fill="#CFE6D3">EQ IN</text>
+
+    <!-- ================= MAIN 56..302 ================= -->
+    <!-- LF FREQUENCY -->
+    <text x="20" y="85" font-size="11" font-weight="600" letter-spacing="1.2" fill="#A7AEB8">LF FREQUENCY</text>
+    <g font-family="Cascadia Mono, Consolas, monospace" font-size="13" text-anchor="middle">
+      <rect x="20" y="96" width="180" height="38" rx="4" fill="#1B1E24" stroke="#2E333C"/>
+      <text x="110" y="120" fill="#A7AEB8">20 Hz</text>
+      <rect x="20" y="140" width="180" height="38" rx="4" fill="#1B1E24" stroke="#2E333C"/>
+      <text x="110" y="164" fill="#A7AEB8">30 Hz</text>
+      <rect x="20" y="184" width="180" height="38" rx="4" fill="#262B33" stroke="#454C58"/>
+      <rect x="20" y="185" width="3" height="36" fill="#DDE1E6"/>
+      <text x="110" y="208" fill="#ECEEF1" font-weight="700">60 Hz</text>
+      <rect x="20" y="228" width="180" height="38" rx="4" fill="#1B1E24" stroke="#2E333C"/>
+      <text x="110" y="252" fill="#A7AEB8">100 Hz</text>
+    </g>
+    <text x="20" y="281" font-size="10" letter-spacing="0.4" fill="#7C838C">DEFAULT: 30 Hz</text>
+    <line x1="220.5" y1="84" x2="220.5" y2="274" stroke="#23272E" stroke-width="1"/>
+
+    <!-- BOOST -->
+    <text x="350" y="85" font-size="12" font-weight="600" letter-spacing="1.5" fill="#E3A857" text-anchor="middle">BOOST</text>
+    <g transform="translate(272,96)">
+      <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 42.64 105.36 A 50 50 0 0 1 108.65 30.49" fill="none" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+      <g stroke="#464D58" stroke-width="1">
+        <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+        <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+        <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+        <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+        <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+        <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+        <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+        <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+      </g>
+      <g stroke="#5A626E" stroke-width="1.5">
+        <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+        <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+        <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+      </g>
+      <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+        <text x="32.75" y="118.75">0</text>
+        <text x="78" y="9.5">5</text>
+        <text x="123.25" y="118.75">10</text>
+      </g>
+      <circle cx="78" cy="70" r="42" fill="url(#gradBoost)" stroke="#3A404A" stroke-width="1"/>
+      <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <rect x="304" y="237" width="92" height="30" rx="4" fill="#101216" stroke="#2E333C"/>
+    <text x="350" y="258" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#ECEEF1" text-anchor="middle">6.40</text>
+    <text x="350" y="280" font-size="10" letter-spacing="0.8" fill="#7C838C" text-anchor="middle">SCALE 0&#8211;10</text>
+    <line x1="480.5" y1="84" x2="480.5" y2="274" stroke="#23272E" stroke-width="1"/>
+
+    <!-- ATTENUATION -->
+    <text x="610" y="85" font-size="12" font-weight="600" letter-spacing="1.5" fill="#6FB3D2" text-anchor="middle">ATTENUATION</text>
+    <g transform="translate(532,96)">
+      <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 42.64 105.36 A 50 50 0 0 1 59.59 23.51" fill="none" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+      <g stroke="#464D58" stroke-width="1">
+        <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+        <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+        <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+        <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+        <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+        <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+        <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+        <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+      </g>
+      <g stroke="#5A626E" stroke-width="1.5">
+        <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+        <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+        <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+      </g>
+      <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+        <text x="32.75" y="118.75">0</text>
+        <text x="78" y="9.5">5</text>
+        <text x="123.25" y="118.75">10</text>
+      </g>
+      <circle cx="78" cy="70" r="42" fill="url(#gradAtten)" stroke="#3A404A" stroke-width="1"/>
+      <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <rect x="564" y="237" width="92" height="30" rx="4" fill="#101216" stroke="#2E333C"/>
+    <text x="610" y="258" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#ECEEF1" text-anchor="middle">4.20</text>
+    <text x="610" y="280" font-size="10" letter-spacing="0.8" fill="#7C838C" text-anchor="middle">SCALE 0&#8211;10</text>
+    <line x1="740.5" y1="84" x2="740.5" y2="274" stroke="#23272E" stroke-width="1"/>
+
+    <!-- OUTPUT TRIM (proposal) -->
+    <text x="783" y="85" font-size="11" font-weight="600" letter-spacing="1.2" fill="#A7AEB8">OUTPUT TRIM</text>
+    <rect x="865" y="74" width="52" height="14" rx="3" fill="none" stroke="#3A404A"/>
+    <text x="891" y="84" font-size="8" font-weight="600" letter-spacing="1" fill="#8A919B" text-anchor="middle">PROPOSAL</text>
+    <g transform="translate(794,96)">
+      <path d="M 29.13 96.87 A 38 38 0 1 1 82.87 96.87" fill="none" stroke="#2E333C" stroke-width="2.5" stroke-linecap="round"/>
+      <g stroke="#464D58" stroke-width="1">
+        <line x1="26.3" y1="99.7" x2="23.47" y2="102.53"/>
+        <line x1="17.2" y1="53.93" x2="13.5" y2="52.4"/>
+        <line x1="94.8" y1="53.93" x2="98.5" y2="52.4"/>
+        <line x1="85.7" y1="99.7" x2="88.53" y2="102.53"/>
+      </g>
+      <line x1="56.0" y1="30.0" x2="56.0" y2="24.0" stroke="#5A626E" stroke-width="1.5"/>
+      <circle cx="56" cy="70" r="30" fill="url(#gradTrim)" stroke="#3A404A" stroke-width="1"/>
+      <line x1="56" y1="52" x2="56" y2="44" stroke="#A7AEB8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <rect x="802" y="237" width="96" height="30" rx="4" fill="#101216" stroke="#2E333C"/>
+    <text x="850" y="256" font-family="Cascadia Mono, Consolas, monospace" font-size="14" fill="#ECEEF1" text-anchor="middle">+0.0 dB</text>
+    <text x="850" y="280" font-size="10" letter-spacing="0.8" fill="#7C838C" text-anchor="middle">&#8722;12 &#8230; +12 dB</text>
+
+    <!-- ================= FOOTER 302..340 ================= -->
+    <line x1="0" y1="302" x2="960" y2="302" stroke="#23272E" stroke-width="1"/>
+    <text x="20" y="325" font-size="11" letter-spacing="0.2" fill="#7C838C">Drag: adjust &#183; Shift+Drag: fine &#183; Double-click: reset &#183; Click value: type</text>
+    <text x="914" y="325" font-size="10" letter-spacing="0.5" fill="#7C838C" text-anchor="end">DESIGN PROPOSAL v0.1</text>
+    <g stroke="#454C58" stroke-width="1.5" stroke-linecap="round">
+      <line x1="929" y1="326" x2="938" y2="317"/>
+      <line x1="933" y1="326" x2="938" y2="321"/>
+      <line x1="937" y1="326" x2="938" y2="325"/>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="959" height="339" rx="8" fill="none" stroke="#2E333C" stroke-width="1"/>
+</svg>

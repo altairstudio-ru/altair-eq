@@ -1,6 +1,6 @@
 {
   "schema": "altair-eq.measurement-grid/1",
-  "created_utc": "2026-11-09T02:49:01Z",
+  "created_utc": "2026-11-09T23:57:42Z",
   "plan_ref": "docs/WORK_PLAN_PULTEC_MVP.md, stage 4",
   "passport_ref": "measurements/passports/reference_instance.json",
   "status": "proposed - renders not performed",

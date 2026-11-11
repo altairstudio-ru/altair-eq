@@ -1,0 +1,286 @@
+{
+  "schema": "altair-eq.level-sweep-control-analysis/1",
+  "method": "FFT transfer of log sweeps; each level compared with the -36 dBFS sweep of the same configuration; latency compensated by 86 samples",
+  "rows": [
+    {
+      "id": "flat-m36-44k1-sweep",
+      "config": "flat",
+      "level_dbfs": -36,
+      "repeat": false,
+      "input_sha256": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+      "output_sha256": "1d41817f5d0f1e4429b3bd827b42aa3ef34c7e1d3d6272ca335cc30d390d00a4",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.01808139681816101,
+      "output_peak_dbfs": -34.85536045178464,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m36-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m36-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "char60-b6-a4-m36-44k1-sweep",
+      "config": "char60-b6-a4",
+      "level_dbfs": -36,
+      "repeat": false,
+      "input_sha256": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+      "output_sha256": "79fc86ecded3e5f080e5ac3d8435cd449d75c73bda09cd6ed100c6d551c7785b",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.05846256762742996,
+      "output_peak_dbfs": -24.662442294133132,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m36-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m36-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "flat-m24-44k1-sweep",
+      "config": "flat",
+      "level_dbfs": -24,
+      "repeat": false,
+      "input_sha256": "a24231bbcf1332c5bf32cae924bd3ca4ec7f0953676249e5add03c48783210b7",
+      "output_sha256": "3a56b42d0b7d147ddc5dfc5456905e4ae39b7c9749763435689a7a4b9aaa3552",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.07198326289653778,
+      "output_peak_dbfs": -22.85536942600327,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m24-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m24-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "char60-b6-a4-m24-44k1-sweep",
+      "config": "char60-b6-a4",
+      "level_dbfs": -24,
+      "repeat": false,
+      "input_sha256": "a24231bbcf1332c5bf32cae924bd3ca4ec7f0953676249e5add03c48783210b7",
+      "output_sha256": "d14462e3789dcd3aaa1483d7dd186697855b4ec1835c4e4f9507d4ad20e05631",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.23273965716362,
+      "output_peak_dbfs": -12.662592195037494,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m24-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m24-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "flat-m12-44k1-sweep",
+      "config": "flat",
+      "level_dbfs": -12,
+      "repeat": false,
+      "input_sha256": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+      "output_sha256": "9b53d8e5ea6435ad0a473f490f94ca0d2f39a69c859211774160682ea406023d",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.2865547835826874,
+      "output_peak_dbfs": -10.855846745609568,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m12-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/flat-m12-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "char60-b6-a4-m12-44k1-sweep",
+      "config": "char60-b6-a4",
+      "level_dbfs": -12,
+      "repeat": false,
+      "input_sha256": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+      "output_sha256": "c22d432478cda6af5ec6a1781e075d2b7a8da133f407b7a082ab6617ab699d32",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.9260003566741943,
+      "output_peak_dbfs": -0.6677769207543025,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m12-44k1-sweep.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m12-44k1-sweep.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    },
+    {
+      "id": "char60-b6-a4-m24-44k1-sweep-repeat",
+      "config": "char60-b6-a4",
+      "level_dbfs": -24,
+      "repeat": true,
+      "input_sha256": "a24231bbcf1332c5bf32cae924bd3ca4ec7f0953676249e5add03c48783210b7",
+      "output_sha256": "d14462e3789dcd3aaa1483d7dd186697855b4ec1835c4e4f9507d4ad20e05631",
+      "sample_rate_hz": 44100,
+      "output_peak_linear": 0.23273965716362,
+      "output_peak_dbfs": -12.662592195037494,
+      "analysis_json": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m24-44k1-sweep-repeat.json",
+      "analysis_csv": "measurements/results/pultec_lf/level_sweep_control_v2/char60-b6-a4-m24-44k1-sweep-repeat.csv",
+      "analyzer_stdout": "transfer: 314651 in-band bins, latency compensated 86 samples"
+    }
+  ],
+  "level_comparisons": [
+    {
+      "config": "flat",
+      "reference_level_dbfs": -36,
+      "comparison_level_dbfs": -24,
+      "max_abs_magnitude_delta_db": 0.006054000000000004,
+      "median_abs_magnitude_delta_db": 0.0007584999999999953,
+      "max_abs_phase_delta_deg": 0.05260799999999222,
+      "frequency_points": 246,
+      "control_points": [
+        {
+          "freq_hz": 20.0,
+          "magnitude_delta_db": 0.0020700000000000163
+        },
+        {
+          "freq_hz": 30.0,
+          "magnitude_delta_db": -0.00020500000000001073
+        },
+        {
+          "freq_hz": 50.0,
+          "magnitude_delta_db": -0.0010550000000000281
+        },
+        {
+          "freq_hz": 60.0,
+          "magnitude_delta_db": 0.0019419999999998883
+        },
+        {
+          "freq_hz": 100.0,
+          "magnitude_delta_db": 0.0010729999999998796
+        },
+        {
+          "freq_hz": 1000.0,
+          "magnitude_delta_db": -0.003937000000000079
+        },
+        {
+          "freq_hz": 10000.0,
+          "magnitude_delta_db": -0.0012520000000000309
+        },
+        {
+          "freq_hz": 18000.0,
+          "magnitude_delta_db": 0.0005850000000000577
+        }
+      ]
+    },
+    {
+      "config": "flat",
+      "reference_level_dbfs": -36,
+      "comparison_level_dbfs": -12,
+      "max_abs_magnitude_delta_db": 0.03264,
+      "median_abs_magnitude_delta_db": 0.0014104999999998702,
+      "max_abs_phase_delta_deg": 0.3093629999999905,
+      "frequency_points": 246,
+      "control_points": [
+        {
+          "freq_hz": 20.0,
+          "magnitude_delta_db": -0.019449999999999967
+        },
+        {
+          "freq_hz": 30.0,
+          "magnitude_delta_db": 0.008126999999999995
+        },
+        {
+          "freq_hz": 50.0,
+          "magnitude_delta_db": -0.0018880000000001118
+        },
+        {
+          "freq_hz": 60.0,
+          "magnitude_delta_db": 0.005050999999999917
+        },
+        {
+          "freq_hz": 100.0,
+          "magnitude_delta_db": 0.0009689999999999976
+        },
+        {
+          "freq_hz": 1000.0,
+          "magnitude_delta_db": -0.000512000000000068
+        },
+        {
+          "freq_hz": 10000.0,
+          "magnitude_delta_db": -0.0046200000000000685
+        },
+        {
+          "freq_hz": 18000.0,
+          "magnitude_delta_db": -0.0017340000000000133
+        }
+      ]
+    },
+    {
+      "config": "char60-b6-a4",
+      "reference_level_dbfs": -36,
+      "comparison_level_dbfs": -24,
+      "max_abs_magnitude_delta_db": 0.02164799999999989,
+      "median_abs_magnitude_delta_db": 0.0024445000000001826,
+      "max_abs_phase_delta_deg": 0.20308900000000563,
+      "frequency_points": 246,
+      "control_points": [
+        {
+          "freq_hz": 20.0,
+          "magnitude_delta_db": -0.008986999999999412
+        },
+        {
+          "freq_hz": 30.0,
+          "magnitude_delta_db": 0.009448000000000789
+        },
+        {
+          "freq_hz": 50.0,
+          "magnitude_delta_db": -0.0006529999999997926
+        },
+        {
+          "freq_hz": 60.0,
+          "magnitude_delta_db": 0.0023989999999987077
+        },
+        {
+          "freq_hz": 100.0,
+          "magnitude_delta_db": 0.0005710000000007653
+        },
+        {
+          "freq_hz": 1000.0,
+          "magnitude_delta_db": -0.006512999999999991
+        },
+        {
+          "freq_hz": 10000.0,
+          "magnitude_delta_db": 0.0010909999999999531
+        },
+        {
+          "freq_hz": 18000.0,
+          "magnitude_delta_db": 0.012897999999999965
+        }
+      ]
+    },
+    {
+      "config": "char60-b6-a4",
+      "reference_level_dbfs": -36,
+      "comparison_level_dbfs": -12,
+      "max_abs_magnitude_delta_db": 0.18110099999999996,
+      "median_abs_magnitude_delta_db": 0.005738000000000049,
+      "max_abs_phase_delta_deg": 1.7945949999999868,
+      "frequency_points": 246,
+      "control_points": [
+        {
+          "freq_hz": 20.0,
+          "magnitude_delta_db": -0.1294839999999997
+        },
+        {
+          "freq_hz": 30.0,
+          "magnitude_delta_db": 0.04002000000000017
+        },
+        {
+          "freq_hz": 50.0,
+          "magnitude_delta_db": -0.045707999999999416
+        },
+        {
+          "freq_hz": 60.0,
+          "magnitude_delta_db": 0.06270099999999879
+        },
+        {
+          "freq_hz": 100.0,
+          "magnitude_delta_db": -0.01081899999999969
+        },
+        {
+          "freq_hz": 1000.0,
+          "magnitude_delta_db": -0.0009950000000000792
+        },
+        {
+          "freq_hz": 10000.0,
+          "magnitude_delta_db": 0.015673000000000048
+        },
+        {
+          "freq_hz": 18000.0,
+          "magnitude_delta_db": 0.015104000000000006
+        }
+      ]
+    }
+  ],
+  "repeat_check": {
+    "repeat_of": "char60-b6-a4-m24-44k1-sweep",
+    "repeat": "char60-b6-a4-m24-44k1-sweep-repeat",
+    "bit_identical_samples": true,
+    "sha256_equal": true,
+    "original_sha256": "d14462e3789dcd3aaa1483d7dd186697855b4ec1835c4e4f9507d4ad20e05631",
+    "repeat_sha256": "d14462e3789dcd3aaa1483d7dd186697855b4ec1835c4e4f9507d4ad20e05631"
+  }
+}

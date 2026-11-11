@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--
+  AltaiR EQ - LF MVP - UI design proposal (Concept A "Compact Panel", variant A3 "Stepped frequency knob")
+  Date: 2026-11-10. Status: PROPOSAL. Not a specification, not a product implementation.
+  Base: mockup-a2-volumetric.html (A2 "Volumetric"). ONLY the LF FREQUENCY column is reworked:
+  the vertical list of 4 frequency buttons (180x38 x4) is replaced by a stepped (detented) knob
+  with exactly 4 positions - 20 / 30 / 60 / 100 Hz - evenly spaced over the 270 degree sweep
+  (every 90 degrees). No continuous travel, no intermediate values: the pointer snaps to a detent
+  and never rests between positions. The knob reuses the A2 volumetric treatment 1:1
+  (radial gradient, inner bevel / rim-light, soft drop shadow, bottom inner shade, specular top arc,
+  volumetric pointer). Palette and typography are unchanged; the frequency accent reuses the
+  select-bar token #DDE1E6 from the A2 selected-frequency treatment.
+  Static mockup: behavior (drag = one detent per gesture, no fine mode, keyboard Home/End,
+  double-click reset to default 30 Hz, numeric entry accepts only 20/30/60/100) is a PROPOSAL
+  documented in 04-variant-freq-knob.md, not executed here.
+  Self-contained HTML/CSS/SVG. No network resources. Fonts: locally installed Bahnschrift + Cascadia Mono.
+  Base window: 960 x 340 px at 100% scale. All values shown are illustrative.
+  Boost / Attenuation are unitless 0-10 scales (NOT dB). Output Trim and A/B/COPY/RESET are proposals.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AltaiR EQ - LF MVP - Design Proposal (A3 Stepped Frequency Knob)</title>
+<style>
+  :root{
+    --bg:#14161A; --surface:#1B1E24; --surface-2:#262B33; --raised:#2E343E;
+    --line:#2E333C; --line-soft:#23272E; --line-strong:#454C58;
+    --text-hi:#ECEEF1; --text-mid:#A7AEB8; --text-low:#7C838C;
+    --boost:#E3A857; --atten:#6FB3D2; --trim:#A7AEB8;
+    --ok:#79C267; --ok-bg:#1E2A21; --ok-line:#3E5C46; --ok-text:#CFE6D3;
+    --focus:#8AB4F8; --readout-bg:#101216;
+    --font-ui:Bahnschrift,"Segoe UI",sans-serif;
+    --font-mono:"Cascadia Mono",Consolas,monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{width:960px; height:340px; overflow:hidden; background:var(--bg);}
+  body{font-family:var(--font-ui); color:var(--text-hi); -webkit-font-smoothing:antialiased;}
+
+  .window{width:960px; height:340px; border-radius:8px; overflow:hidden;
+    box-shadow:inset 0 0 0 1px var(--line); display:flex; flex-direction:column;}
+
+  /* ---------- Header: 56 px ---------- */
+  header{flex:0 0 56px; display:flex; align-items:center; padding:0 20px;
+    border-bottom:1px solid var(--line-soft);}
+  .brand{font-size:20px; font-weight:600; letter-spacing:.3px; color:var(--text-hi); white-space:nowrap;}
+  .chip{display:inline-flex; align-items:center; height:16px; padding:0 6px;
+    border:1px solid #3A404A; border-radius:3px; font-size:9px; font-weight:600;
+    letter-spacing:1px; color:var(--text-mid); white-space:nowrap;}
+  .chip-proposal{color:#8A919B;}
+  .brand-chip{margin-left:10px;}
+  .hdiv{width:1px; height:20px; background:var(--line); margin:0 14px;}
+  .hdr-caption{font-size:10px; letter-spacing:1.5px; color:var(--text-low); white-space:nowrap;}
+  .hdr-right{margin-left:auto; display:flex; align-items:center;}
+  .hdr-right .chip-proposal{margin-right:8px;}
+
+  .seg{display:flex; border:1px solid var(--line); border-radius:4px; overflow:hidden; height:32px;}
+  .seg button{width:34px; height:30px; border:0; background:transparent; cursor:pointer;
+    font-family:var(--font-ui); font-size:12px; font-weight:600; color:var(--text-low);}
+  .seg button[aria-checked="true"]{background:var(--raised); color:var(--text-hi); font-weight:700;
+    box-shadow:inset 0 2px 0 var(--focus);}
+  .seg button:hover:not([aria-checked="true"]){color:var(--text-mid);}
+  .ab{margin-right:6px;}
+
+  .ubtn{height:32px; border:1px solid var(--line); border-radius:4px; background:var(--surface);
+    font-family:var(--font-ui); font-size:10px; font-weight:600; letter-spacing:.8px;
+    color:var(--text-mid); cursor:pointer;}
+  .ubtn:hover{border-color:var(--line-strong); color:var(--text-hi);}
+  .ubtn:active{background:var(--raised);}
+  .copy{width:54px; margin-right:6px;}
+  .reset{width:58px; margin-right:16px;}
+  .vdiv{width:1px; height:32px; background:var(--line); margin-right:16px;}
+
+  .eqin{width:104px; height:32px; border-radius:4px; display:flex; align-items:center;
+    justify-content:center; gap:8px; cursor:pointer;
+    font-family:var(--font-ui); font-size:12px; font-weight:700; letter-spacing:.5px;}
+  .eqin.on{background:var(--ok-bg); border:1px solid var(--ok-line); color:var(--ok-text);}
+  .eqin .led{width:8px; height:8px; border-radius:50%; background:var(--ok);}
+  .eqin.off{background:var(--surface); border:1px solid var(--line); color:var(--text-low);}
+  .eqin.off .led{background:transparent; border:1.5px solid var(--text-low);}
+
+  /* ---------- Main: 246 px (content 210 px, padding 18/20) ---------- */
+  main{flex:0 0 246px; display:flex; padding:18px 20px;}
+  .group{flex:none; display:flex; flex-direction:column;}
+  /* A3: frequency column is now centered content (knob + readout) instead of a button list */
+  .g-freq{width:180px; align-items:center;}
+  .g-knob{width:220px; align-items:center;}
+  .g-trim{width:180px; align-items:center;}
+  .sep{flex:0 0 40px; display:flex; justify-content:center;}
+  .sep div{width:1px; height:190px; margin-top:10px; background:var(--line-soft);}
+
+  .glabel{height:14px; line-height:14px; font-size:11px; font-weight:600;
+    letter-spacing:1.2px; color:var(--text-mid); margin-bottom:8px;}
+  .glabel.big{font-size:12px; letter-spacing:1.5px; text-align:center;}
+  .glabel.boost{color:var(--boost);}
+  .glabel.atten{color:var(--atten);}
+
+  .knob{width:156px; height:136px; border-radius:8px; cursor:ns-resize; outline:none;}
+  .knob svg{display:block;}
+  .knob:hover .body, .knob:hover .bevel{stroke:#5A626E;}
+  .knob.trim-knob{width:112px; height:136px; cursor:ns-resize;}
+  /* A3: stepped frequency knob, slightly smaller hit-area than Boost/Atten (150x136 vs 156x136) */
+  .knob.freq-knob{width:150px; height:136px; cursor:ns-resize;}
+
+  .readout{width:92px; height:30px; margin-top:5px; display:flex; align-items:center; justify-content:center;
+    background:var(--readout-bg); border:1px solid var(--line); border-radius:4px; cursor:text;
+    font-family:var(--font-mono); font-size:18px; color:var(--text-hi);}
+  .readout:hover{border-color:var(--line-strong);}
+  .readout.small{width:96px; height:30px; font-size:14px;}
+  .scale-caption{margin-top:4px; height:12px; line-height:12px; font-size:10px;
+    letter-spacing:.8px; color:var(--text-low); text-align:center;}
+
+  /* A3: DEFAULT caption plays the role of the SCALE caption (same y-band, centered) */
+  .freq-default{margin-top:4px; height:12px; line-height:12px; font-size:10px;
+    letter-spacing:.4px; color:var(--text-low); text-align:center;}
+
+  .g-trim .glabel{height:14px; line-height:14px; margin-bottom:8px;
+    display:flex; align-items:center; justify-content:center; gap:6px;}
+  .g-trim .glabel .chip{height:14px; font-size:8px;}
+
+  /* ---------- Footer: 38 px ---------- */
+  footer{flex:0 0 38px; display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px; border-top:1px solid var(--line-soft);}
+  .hint{font-size:11px; color:var(--text-low); letter-spacing:.2px;}
+  .foot-right{display:flex; align-items:center; gap:12px;}
+  .foot-tag{font-size:10px; letter-spacing:.5px; color:var(--text-low);}
+
+  /* ---------- Focus ---------- */
+  button:focus-visible, .readout:focus-visible, .knob:focus-visible{
+    outline:2px solid var(--focus); outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="window">
+
+  <header>
+    <span class="brand">AltaiR EQ</span>
+    <span class="chip brand-chip">LF MVP</span>
+    <div class="hdiv"></div>
+    <span class="hdr-caption">LOW-FREQUENCY SECTION</span>
+
+    <div class="hdr-right">
+      <span class="chip chip-proposal" title="A/B, COPY and RESET are proposals for AltaiR EQ (not present on the reference)">PROPOSAL</span>
+      <div class="seg ab" role="radiogroup" aria-label="Compare banks A and B (proposal)">
+        <button role="radio" aria-checked="true" title="Bank A (active)">A</button>
+        <button role="radio" aria-checked="false" title="Bank B">B</button>
+      </div>
+      <button class="ubtn copy" title="Copy active bank to the other bank (proposal)">COPY</button>
+      <button class="ubtn reset" title="Reset active bank to defaults (proposal)">RESET</button>
+      <div class="vdiv"></div>
+      <button class="eqin on" aria-pressed="true" title="EQ correction enabled">
+        <span class="led"></span>EQ IN
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- LF FREQUENCY: A3 stepped (detented) knob, 4 positions over 270 degrees -->
+    <section class="group g-freq" aria-label="LF frequency">
+      <div class="glabel">LF FREQUENCY &#183; Hz</div>
+      <div class="knob freq-knob" tabindex="0" role="slider"
+           aria-label="LF frequency, stepped control, 4 positions: 20, 30, 60, 100 hertz"
+           aria-valuemin="1" aria-valuemax="4" aria-valuenow="3" aria-valuetext="60 Hz">
+        <svg width="150" height="136" viewBox="0 0 150 136" aria-hidden="true">
+          <defs>
+            <!-- A2 volumetric treatment, reused 1:1 at reduced radius -->
+            <radialGradient id="gradFreq" cx="40%" cy="30%" r="78%">
+              <stop offset="0%" stop-color="#3B4250"/>
+              <stop offset="32%" stop-color="#2A2F39"/>
+              <stop offset="70%" stop-color="#1F232B"/>
+              <stop offset="100%" stop-color="#171A20"/>
+            </radialGradient>
+            <radialGradient id="capFreq" cx="42%" cy="32%" r="80%">
+              <stop offset="0%" stop-color="#2C313B"/>
+              <stop offset="65%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1A1D24"/>
+            </radialGradient>
+            <linearGradient id="bevFreq" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#576172"/>
+              <stop offset="45%" stop-color="#2E333C"/>
+              <stop offset="100%" stop-color="#15181D"/>
+            </linearGradient>
+            <filter id="knobShadow4" x="-25%" y="-25%" width="150%" height="150%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+          <!-- track: 270 degrees, 135 to 45 through the top; no minor ticks between detents (discrete) -->
+          <path d="M 43.89 99.11 A 44 44 0 1 1 106.11 99.11" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+          <!-- value arc: from 20 Hz detent (135 deg) to active 60 Hz detent (315 deg) -->
+          <path d="M 43.89 99.11 A 44 44 0 0 1 106.11 36.89" fill="none" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round"/>
+          <!-- detent ticks r46 to r54 at 135 / 225 / 45 degrees (inactive) -->
+          <g stroke="#5A626E" stroke-width="2">
+            <line x1="42.47" y1="100.53" x2="36.82" y2="106.18"/>
+            <line x1="42.47" y1="35.47" x2="36.82" y2="29.82"/>
+            <line x1="107.53" y1="100.53" x2="113.18" y2="106.18"/>
+          </g>
+          <!-- active detent tick at 315 degrees: thicker + select-bar accent (state not color-only) -->
+          <line x1="107.53" y1="35.47" x2="113.18" y2="29.82" stroke="#DDE1E6" stroke-width="2.5"/>
+          <!-- detent labels, Cascadia Mono 10; active label bold + text-hi -->
+          <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+            <text x="29.75" y="116.75">20</text>
+            <text x="29.75" y="22.75">30</text>
+            <text x="120.25" y="116.75">100</text>
+            <text x="120.25" y="22.75" fill="#ECEEF1" font-weight="700">60</text>
+          </g>
+          <circle class="body" cx="75" cy="68" r="36" fill="url(#gradFreq)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow4)"/>
+          <!-- A2: bottom inner shade -->
+          <path d="M 43.05 79.63 A 34 34 0 0 0 106.95 79.63" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2" stroke-linecap="round"/>
+          <!-- A2: inner cap -->
+          <circle cx="75" cy="68" r="30" fill="url(#capFreq)" stroke="#14171C" stroke-width="1"/>
+          <!-- A2: bevel / rim-light ring -->
+          <circle class="bevel" cx="75" cy="68" r="35.5" fill="none" stroke="url(#bevFreq)" stroke-width="1.5"/>
+          <!-- A2: specular arc, top -->
+          <path d="M 43.99 56.71 A 33 33 0 0 1 106.01 56.71" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+          <!-- A2 volumetric pointer, snapped exactly to the 60 Hz detent (315 deg), r21 to r31 -->
+          <line x1="89.85" y1="53.15" x2="96.92" y2="46.08" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+          <line x1="89.85" y1="53.15" x2="96.92" y2="46.08" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout" tabindex="0" role="textbox" aria-label="LF frequency value, click to type; accepts only 20, 30, 60 or 100">60 Hz</div>
+      <div class="freq-default">DEFAULT: 30 Hz</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- BOOST -->
+    <section class="group g-knob" aria-label="LF boost">
+      <div class="glabel big boost">BOOST</div>
+      <div class="knob" tabindex="0" role="slider" aria-label="LF Boost, unitless scale 0 to 10"
+           aria-valuemin="0" aria-valuemax="10" aria-valuenow="6.4" aria-valuetext="6.40">
+        <svg width="156" height="136" viewBox="0 0 156 136" aria-hidden="true">
+          <defs>
+            <!-- A2: stronger radial gradient, highlight shifted to upper-left -->
+            <radialGradient id="gradBoost" cx="40%" cy="30%" r="78%">
+              <stop offset="0%" stop-color="#3B4250"/>
+              <stop offset="32%" stop-color="#2A2F39"/>
+              <stop offset="70%" stop-color="#1F232B"/>
+              <stop offset="100%" stop-color="#171A20"/>
+            </radialGradient>
+            <!-- A2: inner cap gradient (recessed face) -->
+            <radialGradient id="capBoost" cx="42%" cy="32%" r="80%">
+              <stop offset="0%" stop-color="#2C313B"/>
+              <stop offset="65%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1A1D24"/>
+            </radialGradient>
+            <!-- A2: bevel ring, rim-light top / dark bottom -->
+            <linearGradient id="bevBoost" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#576172"/>
+              <stop offset="45%" stop-color="#2E333C"/>
+              <stop offset="100%" stop-color="#15181D"/>
+            </linearGradient>
+            <filter id="knobShadow" x="-25%" y="-25%" width="150%" height="150%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+          <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 42.64 105.36 A 50 50 0 0 1 108.65 30.49" fill="none" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+            <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+            <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+            <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+            <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+            <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+            <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+            <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+          </g>
+          <g stroke="#5A626E" stroke-width="1.5">
+            <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+            <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+            <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+          </g>
+          <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+            <text x="32.75" y="118.75">0</text>
+            <text x="78" y="9.5">5</text>
+            <text x="123.25" y="118.75">10</text>
+          </g>
+          <circle class="body" cx="78" cy="70" r="42" fill="url(#gradBoost)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow)"/>
+          <!-- A2: bottom inner shade -->
+          <path d="M 40.41 83.68 A 40 40 0 0 0 115.59 83.68" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- A2: inner cap -->
+          <circle cx="78" cy="70" r="35" fill="url(#capBoost)" stroke="#14171C" stroke-width="1"/>
+          <!-- A2: bevel / rim-light ring -->
+          <circle class="bevel" cx="78" cy="70" r="41.5" fill="none" stroke="url(#bevBoost)" stroke-width="1.5"/>
+          <!-- A2: specular arc, top -->
+          <path d="M 41.35 56.66 A 39 39 0 0 1 114.65 56.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+          <!-- A2: volumetric pointer = dark under-stroke + accent -->
+          <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+          <line x1="92.71" y1="51.04" x2="100.06" y2="41.55" stroke="#E3A857" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout" tabindex="0" role="textbox" aria-label="Boost value, click to type">6.40</div>
+      <div class="scale-caption">SCALE 0&#8211;10</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- ATTENUATION -->
+    <section class="group g-knob" aria-label="LF attenuation">
+      <div class="glabel big atten">ATTENUATION</div>
+      <div class="knob" tabindex="0" role="slider" aria-label="LF Attenuation, unitless scale 0 to 10"
+           aria-valuemin="0" aria-valuemax="10" aria-valuenow="4.2" aria-valuetext="4.20">
+        <svg width="156" height="136" viewBox="0 0 156 136" aria-hidden="true">
+          <defs>
+            <radialGradient id="gradAtten" cx="40%" cy="30%" r="78%">
+              <stop offset="0%" stop-color="#3B4250"/>
+              <stop offset="32%" stop-color="#2A2F39"/>
+              <stop offset="70%" stop-color="#1F232B"/>
+              <stop offset="100%" stop-color="#171A20"/>
+            </radialGradient>
+            <radialGradient id="capAtten" cx="42%" cy="32%" r="80%">
+              <stop offset="0%" stop-color="#2C313B"/>
+              <stop offset="65%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1A1D24"/>
+            </radialGradient>
+            <linearGradient id="bevAtten" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#576172"/>
+              <stop offset="45%" stop-color="#2E333C"/>
+              <stop offset="100%" stop-color="#15181D"/>
+            </linearGradient>
+            <filter id="knobShadow2" x="-25%" y="-25%" width="150%" height="150%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+          <path d="M 42.64 105.36 A 50 50 0 1 1 113.36 105.36" fill="none" stroke="#2E333C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 42.64 105.36 A 50 50 0 0 1 59.59 23.51" fill="none" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="25.69" y1="87.0" x2="20.94" y2="88.54"/>
+            <line x1="23.68" y1="61.4" x2="18.74" y2="60.61"/>
+            <line x1="33.5" y1="37.67" x2="29.46" y2="34.73"/>
+            <line x1="53.03" y1="20.99" x2="50.76" y2="16.54"/>
+            <line x1="102.97" y1="20.99" x2="105.24" y2="16.54"/>
+            <line x1="122.5" y1="37.67" x2="126.54" y2="34.73"/>
+            <line x1="132.32" y1="61.4" x2="137.26" y2="60.61"/>
+            <line x1="130.31" y1="87.0" x2="135.06" y2="88.54"/>
+          </g>
+          <g stroke="#5A626E" stroke-width="1.5">
+            <line x1="41.23" y1="106.77" x2="35.57" y2="112.43"/>
+            <line x1="78.0" y1="18.0" x2="78.0" y2="10.0"/>
+            <line x1="114.77" y1="106.77" x2="120.43" y2="112.43"/>
+          </g>
+          <g font-family="Cascadia Mono, Consolas, monospace" font-size="10" fill="#7C838C" text-anchor="middle">
+            <text x="32.75" y="118.75">0</text>
+            <text x="78" y="9.5">5</text>
+            <text x="123.25" y="118.75">10</text>
+          </g>
+          <circle class="body" cx="78" cy="70" r="42" fill="url(#gradAtten)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow2)"/>
+          <path d="M 40.41 83.68 A 40 40 0 0 0 115.59 83.68" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="78" cy="70" r="35" fill="url(#capAtten)" stroke="#14171C" stroke-width="1"/>
+          <circle class="bevel" cx="78" cy="70" r="41.5" fill="none" stroke="url(#bevAtten)" stroke-width="1.5"/>
+          <path d="M 41.35 56.66 A 39 39 0 0 1 114.65 56.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+          <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="5" stroke-linecap="round"/>
+          <line x1="69.17" y1="47.69" x2="64.75" y2="36.53" stroke="#6FB3D2" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout" tabindex="0" role="textbox" aria-label="Attenuation value, click to type">4.20</div>
+      <div class="scale-caption">SCALE 0&#8211;10</div>
+    </section>
+
+    <div class="sep"><div></div></div>
+
+    <!-- OUTPUT TRIM (proposal) -->
+    <section class="group g-trim" aria-label="Output trim, proposal">
+      <div class="glabel">OUTPUT TRIM <span class="chip chip-proposal">PROPOSAL</span></div>
+      <div class="knob trim-knob" tabindex="0" role="slider" aria-label="Output trim, proposal, minus 12 to plus 12 decibels"
+           aria-valuemin="-12" aria-valuemax="12" aria-valuenow="0" aria-valuetext="plus 0.0 dB">
+        <svg width="112" height="136" viewBox="0 0 112 136" aria-hidden="true">
+          <defs>
+            <radialGradient id="gradTrim" cx="40%" cy="30%" r="78%">
+              <stop offset="0%" stop-color="#3B4250"/>
+              <stop offset="32%" stop-color="#2A2F39"/>
+              <stop offset="70%" stop-color="#1F232B"/>
+              <stop offset="100%" stop-color="#171A20"/>
+            </radialGradient>
+            <radialGradient id="capTrim" cx="42%" cy="32%" r="80%">
+              <stop offset="0%" stop-color="#2C313B"/>
+              <stop offset="65%" stop-color="#23272F"/>
+              <stop offset="100%" stop-color="#1A1D24"/>
+            </radialGradient>
+            <linearGradient id="bevTrim" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#576172"/>
+              <stop offset="45%" stop-color="#2E333C"/>
+              <stop offset="100%" stop-color="#15181D"/>
+            </linearGradient>
+            <filter id="knobShadow3" x="-25%" y="-25%" width="150%" height="150%">
+              <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+          <path d="M 29.13 96.87 A 38 38 0 1 1 82.87 96.87" fill="none" stroke="#2E333C" stroke-width="2.5" stroke-linecap="round"/>
+          <g stroke="#464D58" stroke-width="1">
+            <line x1="26.3" y1="99.7" x2="23.47" y2="102.53"/>
+            <line x1="17.2" y1="53.93" x2="13.5" y2="52.4"/>
+            <line x1="94.8" y1="53.93" x2="98.5" y2="52.4"/>
+            <line x1="85.7" y1="99.7" x2="88.53" y2="102.53"/>
+          </g>
+          <line x1="56.0" y1="30.0" x2="56.0" y2="24.0" stroke="#5A626E" stroke-width="1.5"/>
+          <circle class="body" cx="56" cy="70" r="30" fill="url(#gradTrim)" stroke="#3A404A" stroke-width="1" filter="url(#knobShadow3)"/>
+          <path d="M 29.22 79.75 A 28.5 28.5 0 0 0 82.78 79.75" fill="none" stroke="#000000" stroke-opacity="0.30" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="56" cy="70" r="24.5" fill="url(#capTrim)" stroke="#14171C" stroke-width="1"/>
+          <circle class="bevel" cx="56" cy="70" r="29.5" fill="none" stroke="url(#bevTrim)" stroke-width="1.5"/>
+          <path d="M 29.69 60.42 A 28 28 0 0 1 82.31 60.42" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="56" y1="52" x2="56" y2="44" stroke="#0A0C0F" stroke-opacity="0.60" stroke-width="4.5" stroke-linecap="round"/>
+          <line x1="56" y1="52" x2="56" y2="44" stroke="#A7AEB8" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="readout small" tabindex="0" role="textbox" aria-label="Trim value, click to type">+0.0 dB</div>
+      <div class="scale-caption">&#8722;12 &#8230; +12 dB</div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="hint">Drag: adjust &#183; Shift+Drag: fine &#183; Double-click: reset &#183; Click value: type</span>
+    <span class="foot-right">
+      <span class="foot-tag">DESIGN PROPOSAL v0.1</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+        <g stroke="#454C58" stroke-width="1.5" stroke-linecap="round">
+          <line x1="3" y1="12" x2="12" y2="3"/>
+          <line x1="7" y1="12" x2="12" y2="7"/>
+          <line x1="11" y1="12" x2="12" y2="11"/>
+        </g>
+      </svg>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>

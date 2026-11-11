@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:46:39Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\impulse-96000.wav": "4345937cc9db7e0b98cbb0958072c9366877f38e507e3f91fc6d71374e6b8cb8",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\sr_reduced-30-b050-a100-96k-imp.wav": "ddb03f68a40cf8d532ef2922922e1ec7c544488b98bcf6768f32257e284b8b89"
+  },
+  "sample_rate_hz": 96000,
+  "samples": 480000,
+  "latency_compensated_samples": 118,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 89901,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 5.088713433272134,
+      "phase_deg": -4.642906270673646,
+      "group_delay_ms": 1.4054014554703511
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 4.9009074604563825,
+      "phase_deg": -9.122173843500487,
+      "group_delay_ms": 1.1240206199711984
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 4.325011911705264,
+      "phase_deg": -16.112837273619984,
+      "group_delay_ms": 0.8368498659434543
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 3.9597387664528534,
+      "phase_deg": -18.903294165182054,
+      "group_delay_ms": 0.7140534405269686
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 2.2211959823890775,
+      "phase_deg": -25.770330585672177,
+      "group_delay_ms": 0.24736924946419733
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 0.5963425263544407,
+      "phase_deg": 5.9403179956189405,
+      "group_delay_ms": 0.013314664141793766
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.1048098683698704,
+      "phase_deg": -5.337883437405089,
+      "group_delay_ms": 0.002027884538418629
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.9191799118740394,
+      "phase_deg": -10.565645149513362,
+      "group_delay_ms": 0.0015099046750608105
+    }
+  ]
+}

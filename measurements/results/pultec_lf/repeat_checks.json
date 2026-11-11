@@ -1,0 +1,93 @@
+{
+  "schema": "altair-eq.pultec-lf-repeat/1",
+  "seed": 20261110,
+  "results": [
+    {
+      "grid_id": "boost_only-30-b100-a000-44k1-imp",
+      "configuration": {
+        "id": "boost_only-30-b100-a000-44k1-imp",
+        "group": "boost_only",
+        "priority": 1,
+        "conditional": false,
+        "sample_rate_hz": 44100,
+        "plugin": {
+          "fx_present": true,
+          "host_bypass": false,
+          "eq_in": true,
+          "lf_cps_hz": 30,
+          "lf_boost_ui": 10,
+          "lf_atten_ui": 0,
+          "output_gain_ui": null
+        },
+        "signal": "impulse",
+        "level_dbfs": null,
+        "purpose": "Static magnitude/phase: LF boost grid (atten=0)"
+      },
+      "original_sha256": "134ef5bef6107c2f83c0a170af63ae58b4d9d064b3d1e66ac89d080325efea31",
+      "repeat_sha256": "134ef5bef6107c2f83c0a170af63ae58b4d9d064b3d1e66ac89d080325efea31",
+      "bit_identical_wav": true,
+      "repeat_path": "measurements\\renders\\pultec_lf\\repeats\\boost_only-30-b100-a000-44k1-imp-repeat.wav",
+      "latency_gate": 86,
+      "stdout": "\n              Timers:\n                       General@info\n                        Errors@warn\n                       Sockets@warn\n                 ServerSockets@warn\n                 ClientSockets@warn\n                         Mixer@info\n                        Engine@info\n                        Plugin@info\n                         Async@warn\n                      MIDISync@warn\n                          UAPW@info\n                          HBGF@info\nrendered: K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\repeats\\boost_only-30-b100-a000-44k1-imp-repeat.wav\n",
+      "stderr": "prepared, latency=86\n"
+    },
+    {
+      "grid_id": "atten_only-30-b000-a020-44k1-imp",
+      "configuration": {
+        "id": "atten_only-30-b000-a020-44k1-imp",
+        "group": "atten_only",
+        "priority": 1,
+        "conditional": false,
+        "sample_rate_hz": 44100,
+        "plugin": {
+          "fx_present": true,
+          "host_bypass": false,
+          "eq_in": true,
+          "lf_cps_hz": 30,
+          "lf_boost_ui": 0,
+          "lf_atten_ui": 2,
+          "output_gain_ui": null
+        },
+        "signal": "impulse",
+        "level_dbfs": null,
+        "purpose": "Static magnitude/phase: LF attenuation grid (boost=0)"
+      },
+      "original_sha256": "18be649ead5b43daeb360695458f3f3de7a980c1b36c4f877faaec633336f6f5",
+      "repeat_sha256": "18be649ead5b43daeb360695458f3f3de7a980c1b36c4f877faaec633336f6f5",
+      "bit_identical_wav": true,
+      "repeat_path": "measurements\\renders\\pultec_lf\\repeats\\atten_only-30-b000-a020-44k1-imp-repeat.wav",
+      "latency_gate": 86,
+      "stdout": "\n              Timers:\n                       General@info\n                        Errors@warn\n                       Sockets@warn\n                 ServerSockets@warn\n                 ClientSockets@warn\n                         Mixer@info\n                        Engine@info\n                        Plugin@info\n                         Async@warn\n                      MIDISync@warn\n                          UAPW@info\n                          HBGF@info\nrendered: K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\repeats\\atten_only-30-b000-a020-44k1-imp-repeat.wav\n",
+      "stderr": "prepared, latency=86\n"
+    },
+    {
+      "grid_id": "boost_atten_trick-100-b080-a080-44k1-imp",
+      "configuration": {
+        "id": "boost_atten_trick-100-b080-a080-44k1-imp",
+        "group": "boost_atten_trick",
+        "priority": 1,
+        "conditional": false,
+        "sample_rate_hz": 44100,
+        "plugin": {
+          "fx_present": true,
+          "host_bypass": false,
+          "eq_in": true,
+          "lf_cps_hz": 100,
+          "lf_boost_ui": 8,
+          "lf_atten_ui": 8,
+          "output_gain_ui": null
+        },
+        "signal": "impulse",
+        "level_dbfs": null,
+        "purpose": "Simultaneous boost+atten interaction at same CPS"
+      },
+      "original_sha256": "af007b4c50fa7f7994b072ff07f6358c1026349bc012a51b6e4630e9e9f1a008",
+      "repeat_sha256": "af007b4c50fa7f7994b072ff07f6358c1026349bc012a51b6e4630e9e9f1a008",
+      "bit_identical_wav": true,
+      "repeat_path": "measurements\\renders\\pultec_lf\\repeats\\boost_atten_trick-100-b080-a080-44k1-imp-repeat.wav",
+      "latency_gate": 86,
+      "stdout": "\n              Timers:\n                       General@info\n                        Errors@warn\n                       Sockets@warn\n                 ServerSockets@warn\n                 ClientSockets@warn\n                         Mixer@info\n                        Engine@info\n                        Plugin@info\n                         Async@warn\n                      MIDISync@warn\n                          UAPW@info\n                          HBGF@info\nrendered: K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\repeats\\boost_atten_trick-100-b080-a080-44k1-imp-repeat.wav\n",
+      "stderr": "prepared, latency=86\n"
+    }
+  ]
+}

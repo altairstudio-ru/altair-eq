@@ -1,0 +1,77 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-09T18:00:02Z",
+  "inputs": {
+    "measurements/signals/impulse-44100.wav": "b8e9e316407e4a007675feb6c306dad4ae197949790f4dca8dc1d7cb58a9aa59",
+    "measurements/renders/calibration/stage3-calfilter-impulse.wav": "5866cd31f1a1a1da9a23334d7b6406d482b6027cf1ad3c9919db59f63dd92e77"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "latency_compensated_samples": 0,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 89901,
+  "analytic_rbj": {
+    "f0_hz": 1000.0,
+    "gain_db": 6.0,
+    "q": 1.0
+  },
+  "tolerance_db": 0.05,
+  "tolerance_phase_deg": 1.0,
+  "max_error_db": 4.5922065780579224e-07,
+  "max_error_phase_deg": 7.572238995168225e-07,
+  "gate_pass": true,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 0.002587866035692335,
+      "phase_deg": 0.8059836201909863,
+      "group_delay_ms": -0.1119274820031989
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 0.0058244003319636115,
+      "phase_deg": 1.2088760089819583,
+      "group_delay_ms": -0.11189972724919683
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 0.016197642988022273,
+      "phase_deg": 2.0142566887388735,
+      "group_delay_ms": -0.11180912926319637
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 0.02334366926298307,
+      "phase_deg": 2.416658468407986,
+      "group_delay_ms": -0.11174526342080739
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 0.06515291609354523,
+      "phase_deg": 4.023220308060882,
+      "group_delay_ms": -0.11134797200424697
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 6.000000201356467,
+      "phase_deg": 4.106664777425776e-08,
+      "group_delay_ms": 0.22503906650790564
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 0.04452180744722846,
+      "phase_deg": -3.331553709879724,
+      "group_delay_ms": -0.0013294488258859926
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.002911799173878608,
+      "phase_deg": -0.8549308319127654,
+      "group_delay_ms": -0.0006201315867620344
+    }
+  ]
+}

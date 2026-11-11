@@ -1,0 +1,16 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "null",
+  "created_utc": "2026-11-10T13:47:16Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-44100.wav": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\svc-transparent-44k1-swp.wav": "e290c2aa896d5c39387f1135e3e9fb9ad57d4d32a36080f5db5c28c5563af0fc"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "bit_identical_samples": true,
+  "difference_peak": 0.0,
+  "difference_rms": 0.0,
+  "stereo_difference_peak_a": 0.0,
+  "stereo_difference_peak_b": 0.0
+}

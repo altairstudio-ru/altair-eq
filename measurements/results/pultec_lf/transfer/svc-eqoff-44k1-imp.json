@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:47:15Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\impulse-44100.wav": "b8e9e316407e4a007675feb6c306dad4ae197949790f4dca8dc1d7cb58a9aa59",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\svc-eqoff-44k1-imp.wav": "6fd94cc31df18ca9c18ef779406fc2954db22f4c350943dc9a1c95df99695eef"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 220500,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 89901,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": 1.1663835045652768,
+      "phase_deg": 2.891575500474584,
+      "group_delay_ms": 0.3923028588718799
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": 1.172493569894392,
+      "phase_deg": 1.9541421804079668,
+      "group_delay_ms": 0.1722283307177485
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": 1.1758101630188242,
+      "phase_deg": 1.2221089535913288,
+      "group_delay_ms": 0.05971238965095448
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": 1.1765358624372433,
+      "phase_deg": 1.0467361595336007,
+      "group_delay_ms": 0.04014540746668817
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": 1.1781741621290875,
+      "phase_deg": 0.7264368045314799,
+      "group_delay_ms": 0.011853266725850393
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 1.2986862943822255,
+      "phase_deg": 1.2631604809238093,
+      "group_delay_ms": -0.0018288199217776095
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.8494779484990198,
+      "phase_deg": -6.178276327886154,
+      "group_delay_ms": 0.00235836035749731
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 1.6041205677881687,
+      "phase_deg": -12.657790099546942,
+      "group_delay_ms": 0.0024068952710020897
+    }
+  ]
+}

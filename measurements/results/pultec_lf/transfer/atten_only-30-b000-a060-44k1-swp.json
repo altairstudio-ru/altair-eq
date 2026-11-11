@@ -1,0 +1,67 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-10T13:41:02Z",
+  "inputs": {
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\signals\\sweep_log-44100.wav": "c15689298c36692f4da172a86a94a96545ef104ad4fb5bb56302cef040e1db89",
+    "K:\\AltaiR Studio\\Projects\\AltaiR EQ\\measurements\\renders\\pultec_lf\\atten_only-30-b000-a060-44k1-swp.wav": "3e587a6d8bb0e495acb71372fe7b095dfbdb81336adc6ff7f7f701135f9122a9"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 20.0,
+  "fmax_hz": 18000.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 314651,
+  "control_points": [
+    {
+      "freq_hz": 20.0,
+      "magnitude_db": -11.06344066444172,
+      "phase_deg": 12.006896005477705,
+      "group_delay_ms": -1.2407266149968221
+    },
+    {
+      "freq_hz": 30.0,
+      "magnitude_db": -10.84452482810303,
+      "phase_deg": 15.296231064948026,
+      "group_delay_ms": -0.8105555246276603
+    },
+    {
+      "freq_hz": 50.0,
+      "magnitude_db": -10.220115103101575,
+      "phase_deg": 21.977658733370127,
+      "group_delay_ms": -0.7847977481302978
+    },
+    {
+      "freq_hz": 60.0,
+      "magnitude_db": -9.84417724329249,
+      "phase_deg": 24.89781940378269,
+      "group_delay_ms": -0.7024148416493383
+    },
+    {
+      "freq_hz": 100.0,
+      "magnitude_db": -8.203984758298713,
+      "phase_deg": 33.1346747385392,
+      "group_delay_ms": -0.3859725429297587
+    },
+    {
+      "freq_hz": 1000.0,
+      "magnitude_db": 0.6417426546975952,
+      "phase_deg": 15.511107194204287,
+      "group_delay_ms": 0.0773778707422089
+    },
+    {
+      "freq_hz": 10000.0,
+      "magnitude_db": 1.1234418419810737,
+      "phase_deg": -4.9907281234626835,
+      "group_delay_ms": 0.07634715496243948
+    },
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.898677589628962,
+      "phase_deg": -11.11017260744233,
+      "group_delay_ms": 0.08188731903387607
+    }
+  ]
+}

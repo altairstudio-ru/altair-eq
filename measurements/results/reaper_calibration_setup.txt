@@ -1,0 +1,79 @@
+REAPER 7.85/x64
+40015 File: Render project to disk...
+40405 Track: Render tracks to stereo post-fader stem tracks (and mute originals)
+40537 Track: Render tracks to mono post-fader stem tracks (and mute originals)
+40601 Item: Render items to new take (preserve source type)
+40788 Track: Render tracks to stereo stem tracks (and mute originals)
+40789 Track: Render tracks to mono stem tracks (and mute originals)
+40877 Track: Freeze to multichannel (render pre-fader, save/remove items and online FX)
+40892 Track: Render tracks to multichannel post-fader stem tracks (and mute originals)
+40893 Track: Render tracks to multichannel stem tracks (and mute originals)
+40901 Track: Freeze to mono (render pre-fader, save/remove items and online FX)
+40929 File: Open render queue
+41207 Render all queued renders
+41223 Track: Freeze to stereo (render pre-fader, save/remove items and online FX)
+41716 Track: Render selected area of tracks to stereo post-fader stem tracks (and mute originals)
+41717 Track: Render selected area of tracks to multichannel post-fader stem tracks (and mute originals)
+41718 Track: Render selected area of tracks to mono post-fader stem tracks (and mute originals)
+41719 Track: Render selected area of tracks to stereo stem tracks (and mute originals)
+41720 Track: Render selected area of tracks to multichannel stem tracks (and mute originals)
+41721 Track: Render selected area of tracks to mono stem tracks (and mute originals)
+41823 File: Add project to render queue, using the most recent render settings
+41824 File: Render project, using the most recent render settings
+41855 File: Render project, using the most recent render settings, with a new target file name...
+41888 View: Show region render matrix window
+41890 Region render matrix: Render master mix for all regions
+41891 Region render matrix: Render all tracks for all regions
+41892 Region render matrix: Render only selected tracks for all regions
+41893 Region render matrix: Add selected tracks to render list for all regions
+41998 Project tabs: Defer rendering of subprojects (render on tab switch rather than save)
+41999 Item: Render items to new take
+42012 Project tabs: Leave subproject open in tab after automatic open and render
+42230 File: Render project, using the most recent render settings, auto-close render dialog
+42332 File: Save project and render RPP-PROX
+42333 Project tabs: Do not automatically render subprojects (require manual render)
+42334 Project tabs: Prompt before automatic rerender of background subprojects
+42397 File: Show project render metadata window
+42413 Track: 2nd pass render selected area of tracks to stereo post-fader stem tracks (and mute originals)
+42414 Track: 2nd pass render selected area of tracks to multichannel post-fader stem tracks (and mute originals)
+42415 Track: 2nd pass render selected area of tracks to mono post-fader stem tracks (and mute originals)
+42416 Track: 2nd pass render selected area of tracks to stereo stem tracks (and mute originals)
+42417 Track: 2nd pass render selected area of tracks to multichannel stem tracks (and mute originals)
+42418 Track: 2nd pass render selected area of tracks to mono stem tracks (and mute originals)
+42437 Calculate loudness of selected items, including take and track FX and settings, via dry run render
+42438 Calculate loudness of selected tracks via dry run render
+42439 Calculate loudness of selected tracks within time selection via dry run render
+42440 Calculate loudness of master mix via dry run render
+42441 Calculate loudness of master mix within time selection via dry run render
+42447 Calculate mono loudness of selected tracks via dry run render
+42448 Calculate mono loudness of selected tracks within time selection via dry run render
+42468 Calculate loudness of selected items source media via dry run render
+42497 File: Open render statistics charts from most recent render in web browser
+42510 File: Open render statistics charts from most recent render in web browser (hide file paths)
+42589 Track: Render tracks to multichannel (parent send only) post-fader stem tracks (and mute originals)
+42590 Track: Render tracks to multichannel (parent send only) stem tracks (and mute originals)
+42591 Track: Render selected area of tracks to multichannel (parent send only) post-fader stem tracks (and mute originals)
+42592 Track: Render selected area of tracks to multichannel (parent send only) stem tracks (and mute originals)
+42593 Track: 2nd pass render selected area of tracks to multichannel (parent send only) post-fader stem tracks (and mute originals)
+42594 Track: 2nd pass render selected area of tracks to multichannel (parent send only) stem tracks (and mute originals)
+42679 Regions: Select/unselect all regions for rendering
+0 Freq-Low Shelf = 100.0
+1 Gain-Low Shelf = 0.0
+2 BW-Low Shelf = 0.80
+3 Freq-Band 2 = 100.0
+4 Gain-Band 2 = 15.6
+5 BW-Band 2 = 2.00
+6 Freq-Band 3 = 1000.0
+7 Gain-Band 3 = 0.0
+8 BW-Band 3 = 2.00
+9 Freq-High Shelf 4 = 5000.0
+10 Gain-High Shelf 4 = 0.0
+11 BW-High Shelf 4 = 0.80
+12 Freq-High Pass 5 = 100.0
+13 Gain-High Pass 5 = 0.0
+14 BW-High Pass 5 = 2.00
+15 Global Gain = 0.0
+16 Bypass = normal
+17 Wet = 100
+18 Delta = normal
+RENDER_FORMAT=ZXZhdxgAAQ==

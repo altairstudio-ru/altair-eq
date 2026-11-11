@@ -1,0 +1,4310 @@
+{
+  "schema": "altair-eq.pultec-lf-level-analysis/1",
+  "method": "FFT of 1 s to 9 s steady section; amplitudes at coherent bins",
+  "results": [
+    {
+      "id": "imd-char60b6a4-12db",
+      "signal": "twotone_50_1000",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "201059194c9ca01c1c1bed9cf6b9d4d8e22924c697cb7fc7e202e1e3f8665b58",
+      "output_sha256": "d413ede7b11f7f90483ac820b2e5fc2420cc95699bd465179e529ec96124610d",
+      "fundamental_50_hz_gain_db": 10.703171033833243,
+      "fundamental_1000_hz_gain_db": -1.6672296645259799,
+      "selected_intermod_products": [
+        {
+          "frequency_hz": 900,
+          "amplitude": 2.2855375020993183e-05,
+          "dBc_vs_50Hz": -89.58520373460112
+        },
+        {
+          "frequency_hz": 950,
+          "amplitude": 2.7121347862312886e-05,
+          "dBc_vs_50Hz": -88.0987453888068
+        },
+        {
+          "frequency_hz": 1050,
+          "amplitude": 2.9925640605933618e-05,
+          "dBc_vs_50Hz": -87.24410165131326
+        },
+        {
+          "frequency_hz": 1100,
+          "amplitude": 2.4825476854433175e-05,
+          "dBc_vs_50Hz": -88.86701878430097
+        },
+        {
+          "frequency_hz": 1950,
+          "amplitude": 4.4048313170426815e-07,
+          "dBc_vs_50Hz": -123.88638513485417
+        },
+        {
+          "frequency_hz": 2000,
+          "amplitude": 4.7450419388325566e-07,
+          "dBc_vs_50Hz": -123.24016966471768
+        },
+        {
+          "frequency_hz": 2050,
+          "amplitude": 1.2041000396195282e-06,
+          "dBc_vs_50Hz": -115.15171935647203
+        }
+      ]
+    },
+    {
+      "id": "imd-char60b6a4-6db",
+      "signal": "twotone_50_1000",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "593b74b403d340654cf0c593215c449c47beeed755868acae326f6ae0c66d3e3",
+      "output_sha256": "b9b7f066e869a170433f88933692bc2d71452a331bd7f28828ed25bb49114dca",
+      "fundamental_50_hz_gain_db": 10.703720865374303,
+      "fundamental_1000_hz_gain_db": -1.6616107807525051,
+      "selected_intermod_products": [
+        {
+          "frequency_hz": 900,
+          "amplitude": 0.0002249388773181347,
+          "dBc_vs_50Hz": -75.72423011585127
+        },
+        {
+          "frequency_hz": 950,
+          "amplitude": 0.00014269709964320233,
+          "dBc_vs_50Hz": -79.67721765927547
+        },
+        {
+          "frequency_hz": 1050,
+          "amplitude": 0.00015592965497464637,
+          "dBc_vs_50Hz": -78.90694622175947
+        },
+        {
+          "frequency_hz": 1100,
+          "amplitude": 0.0002500987018871692,
+          "dBc_vs_50Hz": -74.80329182886041
+        },
+        {
+          "frequency_hz": 1950,
+          "amplitude": 4.991285973764677e-06,
+          "dBc_vs_50Hz": -108.80127151412111
+        },
+        {
+          "frequency_hz": 2000,
+          "amplitude": 3.730504638146157e-07,
+          "dBc_vs_50Hz": -131.3301688946192
+        },
+        {
+          "frequency_hz": 2050,
+          "amplitude": 6.510458351327655e-06,
+          "dBc_vs_50Hz": -106.49328928071458
+        }
+      ]
+    },
+    {
+      "id": "imd-flat-12db",
+      "signal": "twotone_50_1000",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "201059194c9ca01c1c1bed9cf6b9d4d8e22924c697cb7fc7e202e1e3f8665b58",
+      "output_sha256": "2a1f5ee13984d709487fd1c11e1e284a9bd9d274bf6897fc521a9ddf87e6e534",
+      "fundamental_50_hz_gain_db": 1.1428827824868621,
+      "fundamental_1000_hz_gain_db": 1.1435365678520137,
+      "selected_intermod_products": [
+        {
+          "frequency_hz": 900,
+          "amplitude": 3.7240418398164276e-06,
+          "dBc_vs_50Hz": -95.78439148562283
+        },
+        {
+          "frequency_hz": 950,
+          "amplitude": 9.89446493803923e-06,
+          "dBc_vs_50Hz": -87.29683624121938
+        },
+        {
+          "frequency_hz": 1050,
+          "amplitude": 1.0791204739356698e-05,
+          "dBc_vs_50Hz": -86.54328387084492
+        },
+        {
+          "frequency_hz": 1100,
+          "amplitude": 3.8127786067077077e-06,
+          "dBc_vs_50Hz": -95.57985075467602
+        },
+        {
+          "frequency_hz": 1950,
+          "amplitude": 5.73390883532613e-07,
+          "dBc_vs_50Hz": -112.03566684436535
+        },
+        {
+          "frequency_hz": 2000,
+          "amplitude": 4.6507566855419845e-07,
+          "dBc_vs_50Hz": -113.85421013791218
+        },
+        {
+          "frequency_hz": 2050,
+          "amplitude": 5.59472296974248e-07,
+          "dBc_vs_50Hz": -112.24911078441957
+        }
+      ]
+    },
+    {
+      "id": "imd-flat-6db",
+      "signal": "twotone_50_1000",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "593b74b403d340654cf0c593215c449c47beeed755868acae326f6ae0c66d3e3",
+      "output_sha256": "9b62770842f2f05923d1433fdebbe73c1947f2bb2a1e814e5a3bb5c2c25e9449",
+      "fundamental_50_hz_gain_db": 1.1424612518886792,
+      "fundamental_1000_hz_gain_db": 1.1428418816412176,
+      "selected_intermod_products": [
+        {
+          "frequency_hz": 900,
+          "amplitude": 2.771007004311704e-05,
+          "dBc_vs_50Hz": -84.35150849572938
+        },
+        {
+          "frequency_hz": 950,
+          "amplitude": 4.3298349073461425e-05,
+          "dBc_vs_50Hz": -80.47483421850652
+        },
+        {
+          "frequency_hz": 1050,
+          "amplitude": 4.7628328436885706e-05,
+          "dBc_vs_50Hz": -79.64695417111588
+        },
+        {
+          "frequency_hz": 1100,
+          "amplitude": 3.0097721230025867e-05,
+          "dBc_vs_50Hz": -83.63358865940955
+        },
+        {
+          "frequency_hz": 1950,
+          "amplitude": 3.6543317421984607e-06,
+          "dBc_vs_50Hz": -101.94810156099179
+        },
+        {
+          "frequency_hz": 2000,
+          "amplitude": 1.5683305558158893e-06,
+          "dBc_vs_50Hz": -109.29550888868889
+        },
+        {
+          "frequency_hz": 2050,
+          "amplitude": 4.7705912214426975e-06,
+          "dBc_vs_50Hz": -99.63281687325541
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s100-12db",
+      "signal": "sine_100",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "eca2268d2ca440725d16ed36348cb401c8d57e4761833b7c358a47d13cb13ac3",
+      "output_sha256": "ea20d17602b3434b99a074b0d45e06a8d1e092d9ed27c8e7f6e5c939fccee824",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 9.119698294828384,
+      "thd_percent": 0.034486468183935325,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 0.00020768571177206513,
+          "dBc": -70.77156590736963
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 0.00013455827297707596,
+          "dBc": -74.54149020388378
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 5.688366602772892e-06,
+          "dBc": -102.01994673333803
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 4.6046794991501265e-07,
+          "dBc": -123.8557101471939
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 2.2906290942635356e-07,
+          "dBc": -129.9206028408097
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 2.5413293588995567e-07,
+          "dBc": -129.01847921818776
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 1.0883846213484351e-07,
+          "dBc": -136.38405035919934
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 8.220196752812987e-08,
+          "dBc": -138.8220540397835
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 3.7219444230047543e-07,
+          "dBc": -125.70430061537135
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 2.4001905585736433e-07,
+          "dBc": -129.51478383105137
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 2.0796864016631256e-07,
+          "dBc": -130.75974124980988
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 3.6989287115827353e-07,
+          "dBc": -125.7581790651787
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 3.0583527768882806e-07,
+          "dBc": -127.40994670735361
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 3.6254489610567614e-07,
+          "dBc": -125.93246238190311
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 2.505673634046629e-07,
+          "dBc": -129.141208229474
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 1.619423499293123e-07,
+          "dBc": -132.93248955258375
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 1.931969122954815e-07,
+          "dBc": -131.39969466898503
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 7.568657433940756e-08,
+          "dBc": -139.53932131200145
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 1.1506269793030643e-07,
+          "dBc": -135.9010072339802
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s100-18db",
+      "signal": "sine_100",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "19e99773e12942cc8fe2dba3a7bacc379c4005a23769e5453bacd17328ac90e1",
+      "output_sha256": "07b62a1d33c524348030ba5d3b584a0a92904001be4a54bbed1d6f2302324617",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 9.121668132213497,
+      "thd_percent": 0.014835648999429957,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 5.0419136317016715e-05,
+          "dBc": -77.06976010085329
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 1.7525556351688852e-05,
+          "dBc": -86.24823186694348
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 3.4749215808687296e-07,
+          "dBc": -120.30276797427592
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 6.354713868796907e-08,
+          "dBc": -135.05974812863204
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 1.240180539046583e-07,
+          "dBc": -129.2519698970743
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 8.722448433882829e-08,
+          "dBc": -132.3088999265302
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 6.010154270183527e-08,
+          "dBc": -135.54395574453673
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 2.493138780630228e-07,
+          "dBc": -123.18673905531044
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 3.715391466298335e-08,
+          "dBc": -139.72157655403728
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 1.9296400913954046e-07,
+          "dBc": -125.41214186461075
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 8.310225157158057e-08,
+          "dBc": -132.72941232482106
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 1.1525065103118797e-07,
+          "dBc": -129.888800392624
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 8.723237308949464e-08,
+          "dBc": -132.3081143934336
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 1.6356428703782198e-07,
+          "dBc": -126.84789844035392
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 4.1586843402051785e-08,
+          "dBc": -138.74254899849788
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 3.4054977958324466e-08,
+          "dBc": -140.47805606856258
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 6.578337273684149e-08,
+          "dBc": -134.75934541610897
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 1.1391012993005678e-07,
+          "dBc": -129.99042119446122
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 1.1175348095245881e-07,
+          "dBc": -130.15644694643808
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s100-24db",
+      "signal": "sine_100",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "cdaf7e7f181d6999cc2f884af236f027cb9063cef0e05ac77a963b2c70674b3e",
+      "output_sha256": "6678bc0e1be3d50684816f174226a28219c3839cf46e83e3a9cbada1998b1f53",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 9.122168790675099,
+      "thd_percent": 0.0070759109759898535,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 1.2577917071889557e-05,
+          "dBc": -83.12999425452699
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 2.1455828022663867e-06,
+          "dBc": -98.49126320575027
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 9.032562435581069e-08,
+          "dBc": -126.0059493508906
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 8.474409464087544e-08,
+          "dBc": -126.55997990941692
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 5.95386478958756e-08,
+          "dBc": -129.6261894405725
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 2.60879985418797e-08,
+          "dBc": -136.7933535646987
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 1.3517524661115511e-08,
+          "dBc": -142.50422538384174
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 3.0369685359813934e-08,
+          "dBc": -135.47336294509722
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 6.586974084336487e-09,
+          "dBc": -148.7484496998805
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 7.069604149867368e-08,
+          "dBc": -128.13426685684266
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 2.2845644375963644e-08,
+          "dBc": -137.9461005528376
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 5.278937401243193e-08,
+          "dBc": -130.6712385536692
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 1.1311257304557197e-08,
+          "dBc": -144.05195116160178
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 4.9696420602056817e-08,
+          "dBc": -131.19566660150338
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 5.2160399913100124e-08,
+          "dBc": -130.77535054584752
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 3.742156535971832e-08,
+          "dBc": -133.65972978990885
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 6.071005912764119e-08,
+          "dBc": -129.45695567822813
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 2.402888662532267e-08,
+          "dBc": -137.5074958291084
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 1.277154570629925e-08,
+          "dBc": -142.99729955611159
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s100-36db",
+      "signal": "sine_100",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "c359be797eb932c113613d9dfea3b7eee04576ee266cc5630abfd358c07d985c",
+      "output_sha256": "31975c5bb59adf37cd6a3475e40e75d2c27ce292b2c681483ee2130d12032c7b",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 9.122328959735805,
+      "thd_percent": 0.0017612557448155514,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 7.949573841576002e-07,
+          "dBc": -95.11545200623829
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 4.1111897861215907e-08,
+          "dBc": -120.84297844695902
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 1.716151535635302e-08,
+          "dBc": -128.4312162958105
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 7.818071084344833e-09,
+          "dBc": -135.26033666411675
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 2.9793794919554263e-08,
+          "dBc": -123.63981248023501
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 1.0026874448431639e-08,
+          "dBc": -133.0990174221327
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 1.930303412998357e-08,
+          "dBc": -127.4098173900385
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 1.3307275516522446e-08,
+          "dBc": -130.6405459873519
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 1.7087846621270302e-08,
+          "dBc": -128.46858221754326
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 7.861553522974137e-09,
+          "dBc": -135.21216145064224
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 1.5286073343278547e-08,
+          "dBc": -129.43641018084804
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 9.885625868910946e-09,
+          "dBc": -133.2222455584161
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 1.5800241905781357e-09,
+          "dBc": -149.14905423790407
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 8.853897404368226e-09,
+          "dBc": -134.17963925660385
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 4.256591798603259e-09,
+          "dBc": -140.54108888281152
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 2.3030500369058536e-09,
+          "dBc": -145.87626148707875
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 1.6112842487682678e-09,
+          "dBc": -148.97888572847916
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 3.28014644384883e-09,
+          "dBc": -142.80446429225907
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 1.650628210685543e-08,
+          "dBc": -128.76934369500643
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s100-6db",
+      "signal": "sine_100",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "d89692b921544bfc26e0e77b72799a2599ac0fda626ac771c407378e756f67ea",
+      "output_sha256": "71d93f4e73b38de50f98f615906b619b462e9354794e4ce1d991785bfb77109a",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 9.112435359230158,
+      "thd_percent": 0.0955534756356907,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 0.0009381538404384337,
+          "dBc": -63.666954123346116
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 0.0009905808616843088,
+          "dBc": -63.19463667757117
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 8.737296033689795e-05,
+          "dBc": -84.28489432698112
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 2.1483742173025125e-05,
+          "dBc": -96.4702367030635
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 3.340375034062649e-07,
+          "dBc": -132.63653075593876
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 8.071272659010214e-06,
+          "dBc": -104.97359496538344
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 9.832426330938056e-07,
+          "dBc": -123.25922131496219
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 2.4389374115883177e-07,
+          "dBc": -135.36842222774936
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 6.450340636845313e-07,
+          "dBc": -126.92078233911067
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 4.375957313296138e-07,
+          "dBc": -130.29097380058482
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 5.175168625999467e-07,
+          "dBc": -128.83394523278702
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 6.356746364230485e-07,
+          "dBc": -127.04773767180566
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 4.784478974493103e-07,
+          "dBc": -129.51574233006338
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 4.99884349921049e-07,
+          "dBc": -129.13504453146692
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 2.6265729516316325e-07,
+          "dBc": -134.72464598617844
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 4.2909821362821276e-07,
+          "dBc": -130.46130120751718
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 2.089741053062431e-07,
+          "dBc": -136.71058584745492
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 5.355008334386336e-07,
+          "dBc": -128.5372323163146
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 4.984237764497306e-07,
+          "dBc": -129.16046030981596
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-12db",
+      "signal": "sine_1000",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6c3d8a74263d7955e65daaf3a884abdf38f21261372cc35f543508179b3471f2",
+      "output_sha256": "76d91d4b9e1f262163e62ec01cb57a5d080b642b396f1b567343c3c009d7b203",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": -1.665755309461482,
+      "thd_percent": 0.0024109626170635045,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 4.493028829735715e-06,
+          "dBc": -93.28346058262291
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 2.170990868201341e-06,
+          "dBc": -99.60108475422248
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 4.758121127675167e-08,
+          "dBc": -132.78553481422026
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 3.613960137555813e-08,
+          "dBc": -135.17457752954206
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 2.2096845255364138e-08,
+          "dBc": -139.44763920170615
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 1.9758240765859273e-08,
+          "dBc": -140.4192792228285
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 1.2993589451096804e-07,
+          "dBc": -124.05966187684439
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 1.1429703873029525e-08,
+          "dBc": -145.1735451160126
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 1.0099821914368559e-07,
+          "dBc": -126.24797036548559
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 8.421924466930956e-08,
+          "dBc": -127.8260178465301
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 1.6549132149140766e-07,
+          "dBc": -121.95874020950791
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 1.620693356008206e-08,
+          "dBc": -142.14022765319794
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 1.2101542787648983e-07,
+          "dBc": -124.67742987440467
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 2.005782547669601e-08,
+          "dBc": -140.28856772423507
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 8.566227952433663e-08,
+          "dBc": -127.67845214710222
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 6.831764837714375e-09,
+          "dBc": -149.64358651409955
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 4.417693475077802e-09,
+          "dBc": -153.43033311333824
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 4.557283327710157e-08,
+          "dBc": -133.16012409521738
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 2.8459751638438837e-08,
+          "dBc": -137.24962257251173
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-18db",
+      "signal": "sine_1000",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "dddc1a8c879ef3f94d6600da25133939e14293e5acd11558310cd42ebb7f9f46",
+      "output_sha256": "a53daa404e4dac826d482a8ff5603b6b712f009bb07fec10bfc3809fea524a90",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": -1.6655505701335231,
+      "thd_percent": 0.0011285433657738436,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 1.1253598600251155e-06,
+          "dBc": -99.30862102808888
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 2.7806704891503867e-07,
+          "dBc": -111.451458880748
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 5.7782635867005595e-08,
+          "dBc": -125.09850245382346
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 1.1765691785513366e-08,
+          "dBc": -138.9221000885965
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 1.3827313423565494e-07,
+          "dBc": -117.51969329464424
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 8.119900267766177e-09,
+          "dBc": -142.14343553521567
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 2.0004208190272828e-08,
+          "dBc": -134.31202212187753
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 1.743004753059352e-08,
+          "dBc": -135.50847800864477
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 5.1351224445790654e-08,
+          "dBc": -126.12343336463915
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 1.915529604380289e-08,
+          "dBc": -134.68867206947155
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 4.7720068571623693e-08,
+          "dBc": -126.76042825551332
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 7.791165202138712e-09,
+          "dBc": -142.50240117411772
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 1.661152150964991e-08,
+          "dBc": -135.92626117905064
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 5.703462063943868e-09,
+          "dBc": -145.21167829226928
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 4.3840754192279466e-08,
+          "dBc": -127.49688910259843
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 1.1963002142741666e-08,
+          "dBc": -138.77764582626202
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 2.1316763772568933e-08,
+          "dBc": -133.76002398723182
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.1550393002326214e-08,
+          "dBc": -139.08251420958703
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 1.1837375315040772e-08,
+          "dBc": -138.86934108587715
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-24db",
+      "signal": "sine_1000",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "5d81493a2b3473eb3056d51f7511443e2abc4d11bec059b47ec5184d8a1fb32e",
+      "output_sha256": "3a380afb8a8b8edf0713318a8bd6be36a505709f2b99980b7d6b3ec0423d4229",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": -1.6654987014746143,
+      "thd_percent": 0.0006266084708326633,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 3.11321346978598e-07,
+          "dBc": -104.47032328660903
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 4.100502380383588e-08,
+          "dBc": -122.07775993613753
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 6.148677628646038e-08,
+          "dBc": -118.5588668260071
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 9.895258838715383e-09,
+          "dBc": -134.42595812499712
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 3.789736525422828e-08,
+          "dBc": -122.7623209534463
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 7.400385083299957e-09,
+          "dBc": -136.9494149213828
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 3.35715799618164e-08,
+          "dBc": -123.81506568894343
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 5.794093128060623e-09,
+          "dBc": -139.07479187684797
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 1.9875649864700734e-08,
+          "dBc": -128.36807455340323
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 4.332118554372558e-09,
+          "dBc": -141.60049463941743
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 1.751090422831064e-08,
+          "dBc": -129.46832984769503
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 2.5265626038078284e-09,
+          "dBc": -146.28390002770814
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 1.6653129803152725e-08,
+          "dBc": -129.90458395939746
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 1.317687530352218e-09,
+          "dBc": -151.93825258091582
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 1.2485006033912264e-08,
+          "dBc": -132.40672617145657
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 2.7988926225154688e-09,
+          "dBc": -145.39477655517018
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 1.2505523153130067e-08,
+          "dBc": -132.39246401062576
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 3.470292787152046e-09,
+          "dBc": -143.52717895142018
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 7.229178292506407e-09,
+          "dBc": -137.1527225862172
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-36db",
+      "signal": "sine_1000",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "479d1a96ccbb360f128cf3794aa9bec2f7ca40d02c9408b842f47893495673c7",
+      "output_sha256": "7f8457d35cb48141fe7ebeea0e757faf509e273f8622102284f1a64a8b5a030f",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": -1.6654858189436066,
+      "thd_percent": 0.0004722575585724078,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 5.701794225655263e-08,
+          "dBc": -107.21428338598214
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 1.6307254610914084e-09,
+          "dBc": -138.08689714161483
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 1.72234889748797e-08,
+          "dBc": -117.61209155487632
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 1.2046030662253151e-09,
+          "dBc": -140.7176348965536
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 1.0418520003168436e-08,
+          "dBc": -121.97839358467051
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 2.2648831464508673e-09,
+          "dBc": -135.23359818060558
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 7.512550184626702e-09,
+          "dBc": -124.8187664594756
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 1.8417903480058057e-09,
+          "dBc": -137.02971032858582
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 5.172071996551692e-09,
+          "dBc": -128.06122294775156
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 3.092981005485201e-10,
+          "dBc": -152.52696912381998
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 4.5338684560918375e-09,
+          "dBc": -129.20513587212443
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 1.569439668721286e-09,
+          "dBc": -138.41962167216965
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 3.4716291618613325e-09,
+          "dBc": -131.52384762641034
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 1.5377589381171499e-09,
+          "dBc": -138.59674898234977
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 3.0891331429579544e-09,
+          "dBc": -132.53778164289278
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 1.063022965439449e-09,
+          "dBc": -141.80366124097867
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 2.8022557235049977e-09,
+          "dBc": -133.38435888517884
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.6349085709560476e-09,
+          "dBc": -138.0646447703177
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 2.6409661739676296e-09,
+          "dBc": -133.89925740833488
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s1k-6db",
+      "signal": "sine_1000",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "d3c55a694365669258eb5e2ed86954b8a635b570ce156d3de94824b1130e3350",
+      "output_sha256": "780682cd9d1bc4481e04b6c43d33e7b6a5c8685f565f393f1c2553a37b3b441b",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": -1.6665643885411205,
+      "thd_percent": 0.005975637242928742,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 1.7879501821226584e-05,
+          "dBc": -87.28632731464236
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 1.7068745013211567e-05,
+          "dBc": -87.68940377917808
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 2.3144808319496746e-08,
+          "dBc": -145.04436382325574
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 2.9480047839855116e-08,
+          "dBc": -142.94287191208787
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 2.6593266598144658e-08,
+          "dBc": -143.83800184312233
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 3.871469376722094e-08,
+          "dBc": -140.57591902421694
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 1.146440163787459e-08,
+          "dBc": -151.14640774114446
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 1.784582374007611e-08,
+          "dBc": -147.30270360670698
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 6.309157859019109e-08,
+          "dBc": -136.33400771404132
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 4.148843702712655e-08,
+          "dBc": -139.97489410757117
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 5.784491712741038e-08,
+          "dBc": -137.08813152699392
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 1.605462730555849e-07,
+          "dBc": -128.22143102630147
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 7.678369146528406e-09,
+          "dBc": -154.62805584127932
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 2.434660664053638e-08,
+          "dBc": -144.60466680994335
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 5.3943312861792796e-08,
+          "dBc": -137.69468329931368
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 7.221664449359436e-08,
+          "dBc": -135.16068948505458
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 5.515838799040198e-09,
+          "dBc": -157.50120428343146
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.6218662214113554e-07,
+          "dBc": -128.1331350141458
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 8.353074260841582e-08,
+          "dBc": -133.89650874308248
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s50-12db",
+      "signal": "sine_50",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6434c69154b1a8e1b843eba2f9b7e81a5105d766d5ecb456b15e8a217ef9addb",
+      "output_sha256": "841772348b3624244594d3b0bf8fd949b41b5b6987347168494a8cec6c28ecbd",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 10.702815205351957,
+      "thd_percent": 0.10317577549499289,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 0.0007356370303951431,
+          "dBc": -61.369543551466904
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 0.0004889220092828396,
+          "dBc": -64.91802344535775
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 9.316677314430259e-05,
+          "dBc": -79.31759412598885
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 2.5561575341962696e-05,
+          "dBc": -90.55106289139415
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 4.956788991772024e-07,
+          "dBc": -124.79880657125925
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 1.0328764195483402e-05,
+          "dBc": -98.42184795003084
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 5.462733712749992e-07,
+          "dBc": -123.95461458599348
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 1.5123389682461406e-06,
+          "dBc": -115.10983234864953
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 4.1412381176705987e-07,
+          "dBc": -126.36021114722915
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 7.756689327773054e-07,
+          "dBc": -120.90928725576839
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 5.080511137830272e-07,
+          "dBc": -124.58466704709956
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 7.233824417929057e-07,
+          "dBc": -121.5154559389708
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 2.6410622104607034e-07,
+          "dBc": -130.26724257943553
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.2723949015692323e-06,
+          "dBc": -116.61037679810849
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 2.438368431220885e-07,
+          "dBc": -130.96082866243194
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 8.905251001113631e-07,
+          "dBc": -119.70989190521834
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 4.6733435395009087e-07,
+          "dBc": -125.31026105545209
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 4.052891819696528e-07,
+          "dBc": -126.5475149698465
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 5.406023461486995e-07,
+          "dBc": -124.0452566798597
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s50-18db",
+      "signal": "sine_50",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "85404f3f1ad40bf6e3247166f9dea7418ef0cfd3ba86eb20338ac57aeb3e90c6",
+      "output_sha256": "9a65bcc06064297c539c0196951887a14da867cd14531cdf643b9a62759ca6b5",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 10.703757483290211,
+      "thd_percent": 0.037738904248919174,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 0.00015149200189374054,
+          "dBc": -69.09596339777987
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 5.964190864941003e-05,
+          "dBc": -77.19272682586356
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 5.845259668550933e-06,
+          "dBc": -97.36768131156565
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 8.965088029222422e-07,
+          "dBc": -113.65266632405158
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 2.8940551475379307e-07,
+          "dBc": -123.47362143935851
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 4.848608376876393e-07,
+          "dBc": -118.9914153406766
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 2.1945423137097136e-07,
+          "dBc": -125.87687830937698
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 3.673568900663336e-07,
+          "dBc": -121.40199369437381
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 2.2901969013820296e-07,
+          "dBc": -125.50630103545187
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 2.6484136916794033e-08,
+          "dBc": -144.24404100185617
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 4.2842813639396174e-07,
+          "dBc": -120.06619779509434
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 2.5411970244006007e-07,
+          "dBc": -124.6029907275958
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 2.8896230168210753e-07,
+          "dBc": -123.48693373119417
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.620227294069353e-07,
+          "dBc": -128.51223861122693
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 1.1070757321929397e-07,
+          "dBc": -131.82021087298975
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 1.7092197709781968e-07,
+          "dBc": -128.04779933480523
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 1.6470736112269826e-07,
+          "dBc": -128.36949730720227
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 4.035691171114167e-07,
+          "dBc": -120.58539899602744
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 4.0563844968069856e-07,
+          "dBc": -120.54097520604088
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s50-24db",
+      "signal": "sine_50",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6cc58b22e49f649b23aad18a2017ee6f6cad18b5c72cd7dae7b5174b0164b841",
+      "output_sha256": "0e9851432495f273c0b930c0c45baaac37cc376aec458c58ee7473b5bf849958",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 10.704024490683429,
+      "thd_percent": 0.016871158689980716,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 3.564798596100382e-05,
+          "dBc": -75.66332453273999
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 7.8251066529208e-06,
+          "dBc": -88.83421918498175
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 2.4541398392654586e-07,
+          "dBc": -118.90603838286303
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 2.1737189913288867e-07,
+          "dBc": -119.95995650058299
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 1.1210758294818446e-07,
+          "dBc": -125.71132471052096
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 1.62528345639655e-07,
+          "dBc": -122.48544220041995
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 2.591264394121933e-08,
+          "dBc": -138.43378994407988
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 2.2057480005420666e-07,
+          "dBc": -119.83290661076276
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 1.4937811106478487e-07,
+          "dBc": -123.21828522836512
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 2.2451705950170495e-07,
+          "dBc": -119.67903758252577
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 1.9573609678358727e-07,
+          "dBc": -120.87060602103563
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 1.3982456822643644e-07,
+          "dBc": -123.79235475687793
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 2.3459379483418289e-07,
+          "dBc": -119.29769408426424
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.943762125544209e-07,
+          "dBc": -120.93116218343205
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 2.18394907782296e-07,
+          "dBc": -119.91917433723124
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 2.1535310052335776e-07,
+          "dBc": -120.04100191814524
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 1.3801446983825844e-07,
+          "dBc": -123.90553206550257
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 1.1559534502942183e-07,
+          "dBc": -125.445217583178
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 1.4141911819466745e-07,
+          "dBc": -123.69386199689262
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s50-36db",
+      "signal": "sine_50",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "f352f012d7ca06403e0dcbea320c9289ba00ff00965bfc52ea3cbf1718725de8",
+      "output_sha256": "1135a6c7e24b56e3d440f91a54d3deff9e1a32545f1fadc428368b030008d0bf",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 10.704101705750762,
+      "thd_percent": 0.004153303506246367,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 2.2467688079183047e-06,
+          "dBc": -87.67293398926007
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 1.7081995239490423e-07,
+          "dBc": -110.05332977725936
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 4.637076464120581e-08,
+          "dBc": -121.3792165601999
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 3.6013235013170567e-08,
+          "dBc": -123.57485900474114
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 2.0095659002329626e-08,
+          "dBc": -128.64205665329996
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 3.053376551196473e-08,
+          "dBc": -125.00849438626517
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 1.3942679315898294e-08,
+          "dBc": -131.8171769345815
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 6.751030277083496e-09,
+          "dBc": -138.116700592815
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 3.7382650117482986e-08,
+          "dBc": -123.25069998756771
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 1.7941314414999163e-08,
+          "dBc": -129.62701656488207
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 1.3535191426009303e-08,
+          "dBc": -132.07481366111494
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 5.6151976928477817e-08,
+          "dBc": -119.71680068798076
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 1.2972620447242005e-08,
+          "dBc": -132.44354747340802
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 5.287979627506033e-08,
+          "dBc": -120.23830624091869
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 3.329944946220585e-08,
+          "dBc": -124.25536063921477
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 4.043661241091377e-08,
+          "dBc": -122.5686064013365
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 1.577305419481563e-08,
+          "dBc": -130.7457857968713
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 3.2668409815683086e-08,
+          "dBc": -124.42154180626994
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 3.7048163066633684e-08,
+          "dBc": -123.32876811669414
+        }
+      ]
+    },
+    {
+      "id": "lvl-char60b6a4-s50-6db",
+      "signal": "sine_50",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": 60,
+        "lf_boost_ui": 6,
+        "lf_atten_ui": 4,
+        "output_gain_ui": null
+      },
+      "input_sha256": "74506f7a726848bb97215247e9dc9bef27764ed4a617966fe1d29cbfaeb306b4",
+      "output_sha256": "79e60489252fea3e0078b0bb13dc941442e3e7cc8af86333cb678d353246212d",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 10.706727563194345,
+      "thd_percent": 0.3887433354232962,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 0.0035550533383845737,
+          "dBc": -53.68980512073933
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 0.005605864893458546,
+          "dBc": -49.73387500910987
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 3.2241129951770866e-05,
+          "dBc": -94.53852246059262
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 0.0005564409898768993,
+          "dBc": -69.79834525153794
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 0.0004432394706308681,
+          "dBc": -71.77395899174596
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 0.00026805228626907443,
+          "dBc": -76.14233722697253
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 0.00011672472921825356,
+          "dBc": -83.36347003984767
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 1.6280302472942275e-05,
+          "dBc": -100.47347815377634
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 6.969263857476991e-05,
+          "dBc": -87.84298939628941
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 4.534437753134905e-05,
+          "dBc": -91.57625865289631
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 4.114182054868577e-05,
+          "dBc": -92.42105743094704
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 4.1789501540686114e-05,
+          "dBc": -92.28538372270745
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 1.2495822935670627e-05,
+          "dBc": -102.77143028861411
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.1695669661550774e-05,
+          "dBc": -103.3462256750738
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 1.8254777573238902e-05,
+          "dBc": -99.47919662966439
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 1.1045324121098984e-05,
+          "dBc": -103.84315824990028
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 2.066793952546811e-06,
+          "dBc": -118.40078389958693
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 7.366347041455769e-06,
+          "dBc": -107.36168403469817
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 8.293729625204137e-06,
+          "dBc": -106.3317300761239
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s100-12db",
+      "signal": "sine_100",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "eca2268d2ca440725d16ed36348cb401c8d57e4761833b7c358a47d13cb13ac3",
+      "output_sha256": "8353df69a11a7477f6c5b64e29c015945837d289d4f20a326f178a7bf7a4cf2e",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 1.1438816138080374,
+      "thd_percent": 0.011487623738170418,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 3.168148318093705e-05,
+          "dBc": -79.12777151019671
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 8.919398047401613e-06,
+          "dBc": -90.1371706976345
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 8.865202572164345e-08,
+          "dBc": -130.19010833553668
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 8.524876807826521e-08,
+          "dBc": -130.53011937611737
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 1.8068818789481138e-07,
+          "dBc": -124.00528636310585
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 1.0316903124565719e-07,
+          "dBc": -128.87289456040705
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 9.50165534519052e-08,
+          "dBc": -129.5878961484142
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 7.462633790572372e-08,
+          "dBc": -131.68603900603534
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 5.479428236591698e-08,
+          "dBc": -134.36917674330883
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 2.981573091008317e-08,
+          "dBc": -139.65497240710323
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 1.507440213299828e-07,
+          "dBc": -125.57907968001062
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 2.1699607190770768e-07,
+          "dBc": -122.4148441661179
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 2.6372314091169226e-07,
+          "dBc": -120.72091682138394
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 1.6121487209972626e-07,
+          "dBc": -124.99577955020246
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 1.183310778540838e-07,
+          "dBc": -127.68190520265662
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 4.003896902990899e-08,
+          "dBc": -137.09422388675645
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 9.793415512037692e-08,
+          "dBc": -129.32519799115224
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 5.347134178490932e-08,
+          "dBc": -134.58145996695598
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 8.169125606269148e-08,
+          "dBc": -130.900370137248
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s100-18db",
+      "signal": "sine_100",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "19e99773e12942cc8fe2dba3a7bacc379c4005a23769e5453bacd17328ac90e1",
+      "output_sha256": "4de31d2e57279f5873c65d68b6fb1b0c84d0ed606a83bef3043353c881f62b16",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 1.1442008394112861,
+      "thd_percent": 0.0056443329795025305,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 8.016999761900685e-06,
+          "dBc": -85.06396343231408
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 1.167695579811982e-06,
+          "dBc": -101.79760812158722
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 1.0982840098919007e-07,
+          "dBc": -122.3299076327319
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 4.211746010112778e-08,
+          "dBc": -130.6549573839313
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 1.0455496568625716e-07,
+          "dBc": -122.75730756971231
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 1.2582180631333632e-08,
+          "dBc": -141.14908253272154
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 6.529867643310658e-08,
+          "dBc": -126.84611327703557
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 4.904877678317931e-08,
+          "dBc": -129.33163722479702
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 4.143650207550076e-08,
+          "dBc": -130.79653911301392
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 3.9733313225497336e-08,
+          "dBc": -131.16110522827253
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 1.8457642483789492e-08,
+          "dBc": -137.82067625341443
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 1.2622374103068543e-07,
+          "dBc": -121.12137989252193
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 4.9686073136658184e-08,
+          "dBc": -129.21950736035842
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 8.595840307579594e-08,
+          "dBc": -124.45843407375531
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 4.0996813863336396e-08,
+          "dBc": -130.8891987242629
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 4.97443982755323e-08,
+          "dBc": -129.20931720898338
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 9.681662312293137e-08,
+          "dBc": -123.42520223096444
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 3.444594104624826e-08,
+          "dBc": -132.401439767039
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 2.372709934249178e-08,
+          "dBc": -135.63930787423732
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s100-24db",
+      "signal": "sine_100",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "cdaf7e7f181d6999cc2f884af236f027cb9063cef0e05ac77a963b2c70674b3e",
+      "output_sha256": "7f88cf65dc874941a2f2b189365fd1024fb62c98fba409df4692075bc7241e89",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 1.144280696221294,
+      "thd_percent": 0.0027932584456074874,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 2.0022717342655114e-06,
+          "dBc": -91.11382036989218
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 1.0839240513098967e-07,
+          "dBc": -116.44430364067614
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 4.886776064369005e-08,
+          "dBc": -123.36383194036961
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 2.0742679390588448e-08,
+          "dBc": -130.80698360625513
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 3.96731135600477e-08,
+          "dBc": -125.17435499278973
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 9.939376802910157e-09,
+          "dBc": -137.19709759938516
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 4.4071914272985244e-08,
+          "dBc": -124.26104240886897
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 5.1045320747208706e-08,
+          "dBc": -122.98516195906933
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 3.2132764990378025e-08,
+          "dBc": -127.00531874593932
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 3.3084185458376726e-08,
+          "dBc": -126.7518717674629
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 3.9193418121501344e-08,
+          "dBc": -125.28001788762255
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 3.6872318945958127e-08,
+          "dBc": -125.81027166503424
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 5.343956719964221e-08,
+          "dBc": -122.58702205702491
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 1.823093269864293e-08,
+          "dBc": -131.92810294418118
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 3.019152855474191e-08,
+          "dBc": -127.54657867472454
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 4.6218026063877685e-08,
+          "dBc": -123.84805283756833
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 9.095635049059886e-09,
+          "dBc": -137.9676201705625
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 3.495728629001569e-08,
+          "dBc": -126.27352647492191
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 7.700395773287153e-09,
+          "dBc": -139.41401976159628
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s100-36db",
+      "signal": "sine_100",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "c359be797eb932c113613d9dfea3b7eee04576ee266cc5630abfd358c07d985c",
+      "output_sha256": "3cab136456c6c7c5b948a1664f8be29f4c77c2b020888954e61e3534f142f62f",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 1.144302944373114,
+      "thd_percent": 0.0008113605369984891,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 1.3868103658462364e-07,
+          "dBc": -102.30396136242024
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 5.727948436508588e-09,
+          "dBc": -129.98432095064805
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 2.0990228608629338e-08,
+          "dBc": -118.70395957399695
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 1.6593860382688544e-08,
+          "dBc": -120.74535431172623
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 1.7856735118968362e-08,
+          "dBc": -120.10826181610014
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 7.2277927796713825e-09,
+          "dBc": -127.96418908837894
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 1.3053163143243456e-08,
+          "dBc": -122.82998762548418
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 9.508743305939217e-09,
+          "dBc": -125.58184047537621
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 1.677675702174324e-08,
+          "dBc": -120.65014265233161
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 3.4179213107144474e-09,
+          "dBc": -134.4690617472462
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 1.4479197950271646e-08,
+          "dBc": -121.92941283490599
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 6.118894424338737e-09,
+          "dBc": -129.41084374733848
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 9.875519925457728e-09,
+          "dBc": -125.25310355393911
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 2.2691649352385206e-09,
+          "dBc": -138.02698166755604
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 5.4224173264823175e-09,
+          "dBc": -130.46044416155434
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 1.0658381570596877e-08,
+          "dBc": -124.59047766690942
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 6.577185522303523e-09,
+          "dBc": -128.78350110281696
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 6.752363664571374e-09,
+          "dBc": -128.5551864617085
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 5.738434741086568e-09,
+          "dBc": -129.96843400386504
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s100-6db",
+      "signal": "sine_100",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "d89692b921544bfc26e0e77b72799a2599ac0fda626ac771c407378e756f67ea",
+      "output_sha256": "4b2bb668c751d1c1c7b325a27976a889e1c7adb595893a472bb400072d671da2",
+      "fundamental_hz": 100,
+      "fundamental_gain_db": 1.1426222900892073,
+      "thd_percent": 0.02563862515208944,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 200,
+          "amplitude": 0.00012932316784070675,
+          "dBc": -72.90909558207414
+        },
+        {
+          "order": 3,
+          "frequency_hz": 300,
+          "amplitude": 6.89205874433788e-05,
+          "dBc": -78.37564285916085
+        },
+        {
+          "order": 4,
+          "frequency_hz": 400,
+          "amplitude": 2.3266434342489312e-06,
+          "dBc": -107.80802564242083
+        },
+        {
+          "order": 5,
+          "frequency_hz": 500,
+          "amplitude": 2.68403801303529e-07,
+          "dBc": -126.56684902317429
+        },
+        {
+          "order": 6,
+          "frequency_hz": 600,
+          "amplitude": 1.264088864444181e-07,
+          "dBc": -133.10707015747838
+        },
+        {
+          "order": 7,
+          "frequency_hz": 700,
+          "amplitude": 6.745751837762712e-08,
+          "dBc": -138.5620150619664
+        },
+        {
+          "order": 8,
+          "frequency_hz": 800,
+          "amplitude": 3.0914110969379487e-07,
+          "dBc": -125.33948703827923
+        },
+        {
+          "order": 9,
+          "frequency_hz": 900,
+          "amplitude": 2.4741236634578206e-07,
+          "dBc": -127.27419420782064
+        },
+        {
+          "order": 10,
+          "frequency_hz": 1000,
+          "amplitude": 1.0185174249424402e-07,
+          "dBc": -134.98325300157654
+        },
+        {
+          "order": 11,
+          "frequency_hz": 1100,
+          "amplitude": 5.3912863014841626e-08,
+          "dBc": -140.50877436049993
+        },
+        {
+          "order": 12,
+          "frequency_hz": 1200,
+          "amplitude": 1.8617561210219726e-07,
+          "dBc": -129.74416646147515
+        },
+        {
+          "order": 13,
+          "frequency_hz": 1300,
+          "amplitude": 4.60782304788659e-08,
+          "dBc": -141.8727064145442
+        },
+        {
+          "order": 14,
+          "frequency_hz": 1400,
+          "amplitude": 3.7191414733829115e-07,
+          "dBc": -123.73376829075647
+        },
+        {
+          "order": 15,
+          "frequency_hz": 1500,
+          "amplitude": 1.29389352378365e-07,
+          "dBc": -132.90465148635042
+        },
+        {
+          "order": 16,
+          "frequency_hz": 1600,
+          "amplitude": 3.144736934770029e-07,
+          "dBc": -125.19093583972845
+        },
+        {
+          "order": 17,
+          "frequency_hz": 1700,
+          "amplitude": 1.9094916443691906e-07,
+          "dBc": -129.52426702281667
+        },
+        {
+          "order": 18,
+          "frequency_hz": 1800,
+          "amplitude": 1.574267823057673e-07,
+          "dBc": -131.20104989176642
+        },
+        {
+          "order": 19,
+          "frequency_hz": 1900,
+          "amplitude": 2.595196060241126e-07,
+          "dBc": -126.85921880440935
+        },
+        {
+          "order": 20,
+          "frequency_hz": 2000,
+          "amplitude": 4.868576215324816e-07,
+          "dBc": -121.39458280749506
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s1k-12db",
+      "signal": "sine_1000",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6c3d8a74263d7955e65daaf3a884abdf38f21261372cc35f543508179b3471f2",
+      "output_sha256": "6fccba3a82d5963b2196ab3f36f38ae3a6fa2aff6099bf3e19d9648065f66fae",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": 1.1432087927876398,
+      "thd_percent": 0.0036059506832521277,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 8.599548353085197e-06,
+          "dBc": -90.45369593503538
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 5.715786729600374e-06,
+          "dBc": -94.00168847433551
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 4.224616507247189e-08,
+          "dBc": -136.62746295703056
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 3.390209287588298e-08,
+          "dBc": -138.53867860421875
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 5.420719998362121e-08,
+          "dBc": -134.46206929371135
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 2.7148301375524675e-08,
+          "dBc": -140.46835555664174
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 5.290480507845162e-08,
+          "dBc": -134.67330641795934
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 7.487037729165727e-08,
+          "dBc": -131.6570083571712
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 3.705354828983824e-08,
+          "dBc": -137.76661273355526
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 3.596204462040249e-08,
+          "dBc": -138.02632127921916
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 1.2599637967791248e-07,
+          "dBc": -127.13604746076575
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 4.087889688828648e-08,
+          "dBc": -136.9132254322464
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 9.715961481000494e-09,
+          "dBc": -149.39349310288233
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 2.9176362332195835e-08,
+          "dBc": -139.84258591618612
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 1.588792681885225e-07,
+          "dBc": -125.12186417517141
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 8.688092394151016e-08,
+          "dBc": -130.36472017422798
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 1.994294722962355e-07,
+          "dBc": -123.1474219886819
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 9.65701214167411e-08,
+          "dBc": -129.44635324153728
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 8.752573559254861e-08,
+          "dBc": -130.30049340246887
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s1k-18db",
+      "signal": "sine_1000",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "dddc1a8c879ef3f94d6600da25133939e14293e5acd11558310cd42ebb7f9f46",
+      "output_sha256": "f4a5bdb938f27633e4feeb3904a74ca03d54d857455094a1262afff082e76a66",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": 1.1435994832916765,
+      "thd_percent": 0.0016124898055451798,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 2.185087698334034e-06,
+          "dBc": -96.35422204948568
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 7.282041841418179e-07,
+          "dBc": -105.89853609035276
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 6.352134336118817e-08,
+          "dBc": -127.08520600901869
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 1.660723996336254e-08,
+          "dBc": -138.73765027072346
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 3.4161551811121004e-08,
+          "dBc": -132.4728476785601
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 1.19280220471534e-08,
+          "dBc": -141.6122308266788
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 1.6351664508939943e-07,
+          "dBc": -118.87236012973236
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 2.571642737069887e-08,
+          "dBc": -134.93938679994642
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 1.1636347318242656e-07,
+          "dBc": -121.82726598092535
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 1.961186881643213e-08,
+          "dBc": -137.29321989829208
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 1.7071316008739288e-08,
+          "dBc": -138.49825945648826
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 1.076848256252894e-08,
+          "dBc": -142.50050930748037
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 1.971074742991406e-08,
+          "dBc": -137.24953763010075
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 1.4699544721122818e-08,
+          "dBc": -139.79752181310153
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 5.091456344134231e-08,
+          "dBc": -129.00675900351112
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 3.4511331958846676e-08,
+          "dBc": -132.38436506745515
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 7.066390710607379e-08,
+          "dBc": -126.15964655993406
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.6593042538696585e-08,
+          "dBc": -138.74507895879577
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 2.0898949947434387e-08,
+          "dBc": -136.74111017318575
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s1k-24db",
+      "signal": "sine_1000",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "5d81493a2b3473eb3056d51f7511443e2abc4d11bec059b47ec5184d8a1fb32e",
+      "output_sha256": "6804b790defb96f6b333463e4ab9ba01f3aeb6bd0d90a9cd581538c25690ac21",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": 1.143698901994906,
+      "thd_percent": 0.0007965900453589304,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 5.544155792996375e-07,
+          "dBc": -102.26699039402246
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 8.061391831862606e-08,
+          "dBc": -119.01549828699271
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 8.169280409138209e-08,
+          "dBc": -118.90002283853129
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 1.40036777759276e-08,
+          "dBc": -134.21885672431964
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 5.926632035513283e-08,
+          "dBc": -121.68753962241587
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 6.73976576893455e-09,
+          "dBc": -140.5708028364089
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 3.8007764547040264e-08,
+          "dBc": -125.54625236602314
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 7.364429690785652e-09,
+          "dBc": -139.80091650135324
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 3.3785729447061507e-08,
+          "dBc": -126.56903290751588
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 3.6333163679517695e-09,
+          "dBc": -145.93763459981878
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 2.7762135141322326e-08,
+          "dBc": -128.27464162730362
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 6.119032845117651e-09,
+          "dBc": -141.4100432192148
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 1.8076937398796045e-08,
+          "dBc": -132.00120182560323
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 4.561824677319195e-09,
+          "dBc": -143.9609271024016
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 1.739468443429049e-08,
+          "dBc": -132.33536781848778
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 2.7332230221419912e-09,
+          "dBc": -148.41019750328215
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 1.1859150239272226e-08,
+          "dBc": -135.66262748616697
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.971608784936231e-09,
+          "dBc": -151.2472840148714
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 1.2783289531668132e-08,
+          "dBc": -135.0108463971568
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s1k-36db",
+      "signal": "sine_1000",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "479d1a96ccbb360f128cf3794aa9bec2f7ca40d02c9408b842f47893495673c7",
+      "output_sha256": "f790dc1c900cbce809183877ad36afd9e44786db6e8cc47e31a7bccd8760b719",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": 1.1437263561349142,
+      "thd_percent": 0.00048052038234483956,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 8.000892911146729e-08,
+          "dBc": -107.0809572059221
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 2.3175410972395376e-09,
+          "dBc": -137.8431774719827
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 2.4963340902986692e-08,
+          "dBc": -117.19767220645542
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 1.5123730515736337e-09,
+          "dBc": -141.55054775314707
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 1.4851332142828936e-08,
+          "dBc": -121.70841813798233
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 1.946862958855714e-09,
+          "dBc": -139.35701871199151
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 1.0725202454630546e-08,
+          "dBc": -124.53561637946265
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 8.192275841211214e-10,
+          "dBc": -146.87563501843613
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 6.424265631031934e-09,
+          "dBc": -128.98725655994784
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 3.1149532026933944e-09,
+          "dBc": -135.274695828663
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 6.836509724384739e-09,
+          "dBc": -128.44703763991635
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 1.4307444928996423e-09,
+          "dBc": -142.03248469893856
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 4.718504720405599e-09,
+          "dBc": -131.66763848053736
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 1.704978954444148e-09,
+          "dBc": -140.50934590542306
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 3.6537545144598966e-09,
+          "dBc": -133.8889390583033
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 6.865473555292579e-10,
+          "dBc": -148.410316384557
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 4.046118607641106e-09,
+          "dBc": -133.0029541676257
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.5816736401682583e-09,
+          "dBc": -141.16138882111224
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 4.177042546124791e-09,
+          "dBc": -132.72634837995577
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s1k-6db",
+      "signal": "sine_1000",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "d3c55a694365669258eb5e2ed86954b8a635b570ce156d3de94824b1130e3350",
+      "output_sha256": "b70177c873e148bd5d5bda179636c91e47ca31eca92bc9b2343ef857f6184964",
+      "fundamental_hz": 1000,
+      "fundamental_gain_db": 1.141675975699389,
+      "thd_percent": 0.0098355113466924,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 2000,
+          "amplitude": 3.4088634347289435e-05,
+          "dBc": -84.48948389642739
+        },
+        {
+          "order": 3,
+          "frequency_hz": 3000,
+          "amplitude": 4.470296976421455e-05,
+          "dBc": -82.13494844162338
+        },
+        {
+          "order": 4,
+          "frequency_hz": 4000,
+          "amplitude": 5.346221046560006e-09,
+          "dBc": -160.58073773003645
+        },
+        {
+          "order": 5,
+          "frequency_hz": 5000,
+          "amplitude": 2.8798564174437794e-07,
+          "dBc": -125.9542592465431
+        },
+        {
+          "order": 6,
+          "frequency_hz": 6000,
+          "amplitude": 2.3597733558146803e-08,
+          "dBc": -147.68427009133467
+        },
+        {
+          "order": 7,
+          "frequency_hz": 7000,
+          "amplitude": 1.9726983014658007e-08,
+          "dBc": -149.24046254260946
+        },
+        {
+          "order": 8,
+          "frequency_hz": 8000,
+          "amplitude": 2.5577599954567982e-08,
+          "dBc": -146.98448014506639
+        },
+        {
+          "order": 9,
+          "frequency_hz": 9000,
+          "amplitude": 6.769910725647461e-08,
+          "dBc": -138.53001712121193
+        },
+        {
+          "order": 10,
+          "frequency_hz": 10000,
+          "amplitude": 3.84526454072742e-08,
+          "dBc": -143.4431514933553
+        },
+        {
+          "order": 11,
+          "frequency_hz": 11000,
+          "amplitude": 9.919617067734474e-08,
+          "dBc": -135.2117778119063
+        },
+        {
+          "order": 12,
+          "frequency_hz": 12000,
+          "amplitude": 3.719377664537488e-08,
+          "dBc": -143.73227038074046
+        },
+        {
+          "order": 13,
+          "frequency_hz": 13000,
+          "amplitude": 6.945333608666659e-08,
+          "dBc": -138.3078137302798
+        },
+        {
+          "order": 14,
+          "frequency_hz": 14000,
+          "amplitude": 4.333073478546703e-08,
+          "dBc": -142.40575488161545
+        },
+        {
+          "order": 15,
+          "frequency_hz": 15000,
+          "amplitude": 8.544518209506785e-08,
+          "dBc": -136.5079243623422
+        },
+        {
+          "order": 16,
+          "frequency_hz": 16000,
+          "amplitude": 7.365900478347247e-08,
+          "dBc": -137.79715902046348
+        },
+        {
+          "order": 17,
+          "frequency_hz": 17000,
+          "amplitude": 9.154841845332122e-08,
+          "dBc": -135.9086590346573
+        },
+        {
+          "order": 18,
+          "frequency_hz": 18000,
+          "amplitude": 5.966364390074294e-08,
+          "dBc": -139.62748047620067
+        },
+        {
+          "order": 19,
+          "frequency_hz": 19000,
+          "amplitude": 1.2882078900762178e-07,
+          "dBc": -132.94195685912803
+        },
+        {
+          "order": 20,
+          "frequency_hz": 20000,
+          "amplitude": 3.295260498469536e-08,
+          "dBc": -144.78388090869348
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s50-12db",
+      "signal": "sine_50",
+      "level_dbfs": -12,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6434c69154b1a8e1b843eba2f9b7e81a5105d766d5ecb456b15e8a217ef9addb",
+      "output_sha256": "d4344812606db45a17113dc79f23430ed629b38b1f317d1ad2ecaa0fdb620732",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 1.1428719911989909,
+      "thd_percent": 0.023125715877509546,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 6.377929041602473e-05,
+          "dBc": -73.04927832595901
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 1.790274457447198e-05,
+          "dBc": -84.08447967956974
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 1.1199691546233855e-06,
+          "dBc": -108.15875075251446
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 2.8443623970583635e-07,
+          "dBc": -120.0631734175265
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 1.2050409093753602e-07,
+          "dBc": -127.52283617228657
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 1.267915966084612e-07,
+          "dBc": -127.08106257517369
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 8.711599816060777e-08,
+          "dBc": -130.3409136475262
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 7.876967947053229e-08,
+          "dBc": -131.21569042390308
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 2.4930645355395235e-07,
+          "dBc": -121.20820157257953
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 1.6045473323791673e-07,
+          "dBc": -125.03582133216358
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 2.9116989253001267e-07,
+          "dBc": -119.85994266549693
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 1.519398752274868e-07,
+          "dBc": -125.50943668020659
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 3.344983637053814e-07,
+          "dBc": -118.65499203608948
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.8379091897030666e-07,
+          "dBc": -123.85639100319216
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 2.467140460498276e-07,
+          "dBc": -121.29899447538314
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 6.564735520435094e-08,
+          "dBc": -132.79852730965322
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 4.1548728590311154e-08,
+          "dBc": -136.77171721439242
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 1.3718686263459113e-07,
+          "dBc": -126.39662150455572
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 1.3777378021412214e-07,
+          "dBc": -126.35954049534519
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s50-18db",
+      "signal": "sine_50",
+      "level_dbfs": -18,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "85404f3f1ad40bf6e3247166f9dea7418ef0cfd3ba86eb20338ac57aeb3e90c6",
+      "output_sha256": "3b0fb9984e03213a4a0f63b8372fd69c9de6f990d6857b258d6e1d5d340d2fe7",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 1.1429788757952495,
+      "thd_percent": 0.010914829157054728,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 1.5498814894928672e-05,
+          "dBc": -79.33700905381696
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 2.291481677365761e-06,
+          "dBc": -95.94065110295885
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 9.09524258577249e-08,
+          "dBc": -123.96669314397647
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 1.2910530683712368e-07,
+          "dBc": -120.92409699897749
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 3.2716991185373645e-08,
+          "dBc": -132.8475117428867
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 7.587056839584879e-08,
+          "dBc": -125.54151212949873
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 4.366333254103913e-08,
+          "dBc": -130.34064129188783
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 1.028959079510409e-07,
+          "dBc": -122.89501680815528
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 1.3226737641151223e-07,
+          "dBc": -120.71392409894705
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 1.2515326251891304e-07,
+          "dBc": -121.19413537543126
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 1.4672621613014458e-07,
+          "dBc": -119.81282452627187
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 1.0271950104903965e-07,
+          "dBc": -122.90992085902944
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 1.1960864740694574e-07,
+          "dBc": -121.58772729877045
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 8.269173873504467e-08,
+          "dBc": -124.79373640650236
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 5.8508707545695326e-08,
+          "dBc": -127.79856878919746
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 1.4048002667941679e-07,
+          "dBc": -120.19068726185009
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 1.2367778593241762e-07,
+          "dBc": -121.29714484374774
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 1.307168160002907e-07,
+          "dBc": -120.81634966720438
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 9.028503981341765e-08,
+          "dBc": -124.03066300481316
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s50-24db",
+      "signal": "sine_50",
+      "level_dbfs": -24,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "6cc58b22e49f649b23aad18a2017ee6f6cad18b5c72cd7dae7b5174b0164b841",
+      "output_sha256": "a68be26806f1d0b86dadc310cec703ebd37c3db138e88d62e72144d595386032",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 1.14301031381566,
+      "thd_percent": 0.00539227323849658,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 3.867178628227679e-06,
+          "dBc": -85.3951256590596
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 2.6473335664281194e-07,
+          "dBc": -108.68683699337522
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 3.8977577694398994e-08,
+          "dBc": -125.32671340034233
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 3.903459420108697e-08,
+          "dBc": -125.3140169412953
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 4.3572178562005406e-08,
+          "dBc": -124.3588248236218
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 3.681816610265717e-08,
+          "dBc": -125.82176726469154
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 2.7741795159884403e-08,
+          "dBc": -128.28031910512942
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 3.1726129980899093e-08,
+          "dBc": -127.11466833452108
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 3.123459804628071e-08,
+          "dBc": -127.25029188947381
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 9.701153202797418e-09,
+          "dBc": -137.40654305600196
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 6.451788037162305e-08,
+          "dBc": -120.94940849985143
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 6.691987179878082e-08,
+          "dBc": -120.63190831242407
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 4.521938584360871e-08,
+          "dBc": -124.0365171265313
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 9.529863811753014e-08,
+          "dBc": -117.56127643194979
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 5.608441441504203e-08,
+          "dBc": -122.16616652419951
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 4.725726125817934e-08,
+          "dBc": -123.65363933884686
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 2.417080034603706e-08,
+          "dBc": -129.47718969733282
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 1.1481396375284025e-08,
+          "dBc": -135.94311610899723
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 2.299183501500145e-08,
+          "dBc": -129.9115376305738
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s50-36db",
+      "signal": "sine_50",
+      "level_dbfs": -36,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "f352f012d7ca06403e0dcbea320c9289ba00ff00965bfc52ea3cbf1718725de8",
+      "output_sha256": "94d015c989401ad5eca6100cef45bd05b5a1d4bf8de800a29adf1efc5cd98b07",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 1.143013934125336,
+      "thd_percent": 0.0014187067775274667,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 2.496595791073515e-07,
+          "dBc": -97.19604925531581
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 2.1784265173070308e-08,
+          "dBc": -118.38015563770306
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 1.1491543449348798e-08,
+          "dBc": -123.93544666642796
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 1.7346247829656944e-08,
+          "dBc": -120.3589029964244
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 6.847675365432129e-09,
+          "dBc": -128.4321506730928
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 1.326239553582395e-08,
+          "dBc": -122.69057441347529
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 3.6352199981881128e-09,
+          "dBc": -133.93239995848967
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 1.6425623537777052e-08,
+          "dBc": -120.83257663718479
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 5.9700038968348425e-09,
+          "dBc": -129.62352164343238
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 1.1628895770282072e-08,
+          "dBc": -123.83224437645337
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 3.76893949006528e-09,
+          "dBc": -133.61863063656273
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 1.4577854150845406e-08,
+          "dBc": -121.86914191829564
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 1.558697393793131e-08,
+          "dBc": -121.287777750655
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.7758658348262696e-08,
+          "dBc": -120.15481089364762
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 1.5622036525170444e-08,
+          "dBc": -121.2682609581134
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 1.1693486265387685e-08,
+          "dBc": -123.78413373787048
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 1.1521808222135769e-08,
+          "dBc": -123.91260109124639
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 6.112570212954788e-09,
+          "dBc": -129.41853672063112
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 2.2997610772826644e-08,
+          "dBc": -117.90935954749962
+        }
+      ]
+    },
+    {
+      "id": "lvl-flat-s50-6db",
+      "signal": "sine_50",
+      "level_dbfs": -6,
+      "sample_rate_hz": 44100,
+      "parameters": {
+        "fx_present": true,
+        "host_bypass": false,
+        "eq_in": true,
+        "lf_cps_hz": null,
+        "lf_boost_ui": 0,
+        "lf_atten_ui": 0,
+        "output_gain_ui": null
+      },
+      "input_sha256": "74506f7a726848bb97215247e9dc9bef27764ed4a617966fe1d29cbfaeb306b4",
+      "output_sha256": "e8f0f1f7ea1f2f74f908a3365b45c1a689ec50f8f84e54850896d2b7b7750354",
+      "fundamental_hz": 50,
+      "fundamental_gain_db": 1.1423834772438521,
+      "thd_percent": 0.05455411240817575,
+      "harmonics": [
+        {
+          "order": 2,
+          "frequency_hz": 100,
+          "amplitude": 0.0002801499902573234,
+          "dBc": -66.19457122216818
+        },
+        {
+          "order": 3,
+          "frequency_hz": 150,
+          "amplitude": 0.00013577483326946785,
+          "dBc": -72.48599789308484
+        },
+        {
+          "order": 4,
+          "frequency_hz": 200,
+          "amplitude": 1.810364832899568e-05,
+          "dBc": -89.98706136267126
+        },
+        {
+          "order": 5,
+          "frequency_hz": 250,
+          "amplitude": 1.4267016881798823e-06,
+          "dBc": -112.05571995352899
+        },
+        {
+          "order": 6,
+          "frequency_hz": 300,
+          "amplitude": 2.853756700296012e-07,
+          "dBc": -126.03404457270355
+        },
+        {
+          "order": 7,
+          "frequency_hz": 350,
+          "amplitude": 8.316427277541198e-07,
+          "dBc": -116.74364757191405
+        },
+        {
+          "order": 8,
+          "frequency_hz": 400,
+          "amplitude": 5.061242076689725e-07,
+          "dBc": -121.05724125828387
+        },
+        {
+          "order": 9,
+          "frequency_hz": 450,
+          "amplitude": 1.368675519232e-07,
+          "dBc": -132.41637346953698
+        },
+        {
+          "order": 10,
+          "frequency_hz": 500,
+          "amplitude": 1.9129251330357303e-07,
+          "dBc": -129.50842399233167
+        },
+        {
+          "order": 11,
+          "frequency_hz": 550,
+          "amplitude": 2.1667979974432633e-07,
+          "dBc": -128.42601494537416
+        },
+        {
+          "order": 12,
+          "frequency_hz": 600,
+          "amplitude": 1.1263439904932112e-07,
+          "dBc": -134.10896253115976
+        },
+        {
+          "order": 13,
+          "frequency_hz": 650,
+          "amplitude": 2.5477751979779784e-07,
+          "dBc": -127.0191613454252
+        },
+        {
+          "order": 14,
+          "frequency_hz": 700,
+          "amplitude": 3.9315426495697645e-07,
+          "dBc": -123.25112363065529
+        },
+        {
+          "order": 15,
+          "frequency_hz": 750,
+          "amplitude": 1.9480138477782764e-07,
+          "dBc": -129.35054266002092
+        },
+        {
+          "order": 16,
+          "frequency_hz": 800,
+          "amplitude": 3.261137512134729e-07,
+          "dBc": -124.875001215092
+        },
+        {
+          "order": 17,
+          "frequency_hz": 850,
+          "amplitude": 3.730119897952291e-07,
+          "dBc": -123.7079276233127
+        },
+        {
+          "order": 18,
+          "frequency_hz": 900,
+          "amplitude": 2.6927577949770616e-07,
+          "dBc": -126.53843762103301
+        },
+        {
+          "order": 19,
+          "frequency_hz": 950,
+          "amplitude": 5.283298252004691e-08,
+          "dBc": -140.68428089398265
+        },
+        {
+          "order": 20,
+          "frequency_hz": 1000,
+          "amplitude": 7.152335071751621e-07,
+          "dBc": -118.05342641534929
+        }
+      ]
+    }
+  ]
+}
