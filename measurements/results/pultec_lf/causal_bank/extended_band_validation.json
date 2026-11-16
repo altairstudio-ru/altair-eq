@@ -1,0 +1,16 @@
+{
+  "model": "measurements\\results\\pultec_lf\\causal_bank\\frozen_guard003_ridge0001_model.json",
+  "sample_rate_hz": 44100,
+  "band_hz": [
+    18000.0,
+    19845.0
+  ],
+  "frequency_points_per_configuration": 240,
+  "configuration_count": 484,
+  "max_abs_mag_error_db": 10.387240422625688,
+  "max_abs_phase_error_deg": 91.1421644105583,
+  "max_reference_peak_db": 3.6842089748956974,
+  "max_model_peak_db": 9.486682469873603,
+  "csv": "measurements\\results\\pultec_lf\\causal_bank\\extended_band_validation.csv",
+  "note": "Saved -36 dBFS UADx renders only; errors above 18 kHz are diagnostic, outside SPEC gates."
+}

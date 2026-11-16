@@ -1,0 +1,25 @@
+{
+  "schema": "altair-eq.analysis/1",
+  "mode": "transfer",
+  "created_utc": "2026-11-11T19:26:07Z",
+  "inputs": {
+    "measurements/signals/sweep_log_m36-44100-tail.wav": "5302bfe4065dc452567dd13a9a3c239ff0c9d126401c4916b8a55f582a0b80b2",
+    "measurements/renders/pultec_lf/joint_grid_44k1_integer/cps100-b09-a03.wav": "84984393bfd6445764e9fb22cf8dea8ac96a177b06057873286d4e49545bbf9f"
+  },
+  "sample_rate_hz": 44100,
+  "samples": 771750,
+  "latency_compensated_samples": 86,
+  "fmin_hz": 18000.0,
+  "fmax_hz": 19845.0,
+  "stereo_difference_peak_input": 0.0,
+  "stereo_difference_peak_render": 0.0,
+  "in_band_bins": 31772,
+  "control_points": [
+    {
+      "freq_hz": 18000.0,
+      "magnitude_db": 0.7317858879888353,
+      "phase_deg": -9.798972447011215,
+      "group_delay_ms": 2.9201876820369383
+    }
+  ]
+}

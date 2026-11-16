@@ -1,0 +1,15 @@
+{
+  "guard_weight": 0.01,
+  "ridge": 0.001,
+  "training_count": 92,
+  "train_pass": 1,
+  "max_train_errors": [
+    0.009629030958948277,
+    0.04177304394492488,
+    0.06594333011584062,
+    2.4975074553354712
+  ],
+  "max_response_18_22k_db_over_integer_table": 4.98743729556764,
+  "max_pole_radius": 0.9994530423438505,
+  "note": "Fit/selection used only flat, measured axes, and the 92 training joint nodes. Holdout files were not opened."
+}

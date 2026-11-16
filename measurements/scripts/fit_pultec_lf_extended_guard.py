@@ -1,0 +1,173 @@
+"""Подбор измеренного guard на train и отдельная оценка замороженного JSON."""
+import argparse
+import csv
+import json
+
+import numpy as np
+from scipy.linalg import pinv
+from scipy.interpolate import RBFInterpolator
+
+from probe_pultec_lf_causal_bank import CPS, FLAT, LIMIT, TRAIN, basis, curve, errors, paths
+from validate_pultec_lf_causal_bank_extended_band import (
+    FMIN, FMAX, MODEL, OUT, SR, load_rows, measured_curve, sha256)
+
+FROZEN = OUT / "frozen_measured_guard_v1.json"
+AUDIT = OUT / "measured_guard_v1_audit.csv"
+EXT = np.geomspace(FMIN, FMAX, 240)
+JOINT = [(c, b, a) for c in CPS for b in range(1, 11) for a in range(1, 11)]
+TRAIN_KEYS = [k for k in JOINT if k[1:] in TRAIN]
+
+
+def targets(keys, grid):
+    rows, files = load_rows(), paths()
+    spec, extended = [], []
+    for k in keys:
+        f, h, _ = curve(files[k])
+        row = rows[k]
+        if not np.array_equal(f, grid) or not all(row.get(tag) for tag in ('input_sha256', 'output_sha256')):
+            raise ValueError(f"Неполные данные {k}")
+        spec.append(h)
+        extended.append(measured_curve(row, EXT)[0])
+    return np.asarray(spec), np.asarray(extended)
+
+
+def arrays(model):
+    poles = np.array(model["pole_real"]) + 1j * np.array(model["pole_imag"])
+    tables = np.array([model["tables"][str(c)] for c in CPS])
+    return poles, tables
+
+
+def spec_surface(grid, training):
+    """Измеренные оси и интерполяция измеренного комплексного interaction."""
+    files = paths()
+    flat = curve(FLAT)[1]
+    surface = np.empty((4,11,11,len(grid)), complex)
+    anchors = [(0,a) for a in range(0,11,2)] + [(b,0) for b in range(2,11,2)]
+    for i,c in enumerate(CPS):
+        boost = np.array([flat]+[curve(files[c,b,0])[1] for b in range(1,11)])
+        atten = np.array([flat]+[curve(files[c,0,a])[1] for a in range(1,11)])
+        base = boost[:,None]+atten[None,:]-flat
+        d = training[i*len(TRAIN):(i+1)*len(TRAIN)] - np.array([base[b,a] for b,a in TRAIN])
+        v = np.vstack([d, np.zeros((len(anchors),len(grid)))])
+        interp = RBFInterpolator(TRAIN+anchors,np.column_stack([v.real,v.imag]),kernel="cubic")
+        surface[i] = base
+        for b in range(1,11):
+            for a in range(1,11):
+                re,im = np.split(interp([[b,a]])[0],2)
+                surface[i,b,a] += re+1j*im
+    return surface.reshape(-1,len(grid)).T
+
+
+def choose(model, grid, freeze):
+    poles, old = arrays(model)
+    spec, ext = targets(TRAIN_KEYS, grid)
+    main = basis(grid, poles)
+    high = basis(EXT, poles)
+    tail = basis(np.linspace(FMAX, SR/2, 100), poles)
+    # Continuation relative to 18 kHz removes most level differences between settings.
+    shape = (ext / spec[:, -1:]).reshape(4, len(TRAIN), -1).mean(axis=1)
+    flat = old.reshape(-1, old.shape[-1])
+    baseline = main @ flat.T
+    train_ix = [CPS.index(c)*121 + 11*b + a for c,b,a in TRAIN_KEYS]
+    trials = []
+    best = None
+    # Fit a linear correction to all frozen weight vectors; no new audio states.
+    target = spec_surface(grid,spec)
+    # Preserve validated bass branches: the correction is for the treble only.
+    mix = np.clip((grid-3000)/3000,0,1)[:,None]
+    target = baseline + mix*(target-baseline)
+    desired = (shape[:,None,:] * target[-1].reshape(4,121,1)).reshape(-1,len(EXT)).T
+    anchor = target[:,train_ix].mean(axis=1)
+    rel = main / anchor[:,None]
+    base_error = (target - baseline) / anchor[:,None]
+    # Reweight the frequencies with the largest normalized training residual.
+    for strength in (.02,.07,.2):
+        for damping in (.001,.003,.007):
+            freq_w = np.where(grid<3000,6.,1.)
+            for iteration in range(8):
+                wr = freq_w[:,None]
+                rows = [wr*rel.real, .4*wr*rel.imag, strength*high.real, strength*high.imag,
+                        damping*tail.real, damping*tail.imag, .000003*np.eye(flat.shape[1])]
+                residual = desired - high @ flat.T
+                tail_delta = 1 - tail @ flat.T
+                rhs = np.vstack([wr*base_error.real,.4*wr*base_error.imag,strength*residual.real,
+                                 strength*residual.imag,damping*tail_delta.real,damping*tail_delta.imag,
+                                 np.zeros((flat.shape[1],len(flat)))])
+                weights = flat.T + pinv(np.vstack(rows)) @ rhs
+                pred = (main @ weights[:,train_ix]).T
+                ext_pred = (high @ weights[:,train_ix]).T
+                ratios = ext_pred / ext
+                err = pred/spec
+                md = abs(20*np.log10(abs(err)))
+                ph = abs(np.angle(err,deg=True))
+                spec_max = np.max([errors(grid,p,h) for p,h in zip(pred,spec)],axis=0)
+                worst = np.maximum(md.max(axis=0)/.025,ph.max(axis=0)/1.3)
+                freq_w *= np.clip(worst**.6,.8,1.8)
+                freq_w[grid<3000] = 6.
+                shift = abs(20*np.log10(abs(pred/baseline[:,train_ix].T))).max()
+                peak = 20*np.log10(abs(tail @ weights[:,train_ix]).max())
+                mag = abs(20*np.log10(abs(ratios))).max()
+                phase = abs(np.angle(ratios,deg=True)).max()
+                measured_peak = 20*np.log10(abs(ext_pred).max())
+                score = (bool(np.any(spec_max>LIMIT)),max(spec_max[2]/.032,spec_max[3]/1.6,
+                         peak/13,measured_peak/2.5,mag/7,1),mag)
+                trials.append(dict(strength=strength,damping=damping,iteration=iteration,
+                              measured_peak=measured_peak,spec_max=spec_max.tolist(),shift_db=shift,
+                              tail_peak_db=peak,extended_max_db=mag,extended_max_deg=phase,score=score))
+                if best is None or score<best[0]:
+                    best = score,trials[-1],weights.T.reshape(old.shape)
+    (OUT/"measured_guard_v1_train_trials.json").write_text(json.dumps(trials,indent=2),encoding="utf-8")
+    print("Выбор по train", best[1])
+    if not freeze:
+        return
+    model["tables"] = {str(c): best[2][i].tolist() for i,c in enumerate(CPS)}
+    model["measured_guard"] = best[1]
+    model["baseline_sha256"] = sha256(MODEL)
+    with FROZEN.open("x", encoding="utf-8") as stream:
+        json.dump(model,stream,separators=(",",":"))
+
+
+def audit(model, grid):
+    poles, tables = arrays(model)
+    main, high = basis(grid,poles), basis(EXT,poles)
+    spec, extended = targets(JOINT, grid)
+    rows = []
+    for (c,b,a), h, e in zip(JOINT,spec,extended):
+        w = tables[CPS.index(c),b,a]
+        s = errors(grid,main@w,h)
+        p = high@w
+        mag = abs(20*np.log10(abs(p/e)))
+        phase = abs(np.angle(p/e,deg=True))
+        rows.append(dict(cps=c,boost=b,atten=a,split="train" if (b,a) in TRAIN else "holdout",
+                         low=s[0],mid=s[1],high=s[2],phase=s[3],official=int(np.all(s<=LIMIT)),
+                         ext_db=mag.max(),ext_db_hz=EXT[mag.argmax()],ext_deg=phase.max(),
+                         ext_deg_hz=EXT[phase.argmax()],model_peak=20*np.log10(abs(p).max()),
+                         ref_peak=20*np.log10(abs(e).max()),diagnostic=int(mag.max()<=.1 and phase.max()<=2)))
+    with AUDIT.open("w",newline="",encoding="utf-8") as stream:
+        writer=csv.DictWriter(stream,fieldnames=rows[0])
+        writer.writeheader()
+        writer.writerows(rows)
+    print("SHA256",sha256(FROZEN),"radius",max(abs(poles)),"buffer delay samples",0)
+    for split in ("train","holdout"):
+        part=[r for r in rows if r["split"]==split]
+        for c in CPS:
+            group=[r for r in part if r["cps"]==c]
+            vals=np.array([[r[k] for k in ("low","mid","high","phase")] for r in group])
+            print(split,c,(vals<=LIMIT).sum(axis=0),sum(r["official"] for r in group),
+                  "max",vals.max(axis=0),"P90",np.percentile(vals,90,axis=0))
+        print(split,"diagnostic",sum(r["diagnostic"] for r in part))
+        for k in ("ext_db","ext_deg","model_peak","ref_peak"):
+            worst=max(part,key=lambda r:r[k])
+            print(k,"max",worst[k],"P90",np.percentile([r[k] for r in part],90),
+                  "at",tuple(worst[i] for i in ("cps","boost","atten")),worst.get(k+"_hz",""))
+
+
+if __name__=="__main__":
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("mode",choices=["train","freeze","audit"])
+    mode=parser.parse_args().mode
+    f=curve(FLAT)[0]
+    if mode!="audit":
+        choose(json.loads(MODEL.read_text()),f,mode=="freeze")
+    else:
+        audit(json.loads(FROZEN.read_text()),f)

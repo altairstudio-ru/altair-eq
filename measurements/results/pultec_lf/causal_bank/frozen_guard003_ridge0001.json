@@ -1,0 +1,23 @@
+{
+  "guard_weight": 0.003,
+  "ridge": 0.0001,
+  "training_count": 92,
+  "train_pass": 92,
+  "max_train_errors": [
+    0.008616195605421864,
+    0.03983910469158859,
+    0.053418790706157376,
+    1.7130974986708287
+  ],
+  "max_response_18_22k_db_over_integer_table": 9.486357842378776,
+  "max_pole_radius": 0.9994530423438505,
+  "note": "Fit uses flat, measured axes, and 92 training joint nodes. Holdout is not opened unless --validate-holdout is explicitly set.",
+  "holdout_count": 308,
+  "holdout_pass": 308,
+  "holdout_max_errors": [
+    0.14803286895039372,
+    0.1143576883548564,
+    0.09741775234893058,
+    1.909625753267462
+  ]
+}
