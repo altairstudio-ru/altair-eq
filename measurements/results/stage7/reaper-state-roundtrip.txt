@@ -1,0 +1,16 @@
+PASS dedicated empty project
+PASS load AltaiR EQ LF
+PASS create Boost automation envelope
+PASS save dedicated RPP
+PASS reopen saved RPP
+PASS restore FX instance
+PASS restore parameter 0
+PASS restore parameter 1
+PASS restore parameter 2
+PASS restore parameter 3
+PASS restore parameter 4
+PASS restore parameter 5
+PASS restore automation envelope
+PASS restore automation point 1
+PASS restore automation point 2
+SUCCESS

@@ -1,0 +1,13 @@
+# Краткая передача AltaiR EQ
+
+Актуально на 17 ноября 2026.
+
+- Проект Windows x64 VST3, LF MVP по измерениям UADx Pultec EQP-1A v1.2.16. Корень K:/AltaiR Studio/Projects/AltaiR EQ. Язык общения и документации русский.
+- Этапы 1–7 завершены. Следующий этап 8 — проверка транспорта, seek/reset, нагрузки и сравнение с UADx в отдельной DAW-сессии, затем прослушивание пользователем. Локальная альфа относится к этапу 9.
+- DSP — dsp/FrozenLfBank.h и FrozenLfData.inc. 44,1/48/96 кГц, моно/стерео, 0 latency, smoothing 20 ms. Приёмка 629/629 измеренных кривых учитывает пять явно принятых исключений. Точные пределы — docs/changes/2026-11-16-stage6-mvp-exceptions-proposal.md. Сохранённый PultecLf.h — прежний SOS-прототип.
+- VST3 — plugin/Processor.cpp и Editor.cpp, версия 0.1.3. Панель A4 с компактными ручками, минимальными/максимальными значениями возле делений и шильдиком версии. Единственная установка REAPER — C:/Program Files/Common Files/VST3/AltaiR EQ LF.vst3. В REAPER проектные build-пути из сканирования убраны.
+- Сборка в build/stage7, команды docs/BUILD_AND_TEST.md. Для установки закрыть REAPER, обновить системный пакет, сверить SHA-256 и проверить загрузку. Program Files требует повышения прав Windows.
+- Проверено на установленном пакете: pluginval 1.0.4 level 10, частоты 44100/48000/96000, блоки 32/64/128/512, GUI, automation, state, fuzz — SUCCESS. REAPER сохранил/открыл тестовый RPP с шестью параметрами и двумя точками автоматизации Boost — PASS. Моно на трёх частотах совпало с автономным DSP в пределах 1e−7, максимум 5,22e−8. Стерео также PASS. Bypass/EQ Out — точное совпадение с входом, trim +6 дБ — PASS. Release CTest 3/3.
+- Доказательства — docs/changes/2026-11-17-stage7-validation.md и measurements/results/stage7/. Скрипты check_stage7_vst3.py, check_stage7_mono.py, check_stage7_bypass.py, check_stage7_reaper.lua в measurements/scripts. Внешний Steinberg validator не запускался. Полноценная проверка транспорта REAPER и слышимости переходов ещё предстоит.
+- Git — ветка codex/stage7-vst3. Базовый коммит 04d94f3 с этапом 6 опубликован в origin/codex/stage6-causal-bank. Этап 7 оформлен отдельным коммитом в codex/stage7-vst3; текущий HEAD проверять через git log. В дереве есть пользовательское изменение eq_reaper_project/uadx-load-check.rpp и outputs/listening-*; учитывать их при подготовке коммита.
+- Прочитать AGENTS.md, HANDOFF.md, PLAN.md. Соблюдать RTK.md. Master не переписывать, Mix Studio использовать как read-only. SPEC и пять исключений менять только с явным решением пользователя. Любое ключевое внедрение документировать в docs/changes. Качество прослушивания подтверждает пользователь.

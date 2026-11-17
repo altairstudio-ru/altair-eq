@@ -1,12 +1,14 @@
 # Активный план: Pultec EQP-1A LF MVP
 
-16 ноября: этап 6 закрыт. Актуальная реализация и доказательства — [приёмка DSP](docs/changes/2026-11-16-stage6-runtime-acceptance.md). Следующий этап — 7.
+17 ноября: этап 7 закрыт, включая REAPER save/restore и моно-рендер. [Протокол](docs/changes/2026-11-17-stage7-validation.md). Следующий этап 8.
 
-Решение пользователя от 8 ноября 2026: первый MVP использует UAD Pultec EQP-1A вместо API 550A. Начальный объём — низкочастотная секция Boost/Attenuation. Этапы 1–5 закрыты. Этап 6 закрыт 16 ноября: отдельный DSP-компонент прошёл C++-приёмку после принятия пяти точечных исключений; детали и ограничения — в `docs/changes/2026-11-16-stage6-runtime-acceptance.md`. Следующий этап — 7, VST3-оболочка. Актуальное состояние и гейты — в `docs/WORK_PLAN_PULTEC_MVP.md` и `HANDOFF.md`.
+Следующие работы этапа 8 — отдельная сессия DAW с AltaiR и UADx, проверка транспорта/seek/reset, нагрузки и прослушивание пользователем. Результаты фиксировать в docs/VALIDATION.md и записи docs/changes. Этап 8 пока не завершён.
+
+Решение пользователя от 8 ноября 2026: первый MVP использует UAD Pultec EQP-1A вместо API 550A. Начальный объём — низкочастотная секция Boost/Attenuation. Этапы 1–5 закрыты. Этап 6 закрыт 16 ноября: отдельный DSP-компонент прошёл C++-приёмку после принятия пяти точечных исключений; детали и ограничения — в `docs/changes/2026-11-16-stage6-runtime-acceptance.md`. VST3-оболочка этапа 7 принята 17 ноября; далее этап 8. Актуальное состояние и гейты — в `docs/WORK_PLAN_PULTEC_MVP.md` и `HANDOFF.md`.
 
 **Детальный поэтапный план: [`docs/WORK_PLAN_PULTEC_MVP.md`](docs/WORK_PLAN_PULTEC_MVP.md)** — утверждён пользователем 8 ноября 2026. Этап 1 (baseline) выполнен 8 ноября 2026: [`docs/BASELINE.md`](docs/BASELINE.md). Запись о плане: `docs/changes/2026-11-08-pultec-mvp-work-plan.md`.
 
-Подробности решения о референсе: docs/changes/2026-11-08-pultec-reference.md. Предыдущий API-план в docs/STAGED_PLAN.md является историческим; его параметры не применять к Pultec. Измерительный этап 4 закрыт для ограниченного LF MVP; отчёт и ограничения данных: [`docs/RESULTS_PULTEC_LF.md`](docs/RESULTS_PULTEC_LF.md). Текущий fit-гейт этапа 6: `docs/changes/2026-11-10-stage6-fit-probe.md`.
+Подробности решения о референсе: docs/changes/2026-11-08-pultec-reference.md. Предыдущий API-план в docs/STAGED_PLAN.md является историческим; его параметры не применять к Pultec. Измерительный этап 4 закрыт для ограниченного LF MVP; отчёт и ограничения данных: [`docs/RESULTS_PULTEC_LF.md`](docs/RESULTS_PULTEC_LF.md). Исторический fit-гейт этапа 6: `docs/changes/2026-11-10-stage6-fit-probe.md`.
 
 Состояние этапа 3: калибровка и защищённый рендер подтверждены; гейт закрыт. Подробности: `docs/changes/2026-11-09-stage3-calibration-gate.md` и `docs/changes/2026-11-09-uadx-sandbox-resolution.md`.
 

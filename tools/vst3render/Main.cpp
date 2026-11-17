@@ -11,9 +11,11 @@ int main (int argc, char** argv)
     ScopedJuceInitialiser_GUI init;
     if (argc < 4) { std::cerr << "usage: vst3render <plugin.vst3|transparent> <input.wav> <output.wav> [index=normalized ...] [--realtime] [--require-latency=N]\n"; return 2; }
     int requiredLatency = -1;
+    bool mono = false;
     for (int i = 4; i < argc; ++i)
     {
         const String arg (argv[i]);
+        if (arg == "--mono") mono = true;
         if (arg.startsWith ("--require-latency="))
         {
             const auto text = arg.fromFirstOccurrenceOf ("=", false, false);
@@ -24,6 +26,7 @@ int main (int argc, char** argv)
     AudioFormatManager audio; audio.registerBasicFormats();
     std::unique_ptr<AudioFormatReader> reader (audio.createReaderFor (File (String::fromUTF8 (argv[2]))));
     if (!reader || reader->lengthInSamples <= 0 || reader->lengthInSamples > 100000000 || reader->numChannels != 2) return 3;
+    const int channels = mono ? 1 : 2;
     const int block = 512;
     AudioPluginFormatManager formats; formats.addFormat (new VST3PluginFormat());
     std::unique_ptr<AudioPluginInstance> processor;
@@ -37,7 +40,8 @@ int main (int argc, char** argv)
         processor = formats.createPluginInstance (description, reader->sampleRate, block, error);
         if (!processor) { std::cerr << error << '\n'; return 5; }
         processor->enableAllBuses();
-        if (processor->getTotalNumInputChannels() != 2 || processor->getTotalNumOutputChannels() != 2) return 13;
+        if (mono && !processor->setBusesLayout ({ { AudioChannelSet::mono() }, { AudioChannelSet::mono() } })) return 13;
+        if (processor->getTotalNumInputChannels() != channels || processor->getTotalNumOutputChannels() != channels) return 13;
         processor->setRateAndBufferSizeDetails (reader->sampleRate, block);
         bool realtime = false;
         for (int i = 4; i < argc; ++i) if (String (argv[i]) == "--realtime") realtime = true;
@@ -45,6 +49,7 @@ int main (int argc, char** argv)
         for (int i = 4; i < argc; ++i)
         {
             const String arg (argv[i]);
+            if (arg == "--mono") continue;
             if (arg == "--realtime") continue;
             if (arg.startsWith ("--require-latency=")) continue;
             const auto indexText = arg.upToFirstOccurrenceOf ("=", false, false);
@@ -92,13 +97,13 @@ int main (int argc, char** argv)
     if (output.existsAsFile()) { std::cerr << "output exists\n"; return 7; }
     output.getParentDirectory().createDirectory();
     auto stream = output.createOutputStream(); WavAudioFormat wav;
-    std::unique_ptr<AudioFormatWriter> writer (wav.createWriterFor (stream.get(), reader->sampleRate, 2, 32, {}, 0));
+    std::unique_ptr<AudioFormatWriter> writer (wav.createWriterFor (stream.get(), reader->sampleRate, channels, 32, {}, 0));
     if (!writer) return 8;
     stream.release();
     int renderError = 0;
     auto render = [&]() -> int
     {
-    AudioBuffer<float> buffer (2, block); MidiBuffer midi;
+    AudioBuffer<float> buffer (channels, block); MidiBuffer midi;
     // One second of silence allows parameter smoothing and startup to settle.
     if (processor) for (int n = 0; n < static_cast<int> (std::ceil (reader->sampleRate / block)); ++n)
     { buffer.clear(); midi.clear(); processor->processBlock (buffer, midi); }
@@ -108,7 +113,7 @@ int main (int argc, char** argv)
         buffer.clear();
         if (!reader->read (&buffer, 0, count, position, true, true)) return 9;
         if (processor) { midi.clear(); processor->processBlock (buffer, midi); }
-        for (int c = 0; c < 2; ++c) for (int n = 0; n < count; ++n)
+        for (int c = 0; c < channels; ++c) for (int n = 0; n < count; ++n)
             if (!std::isfinite (buffer.getSample (c, n))) return 10;
         if (!writer->writeFromAudioSampleBuffer (buffer, 0, count)) return 11;
     }
