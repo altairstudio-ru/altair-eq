@@ -1,0 +1,62 @@
+{
+  "schema": "altair-eq.stage8-spot-sines/1",
+  "method": "steady-state RMS sine -36 dBFS, vst3render, 2 s analysis window",
+  "checks": [
+    {
+      "freq_hz": 16300,
+      "srate": 44100,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": -0.0827
+    },
+    {
+      "freq_hz": 8000,
+      "srate": 44100,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": 0.0478
+    },
+    {
+      "freq_hz": 17728,
+      "srate": 48000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": -0.1717
+    },
+    {
+      "freq_hz": 8000,
+      "srate": 48000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": 0.0503
+    },
+    {
+      "freq_hz": 17728,
+      "srate": 96000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": 0.0583
+    },
+    {
+      "freq_hz": 16300,
+      "srate": 44100,
+      "cps": 60,
+      "boost": 10,
+      "atten": 10,
+      "diff_db": -0.0466
+    },
+    {
+      "freq_hz": 17257,
+      "srate": 96000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "diff_db": -0.0914
+    }
+  ]
+}

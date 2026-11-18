@@ -1,0 +1,433 @@
+{
+  "schema": "altair-eq.stage8-render-comparison/1",
+  "pairs": [
+    {
+      "signal": "impulse-44100",
+      "srate": 44100,
+      "cps": 20,
+      "boost": 6,
+      "atten": 0,
+      "impulse_position_input": 8820,
+      "peak_position_out": {
+        "altair": 0,
+        "uadx": 0
+      },
+      "time_max_abs": 0.10331964492797852,
+      "time_rms": 0.001120374878987569,
+      "peak_out": {
+        "altair": 0.9999998807907104,
+        "uadx": 0.9999998807907104
+      }
+    },
+    {
+      "signal": "impulse-44100",
+      "srate": 44100,
+      "cps": 30,
+      "boost": 0,
+      "atten": 0,
+      "impulse_position_input": 8820,
+      "peak_position_out": {
+        "altair": 0,
+        "uadx": 0
+      },
+      "time_max_abs": 0.08039307594299316,
+      "time_rms": 0.0009168275982621829,
+      "peak_out": {
+        "altair": 0.9999998807907104,
+        "uadx": 0.9999998807907104
+      }
+    },
+    {
+      "signal": "impulse-44100",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "impulse_position_input": 8820,
+      "peak_position_out": {
+        "altair": 0,
+        "uadx": 0
+      },
+      "time_max_abs": 0.09703564643859863,
+      "time_rms": 0.0013498690616710483,
+      "peak_out": {
+        "altair": 0.9999998807907104,
+        "uadx": 0.9999998807907104
+      }
+    },
+    {
+      "signal": "impulse-44100",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 10,
+      "atten": 10,
+      "impulse_position_input": 8820,
+      "peak_position_out": {
+        "altair": 0,
+        "uadx": 0
+      },
+      "time_max_abs": 0.09309494495391846,
+      "time_rms": 0.0011359682547769738,
+      "peak_out": {
+        "altair": 0.9999998807907104,
+        "uadx": 0.9999998807907104
+      }
+    },
+    {
+      "signal": "impulse-44100",
+      "srate": 44100,
+      "cps": 100,
+      "boost": 0,
+      "atten": 5,
+      "impulse_position_input": 8820,
+      "peak_position_out": {
+        "altair": 0,
+        "uadx": 0
+      },
+      "time_max_abs": 0.07742941379547119,
+      "time_rms": 0.0006678201637274418,
+      "peak_out": {
+        "altair": 0.9771066904067993,
+        "uadx": 0.9994275569915771
+      }
+    },
+    {
+      "signal": "impulse-48000",
+      "srate": 48000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "impulse_position_input": 9600,
+      "peak_position_out": {
+        "altair": 12,
+        "uadx": 0
+      },
+      "time_max_abs": 1.0363502502441406,
+      "time_rms": 0.01105785924172082,
+      "peak_out": {
+        "altair": 1.0,
+        "uadx": 0.9999998807907104
+      }
+    },
+    {
+      "signal": "impulse-96000",
+      "srate": 96000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "impulse_position_input": 19200,
+      "peak_position_out": {
+        "altair": 5,
+        "uadx": 0
+      },
+      "time_max_abs": 1.0628008842468262,
+      "time_rms": 0.012593450477136201,
+      "peak_out": {
+        "altair": 1.0,
+        "uadx": 0.5848919153213501
+      }
+    },
+    {
+      "signal": "stage8-music-44100",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "pdc_compensated": true,
+      "time_max_abs": 0.014408349990844727,
+      "time_rms": 0.0031905117724284407,
+      "level_diff_db": 0.1005532872798054
+    },
+    {
+      "signal": "stage8-music-44100",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 10,
+      "atten": 10,
+      "pdc_compensated": true,
+      "time_max_abs": 0.010986566543579102,
+      "time_rms": 0.002455897583775852,
+      "level_diff_db": 0.05679636870433934
+    },
+    {
+      "signal": "sweep_log_m36-44100-tail",
+      "srate": 44100,
+      "cps": 20,
+      "boost": 6,
+      "atten": 0,
+      "pdc_compensated": true,
+      "time_max_abs": 0.26975512504577637,
+      "time_rms": 0.08030445591742084,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.034219017922683115,
+          "p90_db": 0.0331570059233135,
+          "max_phase_deg": 1.0067322279882482,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.044656194862871645,
+          "p90_db": 0.04265531483406271,
+          "max_phase_deg": 0.583673889882856,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.0876671493651412,
+          "p90_db": 0.04597140707765812,
+          "max_phase_deg": 1.7947759210101144,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "signal": "sweep_log_m36-44100-tail",
+      "srate": 44100,
+      "cps": 30,
+      "boost": 0,
+      "atten": 0,
+      "pdc_compensated": true,
+      "time_max_abs": 0.2056276798248291,
+      "time_rms": 0.06088075535423239,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.0752878061951674,
+          "p90_db": 0.07478577001584852,
+          "max_phase_deg": 1.4817079346707247,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.07445514460316383,
+          "p90_db": 0.07286972276304282,
+          "max_phase_deg": 1.1713878780920486,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.09618642702172187,
+          "p90_db": 0.08077092028326982,
+          "max_phase_deg": 1.5516983665379809,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "signal": "sweep_log_m36-44100-tail",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "pdc_compensated": true,
+      "time_max_abs": 0.36629652976989746,
+      "time_rms": 0.11014199112665546,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.05539594782977986,
+          "p90_db": 0.05367025978809181,
+          "max_phase_deg": 1.1917226265701821,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.06168971544210322,
+          "p90_db": 0.05781927660009867,
+          "max_phase_deg": 0.6940756983157665,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.11657848364979018,
+          "p90_db": 0.05391254212121244,
+          "max_phase_deg": 1.808161132925574,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    {
+      "signal": "sweep_log_m36-44100-tail",
+      "srate": 44100,
+      "cps": 60,
+      "boost": 10,
+      "atten": 10,
+      "pdc_compensated": true,
+      "time_max_abs": 0.28056180477142334,
+      "time_rms": 0.08600229320609704,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.028859150016444346,
+          "p90_db": 0.026608577686060286,
+          "max_phase_deg": 0.7596700395057892,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.04885858157370038,
+          "p90_db": 0.04317058901111448,
+          "max_phase_deg": 0.366083496383594,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.11846831272235958,
+          "p90_db": 0.04950571014013583,
+          "max_phase_deg": 1.8213252771581825,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    {
+      "signal": "sweep_log_m36-44100-tail",
+      "srate": 44100,
+      "cps": 100,
+      "boost": 0,
+      "atten": 5,
+      "pdc_compensated": true,
+      "time_max_abs": 0.053936004638671875,
+      "time_rms": 0.016294854302150955,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.038799266872856286,
+          "p90_db": 0.012650700971676088,
+          "max_phase_deg": 0.4947448376912402,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.040491027441593275,
+          "p90_db": 0.039389707417270436,
+          "max_phase_deg": 0.24277088057100046,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.049403787578327085,
+          "p90_db": 0.03919154037481065,
+          "max_phase_deg": 1.3730124328009403,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "signal": "sweep_log_m36-48000-tail",
+      "srate": 48000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "pdc_compensated": true,
+      "time_max_abs": 0.3661993741989136,
+      "time_rms": 0.10966135322157919,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.053778568842796304,
+          "p90_db": 0.05216177980683234,
+          "max_phase_deg": 1.194887733616143,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.060256158755583655,
+          "p90_db": 0.05621384221049475,
+          "max_phase_deg": 0.707019459999264,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.20789377622688254,
+          "p90_db": 0.04594785707207716,
+          "max_phase_deg": 1.2724112045668385,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    {
+      "signal": "sweep_log_m36-96000-tail",
+      "srate": 96000,
+      "cps": 60,
+      "boost": 7,
+      "atten": 3,
+      "pdc_compensated": true,
+      "time_max_abs": 0.36547887325286865,
+      "time_rms": 0.10606505373351688,
+      "bands": [
+        {
+          "lo_hz": 20,
+          "hi_hz": 100,
+          "tol_db": 0.2,
+          "max_db": 0.05431422580965517,
+          "p90_db": 0.05266824322081476,
+          "max_phase_deg": 1.1940803213881057,
+          "pass": true
+        },
+        {
+          "lo_hz": 100,
+          "hi_hz": 1000,
+          "tol_db": 0.15,
+          "max_db": 0.06084769078320207,
+          "p90_db": 0.056926943483563086,
+          "max_phase_deg": 0.7003025236463802,
+          "pass": true
+        },
+        {
+          "lo_hz": 1000,
+          "hi_hz": 18000,
+          "tol_db": 0.1,
+          "max_db": 0.10588487849492989,
+          "p90_db": 0.04628770307117425,
+          "max_phase_deg": 1.747269887400443,
+          "pass": false
+        }
+      ],
+      "pass": false
+    }
+  ]
+}
